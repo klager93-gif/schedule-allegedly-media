@@ -1,16 +1,23 @@
-# File Manifest — v5.10.0
+# File Manifest — v5.11.0
+
+Total files: 465
 
 - `.gitattributes`
 - `.gitignore`
 - `ADMIN_CHANGELOG.md`
+- `BUILDMANIFEST.md`
 - `CHANGELOG.md`
+- `FILEMANIFEST.generated.txt`
+- `FILEMANIFEST.md`
 - `HOWTO.md`
 - `LATEST_RELEASE.md`
 - `MASTER-CHANGELOG.md`
 - `PUBLIC_CHANGELOG.md`
 - `README.md`
 - `ROADMAP.md`
+- `SHA256SUMS.txt`
 - `STANDARDS.md`
+- `VALIDATION.md`
 - `adapters/JsonAssignmentEngineAdapter.js`
 - `adapters/JsonAssignmentGeneratorAdapter.js`
 - `adapters/JsonBenefitLedgerAdapter.js`
@@ -157,6 +164,7 @@
 - `components/tag.js`
 - `components/toolbar.js`
 - `data/agencies.json`
+- `data/agency-setup-preview.json`
 - `data/approval-foundation-preview.json`
 - `data/assignment-engine-preview.json`
 - `data/assignment-generator-preview.json`
@@ -271,6 +279,7 @@
 - `pages/employee/index.html`
 - `pages/employee/profile.html`
 - `pages/employee/requests.html`
+- `pages/identity/agency-setup.html`
 - `pages/identity/current-user.html`
 - `pages/identity/identity.css`
 - `pages/identity/identity.js`

@@ -1,16 +1,26 @@
-# v5.10.0 — Identity & Login Foundation
+# Changelog
+
+## v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
+
+- Cleaned up the login foundation layout so identity cards have balanced proportions and clearer hierarchy.
+- Added Agency Setup Wizard foundation for first-login agency onboarding.
+- Sanitized demo data by replacing real personal and agency references with fictional sample data.
+- Added fictional City of Fairview preview agency and Jordan Miller administrator session.
+- Updated route/navigation registries for Agency Setup.
+
+# v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
 
 - Added login foundation page.
 - Added current-user/session preview page.
 - Added identity routes and navigation group.
 - Added role-aware app-shell login/current-user links.
-- Added City of Minooka preview administrator session data.
+- Added City of Fairview preview administrator session data.
 - Added identity/session docs tied to existing users, roles, user_roles, role_permissions, and employees tables.
 - No live authentication or database changes.
 
 # Changelog
 
-## v5.10.0 — Identity & Login Foundation
+## v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
 
 - Added approval foundation data and decision model preview.
 - Added database naming contract for core identity versus schedule module tables.
@@ -20,7 +30,7 @@
 - Refreshed release metadata, cache busting, manifests, and validation.
 
 
-## v5.10.0 — Leave Banks & Data Layer Cleanup
+## v5.11.0 — Leave Banks & Data Layer Cleanup
 
 - Added leave bank foundation UI improvements for balances, pending impacts, transactions, and adjustment-entry readiness.
 - Added data layer cleanup so optional preview JSON failures render neutral foundation states instead of alarming errors.

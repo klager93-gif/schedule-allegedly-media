@@ -1,9 +1,16 @@
-# Validation — v5.10.0
+# Validation Report — v5.11.0
 
-- Missing local HTML links: 0
-- Missing route registry targets: 0
-- macOS metadata files: 0
-- Footer/header/homepage metadata: v5.10.0 checked
-- Identity pages: login and current-user present
-- Database changes: none
+Release: Agency Setup Wizard & Sanitized Identity Demo
 
+Checks performed:
+
+- No macOS metadata files.
+- No missing local HTML links.
+- No missing JavaScript imports.
+- Route registry targets checked.
+- Footer/header/homepage metadata checked.
+- Login layout reviewed for balanced card proportions.
+- Demo data sanitized: no Jordan Miller, Fairview, or fairview.example references.
+- Agency setup route added and registered.
+- No live authentication changes.
+- No database changes.

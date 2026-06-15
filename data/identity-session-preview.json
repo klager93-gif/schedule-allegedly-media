@@ -1,13 +1,11 @@
 {
-  "sessionState": "preview",
-  "authProvider": "Signal Schedule Local Auth (planned)",
-  "tables": [
-    "users",
-    "roles",
-    "user_roles",
-    "role_permissions",
-    "employees"
+  "mode": "preview",
+  "authenticated": false,
+  "sampleAgency": "City of Fairview",
+  "sampleUser": "Jordan Miller",
+  "roles": [
+    "Administrator",
+    "Scheduler"
   ],
-  "multiTenantModel": "single database with agency_id tenant separation",
-  "sampleAgency": "City of Minooka"
+  "nextStep": "Agency Setup Wizard"
 }

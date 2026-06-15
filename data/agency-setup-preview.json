@@ -1,0 +1,55 @@
+{
+  "agencyName": "City of Fairview",
+  "agencyType": "Dispatch Center",
+  "timezone": "America/Chicago",
+  "weekStartsOn": "Sunday",
+  "timeFormat": "24-hour",
+  "roles": [
+    "Dispatcher",
+    "Lead Dispatcher",
+    "Supervisor",
+    "Communications Manager"
+  ],
+  "qualifications": [
+    "Call Taking",
+    "Police Radio",
+    "Fire Radio",
+    "NCIC",
+    "Emergency Medical Dispatch",
+    "Trainer"
+  ],
+  "shiftGroups": [
+    "A Days",
+    "A Nights",
+    "B Days",
+    "B Nights"
+  ],
+  "coverage": [
+    {
+      "name": "Day Shift",
+      "minimum": 2,
+      "preferred": 3,
+      "maximum": 4
+    },
+    {
+      "name": "Night Shift",
+      "minimum": 2,
+      "preferred": 2,
+      "maximum": 3
+    }
+  ],
+  "leaveBanks": [
+    "Vacation",
+    "Sick",
+    "Personal",
+    "Comp Time",
+    "Holiday"
+  ],
+  "requestRules": {
+    "minimumIncrementMinutes": 15,
+    "adminOverrideAllowed": true,
+    "reasonTemplate": "Dispatch default"
+  },
+  "employeeImport": "CSV or manual entry",
+  "status": "Setup Pending"
+}

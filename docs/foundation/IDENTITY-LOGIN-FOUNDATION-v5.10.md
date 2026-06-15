@@ -1,4 +1,4 @@
-# Signal Schedule v5.10.0 — Identity & Login Foundation
+# Signal Schedule v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
 
 This release adds the first-login and current-user foundation for future multi-user Schedule access.
 
@@ -9,7 +9,7 @@ This release adds the first-login and current-user foundation for future multi-u
 - Role-aware app-shell links
 - Identity routes in the route registry
 - Identity navigation group
-- Preview data for a City of Minooka setup-pending administrator
+- Preview data for a City of Fairview setup-pending administrator
 
 ## Database Naming Contract
 
@@ -35,4 +35,4 @@ These remain unprefixed platform identity tables. Schedule module tables remain 
 
 ## Customer setup model
 
-A customer such as City of Minooka should receive a primary administrator login. On first login, the user should enter agency setup pending mode until the setup wizard is completed.
+A customer such as City of Fairview should receive a primary administrator login. On first login, the user should enter agency setup pending mode until the setup wizard is completed.

@@ -1,10 +1,10 @@
-# v5.10.0 — Identity & Login Foundation
+# v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
 
 Signal Schedule now includes a preview login experience and current-user model for future multi-user access.
 
 # Public Changelog
 
-## v5.10.0 — Identity & Login Foundation
+## v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
 
 - Added approval foundation data and decision model preview.
 - Added database naming contract for core identity versus schedule module tables.
@@ -14,7 +14,7 @@ Signal Schedule now includes a preview login experience and current-user model f
 - Refreshed release metadata, cache busting, manifests, and validation.
 
 
-## v5.10.0 — Leave Banks & Data Cleanup
+## v5.11.0 — Leave Banks & Data Cleanup
 
 - Improved leave bank preview pages.
 - Added clearer balance, transaction, and adjustment foundations.

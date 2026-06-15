@@ -1,7 +1,8 @@
 # Latest Release
 
-## Signal Schedule v5.10.0 — Identity & Login Foundation
+## Signal Schedule v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
 
-Adds preview login, current-user session modeling, identity route/navigation entries, role-aware shell preparation, and identity database naming documentation.
+Adds the first-login Agency Setup Wizard foundation, improves the login page layout, and sanitizes demo identity/agency data to avoid real personal or customer references.
 
-No live authentication, password handling, API enforcement, or database changes are included.
+Status: Foundation
+Date: 2026-06-15

@@ -192,3 +192,10 @@ Do not add copy buttons or code-style copy boxes to normal product UI just becau
 ## Identity/Login Rule
 
 Login UI may be previewed before live authentication, but every identity release must clearly separate preview-only session data from backend-enforced authentication. Identity references must use the live database naming contract: `users`, `roles`, `user_roles`, `role_permissions`, and `employees` for core identity tables.
+
+
+## v5.11.0 Note — Agency Setup Wizard & Sanitized Identity Demo
+
+- Use fictional demo agencies and users in Schedule UI/demo data unless explicitly requested otherwise.
+- First-login agency administrators should land in Agency Setup Wizard foundation before normal dashboard use.
+- Login/identity pages should use balanced software-style cards rather than oversized documentation placeholders.

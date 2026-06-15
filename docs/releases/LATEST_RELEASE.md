@@ -1,4 +1,4 @@
-# Signal Schedule v5.10.0 — Standalone Repository Organization
+# Signal Schedule v5.11.0 — Standalone Repository Organization
 
 This release organizes the standalone Schedule repository after the split from Signal Labs Tools.
 

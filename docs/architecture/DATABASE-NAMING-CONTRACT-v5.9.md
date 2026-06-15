@@ -1,4 +1,4 @@
-# Signal Schedule v5.10.0 — Database Naming Contract
+# Signal Schedule v5.11.0 — Database Naming Contract
 
 ## Purpose
 
@@ -29,7 +29,7 @@ Schedule-specific functional tables should use the `schedule_` prefix, for examp
 
 ## Tenant rule
 
-Agency-owned data should carry an agency/tenant identifier where applicable. For the future hosted product, City of Minooka is an agency/tenant row, not a separate database by default.
+Agency-owned data should carry an agency/tenant identifier where applicable. For the future hosted product, City of Fairview is an agency/tenant row, not a separate database by default.
 
 ## Validation rule
 

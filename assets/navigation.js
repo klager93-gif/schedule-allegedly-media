@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v5.10.0
+Version: v5.11.0
 Purpose: Central navigation registry for connected Schedule flyout navigation.
 */
 (function () {
@@ -13,6 +13,7 @@ Purpose: Central navigation registry for connected Schedule flyout navigation.
       [path('home','index.html')]: 'Overview',
       [path('login','pages/identity/login.html')]: 'Login',
       [path('currentUser','pages/identity/current-user.html')]: 'Current User',
+      [path('agencySetup','pages/identity/agency-setup.html')]: 'Agency Setup',
       [path('workspace','pages/workspace/workspace.html')]: 'Scheduling Workspace',
       [path('builder','pages/workspace/builder.html')]: 'Schedule Builder',
       [path('calendar','pages/calendar/schedule.html')]: 'Calendar',
@@ -65,7 +66,7 @@ Purpose: Central navigation registry for connected Schedule flyout navigation.
       [path('databaseAudit','pages/admin/database-audit.html')]: 'Database Audit',
     }),
     groups: Object.freeze([
-      { label: 'Identity', href: path('login','pages/identity/login.html'), icon: '🔐', children: [path('login','pages/identity/login.html'), path('currentUser','pages/identity/current-user.html'), path('permissions','pages/rules/permissions.html')] },
+      { label: 'Identity', href: path('login','pages/identity/login.html'), icon: '🔐', children: [path('login','pages/identity/login.html'), path('currentUser','pages/identity/current-user.html'), path('agencySetup','pages/identity/agency-setup.html'), path('permissions','pages/rules/permissions.html')] },
       { label: 'My Schedule', href: path('employeePortal','pages/employee/index.html'), icon: '◉', children: [path('employeePortal','pages/employee/index.html'), path('employeeCalendar','pages/employee/calendar.html'), path('employeeRequests','pages/employee/requests.html'), path('employeeProfile','pages/employee/profile.html')] },
       { label: 'Scheduling', href: path('builder','pages/workspace/builder.html'), icon: '▣', children: [path('builder','pages/workspace/builder.html'), path('workspace','pages/workspace/workspace.html'), path('history','pages/workspace/history.html'), path('publishing','pages/workspace/publishing.html'), path('weeklyBoard','pages/workspace/weekly-board.html'), path('dailyBoard','pages/workspace/daily-board.html'), path('calendar','pages/calendar/schedule.html'), path('planning','pages/workspace/planning.html'), path('draftPlanning','pages/workspace/draft-planning.html')] },
       { label: 'Staffing', href: path('staffingEngine','pages/staffing/staffing-engine.html'), icon: '▥', children: [path('staffingEngine','pages/staffing/staffing-engine.html'), path('coverage','pages/coverage/coverage.html'), path('coverageSpots','pages/coverage/coverage-spots.html'), path('staffing','pages/staffing/staffing.html'), path('assignments','pages/workspace/assignments.html'), path('assignmentGenerator','pages/workspace/assignment-generator.html'), path('conflictDetection','pages/workspace/conflict-detection.html')] },

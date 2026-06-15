@@ -1,24 +1,19 @@
-# Build Manifest — v5.10.0
+# Build Manifest — v5.11.0
 
-Package: `schedule-allegedly-media-v5.10.0-identity-login-foundation.zip`
+Release: Agency Setup Wizard & Sanitized Identity Demo
+Date: 2026-06-15
+Package: schedule-allegedly-media-v5.11.0-agency-setup-sanitized-demo.zip
 
-## Included
+Included:
+- Login layout cleanup
+- Agency Setup Wizard foundation
+- Sanitized fictional demo identity and agency data
+- Route/navigation registry updates
+- Updated manifests/checksums
 
-- Identity/login foundation pages
-- Current-user session preview
-- Identity route/navigation registry entries
-- Role-aware app-shell links
-- City of Minooka preview session data
-- Identity/session documentation
-- Refreshed manifests and checksums
-
-## Excluded
-
-- `.git/`
-- `__MACOSX/`
-- `.DS_Store`
-- AppleDouble `._*` files
-
-## Database
-
-No live database changes.
+Validation:
+- No macOS metadata files
+- No missing local HTML links
+- No missing JavaScript imports
+- No real personal or real-customer demo references
+- No live database changes
