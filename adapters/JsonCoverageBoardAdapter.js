@@ -1,10 +1,10 @@
 /*
 Signal Labs Tool File: schedule/adapters/JsonCoverageBoardAdapter.js
-Version: v5.6.0
+Version: v5.7.0
 Purpose: JSON adapter for Coverage Board preview data.
 */
 export class JsonCoverageBoardAdapter {
-  constructor({ coveragePath = 'data/coverage-board-preview.json', openShiftsPath = 'data/open-shifts-preview.json' } = {}) {
+  constructor({ coveragePath = '/data/coverage-board-preview.json', openShiftsPath = '/data/open-shifts-preview.json' } = {}) {
     this.coveragePath = coveragePath;
     this.openShiftsPath = openShiftsPath;
   }

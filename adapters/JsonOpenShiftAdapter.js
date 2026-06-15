@@ -1,10 +1,10 @@
 /*
 Signal Labs Tool File: schedule/adapters/JsonOpenShiftAdapter.js
-Version: v5.6.0
+Version: v5.7.0
 Purpose: JSON adapter for Open Shifts / VOT Foundation preview data.
 */
 export class JsonOpenShiftAdapter {
-  constructor({ openShiftsPath = 'data/open-shifts-preview.json', votRequestsPath = 'data/vot-requests-preview.json', reasonsPath = 'data/request-reasons.json' } = {}) {
+  constructor({ openShiftsPath = '/data/open-shifts-preview.json', votRequestsPath = '/data/vot-requests-preview.json', reasonsPath = '/data/request-reasons.json' } = {}) {
     this.openShiftsPath = openShiftsPath;
     this.votRequestsPath = votRequestsPath;
     this.reasonsPath = reasonsPath;

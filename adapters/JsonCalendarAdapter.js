@@ -1,12 +1,12 @@
 /*
 Signal Labs Tool File: schedule/adapters/JsonCalendarAdapter.js
-Version: v5.6.0
+Version: v5.7.0
 Purpose: Browser-side JSON adapter for Calendar Foundation preview data.
 */
 export class JsonCalendarAdapter {
   constructor(options = {}) {
-    this.previewUrl = options.previewUrl || './data/calendar-preview.json';
-    this.eventsUrl = options.eventsUrl || './data/calendar-events-preview.json';
+    this.previewUrl = options.previewUrl || '/data/calendar-preview.json';
+    this.eventsUrl = options.eventsUrl || '/data/calendar-events-preview.json';
   }
 
   async readJson(url) {

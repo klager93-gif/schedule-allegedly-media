@@ -1,0 +1,72 @@
+{
+  "version": "5.7.0",
+  "requestTypes": [
+    "Vacation",
+    "Sick",
+    "Comp Time",
+    "Personal",
+    "Training",
+    "Trade",
+    "VOT",
+    "Other"
+  ],
+  "statuses": [
+    "Draft",
+    "Submitted",
+    "Pending",
+    "Approved",
+    "Denied",
+    "Cancelled",
+    "Completed"
+  ],
+  "incrementRules": {
+    "employeeMinutes": [
+      15,
+      30,
+      60
+    ],
+    "adminOverride": true,
+    "defaultMinutes": 15
+  },
+  "reasonPresets": {
+    "Vacation": [
+      "Family trip",
+      "Appointment",
+      "Personal day",
+      "Other"
+    ],
+    "Sick": [
+      "Illness",
+      "Family illness",
+      "Emergency",
+      "Other"
+    ],
+    "Training": [
+      "In-service",
+      "Conference",
+      "Certification",
+      "Other"
+    ],
+    "VOT": [
+      "Extra hours",
+      "Special event",
+      "Holiday",
+      "Other"
+    ]
+  },
+  "statusBoard": [
+    "Draft",
+    "Pending",
+    "Approved",
+    "Denied",
+    "Completed"
+  ],
+  "historyEvents": [
+    "Created",
+    "Modified",
+    "Submitted",
+    "Approved",
+    "Denied",
+    "Cancelled"
+  ]
+}

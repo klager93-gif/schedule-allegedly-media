@@ -1,10 +1,10 @@
 /*
 Signal Labs Tool File: schedule/adapters/JsonQualificationsCertificationAdapter.js
-Version: v5.6.0
+Version: v5.7.0
 Purpose: JSON adapter for Qualifications & Certification Engine preview data.
 */
 export class JsonQualificationsCertificationAdapter {
-  constructor(path = './data/qualifications-certifications-preview.json') {
+  constructor(path = '/data/qualifications-certifications-preview.json') {
     this.path = path;
   }
 

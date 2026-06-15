@@ -1,16 +1,18 @@
-# Build Manifest — Signal Schedule v5.6.0
+# Signal Schedule v5.7.0 Build Manifest
 
-Package: `schedule-allegedly-media-v5.6.0-workspace-foundation.zip`
+## Package
+
+`schedule-allegedly-media-v5.7.0-request-foundation-navigation-cleanup.zip`
 
 ## Scope
 
-Workspace & Foundation UX, employee route cleanup, admin health/export/backend readiness, and foundation UI scaffolding.
+- Request foundation UI/data/docs
+- Navigation cleanup and duplicate ownership removal
+- JSON path drift fixes for moved pages
+- Root-safe data loader helper
+- Module header/version normalization
+- Manifest/checksum regeneration
 
 ## Validation
 
-- Missing local HTML links: 0
-- Missing JS imports: 0
-- Missing route registry files: 0
-- Root `/employee/` folder exists: False
-- macOS metadata files: 0
-- Database changes: none
+See `VALIDATION.md`.

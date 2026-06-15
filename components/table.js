@@ -2,8 +2,8 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/components/table.js
-Version: v5.6.0
+Version: v5.7.0
 Purpose: Reusable dense table metadata helpers.
 */
-export const tableComponentVersion = "v5.6.0";
+export const tableComponentVersion = "v5.7.0";
 export function tableColumn(key, label, options = {}) { return { key, label, ...options }; }

@@ -1,19 +1,40 @@
-# Validation — Signal Schedule v5.6.0
+# Signal Schedule v5.7.0 Validation Report
 
-- No macOS metadata files found.
-- Root `/employee/` folder removed: True.
-- Employee portal pages now live under `/pages/employee/`.
-- Missing local HTML links: 0.
-- Missing JavaScript imports: 0.
-- Missing route registry files: 0.
-- Footer/header/homepage metadata updated to v5.6.0.
-- No database changes.
+## Release
 
-## Link Issues
-None.
+Signal Schedule v5.7.0 — Request Foundation & Navigation Cleanup
 
-## Import Issues
-None.
+## Checks
 
-## Route Issues
-None.
+- Local HTML links missing: 0
+- JavaScript imports missing: 0
+- Relative moved-page data paths found: 0
+- macOS metadata files found: 0
+- Root `/employee/` folder present: no
+- Navigation label `My Schedule` present: yes
+- Data Tools single nav ownership: yes
+- Settings single nav ownership: review
+- Notifications single nav ownership: yes
+
+## v5.7 Fixes Verified
+
+- Fixed `/data/` JSON path drift from moved pages.
+- Added `assets/data-loader.js` for clear JSON/HTML mismatch errors.
+- Renamed `Me` nav to `My Schedule`.
+- Removed duplicate Data Tools, Settings, and Notifications nav ownership.
+- Added request foundation data and docs.
+- Normalized active source/header versions to v5.7.0.
+
+## Details
+
+### Missing links
+- None
+
+### Missing imports
+- None
+
+### Relative data paths
+- None
+
+### macOS metadata
+- None

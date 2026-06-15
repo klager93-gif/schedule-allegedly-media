@@ -174,3 +174,10 @@ Do not hardcode new shared navigation or metadata in individual pages unless the
 ## v5.6 Route Placement Rule
 
 Feature pages belong under `/pages/` and must be registered in `assets/routes.js`. The old root `/employee/` folder must not be restored; employee-facing preview pages live under `/pages/employee/`. Root should contain `index.html` and project documentation only.
+
+
+## v5.7.0 Notes
+
+- Navigation cleanup: Me is now My Schedule and duplicate nav entries were removed.
+- Data path cleanup: moved pages use root-safe `/data/` JSON paths.
+- Request foundation: request types, statuses, reasons, increments, hours, overrides, and history are documented for the v6 Request Engine.

@@ -1,11 +1,12 @@
-# File Manifest — Signal Schedule v5.6.0
+# Signal Schedule v5.7.0 File Manifest
+
+Generated package manifest for v5.7.0.
 
 - `.gitattributes`
 - `.gitignore`
 - `ADMIN_CHANGELOG.md`
 - `BUILDMANIFEST.md`
 - `CHANGELOG.md`
-- `FILEMANIFEST.generated.txt`
 - `FILEMANIFEST.md`
 - `HOWTO.md`
 - `LATEST_RELEASE.md`
@@ -13,7 +14,6 @@
 - `PUBLIC_CHANGELOG.md`
 - `README.md`
 - `ROADMAP.md`
-- `SHA256SUMS.txt`
 - `STANDARDS.md`
 - `VALIDATION.md`
 - `adapters/JsonAssignmentEngineAdapter.js`
@@ -140,6 +140,7 @@
 - `app-shell.css`
 - `app-shell.js`
 - `assets/config.js`
+- `assets/data-loader.js`
 - `assets/features.js`
 - `assets/icons/apple-touch-icon.png`
 - `assets/icons/favicon.ico`
@@ -195,6 +196,7 @@
 - `data/qualifications-certifications-preview.json`
 - `data/request-approval-engine-preview.json`
 - `data/request-approval-workflow-preview.json`
+- `data/request-foundation-preview.json`
 - `data/request-increment-settings.json`
 - `data/request-reasons.json`
 - `data/roles-permissions-preview.json`
@@ -220,6 +222,8 @@
 - `docs/architecture/PAGE-ARCHITECTURE.md`
 - `docs/architecture/REGISTRY-FOUNDATION.md`
 - `docs/audits/ALPHA-INTEGRATION-AUDIT.md`
+- `docs/audits/DATA-PATH-DRIFT-AUDIT-v5.7.md`
+- `docs/audits/NAVIGATION-DRIFT-AUDIT-v5.7.md`
 - `docs/engines/REQUEST-APPROVAL-ENGINE.md`
 - `docs/engines/SCHEDULE-HISTORY-SNAPSHOT-ENGINE.md`
 - `docs/engines/STAFFING-ENGINE.md`
@@ -230,6 +234,7 @@
 - `docs/foundation/MINIMUM-STAFFING-FOUNDATION.md`
 - `docs/foundation/OPEN-SHIFTS-FOUNDATION.md`
 - `docs/foundation/PUBLISHING-FOUNDATION.md`
+- `docs/foundation/REQUEST-FOUNDATION-v5.7.md`
 - `docs/foundation/REQUEST-HOURS-FOUNDATION.md`
 - `docs/foundation/SAVED-SCHEDULES-FOUNDATION.md`
 - `docs/hotfixes/EMPLOYEE-PORTAL-NAVIGATION-HOTFIX.md`

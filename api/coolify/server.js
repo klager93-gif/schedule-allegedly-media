@@ -1,6 +1,6 @@
 /*
 Signal Labs Tool File: schedule/api/coolify/server.js
-Version: v5.6.0
+Version: v5.7.0
 Purpose: Coolify API with employee CRUD, snapshot CRUD, protected publish-state action, and read-only foundations including schedule publishing, schedule planning, draft planning, visibility/privacy controls, notifications, coverage spots, daily board, assignment engine, leave banks, OT volunteer board, shift trades, mandation engine, seniority engine, assignment generator, conflict detection, and qualifications/certifications.
 
 This release intentionally has:
@@ -36,40 +36,40 @@ import {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const PORT = Number(process.env.PORT || 3000);
-const DATA_PATH = resolve(__dirname, '../../data/employees.json');
-const ASSIGNMENT_TEMPLATES_PATH = resolve(__dirname, '../../data/assignment-templates.json');
-const EMPLOYEE_ASSIGNMENTS_PATH = resolve(__dirname, '../../data/employee-assignments.json');
-const MINIMUM_STAFFING_TEMPLATES_PATH = resolve(__dirname, '../../data/minimum-staffing-templates.json');
-const MINIMUM_STAFFING_PREVIEW_PATH = resolve(__dirname, '../../data/minimum-staffing-preview.json');
-const CALENDAR_PREVIEW_PATH = resolve(__dirname, '../../data/calendar-preview.json');
-const CALENDAR_EVENTS_PREVIEW_PATH = resolve(__dirname, '../../data/calendar-events-preview.json');
-const LEAVE_REQUEST_TYPES_PATH = resolve(__dirname, '../../data/leave-request-types.json');
-const LEAVE_REQUESTS_PREVIEW_PATH = resolve(__dirname, '../../data/leave-requests-preview.json');
-const REQUEST_INCREMENT_SETTINGS_PATH = resolve(__dirname, '../../data/request-increment-settings.json');
-const OPEN_SHIFTS_PREVIEW_PATH = resolve(__dirname, '../../data/open-shifts-preview.json');
-const VOT_REQUESTS_PREVIEW_PATH = resolve(__dirname, '../../data/vot-requests-preview.json');
-const REQUEST_REASONS_PATH = resolve(__dirname, '../../data/request-reasons.json');
-const NOTIFICATIONS_PREVIEW_PATH = resolve(__dirname, '../../data/notifications-preview.json');
-const COVERAGE_SPOTS_PREVIEW_PATH = resolve(__dirname, '../../data/coverage-spots-preview.json');
-const DAILY_BOARD_PREVIEW_PATH = resolve(__dirname, '../../data/daily-board-preview.json');
-const ASSIGNMENT_ENGINE_PREVIEW_PATH = resolve(__dirname, '../../data/assignment-engine-preview.json');
-const LEAVE_BANKS_PREVIEW_PATH = resolve(__dirname, '../../data/leave-banks-preview.json');
-const OT_VOLUNTEER_BOARD_PREVIEW_PATH = resolve(__dirname, '../../data/ot-volunteer-board-preview.json');
-const SHIFT_TRADES_PREVIEW_PATH = resolve(__dirname, '../../data/shift-trades-preview.json');
-const MANDATION_ENGINE_PREVIEW_PATH = resolve(__dirname, '../../data/mandation-engine-preview.json');
-const SENIORITY_ENGINE_PREVIEW_PATH = resolve(__dirname, '../../data/seniority-engine-preview.json');
-const ASSIGNMENT_GENERATOR_PREVIEW_PATH = resolve(__dirname, '../../data/assignment-generator-preview.json');
-const CONFLICT_DETECTION_PREVIEW_PATH = resolve(__dirname, '../../data/conflict-detection-preview.json');
-const QUALIFICATIONS_CERTIFICATIONS_PREVIEW_PATH = resolve(__dirname, '../../data/qualifications-certifications-preview.json');
-const WEEKLY_BOARD_PREVIEW_PATH = resolve(__dirname, '../../data/weekly-board-preview.json');
-const VISIBILITY_PRIVACY_PREVIEW_PATH = resolve(__dirname, '../../data/visibility-privacy-preview.json');
-const DRAFT_PLANNING_PREVIEW_PATH = resolve(__dirname, '../../data/draft-planning-preview.json');
-const SCHEDULE_PLANNING_PREVIEW_PATH = resolve(__dirname, '../../data/schedule-planning-preview.json');
-const SCHEDULE_PUBLICATION_PREVIEW_PATH = resolve(__dirname, '../../data/schedule-publication-preview.json');
-const EMPLOYEE_AVAILABILITY_PREFERENCES_PREVIEW_PATH = resolve(__dirname, '../../data/employee-availability-preferences-preview.json');
-const EMPLOYEE_EXPERIENCE_DATA_TOOLS_PREVIEW_PATH = resolve(__dirname, '../../data/employee-experience-data-tools-preview.json');
-const REQUEST_APPROVAL_ENGINE_PREVIEW_PATH = resolve(__dirname, '../../data/request-approval-engine-preview.json');
-const STAFFING_ENGINE_PREVIEW_PATH = resolve(__dirname, '../../data/staffing-engine-preview.json');
+const DATA_PATH = resolve(__dirname, '/data/employees.json');
+const ASSIGNMENT_TEMPLATES_PATH = resolve(__dirname, '/data/assignment-templates.json');
+const EMPLOYEE_ASSIGNMENTS_PATH = resolve(__dirname, '/data/employee-assignments.json');
+const MINIMUM_STAFFING_TEMPLATES_PATH = resolve(__dirname, '/data/minimum-staffing-templates.json');
+const MINIMUM_STAFFING_PREVIEW_PATH = resolve(__dirname, '/data/minimum-staffing-preview.json');
+const CALENDAR_PREVIEW_PATH = resolve(__dirname, '/data/calendar-preview.json');
+const CALENDAR_EVENTS_PREVIEW_PATH = resolve(__dirname, '/data/calendar-events-preview.json');
+const LEAVE_REQUEST_TYPES_PATH = resolve(__dirname, '/data/leave-request-types.json');
+const LEAVE_REQUESTS_PREVIEW_PATH = resolve(__dirname, '/data/leave-requests-preview.json');
+const REQUEST_INCREMENT_SETTINGS_PATH = resolve(__dirname, '/data/request-increment-settings.json');
+const OPEN_SHIFTS_PREVIEW_PATH = resolve(__dirname, '/data/open-shifts-preview.json');
+const VOT_REQUESTS_PREVIEW_PATH = resolve(__dirname, '/data/vot-requests-preview.json');
+const REQUEST_REASONS_PATH = resolve(__dirname, '/data/request-reasons.json');
+const NOTIFICATIONS_PREVIEW_PATH = resolve(__dirname, '/data/notifications-preview.json');
+const COVERAGE_SPOTS_PREVIEW_PATH = resolve(__dirname, '/data/coverage-spots-preview.json');
+const DAILY_BOARD_PREVIEW_PATH = resolve(__dirname, '/data/daily-board-preview.json');
+const ASSIGNMENT_ENGINE_PREVIEW_PATH = resolve(__dirname, '/data/assignment-engine-preview.json');
+const LEAVE_BANKS_PREVIEW_PATH = resolve(__dirname, '/data/leave-banks-preview.json');
+const OT_VOLUNTEER_BOARD_PREVIEW_PATH = resolve(__dirname, '/data/ot-volunteer-board-preview.json');
+const SHIFT_TRADES_PREVIEW_PATH = resolve(__dirname, '/data/shift-trades-preview.json');
+const MANDATION_ENGINE_PREVIEW_PATH = resolve(__dirname, '/data/mandation-engine-preview.json');
+const SENIORITY_ENGINE_PREVIEW_PATH = resolve(__dirname, '/data/seniority-engine-preview.json');
+const ASSIGNMENT_GENERATOR_PREVIEW_PATH = resolve(__dirname, '/data/assignment-generator-preview.json');
+const CONFLICT_DETECTION_PREVIEW_PATH = resolve(__dirname, '/data/conflict-detection-preview.json');
+const QUALIFICATIONS_CERTIFICATIONS_PREVIEW_PATH = resolve(__dirname, '/data/qualifications-certifications-preview.json');
+const WEEKLY_BOARD_PREVIEW_PATH = resolve(__dirname, '/data/weekly-board-preview.json');
+const VISIBILITY_PRIVACY_PREVIEW_PATH = resolve(__dirname, '/data/visibility-privacy-preview.json');
+const DRAFT_PLANNING_PREVIEW_PATH = resolve(__dirname, '/data/draft-planning-preview.json');
+const SCHEDULE_PLANNING_PREVIEW_PATH = resolve(__dirname, '/data/schedule-planning-preview.json');
+const SCHEDULE_PUBLICATION_PREVIEW_PATH = resolve(__dirname, '/data/schedule-publication-preview.json');
+const EMPLOYEE_AVAILABILITY_PREFERENCES_PREVIEW_PATH = resolve(__dirname, '/data/employee-availability-preferences-preview.json');
+const EMPLOYEE_EXPERIENCE_DATA_TOOLS_PREVIEW_PATH = resolve(__dirname, '/data/employee-experience-data-tools-preview.json');
+const REQUEST_APPROVAL_ENGINE_PREVIEW_PATH = resolve(__dirname, '/data/request-approval-engine-preview.json');
+const STAFFING_ENGINE_PREVIEW_PATH = resolve(__dirname, '/data/staffing-engine-preview.json');
 const BODY_LIMIT_BYTES = 1024 * 128;
 
 function sendJson(res, statusCode, payload) {
@@ -81,7 +81,7 @@ function sendJson(res, statusCode, payload) {
 }
 
 function apiMeta(overrides = {}) {
-  return { source: 'coolify-api', version: 'v5.6.0', ...overrides };
+  return { source: 'coolify-api', version: 'v5.7.0', ...overrides };
 }
 
 function notFound(res) {
@@ -464,7 +464,7 @@ const server = createServer(async (req, res) => {
         data: result.employees,
         meta: {
           source: result.source,
-          version: 'v5.6.0',
+          version: 'v5.7.0',
           mode: 'read-with-protected-crud-foundation',
           database: result.database,
           writesEnabled: areEmployeeWritesEnabled()
