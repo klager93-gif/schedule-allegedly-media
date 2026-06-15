@@ -133,3 +133,22 @@ Do not accumulate `RELEASE-vX.X.X*.md` files in the repository. Historical relea
 ## Release File Standard
 
 Persistent per-version `RELEASE-v*.md` files should not accumulate in the repository. Use `schedule/docs/releases/LATEST_RELEASE.md` for the current Schedule release summary and keep historical release details in changelogs and GitHub releases.
+
+### Footer and Metadata Validation Rule
+
+Before every release, validate footer version, header version, homepage metadata, release status, cache-busting values, `LATEST_RELEASE.md` when present, README version references, CHANGELOG top entry, PUBLIC_CHANGELOG, ADMIN_CHANGELOG, app-shell metadata, and any shared footer/header components.
+
+Every release validation pass must include:
+
+```text
+Version validation
+Footer validation
+Header validation
+Manifest regeneration
+Link validation
+JavaScript import validation
+macOS metadata validation
+Route validation
+```
+
+Cosmetic metadata drift does not require an emergency hotfix, but it must be corrected in the next natural release.

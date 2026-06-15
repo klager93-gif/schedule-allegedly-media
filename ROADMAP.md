@@ -1,3 +1,22 @@
+# Signal Schedule Roadmap
+
+## Current track: v5.x Foundation Era
+
+The v5.x series is the standalone foundation era. It may continue adding infrastructure, validation, architecture, docs, route stability, release automation, and feature scaffolding until a full request engine is ready for v6.0.0.
+
+## v5.3.0 — Metadata Stability & Validation
+
+- Central release metadata source.
+- Footer/header/version validation.
+- Cache-busting validation.
+- Manifest and route validation.
+
+## Next: v5.4.x+ Foundation Additions
+
+- Continue safe infrastructure and feature-foundation work.
+- Avoid route moves unless the release is specifically a route architecture release.
+- Continue building toward v6.0 Request Engine.
+
 
 ## Current: v5.1.0 — Request & Approval Engine
 

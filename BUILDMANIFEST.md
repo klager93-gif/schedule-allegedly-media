@@ -1,23 +1,22 @@
-# Build Manifest — Signal Schedule v5.1.0 Full Replacement
-
-Built from v4.8.1 full replacement.
+# Build Manifest — Signal Schedule v5.3.0
 
 ## Release
 
-Signal Schedule v5.1.0 — Request & Approval Engine
+Signal Schedule v5.3.0 — Metadata Stability & Validation
 
 ## Key changes
 
-- Added central request engine hub at `schedule/requests.html`.
-- Added request engine preview data, CSS, JS, and API contract.
-- Added read-only `/api/request-approval-engine` preview route.
-- Added migration `schedule/api/coolify/sql/046_request_approval_engine_schema.sql`.
-- Updated navigation to route Requests to the central request engine.
-- Updated docs/changelogs/roadmap/version/cache references.
+- Added `assets/release-metadata.js` as a central client-side release metadata source.
+- Updated `app-shell.js` to consume shared metadata and default to v5.3.0.
+- Updated footer component default metadata to v5.3.0.
+- Refreshed HTML cache-busting and data-version markers to v5.3.0.
+- Added metadata validation documentation.
+- Updated standards to require footer/header/version metadata checks before release.
 
 ## Validation
 
-- JavaScript syntax checks passed.
-- HTML asset reference check passed.
-- Package junk check passed.
-- SQL migration 046 included in existing Coolify SQL folder.
+- No macOS metadata files included.
+- No missing local HTML links found.
+- No missing JavaScript imports found.
+- Footer/header/homepage metadata checked.
+- No database migration required.

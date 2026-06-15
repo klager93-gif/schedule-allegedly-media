@@ -1,61 +1,37 @@
-# Signal Schedule v5.1.0 HOWTO
+# Signal Schedule v5.3.0 HOWTO
 
 ## Before uploading
 
 Back up the current live Schedule folder.
 
 ```text
-2026-06-14 Schedule Backup Before v5.1.0
+2026-06-15 Signal Schedule Backup Before v5.3.0
 ```
 
-## Upload
+## Upload/deploy
 
-Upload the full replacement package.
+Replace the standalone repository contents with the v5.3.0 package, commit, push to `main`, and allow Coolify to redeploy.
 
-## Apply migration 045
+## Coolify static settings
 
-From `psql`, run the SQL file:
+- Static site: enabled
+- Base directory: `/`
+- Publish directory: `.`
+- Build command: empty
+- Start command: empty
 
-```sql
-\i /app/api/coolify/sql/045_employee_experience_data_tools_schema.sql
-```
+## Database
 
-If the migration tracker does not update automatically, add the row manually:
-
-```sql
-INSERT INTO schema_migrations (version, name)
-VALUES ('045', 'employee_experience_data_tools_schema')
-ON CONFLICT DO NOTHING;
-```
-
-Verify:
-
-```sql
-SELECT *
-FROM schema_migrations
-ORDER BY version DESC
-LIMIT 10;
-```
-
-Expected top row:
-
-```text
-045 | employee_experience_data_tools_schema
-```
+No database migration is required for v5.3.0.
 
 ## Test pages
 
+- `/`
+- `/requests.html`
+- `/staffing-engine.html`
 - `/data-tools.html`
 - `/employee/index.html`
-- `/employee/calendar.html`
-- `/employee/requests.html`
-- `/employee/profile.html`
-- `/history.html`
 
-## Postgres pager
+## Metadata validation
 
-If Postgres shows `--More--`, run:
-
-```sql
-\pset pager off
-```
+Confirm the footer, app toolbar, homepage release block, README, changelog, and cache-busting references show v5.3.0.

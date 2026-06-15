@@ -1,3 +1,13 @@
+## v5.3.0 — Metadata Stability & Validation
+
+- Added a central client-side release metadata source at `assets/release-metadata.js`.
+- Updated app shell and footer version handling to reduce footer/header drift.
+- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.3.0.
+- Added metadata validation documentation and strengthened release standards.
+- Regenerated file manifests and SHA256 checksums.
+- No database changes.
+- No risky HTML route moves.
+
 
 ## v5.2.0 — Standalone Repository Organization
 

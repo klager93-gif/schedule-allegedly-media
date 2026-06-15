@@ -1,20 +1,15 @@
-# FILEMANIFEST.generated.txt
-
-Generated for Signal Schedule v5.2.0.
-Total files: 419
-
 .gitattributes
 .gitignore
 ADMIN_CHANGELOG.md
 BUILDMANIFEST.md
 CHANGELOG.md
-FILEMANIFEST.md
 HOWTO.md
 MASTER-CHANGELOG.md
 PUBLIC_CHANGELOG.md
 README.md
 ROADMAP.md
 STANDARDS.md
+VALIDATION.md
 adapters/JsonAssignmentEngineAdapter.js
 adapters/JsonAssignmentGeneratorAdapter.js
 adapters/JsonBenefitLedgerAdapter.js
@@ -143,6 +138,7 @@ assets/icons/apple-touch-icon.png
 assets/icons/favicon.ico
 assets/icons/favicon.svg
 assets/icons/site.webmanifest
+assets/release-metadata.js
 assets/themes/cad.css
 assets/themes/high-contrast.css
 assets/themes/light.css
@@ -215,6 +211,7 @@ data/weekly-board-preview.json
 data-tools.html
 docs/README.md
 docs/architecture/FILE_ORGANIZATION.md
+docs/architecture/METADATA-VALIDATION.md
 docs/audits/ALPHA-INTEGRATION-AUDIT.md
 docs/engines/REQUEST-APPROVAL-ENGINE.md
 docs/engines/SCHEDULE-HISTORY-SNAPSHOT-ENGINE.md

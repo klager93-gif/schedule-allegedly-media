@@ -2,14 +2,16 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/app-shell.js
-Version: v5.1.0
+Version: v5.3.0
 Purpose: Desktop application shell, role-inheritance navigation, connected flyout navigation, app-styled controls, publishing navigation, dense workspace defaults, and client-side theme engine.
 */
 (function () {
   const body = document.body;
   if (!body || body.dataset.signalArea !== 'Signal Schedule') return;
 
-  const version = 'v5.1.0';
+  const releaseMeta = window.SIGNAL_SCHEDULE_RELEASE || {};
+  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.3.0';
+  const releaseStatus = releaseMeta.status || 'Foundation';
   const title = body.dataset.signalTitle || document.title.replace('— Signal Schedule', '').trim() || 'Signal Schedule';
   const themeKey = 'signalScheduleTheme';
   const allowedThemes = ['midnight', 'light', 'slate', 'cad', 'high-contrast'];
@@ -215,7 +217,7 @@ Purpose: Desktop application shell, role-inheritance navigation, connected flyou
         </div>
         <span class="schedule-app-chip schedule-app-chip--good">Theme-ready workspace</span>
         <span class="schedule-app-chip">${version}</span>
-        <span class="schedule-app-chip schedule-app-chip--warn">Desktop UI</span>
+        <span class="schedule-app-chip schedule-app-chip--warn">${escapeHtml(releaseStatus)}</span>
       </div>
     `;
 
