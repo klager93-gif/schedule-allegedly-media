@@ -1,0 +1,93 @@
+<!--
+Signal Labs
+Area: Signal Schedule
+File: pages/calendar/schedule.html
+Version: v5.7.0
+Purpose: Week and day calendar views with shortcode display
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Schedule — Calendar Views</title>
+<meta name="description" content="Week and day calendar views for Signal Schedule with admin-defined shortcodes and daily detail previews.">
+<link rel="stylesheet" href="/pages/calendar/schedule-calendar.css?v=5.7.0">
+<link rel="stylesheet" href="/app-shell.css?v=5.7.0">
+</head>
+<body
+  data-signal-global-layout="true"
+  data-signal-area="Signal Schedule"
+  data-signal-title="Schedule Calendar"
+  data-signal-version="v5.7.0"
+  data-signal-theme="Calendar Views + Schedule Footer"
+  data-signal-status="Active Development"
+  data-signal-description="Week and day calendar views with shortcode display and daily schedule detail previews."
+  data-signal-status-text="Signal Schedule v3.6.1 consolidates visible versioning, approval routing copy, and asset cache-busting."
+>
+<div id="sl-header"></div>
+
+<nav class="schedule-subnav" aria-label="Signal Schedule navigation"><div class="schedule-subnav__label"><span>Signal Schedule Navigation</span><span class="schedule-subnav__role">Admin-first / role-filtering later</span></div><div class="schedule-subnav__links"><a href="/index.html">Overview</a><a href="/pages/calendar/schedule.html" aria-current="page">Calendar</a><a href="/pages/workspace/weekly-board.html">Weekly View</a><a href="/pages/workspace/daily-board.html">Daily Board</a><a href="/pages/people/employees.html">Employees</a><a href="/pages/people/profile.html">Profile</a><a href="/pages/people/timeline.html">Timeline</a><a href="/pages/people/supervisors.html">Supervisors</a><a href="/pages/people/seniority.html">Seniority & Rotation</a><a href="/pages/people/qualifications.html">Qualifications</a><a href="/pages/people/training.html">Training & Certs</a><a href="/pages/people/eligibility.html">Eligibility</a><a href="/pages/workspace/assignments.html">Assignments</a><a href="/pages/workspace/assignment-generator.html">Assignment Generator</a><a href="/pages/workspace/conflict-detection.html">Conflict Detection</a><a href="/pages/staffing/staffing.html">Minimum Staffing</a><a href="/pages/coverage/coverage.html">Coverage Board</a><a href="/pages/coverage/coverage-spots.html">Coverage Spots</a><a href="/pages/requests/approvals.html">Approvals</a><a href="/pages/requests/leave.html">Leave Requests</a><a href="/pages/requests/leave-banks.html">Leave Banks</a><a href="/pages/requests/open-shifts.html">Open Shifts</a><a href="/pages/requests/ot-volunteer-board.html">OT Volunteer Board</a><a href="/pages/requests/shift-trades.html">Shift Trades</a><a href="/pages/rules/mandation.html">Mandation</a><a href="/pages/rules/permissions.html">Permissions</a><a href="/pages/rules/notifications.html">Notifications</a><a href="/pages/settings/visibility.html">Visibility & Privacy</a><a href="/pages/rules/shortcodes.html">Shortcodes</a><a href="/pages/rules/benefits.html">Benefit Ledger</a><a href="/pages/reports/reports.html">Reports</a><a href="/pages/settings/settings.html">Settings</a></div></nav>
+
+<main class="calendar-shell">
+  <section class="calendar-hero" aria-labelledby="calendarTitle">
+    <div>
+      <p class="schedule-kicker">Signal Schedule</p>
+      <h1 id="calendarTitle">Calendar Views</h1>
+      <p class="calendar-subtitle">Preview week and day views using the admin-managed shortcode system. Week view keeps labels compact; day view expands the same events into full text, coverage status, request context, and hour summaries.</p>
+    </div>
+    <div class="calendar-status-card">
+      <span>Preview Week</span>
+      <strong>Jun 9 – Jun 15, 2026</strong>
+      <small>Read-only foundation</small>
+    </div>
+  </section>
+
+  <div class="calendar-toolbar" aria-label="Calendar controls">
+    <button class="calendar-control" type="button">←</button>
+    <button class="calendar-control calendar-control--wide" type="button">Jun 9 – Jun 15, 2026</button>
+    <button class="calendar-control" type="button">→</button>
+    <button class="calendar-control" type="button">Today</button>
+    <select class="calendar-control calendar-control--wide" aria-label="Group filter"><option>Group: All Groups</option><option>A Days</option><option>B Nights</option></select>
+    <select class="calendar-control calendar-control--wide" aria-label="Position filter"><option>Position: All</option><option>Dispatcher</option><option>CTO</option></select>
+    <select class="calendar-control calendar-control--wide" aria-label="View filter"><option>View: All Employees</option><option>My Schedule</option><option>Open Coverage</option></select>
+  </div>
+
+  <section class="calendar-board" aria-labelledby="weekViewTitle">
+    <div class="calendar-section" style="margin-top:0;border:0;border-radius:0;background:transparent;">
+      <h2 id="weekViewTitle">Week View</h2>
+      <p>Compact schedule grid for users and supervisors. Shortcodes keep the week readable while preserving detail for the day view.</p>
+    </div>
+    <div class="week-scroll"><div id="weekCalendarGrid"></div></div>
+    <div id="calendarLegend" class="legend" aria-label="Calendar shortcode legend"></div>
+  </section>
+
+  <section class="calendar-section" aria-labelledby="dayViewTitle">
+    <h2 id="dayViewTitle">Day View</h2>
+    <p>Expanded daily schedule detail for one employee, including events, approval states, coverage status, and hour totals.</p>
+    <div class="calendar-toolbar">
+      <button class="calendar-control" type="button">Thu, Jun 12, 2026</button>
+      <select class="calendar-control calendar-control--wide" aria-label="Employee filter"><option>Employee: Morgan Price</option><option>Taylor Reed</option><option>Jordan Smith</option></select>
+      <button class="calendar-control" type="button">Actions</button>
+    </div>
+    <div class="day-layout">
+      <div class="day-timeline" id="dayTimeline"></div>
+      <aside class="day-side" id="daySummaryCards"></aside>
+    </div>
+  </section>
+</main>
+
+<div id="schedule-footer"></div>
+<div id="sl-footer"></div>
+<script src="/assets/release-metadata.js?v=5.7.0"></script>
+<script src="/assets/config.js?v=5.7.0"></script>
+<script src="/assets/routes.js?v=5.7.0"></script>
+<script src="/assets/navigation.js?v=5.7.0"></script>
+<script src="/assets/features.js?v=5.7.0"></script>
+<script src="/assets/roles.js?v=5.7.0"></script>
+<script src="/assets/status.js?v=5.7.0"></script>
+<script src="/assets/data-loader.js?v=5.7.0"></script>
+<script src="/app-shell.js?v=5.7.0"></script>
+<script type="module" src="/pages/calendar/schedule-calendar.js?v=5.7.0"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "version": "v5.7.0",
+  "exports": [
+    "schedule-json",
+    "employees-csv",
+    "requests-csv",
+    "leave-bank-csv",
+    "open-shifts-csv",
+    "print-daily-board",
+    "print-weekly-board"
+  ]
+}
