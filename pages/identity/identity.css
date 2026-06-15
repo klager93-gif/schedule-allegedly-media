@@ -1,0 +1,34 @@
+/*
+Signal Labs
+Area: Signal Schedule
+File: pages/identity/identity.css
+Version: v5.12.0
+Purpose: Identity, login, and agency setup foundation styles.
+*/
+.identity-grid{display:grid;grid-template-columns:minmax(320px,1fr) minmax(320px,1fr);gap:18px;align-items:stretch}
+.identity-panel{border:1px solid rgba(148,163,184,.28);border-radius:18px;padding:20px;background:rgba(15,23,42,.38);display:flex;flex-direction:column;gap:16px;min-height:100%}
+.identity-panel__head{display:flex;gap:14px;align-items:flex-start}
+.identity-icon{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:rgba(56,189,248,.14);border:1px solid rgba(56,189,248,.28);font-size:1.2rem;flex:0 0 auto}
+.identity-form{display:grid;gap:14px;margin-top:4px}
+.identity-field{display:grid;gap:7px}
+.identity-field label{font-weight:800;color:#e5e7eb}
+.identity-field input,.identity-field select{width:100%;border:1px solid rgba(148,163,184,.35);border-radius:12px;padding:13px 14px;background:rgba(15,23,42,.62);color:inherit;min-height:44px}
+.identity-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:2px}
+.identity-button{border:0;border-radius:12px;padding:12px 16px;font-weight:900;cursor:pointer;background:#38bdf8;color:#082f49;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.identity-button.secondary{background:rgba(148,163,184,.14);color:#e5e7eb;border:1px solid rgba(148,163,184,.35)}
+.identity-session-card{border:1px solid rgba(148,163,184,.28);border-radius:18px;padding:18px;background:rgba(15,23,42,.45);display:grid;gap:12px}
+.identity-user-row{display:flex;gap:14px;align-items:center}
+.identity-avatar{width:54px;height:54px;border-radius:999px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(56,189,248,.35),rgba(99,102,241,.55));border:1px solid rgba(148,163,184,.26);font-weight:900}
+.identity-pill-row{display:flex;gap:8px;flex-wrap:wrap}
+.identity-pill{border:1px solid rgba(148,163,184,.28);border-radius:999px;padding:6px 10px;background:rgba(15,23,42,.4);font-size:.86rem}
+.identity-detail-list{display:grid;gap:10px;margin:2px 0 0;padding-top:12px;border-top:1px solid rgba(148,163,184,.18)}
+.identity-detail{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.identity-detail span:first-child{color:#94a3b8}
+.identity-warning,.identity-note{border-left:4px solid #38bdf8;padding:12px 14px;border-radius:12px;background:rgba(56,189,248,.08)}
+.identity-warning{border-left-color:#f59e0b;background:rgba(245,158,11,.1)}
+.setup-steps{display:grid;gap:12px}
+.setup-step{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;border:1px solid rgba(148,163,184,.22);border-radius:14px;padding:12px;background:rgba(15,23,42,.34)}
+.setup-step__num{width:30px;height:30px;border-radius:999px;display:grid;place-items:center;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.28);font-weight:900}
+.setup-step__status{font-size:.78rem;border-radius:999px;padding:5px 8px;border:1px solid rgba(148,163,184,.25);color:#cbd5e1}
+.setup-summary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media(max-width:950px){.identity-grid,.setup-summary-grid{grid-template-columns:1fr}.identity-detail{display:grid}}
