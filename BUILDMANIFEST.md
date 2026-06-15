@@ -1,20 +1,23 @@
-# Build Manifest — Signal Schedule v5.8.0
+# Build Manifest
 
-## Release
+Release: Signal Schedule v5.9.0 — Approval Foundation, SQL Audit & UI Modernization
 
-Leave Banks & Data Layer Cleanup
+Package type: Full replacement for standalone `schedule-allegedly-media` repository.
 
-## Package
+Included:
 
-Full replacement package for the standalone `schedule-allegedly-media` repository.
+- Approval foundation and decision model preview.
+- Database naming contract.
+- SQL audit snapshot for the live 118-table Postgres inventory.
+- UI copy widget cleanup.
+- Database Audit system page.
+- Updated docs, metadata, manifests, and checksums.
 
-## Included
+Validation summary:
 
-- Leave bank foundation UI and preview data
-- Data layer graceful fallback cleanup
-- Leave bank SQL foundation draft
-- Updated docs/changelogs/manifests/checksums
-
-## Validation
-
-See `VALIDATION.md`.
+- Missing HTML links: 0
+- Missing scripts: 0
+- Missing JS imports: 0
+- Missing route targets: 0
+- Remaining in-app copy widgets: 0
+- macOS metadata files: 0

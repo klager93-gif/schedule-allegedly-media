@@ -1,4 +1,4 @@
--- Signal Schedule v5.8.0 Leave Banks Foundation
+-- Signal Schedule v5.9.0 Leave Banks Foundation
 -- Preview schema draft only. Do not apply to production until backend migration plan is approved.
 
 create table if not exists schedule_leave_banks (

@@ -1,6 +1,16 @@
 # Public Changelog
 
-## v5.8.0 — Leave Banks & Data Cleanup
+## v5.9.0 — Approval Foundation, SQL Audit & UI Modernization
+
+- Added approval foundation data and decision model preview.
+- Added database naming contract for core identity versus schedule module tables.
+- Added SQL audit snapshot based on the live 118-table Postgres inventory.
+- Removed accidental in-app copy widgets and copy-button UI from foundation pages.
+- Updated route/navigation registry with Database Audit under System.
+- Refreshed release metadata, cache busting, manifests, and validation.
+
+
+## v5.9.0 — Leave Banks & Data Cleanup
 
 - Improved leave bank preview pages.
 - Added clearer balance, transaction, and adjustment foundations.

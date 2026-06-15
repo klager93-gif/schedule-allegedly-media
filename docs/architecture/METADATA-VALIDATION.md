@@ -1,6 +1,6 @@
 # Metadata Validation
 
-Signal Schedule v5.8.0 adds a small release metadata layer to reduce footer/header/version drift.
+Signal Schedule v5.9.0 adds a small release metadata layer to reduce footer/header/version drift.
 
 ## Source of truth
 

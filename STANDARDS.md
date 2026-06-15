@@ -178,3 +178,12 @@ Feature pages belong under `/pages/` and must be registered in `assets/routes.js
 ## Data Layer Fallback Rule
 
 Foundation pages must not show raw fetch, 404, or JSON parse errors to end users. Optional preview JSON should render a neutral empty/foundation state and log technical details to the console.
+
+
+## v5.9 Database Naming Contract
+
+Core identity tables are intentionally unprefixed: `employees`, `users`, `roles`, `user_roles`, and `role_permissions`. Schedule module tables generally use `schedule_`. Do not reference `schedule_employees` unless a future migration explicitly creates it.
+
+## v5.9 UI Copy Widget Rule
+
+Do not add copy buttons or code-style copy boxes to normal product UI just because ChatGPT handoff text uses copy-friendly formatting. Reserve in-app copy affordances for genuinely technical screens such as SQL, API contracts, or export payloads.

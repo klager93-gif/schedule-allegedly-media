@@ -1,4 +1,4 @@
-# Data Layer Audit v5.8.0
+# Data Layer Audit v5.9.0
 
 ## Fixed/Improved
 

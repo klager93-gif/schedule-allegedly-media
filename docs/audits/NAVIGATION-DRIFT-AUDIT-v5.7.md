@@ -1,4 +1,4 @@
-# Navigation Drift Audit v5.8.0
+# Navigation Drift Audit v5.9.0
 
 ## Fixed
 

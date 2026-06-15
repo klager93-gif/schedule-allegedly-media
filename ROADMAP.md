@@ -1,18 +1,16 @@
 # Signal Schedule Roadmap
 
-## v5.x Foundation Era
+## Current
 
-- v5.1 Standalone repo/domain split.
-- v5.2 Repository organization.
-- v5.3 Metadata stability.
-- v5.4 Configuration and registries.
-- v5.5 Page architecture and route migration.
-- v5.6 Workspace and foundation UX.
+- **v5.9.0 — Approval Foundation, SQL Audit & UI Modernization**
 
 ## Next
 
-Continue building request, leave bank, open shift, approval, validation, export, and backend readiness foundations until Schedule is ready for **v6.0 Request Engine**.
-
-## Current: v5.8.0
-
-Leave Banks & Data Layer Cleanup is complete. Next natural direction: approval/open-shift depth, then request engine integration.
+- v5.10 — Identity/Login Foundation
+- v5.11 — Agency Setup Wizard using City of Minooka as canonical sample tenant
+- v5.12 — Visibility Engine
+- v5.13 — Open Shift / VOT Foundation
+- v5.14 — Staffing Foundation
+- v5.15 — Assignment Foundation
+- v5.16 — Publishing Foundation + Backend Readiness
+- v6.0 — Multi-User Request Engine

@@ -1,6 +1,6 @@
 /*
 Signal Labs Tool File: schedule/services/OpenShiftService.js
-Version: v5.8.0
+Version: v5.9.0
 Purpose: Open Shifts / Overtime Opportunity Board service helpers.
 */
 export class OpenShiftService {

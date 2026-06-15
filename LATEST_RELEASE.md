@@ -1,18 +1,13 @@
-# Latest Release — Signal Schedule v5.8.0
+# Latest Release
 
-**Release:** Leave Banks & Data Layer Cleanup  
-**Date:** 2026-06-15  
-**Status:** Foundation
+## Signal Schedule v5.9.0 — Approval Foundation, SQL Audit & UI Modernization
 
-## Included
+Released: 2026-06-15
 
-- Leave bank foundation UI improvements.
-- Vacation, sick, personal, comp time, holiday, and training bank preview support.
-- Leave balance cards, transaction history foundation, and adjustment entry foundation.
-- Data layer cleanup for optional preview JSON.
-- Graceful fallback helpers for foundation pages.
-- Leave bank SQL draft and docs.
+Highlights:
 
-## Database
-
-No live database migration is required. SQL is included as a preview foundation draft only.
+- Approval foundation updates.
+- Database naming contract added.
+- SQL audit snapshot captured from the live Postgres table inventory.
+- Accidental in-app copy widgets removed from foundation UI pages.
+- Foundation pages continue to use graceful data fallbacks.

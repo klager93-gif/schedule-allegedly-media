@@ -1,6 +1,6 @@
 /*
 Signal Labs Tool File: schedule/services/CalendarService.js
-Version: v5.8.0
+Version: v5.9.0
 Purpose: Calendar Foundation service for grouping schedule preview rows by date and coverage status.
 */
 export class CalendarService {

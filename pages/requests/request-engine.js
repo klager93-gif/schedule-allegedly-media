@@ -2,23 +2,13 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/pages/requests/request-engine.js
-Version: v5.8.0
+Version: v5.9.0
 Purpose: Render Request & Approval Engine foundation preview.
 */
 const $ = (selector) => document.querySelector(selector);
 const safe = (value) => String(value ?? '');
 const labelize = (key) => key.replace(/([A-Z])/g, ' $1').replace(/^./, (c) => c.toUpperCase());
 
-function copyText(text) {
-  if (navigator.clipboard?.writeText) return navigator.clipboard.writeText(text);
-  const area = document.createElement('textarea');
-  area.value = text;
-  document.body.appendChild(area);
-  area.select();
-  document.execCommand('copy');
-  area.remove();
-  return Promise.resolve();
-}
 
 async function loadPreview() {
   try {
@@ -43,7 +33,7 @@ function render(data) {
       <h3>${safe(queue.name)}</h3>
       <p>${safe(queue.description)}</p>
       <span class="request-badge">${safe(queue.count)} pending</span>
-      <div class="request-actions"><button type="button" data-copy="${safe(queue.name)} queue">Copy Queue</button></div>
+      
     </article>
   `).join('');
   $('[data-request-list]').innerHTML = (data.requests || []).map((request) => `
@@ -61,7 +51,7 @@ function render(data) {
       <div>
         <p><strong>Policy:</strong> ${safe(request.policy)}</p>
         <p><strong>Coverage:</strong> ${safe(request.coverage)}</p>
-        <div class="request-actions"><button type="button" data-copy="${safe(request.id)}">Copy Request ID</button><button type="button" data-copy="/api/request-approval-engine/${safe(request.id)}">Copy API</button></div>
+        
       </div>
     </article>
   `).join('');
@@ -69,14 +59,6 @@ function render(data) {
   $('[data-request-policy]').innerHTML = (data.policyChecks || []).map((item) => `<li>${safe(item)}</li>`).join('');
 }
 
-document.addEventListener('click', (event) => {
-  const button = event.target.closest('[data-copy]');
-  if (!button) return;
-  copyText(button.dataset.copy || '').then(() => {
-    const original = button.textContent;
-    button.textContent = 'Copied';
-    setTimeout(() => { button.textContent = original; }, 1200);
-  });
 });
 
 loadPreview().then(render).catch((error) => {

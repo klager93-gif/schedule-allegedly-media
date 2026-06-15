@@ -1,21 +1,15 @@
-# File Manifest — Signal Schedule v5.8.0
-
-Total files: 449
+# File Manifest
 
 - `.gitattributes`
 - `.gitignore`
 - `ADMIN_CHANGELOG.md`
-- `BUILDMANIFEST.md`
 - `CHANGELOG.md`
-- `FILEMANIFEST.generated.txt`
-- `FILEMANIFEST.md`
 - `HOWTO.md`
 - `LATEST_RELEASE.md`
 - `MASTER-CHANGELOG.md`
 - `PUBLIC_CHANGELOG.md`
 - `README.md`
 - `ROADMAP.md`
-- `SHA256SUMS.txt`
 - `STANDARDS.md`
 - `VALIDATION.md`
 - `adapters/JsonAssignmentEngineAdapter.js`
@@ -164,6 +158,7 @@ Total files: 449
 - `components/tag.js`
 - `components/toolbar.js`
 - `data/agencies.json`
+- `data/approval-foundation-preview.json`
 - `data/assignment-engine-preview.json`
 - `data/assignment-generator-preview.json`
 - `data/assignment-templates.json`
@@ -176,6 +171,7 @@ Total files: 449
 - `data/coverage-board-preview.json`
 - `data/coverage-spots-preview.json`
 - `data/daily-board-preview.json`
+- `data/database-audit-preview.json`
 - `data/demo-presets.json`
 - `data/draft-planning-preview.json`
 - `data/employee-assignments.json`
@@ -219,6 +215,7 @@ Total files: 449
 - `data/weekly-board-preview.json`
 - `data/workspace-foundation-preview.json`
 - `docs/README.md`
+- `docs/architecture/DATABASE-NAMING-CONTRACT-v5.9.md`
 - `docs/architecture/FILE_ORGANIZATION.md`
 - `docs/architecture/METADATA-VALIDATION.md`
 - `docs/architecture/PAGE-ARCHITECTURE.md`
@@ -227,6 +224,7 @@ Total files: 449
 - `docs/audits/DATA-LAYER-AUDIT-v5.8.md`
 - `docs/audits/DATA-PATH-DRIFT-AUDIT-v5.7.md`
 - `docs/audits/NAVIGATION-DRIFT-AUDIT-v5.7.md`
+- `docs/audits/SQL-AUDIT-v5.9.md`
 - `docs/engines/REQUEST-APPROVAL-ENGINE.md`
 - `docs/engines/SCHEDULE-HISTORY-SNAPSHOT-ENGINE.md`
 - `docs/engines/STAFFING-ENGINE.md`
@@ -245,12 +243,14 @@ Total files: 449
 - `docs/migrations/STANDALONE-MIGRATION.md`
 - `docs/releases/LATEST_RELEASE.md`
 - `docs/ui/SAVED-SCHEDULES-UI.md`
+- `docs/ui/UI-COPY-BOX-CLEANUP-v5.9.md`
 - `index.html`
 - `pages/admin/backend-readiness.html`
 - `pages/admin/data-export.html`
 - `pages/admin/data-tools.css`
 - `pages/admin/data-tools.html`
 - `pages/admin/data-tools.js`
+- `pages/admin/database-audit.html`
 - `pages/admin/foundation-admin.css`
 - `pages/admin/system-health.html`
 - `pages/calendar/schedule-calendar.css`

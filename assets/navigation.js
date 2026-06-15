@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v5.8.0
+Version: v5.9.0
 Purpose: Central navigation registry for connected Schedule flyout navigation.
 */
 (function () {
@@ -60,6 +60,7 @@ Purpose: Central navigation registry for connected Schedule flyout navigation.
       [path('systemHealth','pages/admin/system-health.html')]: 'System Health',
       [path('dataExport','pages/admin/data-export.html')]: 'Data Export',
       [path('backendReadiness','pages/admin/backend-readiness.html')]: 'Backend Readiness',
+      [path('databaseAudit','pages/admin/database-audit.html')]: 'Database Audit',
     }),
     groups: Object.freeze([
       { label: 'My Schedule', href: path('employeePortal','pages/employee/index.html'), icon: '◉', children: [path('employeePortal','pages/employee/index.html'), path('employeeCalendar','pages/employee/calendar.html'), path('employeeRequests','pages/employee/requests.html'), path('employeeProfile','pages/employee/profile.html')] },
@@ -70,7 +71,7 @@ Purpose: Central navigation registry for connected Schedule flyout navigation.
       { label: 'Overtime', href: path('openShifts','pages/requests/open-shifts.html'), icon: '⏱', children: [path('openShifts','pages/requests/open-shifts.html'), path('otVolunteerBoard','pages/requests/ot-volunteer-board.html'), path('mandation','pages/rules/mandation.html')] },
       { label: 'Administration', href: path('settings','pages/settings/settings.html'), icon: '⚙', children: [path('settings','pages/settings/settings.html'), path('permissions','pages/rules/permissions.html'), path('visibility','pages/settings/visibility.html'), path('notifications','pages/rules/notifications.html'), path('shortcodes','pages/rules/shortcodes.html'), path('benefits','pages/rules/benefits.html')] },
       { label: 'Reports', href: path('reports','pages/reports/reports.html'), icon: '◴' },
-      { label: 'System', href: path('systemHealth','pages/admin/system-health.html'), icon: '⌁', children: [path('systemHealth','pages/admin/system-health.html'), path('dataTools','pages/admin/data-tools.html'), path('dataExport','pages/admin/data-export.html'), path('backendReadiness','pages/admin/backend-readiness.html')] }
+      { label: 'System', href: path('systemHealth','pages/admin/system-health.html'), icon: '⌁', children: [path('systemHealth','pages/admin/system-health.html'), path('dataTools','pages/admin/data-tools.html'), path('dataExport','pages/admin/data-export.html'), path('backendReadiness','pages/admin/backend-readiness.html'), path('databaseAudit','pages/admin/database-audit.html')] }
     ])
   });
 })();

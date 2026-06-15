@@ -1,0 +1,22 @@
+{
+  "version": "5.9.0",
+  "tableCount": 118,
+  "coreTables": [
+    "employees",
+    "users",
+    "roles",
+    "user_roles",
+    "role_permissions"
+  ],
+  "approvalTables": [
+    "approval_workflows",
+    "approval_workflow_steps",
+    "approval_requests",
+    "approval_decisions"
+  ],
+  "rule": "Core identity tables are unprefixed. Schedule-module tables use schedule_*.",
+  "warnings": [
+    "Do not assume schedule_employees exists.",
+    "Map new backend work to existing tables before creating duplicates."
+  ]
+}

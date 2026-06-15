@@ -1,4 +1,4 @@
-/* Signal Labs | Signal Schedule | schedule/pages/workspace/history.js | v5.8.0 */
+/* Signal Labs | Signal Schedule | schedule/pages/workspace/history.js | v5.9.0 */
 const state={items:[],filter:''};
 const $=(s)=>document.querySelector(s);
 const esc=(v)=>String(v??'').replace(/[&<>"']/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -12,8 +12,6 @@ document.addEventListener('click',(event)=>{
     if(action.dataset.savedAction==='open')openInBuilder(action.dataset.id);
     if(action.dataset.savedAction==='publish')publishSchedule(action.dataset.id);
   }
-  const copy=event.target.closest('[data-copy-value]');
-  if(copy)copyValue(copy.dataset.copyValue,copy);
 });
 const filter=$('[data-saved-filter]');
 if(filter)filter.addEventListener('input',()=>{state.filter=filter.value.trim().toLowerCase();render();});
@@ -42,13 +40,10 @@ function filtered(){
   if(!state.filter)return state.items;
   return state.items.filter(item=>[item.name,item.status,item.agencyId,item.scheduleStartDate,item.scheduleEndDate,item.id].join(' ').toLowerCase().includes(state.filter));
 }
-function copyButton(value,label='Copy'){
-  return `<button type="button" class="saved-mini-btn saved-copy-btn" data-copy-value="${esc(value)}">${esc(label)}</button>`;
-}
 function render(){
   const tbody=$('[data-saved-table]');if(!tbody)return;
   const rows=filtered();
-  tbody.innerHTML=rows.length?rows.map(item=>`<tr data-id="${esc(item.id)}"><td><strong>${esc(item.name)}</strong><br><small>${esc(item.id)}</small> ${copyButton(item.id,'Copy ID')}</td><td>${esc(dateOnly(item.scheduleStartDate))} → ${esc(dateOnly(item.scheduleEndDate))}</td><td><span class="saved-pill saved-pill--${esc(item.status||'draft')}">${esc(item.status||'draft')}</span></td><td>${esc(item.agencyId)} ${copyButton(item.agencyId,'Copy')}</td><td>${esc(fmtDate(item.updatedAt))}</td><td><div class="saved-row-actions"><button type="button" class="saved-mini-btn" data-saved-action="inspect" data-id="${esc(item.id)}">Inspect</button><button type="button" class="saved-mini-btn" data-saved-action="open" data-id="${esc(item.id)}">Restore</button><button type="button" class="saved-mini-btn" data-saved-action="publish" data-id="${esc(item.id)}">Publish</button></div></td></tr>`).join(''):`<tr><td colspan="6">No matching snapshots.</td></tr>`;
+  tbody.innerHTML=rows.length?rows.map(item=>`<tr data-id="${esc(item.id)}"><td><strong>${esc(item.name)}</strong><br><small>${esc(item.id)}</small></td><td>${esc(dateOnly(item.scheduleStartDate))} → ${esc(dateOnly(item.scheduleEndDate))}</td><td><span class="saved-pill saved-pill--${esc(item.status||'draft')}">${esc(item.status||'draft')}</span></td><td>${esc(item.agencyId)}</td><td>${esc(fmtDate(item.updatedAt))}</td><td><div class="saved-row-actions"><button type="button" class="saved-mini-btn" data-saved-action="inspect" data-id="${esc(item.id)}">Inspect</button><button type="button" class="saved-mini-btn" data-saved-action="open" data-id="${esc(item.id)}">Restore</button><button type="button" class="saved-mini-btn" data-saved-action="publish" data-id="${esc(item.id)}">Publish</button></div></td></tr>`).join(''):`<tr><td colspan="6">No matching snapshots.</td></tr>`;
   tbody.querySelectorAll('tr[data-id]').forEach(row=>row.addEventListener('click',(event)=>{if(event.target.closest('button'))return;inspect(row.dataset.id);}));
   tbody.querySelectorAll('[data-saved-action="inspect"]').forEach(btn=>btn.addEventListener('click',()=>inspect(btn.dataset.id)));
 }
@@ -59,7 +54,7 @@ function inspect(id){
   const endpoint=`/api/saved-schedules/${item.id}`;
   const publishEndpoint=`/api/saved-schedules/${item.id}/publish`;
   const validationJson=JSON.stringify(item.validationSummary||{},null,2);
-  inspector.innerHTML=`<div class="saved-detail"><strong>${esc(item.name)}</strong><span>${esc(dateOnly(item.scheduleStartDate))} → ${esc(dateOnly(item.scheduleEndDate))}</span></div><div class="saved-detail"><strong>Snapshot ID</strong><span>${esc(item.id)} ${copyButton(item.id,'Copy ID')}</span></div><div class="saved-detail"><strong>Snapshot Status</strong><span>${esc(item.status)} • ${esc(item.source||'builder')} ${item.publishedAt?'• published '+esc(fmtDate(item.publishedAt)):''}</span></div><div class="saved-detail"><strong>Payload</strong><span>${assignments} assignment row(s)</span></div><div class="saved-detail"><strong>Snapshot API endpoints</strong><span>${esc(endpoint)} ${copyButton(endpoint,'Copy')}</span><span>${esc(publishEndpoint)} ${copyButton(publishEndpoint,'Copy publish')}</span></div><div class="saved-detail"><strong>Validation Summary</strong>${copyButton(validationJson,'Copy JSON')}<pre class="saved-json">${esc(validationJson)}</pre></div>`;
+  inspector.innerHTML=`<div class="saved-detail"><strong>${esc(item.name)}</strong><span>${esc(dateOnly(item.scheduleStartDate))} → ${esc(dateOnly(item.scheduleEndDate))}</span></div><div class="saved-detail"><strong>Snapshot ID</strong><span>${esc(item.id)}</span></div><div class="saved-detail"><strong>Snapshot Status</strong><span>${esc(item.status)} • ${esc(item.source||'builder')} ${item.publishedAt?'• published '+esc(fmtDate(item.publishedAt)):''}</span></div><div class="saved-detail"><strong>Payload</strong><span>${assignments} assignment row(s)</span></div><div class="saved-detail"><strong>Snapshot API endpoints</strong><span>${esc(endpoint)}</span><span>${esc(publishEndpoint)}</span></div><div class="saved-detail"><strong>Validation Summary</strong><pre class="saved-json">${esc(validationJson)}</pre></div>`;
 }
 async function publishSchedule(id){
   const item=state.items.find(x=>x.id===id);if(!item)return;
@@ -79,12 +74,4 @@ function openInBuilder(id){
   const item=state.items.find(x=>x.id===id);if(!item)return;
   localStorage.setItem('signalScheduleBuilderLoad',JSON.stringify(item));
   location.href='builder.html?load=snapshot';
-}
-async function copyValue(value,button){
-  try{
-    await navigator.clipboard.writeText(value);
-    const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1200);
-  }catch(_error){
-    window.prompt('Copy this value:',value);
-  }
 }

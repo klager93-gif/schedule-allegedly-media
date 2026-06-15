@@ -1,7 +1,10 @@
-# Signal Schedule HOWTO
+# How to Use Signal Schedule v5.9.0
 
-Deploy as a static site from repository root. Keep `index.html` at root and feature pages under `/pages/`. Use the route registry for links. Do not restore the old `/employee/` root folder; employee portal routes now live under `/pages/employee/`.
+Use the navigation groups to review My Schedule, Scheduling, Staffing, Personnel, Requests, Overtime, Administration, Reports, and System pages.
 
-## v5.8.0 Notes
+For database work, see:
 
-Leave bank pages are still foundation/pre-database. Use sample data in `/data/leave-banks-preview.json` and the preview SQL in `/sql/058_leave_banks_foundation.sql` for planning only.
+- `docs/architecture/DATABASE-NAMING-CONTRACT-v5.9.md`
+- `docs/audits/SQL-AUDIT-v5.9.md`
+
+Core identity tables are unprefixed (`employees`, `users`, `roles`). Schedule module tables generally use the `schedule_` prefix.
