@@ -23,7 +23,7 @@ Signal Schedule v5.1.0 — Employee Experience & Data Tools.
 - `data/employee-experience-data-tools-preview.json`
 - `api/contracts/employee-experience-data-tools.read.schema.json`
 - `api/coolify/sql/045_employee_experience_data_tools_schema.sql`
-- `EMPLOYEE-EXPERIENCE-DATA-TOOLS.md`
+- `docs/foundation/EMPLOYEE-EXPERIENCE-DATA-TOOLS.md`
 
 ## Database
 

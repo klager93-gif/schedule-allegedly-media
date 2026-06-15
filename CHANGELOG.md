@@ -1,4 +1,12 @@
 
+## v5.2.0 — Standalone Repository Organization
+
+- Organized root-level technical documents into categorized `docs/` folders.
+- Kept deployable HTML routes at the repository root to avoid navigation/path drift.
+- Kept core public project files in root: README, changelogs, roadmap, standards, manifests, and build metadata.
+- Refreshed visible cache-busting/version metadata for the standalone release.
+- Regenerated file manifests and SHA256 checksums after organization.
+- No feature changes.
 ## v5.1.0 — Request & Approval Engine
 
 - Added central `requests.html` Request & Approval Engine hub.
@@ -44,7 +52,7 @@ No SQL migration required.
 - Added Schedule History UI Publish action with protected `ADMIN_API_KEY` prompt.
 - Added published status handling using `status = published` and `published_at = now()`.
 - Added copy buttons for schedule IDs, agency IDs, API endpoints, publish endpoints, and validation JSON.
-- Added `PUBLISHING-FOUNDATION.md`.
+- Added `docs/foundation/PUBLISHING-FOUNDATION.md`.
 - No database migration required; v4.7.0 uses migration 044 from v4.4.0.
 
 ## v4.4.0 — Saved Schedule CRUD Foundation
