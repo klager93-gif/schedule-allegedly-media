@@ -1,0 +1,84 @@
+<!--
+Signal Labs
+Area: Signal Schedule
+File: pages/requests/leave-banks.html
+Version: v5.10.0
+Purpose: Admin-first Leave Banks Foundation page
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Schedule — Leave Banks</title>
+<meta name="description" content="Leave Banks Foundation for vacation, sick, personal, comp, holiday, and training balances.">
+<link rel="stylesheet" href="/pages/requests/leave-banks.css?v=5.10.0">
+<link rel="stylesheet" href="/app-shell.css?v=5.10.0">
+<link rel="stylesheet" href="/pages/admin/foundation-admin.css?v=5.10.0">
+</head>
+<body data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Leave Banks" data-signal-version="v5.10.0" data-signal-theme="Leave Banks" data-signal-status="Preview" data-signal-description="Admin-first leave bank balance, pending impact, adjustment, and audit foundation." data-signal-status-text="Signal Schedule v5.10.0 adds leave bank foundation UI and data layer cleanup.">
+<div id="sl-header"></div>
+<nav class="schedule-subnav" aria-label="Signal Schedule navigation"><div class="schedule-subnav__label"><span>Signal Schedule Navigation</span><span class="schedule-subnav__role">Admin-first / role-filtering later</span></div><div class="schedule-subnav__links"><a href="/index.html">Overview</a><a href="/pages/workspace/workspace.html">Scheduling Workspace</a><a href="/pages/workspace/draft-planning.html">Draft Planning</a><a href="/pages/workspace/publishing.html">Publishing</a><a href="/pages/calendar/schedule.html">Calendar</a><a href="/pages/workspace/weekly-board.html">Weekly View</a><a href="/pages/workspace/daily-board.html">Daily Board</a><a href="/pages/people/employees.html">Employees</a><a href="/pages/people/profile.html">Profile</a><a href="/pages/people/timeline.html">Timeline</a><a href="/pages/people/supervisors.html">Supervisors</a><a href="/pages/people/seniority.html">Seniority & Rotation</a><a href="/pages/people/qualifications.html">Qualifications</a><a href="/pages/people/training.html">Training & Certs</a><a href="/pages/people/eligibility.html">Eligibility</a><a href="/pages/workspace/assignments.html">Assignments</a><a href="/pages/workspace/assignment-generator.html">Assignment Generator</a><a href="/pages/workspace/conflict-detection.html">Conflict Detection</a><a href="/pages/staffing/staffing.html">Minimum Staffing</a><a href="/pages/coverage/coverage.html">Coverage Board</a><a href="/pages/coverage/coverage-spots.html">Coverage Spots</a><a href="/pages/requests/approvals.html">Approvals</a><a href="/pages/requests/leave.html">Leave Requests</a><a href="/pages/requests/leave-banks.html" aria-current="page">Leave Banks</a><a href="/pages/requests/open-shifts.html">Open Shifts</a><a href="/pages/requests/ot-volunteer-board.html">OT Volunteer Board</a><a href="/pages/requests/shift-trades.html">Shift Trades</a><a href="/pages/rules/mandation.html">Mandation</a><a href="/pages/rules/permissions.html">Permissions</a><a href="/pages/rules/notifications.html">Notifications</a><a href="/pages/settings/visibility.html">Visibility & Privacy</a><a href="/pages/rules/shortcodes.html">Shortcodes</a><a href="/pages/rules/benefits.html">Benefit Ledger</a><a href="/pages/reports/reports.html">Reports</a><a href="/pages/settings/settings.html">Settings</a></div></nav>
+<main class="leave-bank-shell">
+  <section class="leave-bank-hero" aria-labelledby="pageTitle">
+    <p class="schedule-kicker">Signal Schedule</p>
+    <h1 id="pageTitle">Leave Banks</h1>
+    <p>Track vacation, sick, personal, comp, holiday, and training balances before approved requests begin posting live payroll-grade ledger entries.</p>
+  </section>
+
+  <section class="leave-bank-summary" data-leave-bank-summary></section>
+
+  <section class="leave-bank-layout">
+    <article class="leave-bank-panel">
+      <div class="leave-bank-section-title"><h2>Bank Types</h2><p>Admin-controlled bank definitions that requests can consume later.</p></div>
+      <div class="leave-bank-type-grid" data-leave-bank-types></div>
+    </article>
+    <article class="leave-bank-panel">
+      <div class="leave-bank-section-title"><h2>Pending Request Impacts</h2><p>Preview before/after balances before approval posts a ledger entry.</p></div>
+      <div class="leave-bank-impact-list" data-leave-bank-impacts></div>
+    </article>
+  </section>
+
+  <section class="leave-bank-panel">
+    <div class="leave-bank-section-title"><h2>Employee Balances</h2><p>Preview balances by employee and bank. Low and zero balances are flagged for supervisor review.</p></div>
+    <div class="leave-bank-employee-grid" data-leave-bank-employees></div>
+  </section>
+
+  <section class="leave-bank-layout">
+    <article class="leave-bank-panel">
+      <div class="leave-bank-section-title"><h2>Adjustment Audit Trail</h2><p>Manual changes require a reason, author, and timestamp.</p></div>
+      <div class="leave-bank-adjustment-list" data-leave-bank-adjustments></div>
+    </article>
+    <article class="leave-bank-panel">
+      <div class="leave-bank-section-title"><h2>Rules</h2><p>Rules remain preview-only until live approval posting is enabled.</p></div>
+      <div class="leave-bank-rule-list" data-leave-bank-rules></div>
+    </article>
+  </section>
+
+  <section class="leave-bank-layout">
+    <article class="leave-bank-panel">
+      <div class="leave-bank-section-title"><h2>Transaction History Foundation</h2><p>Approved requests, accruals, and manual corrections should post immutable entries.</p></div>
+      <div class="leave-bank-adjustment-list" data-leave-bank-transactions></div>
+    </article>
+    <article class="leave-bank-panel">
+      <div class="leave-bank-section-title"><h2>Adjustment Entry Foundation</h2><p>Admin changes require structured fields before posting.</p></div>
+      <div class="leave-bank-rule-list" data-leave-bank-adjustment-draft></div>
+    </article>
+  </section>
+
+<section class="schedule-card"><h2>v5.8 Leave Bank Foundation UI</h2><div class="foundation-grid"><div class="foundation-card"><h3>Vacation</h3><p>Balance card and adjustment history placeholder.</p></div><div class="foundation-card"><h3>Sick</h3><p>Admin override and partial-day tracking placeholder.</p></div><div class="foundation-card"><h3>Comp / Holiday</h3><p>Future bank rules and transaction history placeholder.</p></div></div></section>
+</main>
+<div id="schedule-footer"></div>
+<div id="sl-footer"></div>
+<script src="/assets/release-metadata.js?v=5.10.0"></script>
+<script src="/assets/config.js?v=5.10.0"></script>
+<script src="/assets/routes.js?v=5.10.0"></script>
+<script src="/assets/navigation.js?v=5.10.0"></script>
+<script src="/assets/features.js?v=5.10.0"></script>
+<script src="/assets/roles.js?v=5.10.0"></script>
+<script src="/assets/status.js?v=5.10.0"></script>
+<script src="/assets/data-loader.js?v=5.10.0"></script>
+<script src="/app-shell.js?v=5.10.0"></script>
+<script type="module" src="/pages/requests/leave-banks.js?v=5.10.0"></script>
+</body>
+</html>
