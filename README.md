@@ -1,21 +1,11 @@
 # Signal Schedule
 
-Standalone repository for Signal Schedule.
+Version: v5.5.0
 
-Current version: v5.4.0 — Configuration & Registry Foundation
+Signal Schedule is a standalone scheduling platform foundation for public safety and shift-based operations.
 
-Live domain: https://schedule.allegedly-media.com
+## Current release
 
-## Current foundation
+v5.5.0 — Page Architecture & Route Registry Migration
 
-- Standalone root deployment
-- Schedule-specific assets/components/docs
-- Central release metadata
-- Route registry
-- Navigation registry
-- Configuration registry
-- Feature, role, and status registries
-
-## Deployment notes
-
-This is currently a static HTML/CSS/JS deployment. No database migration is required for v5.4.0.
+Feature pages now live in categorized `/pages/` folders while `index.html` remains at the repository root for static deployment. Navigation is driven by the central route registry.

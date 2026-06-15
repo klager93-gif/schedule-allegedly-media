@@ -1,6 +1,6 @@
 /*
 Signal Labs Tool File: schedule/repositories/SeniorityRotationRepository.js
-Version: v5.4.0
+Version: v5.5.0
 Purpose: Repository boundary for Seniority and Rotation preview data.
 */
 export class SeniorityRotationRepository {

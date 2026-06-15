@@ -1,18 +1,23 @@
-# Validation Report
+# Validation Report — v5.5.0
 
-Version: v5.4.0
-Date: 2026-06-15
+- Root HTML files: ['index.html']
+- Moved feature routes into `/pages/`: 43
+- Missing local HTML refs: 0
+- Missing JS imports: 0
+- macOS metadata files: 0
+- Footer/header/homepage metadata checked: yes
+- Route registry checked: yes
+- Database changes: none
+- Feature logic changes: none
 
-## Checks
+## Missing refs
 
-- macOS metadata validation: PASS
-- local link/script validation: PASS
-- registry asset validation: PASS
-- version drift validation: PASS
-- footer/header/homepage metadata: PASS
-- database migration: NOT REQUIRED
-- route moves: NONE
+```json
+[]
+```
 
-## Errors
+## Missing JS imports
 
-None.
+```json
+[]
+```

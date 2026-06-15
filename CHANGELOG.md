@@ -1,4 +1,16 @@
-## v5.4.0 — Configuration & Registry Foundation
+# Changelog
+
+## v5.5.0 — Page Architecture & Route Registry Migration
+
+- Moved feature HTML routes from repo root into categorized `/pages/` directories.
+- Kept `index.html` at repo root for static deployment.
+- Updated `assets/routes.js` to point to new page locations.
+- Updated `app-shell.js` to resolve navigation from the standalone domain root.
+- Updated HTML asset/script paths to avoid nested relative-link drift.
+- Added page architecture documentation.
+- Regenerated manifests and validation artifacts.
+
+## v5.5.0 — Page Architecture & Route Registry Migration
 Date: 2026-06-15
 
 - Added release, route, navigation, configuration, feature, role, and status registries under `/assets/`.
@@ -7,11 +19,11 @@ Date: 2026-06-15
 - Added registry scripts to Schedule HTML routes without moving existing route files.
 - Regenerated manifests, checksums, and validation report.
 
-## v5.4.0 — Configuration & Registry Foundation
+## v5.5.0 — Page Architecture & Route Registry Migration
 
 - Added a central client-side release metadata source at `assets/release-metadata.js`.
 - Updated app shell and footer version handling to reduce footer/header drift.
-- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.4.0.
+- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.5.0.
 - Added metadata validation documentation and strengthened release standards.
 - Regenerated file manifests and SHA256 checksums.
 - No database changes.

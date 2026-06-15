@@ -1,42 +1,14 @@
 # Signal Schedule Roadmap
 
-## Current: v5.4.0 — Configuration & Registry Foundation
+## Current
 
-Adds central registries so later request, staffing, assignment, mandation, and publishing systems can be built with less metadata and navigation drift.
+- v5.5.0 — Page Architecture & Route Registry Migration
 
-## v5.x Foundation Era
+## Next
 
-- Registry foundation
-- Validation hardening
-- Workspace polish
-- Request/leave/open-shift/approval scaffolding
-
-## v6.x Request Era
-
-- Time off requests
-- VOT requests
-- Request reasons
-- Hour calculations
-- Approval workflow
-
-## v7.x Staffing and Assignment Era
-
-- Staffing engine
-- Coverage calculations
-- Post/seat assignment foundations
-
-## v8.x Mandation Era
-
-- Mandation queue
-- Rules/exceptions
-- Fairness and audit history
-
-## v9.x Publishing Era
-
-- Draft/published versions
-- Snapshots
-- Rollback
-
-## v10.x Portal Era
-
-- Employee, supervisor, scheduler, and administrator surfaces.
+- v5.6.x — Foundation-era feature scaffolding
+- v6.0.0 — Request Engine
+- v7.x — Staffing and assignments
+- v8.x — Mandation
+- v9.x — Publishing
+- v10.x — Employee Portal

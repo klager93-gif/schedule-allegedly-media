@@ -1,16 +1,16 @@
 /*
 Signal Labs
 Area: Signal Schedule
-File: schedule/app-shell.js
-Version: v5.4.0
-Purpose: Desktop application shell using release, route, navigation, config, feature, role, and status registries.
+File: app-shell.js
+Version: v5.5.0
+Purpose: Desktop application shell using release, route, navigation, config, feature, role, status, and page architecture registries.
 */
 (function () {
   const body = document.body;
   if (!body || body.dataset.signalArea !== 'Signal Schedule') return;
 
   const releaseMeta = window.SIGNAL_SCHEDULE_RELEASE || {};
-  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.4.0';
+  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.5.0';
   const releaseStatus = releaseMeta.status || 'Foundation';
   const title = body.dataset.signalTitle || document.title.replace('— Signal Schedule', '').trim() || 'Signal Schedule';
   const themeKey = 'signalScheduleTheme';
@@ -51,8 +51,8 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
     if (!nav || !linksWrap || linksWrap.dataset.flyout === 'true') return;
 
     const schedulePath = getSchedulePath();
-    const currentPath = schedulePath || 'index.html';
-    const linkPrefix = schedulePath.startsWith('employee/') ? '../' : '';
+    const currentPath = normalizeSchedulePath(schedulePath || 'index.html');
+    const linkPrefix = ''; // v5.5 routes resolve from the standalone domain root.
     const existing = Array.from(linksWrap.querySelectorAll('a'));
     const byHref = new Map(existing.map((a) => [a.getAttribute('href'), a]));
     const navigationRegistry = window.SIGNAL_SCHEDULE_NAVIGATION || {};
@@ -83,7 +83,7 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
 
       const item = document.createElement('div');
       item.className = 'schedule-nav-item';
-      const active = [group.href].concat(group.children || []).includes(currentPath);
+      const active = [group.href].concat(group.children || []).map(normalizeSchedulePath).includes(currentPath);
       if (active) item.classList.add('is-active');
 
       const a = primary || children[0].cloneNode(true);
@@ -103,7 +103,7 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
         children.forEach((child) => {
           const clone = child.cloneNode(true);
           clone.className = 'schedule-nav-flyout__link';
-          if ((clone.dataset.schedulePath || clone.getAttribute('href') || '') === currentPath) clone.setAttribute('aria-current', 'page');
+          if (normalizeSchedulePath(clone.dataset.schedulePath || clone.getAttribute('href') || '') === currentPath) clone.setAttribute('aria-current', 'page');
           else clone.removeAttribute('aria-current');
           flyout.appendChild(clone);
         });
@@ -130,10 +130,15 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
     return path;
   }
 
+
+  function normalizeSchedulePath(value) {
+    return String(value || 'index.html').replace(/^\/+/, '').replace(/\/+$/, '') || 'index.html';
+  }
+
   function resolveScheduleHref(href, prefix) {
     if (/^(https?:|mailto:|#|\/)/.test(href)) return href;
     if (href.startsWith('../')) return href;
-    return prefix + href;
+    return '/' + prefix + href;
   }
 
   function insertToolbar() {
@@ -243,9 +248,9 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
           <span class="schedule-footer__meta">Built by Signal Labs</span>
         </div>
         <nav class="schedule-footer__links" aria-label="Schedule footer links">
-          <a href="README.md">Docs</a><span class="schedule-footer__dot">•</span>
-          <a href="ROADMAP.md">Roadmap</a><span class="schedule-footer__dot">•</span>
-          <a href="CHANGELOG.md">Changelog</a>
+          <a href="/README.md">Docs</a><span class="schedule-footer__dot">•</span>
+          <a href="/ROADMAP.md">Roadmap</a><span class="schedule-footer__dot">•</span>
+          <a href="/CHANGELOG.md">Changelog</a>
         </nav>
       </div>`;
   }

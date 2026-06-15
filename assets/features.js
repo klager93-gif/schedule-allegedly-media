@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: assets/features.js
-Version: v5.4.0
+Version: v5.5.0
 Purpose: Feature flag registry for foundation-era modules and incomplete workflow gates.
 */
 window.SIGNAL_SCHEDULE_FEATURES = Object.freeze({

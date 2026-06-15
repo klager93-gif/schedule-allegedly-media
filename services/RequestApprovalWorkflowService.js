@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/services/RequestApprovalWorkflowService.js
-Version: v5.4.0
+Version: v5.5.0
 Purpose: Service layer for request approval workflow preview logic
 */
 import { listRequestApprovalWorkflowPreview } from '../repositories/RequestApprovalWorkflowRepository.js';

@@ -1,24 +1,9 @@
-# Signal Schedule v5.4.0 — Configuration & Registry Foundation
+# Latest Release
 
-Date: 2026-06-15
+## Signal Schedule v5.5.0 — Page Architecture & Route Registry Migration
 
-This release adds the first centralized client-side registries for Schedule configuration and navigation.
+Released: 2026-06-15
 
-## Included
+This release moves root-level feature HTML routes into categorized `/pages/` folders, updates the route registry, and changes app-shell navigation to resolve routes from the standalone domain root.
 
-- `assets/release-metadata.js`
-- `assets/config.js`
-- `assets/routes.js`
-- `assets/navigation.js`
-- `assets/features.js`
-- `assets/roles.js`
-- `assets/status.js`
-- App shell navigation now reads the registry when available.
-- Footer/header/homepage metadata was validated for v5.4.0.
-
-## Not included
-
-- No database changes.
-- No route moves.
-- No production authentication changes.
-- No feature workflow changes.
+No database changes. No feature logic changes.

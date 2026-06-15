@@ -1,0 +1,81 @@
+<!--
+Signal Labs
+Area: Signal Schedule
+File: pages/settings/visibility.html
+Version: v5.5.0
+Purpose: Schedule Visibility & Privacy Controls for role-based schedule and leave detail.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Schedule — Visibility & Privacy</title>
+<meta name="description" content="Signal Schedule visibility and privacy controls for role-based schedule, supervisor schedule, and leave detail access.">
+<link rel="stylesheet" href="/app-shell.css?v=5.5.0">
+<link rel="stylesheet" href="/pages/settings/visibility.css?v=5.5.0">
+</head>
+<body data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Visibility & Privacy" data-signal-version="v5.5.0" data-signal-theme="Schedule Visibility & Privacy Controls" data-signal-status="Preview" data-signal-description="Configure what each role or user group can see on schedules, supervisor schedules, and leave/off-status labels." data-signal-status-text="Signal Schedule v3.6.1 adds schedule visibility and privacy controls for role-based schedule detail.">
+<div id="sl-header"></div>
+<nav class="schedule-subnav" aria-label="Signal Schedule navigation"><div class="schedule-subnav__label"><span>Signal Schedule Navigation</span><span class="schedule-subnav__role">Role-based panels</span></div><div class="schedule-subnav__links"><a href="/index.html">Overview</a><a href="/pages/workspace/workspace.html">Scheduling Workspace</a><a href="/pages/workspace/draft-planning.html">Draft Planning</a><a href="/pages/workspace/publishing.html">Publishing</a><a href="/pages/calendar/schedule.html">Calendar</a><a href="/pages/workspace/weekly-board.html">Weekly View</a><a href="/pages/workspace/daily-board.html">Daily Board</a><a href="/pages/people/employees.html">Employees</a><a href="/pages/people/profile.html">Profile</a><a href="/pages/people/timeline.html">Timeline</a><a href="/pages/people/supervisors.html">Supervisors</a><a href="/pages/people/seniority.html">Seniority & Rotation</a><a href="/pages/people/qualifications.html">Qualifications</a><a href="/pages/people/training.html">Training & Certs</a><a href="/pages/people/eligibility.html">Eligibility</a><a href="/pages/workspace/assignments.html">Assignments</a><a href="/pages/workspace/assignment-generator.html">Assignment Generator</a><a href="/pages/workspace/conflict-detection.html">Conflict Detection</a><a href="/pages/staffing/staffing.html">Minimum Staffing</a><a href="/pages/coverage/coverage.html">Coverage Board</a><a href="/pages/coverage/coverage-spots.html">Coverage Spots</a><a href="/pages/requests/approvals.html">Approvals</a><a href="/pages/requests/leave.html">Leave Requests</a><a href="/pages/requests/leave-banks.html">Leave Banks</a><a href="/pages/requests/open-shifts.html">Open Shifts</a><a href="/pages/requests/ot-volunteer-board.html">OT Volunteer Board</a><a href="/pages/requests/shift-trades.html">Shift Trades</a><a href="/pages/rules/mandation.html">Mandation</a><a href="/pages/rules/permissions.html">Permissions</a><a href="/pages/rules/notifications.html">Notifications</a><a href="/pages/settings/visibility.html" aria-current="page">Visibility & Privacy</a><a href="/pages/rules/shortcodes.html">Shortcodes</a><a href="/pages/rules/benefits.html">Benefit Ledger</a><a href="/pages/reports/reports.html">Reports</a><a href="/pages/settings/settings.html">Settings</a></div></nav>
+<main class="visibility-shell">
+  <section class="visibility-hero" aria-labelledby="pageTitle">
+    <p class="schedule-kicker">Signal Schedule</p>
+    <h1 id="pageTitle">Schedule Visibility & Privacy Controls</h1>
+    <p>Admin-configurable rules decide whether employees can see supervisor schedules, exact times, hours only, working/off status, and leave type labels by user group.</p>
+  </section>
+
+  <section class="visibility-grid" aria-label="Visibility overview">
+    <aside class="visibility-panel">
+      <h2>Policy Snapshot</h2>
+      <p>Preview-only visibility policy foundation. Future authenticated workflows should persist these settings by agency and apply them to employee-facing schedules.</p>
+      <div class="visibility-summary" data-visibility-summary></div>
+      <p class="visibility-status-line" data-visibility-status>Loading visibility policy preview…</p>
+    </aside>
+    <section class="visibility-card">
+      <h2>User Groups</h2>
+      <ul class="visibility-list" data-user-groups></ul>
+    </section>
+  </section>
+
+  <section class="visibility-card">
+    <h2>Schedule Visibility Matrix</h2>
+    <p>Controls what one user group can see about another group, including supervisor schedule display.</p>
+    <div data-schedule-rules></div>
+  </section>
+
+  <section class="visibility-card">
+    <h2>Leave Type Visibility</h2>
+    <p>Controls whether employees see the exact leave type, off-only status, or nothing for sensitive leave categories.</p>
+    <div data-leave-rules></div>
+  </section>
+
+  <section class="visibility-card">
+    <h2>Display Examples</h2>
+    <div class="schedule-dense-grid" data-display-examples></div>
+  </section>
+
+  <section class="visibility-grid">
+    <section class="visibility-card">
+      <h2>Admin Controls</h2>
+      <ul class="visibility-list" data-admin-controls></ul>
+    </section>
+    <section class="visibility-card">
+      <h2>Rules</h2>
+      <ul class="visibility-list" data-visibility-rules></ul>
+    </section>
+  </section>
+</main>
+<div id="schedule-footer"></div>
+<div id="sl-footer"></div>
+<script src="/assets/release-metadata.js?v=5.5.0"></script>
+<script src="/assets/config.js?v=5.5.0"></script>
+<script src="/assets/routes.js?v=5.5.0"></script>
+<script src="/assets/navigation.js?v=5.5.0"></script>
+<script src="/assets/features.js?v=5.5.0"></script>
+<script src="/assets/roles.js?v=5.5.0"></script>
+<script src="/assets/status.js?v=5.5.0"></script>
+<script src="/app-shell.js?v=5.5.0"></script>
+<script type="module" src="/pages/settings/visibility.js?v=5.5.0"></script>
+</body>
+</html>

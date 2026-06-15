@@ -1,21 +1,16 @@
-# Build Manifest
+# Build Manifest — v5.5.0
 
-Version: v5.4.0
-Release: Configuration & Registry Foundation
-Date: 2026-06-15
-Package: schedule-allegedly-media-v5.4.0-configuration-registry.zip
+Package: schedule-allegedly-media-v5.5.0-page-architecture.zip
 
-## Scope
+Included:
+- Page route migration into categorized `/pages/` directories
+- Route registry update
+- App shell root-relative navigation resolution
+- Metadata/footer/header validation
+- Manifest and checksum regeneration
 
-- Configuration and registry foundation
-- Central navigation registry
-- Central route registry
-- Feature, role, and status registries
-- Metadata validation
-
-## Exclusions
-
-- No `.git/`
-- No macOS metadata files
-- No database migrations
-- No HTML route moves
+Validation:
+- Missing local HTML refs: 0
+- Missing JS imports: 0
+- macOS metadata files: 0
+- Root HTML files: index.html

@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/repositories/SupervisorHierarchyRepository.js
-Version: v5.4.0
+Version: v5.5.0
 Purpose: Repository boundary for supervisor hierarchy data
 */
 import { fetchSupervisorHierarchyPreview } from '../adapters/JsonSupervisorHierarchyAdapter.js';
