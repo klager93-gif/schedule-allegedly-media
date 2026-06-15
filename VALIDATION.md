@@ -1,12 +1,18 @@
-# Validation — v5.3.0
+# Validation Report
 
-- No macOS metadata files found.
-- No missing local HTML links found.
-- No missing JavaScript imports found.
-- HTML route files were not moved.
-- Footer version checked.
-- Header/app toolbar version checked.
-- Homepage metadata checked.
-- Cache-busting references checked.
-- README/changelog release metadata checked.
-- No database migration required.
+Version: v5.4.0
+Date: 2026-06-15
+
+## Checks
+
+- macOS metadata validation: PASS
+- local link/script validation: PASS
+- registry asset validation: PASS
+- version drift validation: PASS
+- footer/header/homepage metadata: PASS
+- database migration: NOT REQUIRED
+- route moves: NONE
+
+## Errors
+
+None.

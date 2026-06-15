@@ -1,79 +1,42 @@
 # Signal Schedule Roadmap
 
-## Current track: v5.x Foundation Era
+## Current: v5.4.0 — Configuration & Registry Foundation
 
-The v5.x series is the standalone foundation era. It may continue adding infrastructure, validation, architecture, docs, route stability, release automation, and feature scaffolding until a full request engine is ready for v6.0.0.
+Adds central registries so later request, staffing, assignment, mandation, and publishing systems can be built with less metadata and navigation drift.
 
-## v5.3.0 — Metadata Stability & Validation
+## v5.x Foundation Era
 
-- Central release metadata source.
-- Footer/header/version validation.
-- Cache-busting validation.
-- Manifest and route validation.
+- Registry foundation
+- Validation hardening
+- Workspace polish
+- Request/leave/open-shift/approval scaffolding
 
-## Next: v5.4.x+ Foundation Additions
+## v6.x Request Era
 
-- Continue safe infrastructure and feature-foundation work.
-- Avoid route moves unless the release is specifically a route architecture release.
-- Continue building toward v6.0 Request Engine.
+- Time off requests
+- VOT requests
+- Request reasons
+- Hour calculations
+- Approval workflow
 
+## v7.x Staffing and Assignment Era
 
-## Current: v5.1.0 — Request & Approval Engine
+- Staffing engine
+- Coverage calculations
+- Post/seat assignment foundations
 
-Request and approval workflows are now the active milestone. The engine unifies time off, sick, comp, training, trades, voluntary overtime, and profile/data-change requests.
+## v8.x Mandation Era
 
-Next consolidated milestone: v5.1.0 — Staffing Engine.
+- Mandation queue
+- Rules/exceptions
+- Fairness and audit history
 
-# Signal Schedule Roadmap — Revised after v5.1.0
+## v9.x Publishing Era
 
-## Completed
+- Draft/published versions
+- Snapshots
+- Rollback
 
-### v4.0–v4.3 — Planning & Forecast Foundation
-- Coverage foundations.
-- Forecast horizon.
-- Employee preferences, availability, restrictions.
-- View-as employee foundation.
+## v10.x Portal Era
 
-### v4.4–v4.7 — Persistence, Publishing & History
-- Database-backed snapshot storage.
-- Save/load foundation.
-- Publishing.
-- Schedule History.
-- One Agency / One Living Schedule / Many Snapshots.
-
-### v5.1.0 — Employee Experience & Data Tools
-- Employee experience foundation.
-- Admin = Employee + More role-inheritance rule.
-- Data Tools page.
-- Templates/imports/exports foundation.
-- Employee profile extras and notification preferences schema.
-
-## Active Roadmap
-
-### v5.1.0 — Request & Approval Engine
-- Vacation, sick, training, comp, trades, and voluntary OT requests.
-- Approvals, reason codes, notifications, and request history.
-
-### v5.1.0 — Staffing Engine
-- Coverage, assignments, open slots, OT opportunities, VOT, callback lists, mandation, fairness, and explainability.
-
-### v5.2.0 — Rules & Intelligence
-- Rules engine, notifications, analytics, fatigue, integrity checker, explainability, and forecasting.
-
-### v5.3.0 — Time Clock & Attendance
-- Clock in/out, meal/break tracking, timecards, exceptions, approvals, and payroll-prep exports.
-
-### v5.4.0 — Events & Development
-- Training, conferences, outreach opportunities, certifications, committees, mentorship, promotion packets, and career accomplishments.
-
-### v5.5.0 — Navigation & UX Consolidation
-- Task-based navigation, search, favorites, recent pages, mobile improvements, unified employee/admin experience.
-
-### v6.0.0 — Public Beta
-
-## Architecture Principles
-
-- Admin = Employee + More.
-- One Agency / One Living Schedule / Many Snapshots.
-- Scheduling answers who should work. Attendance answers who actually worked. Development answers how people are growing.
-- Signal Schedule becomes the operational memory of the agency.
+- Employee, supervisor, scheduler, and administrator surfaces.

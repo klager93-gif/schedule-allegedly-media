@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/pages/requests/request-engine.js
-Version: v5.3.0
+Version: v5.4.0
 Purpose: Render Request & Approval Engine foundation preview.
 */
 const $ = (selector) => document.querySelector(selector);

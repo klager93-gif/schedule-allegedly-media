@@ -1,22 +1,21 @@
-# Build Manifest — Signal Schedule v5.3.0
+# Build Manifest
 
-## Release
+Version: v5.4.0
+Release: Configuration & Registry Foundation
+Date: 2026-06-15
+Package: schedule-allegedly-media-v5.4.0-configuration-registry.zip
 
-Signal Schedule v5.3.0 — Metadata Stability & Validation
+## Scope
 
-## Key changes
+- Configuration and registry foundation
+- Central navigation registry
+- Central route registry
+- Feature, role, and status registries
+- Metadata validation
 
-- Added `assets/release-metadata.js` as a central client-side release metadata source.
-- Updated `app-shell.js` to consume shared metadata and default to v5.3.0.
-- Updated footer component default metadata to v5.3.0.
-- Refreshed HTML cache-busting and data-version markers to v5.3.0.
-- Added metadata validation documentation.
-- Updated standards to require footer/header/version metadata checks before release.
+## Exclusions
 
-## Validation
-
-- No macOS metadata files included.
-- No missing local HTML links found.
-- No missing JavaScript imports found.
-- Footer/header/homepage metadata checked.
-- No database migration required.
+- No `.git/`
+- No macOS metadata files
+- No database migrations
+- No HTML route moves

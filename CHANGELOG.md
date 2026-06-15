@@ -1,8 +1,17 @@
-## v5.3.0 — Metadata Stability & Validation
+## v5.4.0 — Configuration & Registry Foundation
+Date: 2026-06-15
+
+- Added release, route, navigation, configuration, feature, role, and status registries under `/assets/`.
+- Updated `app-shell.js` to consume the navigation registry instead of owning the full navigation map inline.
+- Updated footer metadata fallback to remain aligned with the central release metadata source.
+- Added registry scripts to Schedule HTML routes without moving existing route files.
+- Regenerated manifests, checksums, and validation report.
+
+## v5.4.0 — Configuration & Registry Foundation
 
 - Added a central client-side release metadata source at `assets/release-metadata.js`.
 - Updated app shell and footer version handling to reduce footer/header drift.
-- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.3.0.
+- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.4.0.
 - Added metadata validation documentation and strengthened release standards.
 - Regenerated file manifests and SHA256 checksums.
 - No database changes.

@@ -2,15 +2,15 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/app-shell.js
-Version: v5.3.0
-Purpose: Desktop application shell, role-inheritance navigation, connected flyout navigation, app-styled controls, publishing navigation, dense workspace defaults, and client-side theme engine.
+Version: v5.4.0
+Purpose: Desktop application shell using release, route, navigation, config, feature, role, and status registries.
 */
 (function () {
   const body = document.body;
   if (!body || body.dataset.signalArea !== 'Signal Schedule') return;
 
   const releaseMeta = window.SIGNAL_SCHEDULE_RELEASE || {};
-  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.3.0';
+  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.4.0';
   const releaseStatus = releaseMeta.status || 'Foundation';
   const title = body.dataset.signalTitle || document.title.replace('— Signal Schedule', '').trim() || 'Signal Schedule';
   const themeKey = 'signalScheduleTheme';
@@ -55,52 +55,8 @@ Purpose: Desktop application shell, role-inheritance navigation, connected flyou
     const linkPrefix = schedulePath.startsWith('employee/') ? '../' : '';
     const existing = Array.from(linksWrap.querySelectorAll('a'));
     const byHref = new Map(existing.map((a) => [a.getAttribute('href'), a]));
-    const linkLabels = {
-      'index.html': 'Overview',
-      'workspace.html': 'Scheduling Workspace',
-      'builder.html': 'Schedule Builder',
-      'schedule.html': 'Calendar',
-      'weekly-board.html': 'Weekly View',
-      'daily-board.html': 'Daily Board',
-      'employees.html': 'Employees',
-      'profile.html': 'Profile',
-      'timeline.html': 'Timeline',
-      'supervisors.html': 'Supervisors',
-      'seniority.html': 'Seniority & Rotation',
-      'qualifications.html': 'Qualifications',
-      'training.html': 'Training & Certs',
-      'eligibility.html': 'Eligibility',
-      'availability.html': 'Availability & Preferences',
-      'assignments.html': 'Assignments',
-      'assignment-generator.html': 'Assignment Generator',
-      'draft-planning.html': 'Draft Planning',
-      'planning.html': 'Planning Forecast',
-      'publishing.html': 'Publishing',
-      'history.html': 'Schedule History',
-      'data-tools.html': 'Data Tools',
-      'conflict-detection.html': 'Conflict Detection',
-      'coverage.html': 'Coverage Board',
-      'coverage-spots.html': 'Coverage Spots',
-      'staffing.html': 'Minimum Staffing',
-      'staffing-engine.html': 'Staffing Engine',
-      'requests.html': 'Request Engine',
-      'leave.html': 'Leave Requests',
-      'leave-banks.html': 'Leave Banks',
-      'open-shifts.html': 'Open Shifts',
-      'ot-volunteer-board.html': 'OT Volunteer Board',
-      'shift-trades.html': 'Shift Trades',
-      'trades.html': 'Trades Compatibility',
-      'approvals.html': 'Approvals',
-      'mandation.html': 'Mandation',
-      'permissions.html': 'Permissions',
-      'notifications.html': 'Notifications',
-      'shortcodes.html': 'Shortcodes',
-      'benefits.html': 'Benefit Ledger',
-      'visibility.html': 'Visibility & Privacy',
-      'reports.html': 'Reports',
-      'settings.html': 'Settings',
-      'employee/index.html': 'Employee Portal'
-    };
+    const navigationRegistry = window.SIGNAL_SCHEDULE_NAVIGATION || {};
+    const linkLabels = navigationRegistry.labels || {};
     const makeNavLink = (href) => {
       const resolvedHref = resolveScheduleHref(href, linkPrefix);
       const found = byHref.get(href) || byHref.get(resolvedHref);
@@ -110,17 +66,7 @@ Purpose: Desktop application shell, role-inheritance navigation, connected flyou
       a.textContent = linkLabels[href] || href.replace('.html', '').replace(/-/g, ' ');
       return a;
     };
-    const groups = [
-      { label: 'Me', href: 'employee/index.html', icon: '◉', children: ['employee/index.html', 'employee/calendar.html', 'employee/requests.html', 'employee/profile.html', 'notifications.html'] },
-      { label: 'Scheduling', href: 'builder.html', icon: '▣', children: ['builder.html', 'workspace.html', 'history.html', 'publishing.html', 'weekly-board.html', 'daily-board.html', 'schedule.html', 'planning.html', 'draft-planning.html'] },
-      { label: 'Staffing', href: 'staffing-engine.html', icon: '▥', children: ['staffing-engine.html', 'coverage.html', 'coverage-spots.html', 'staffing.html', 'assignments.html', 'assignment-generator.html', 'conflict-detection.html'] },
-      { label: 'Personnel', href: 'employees.html', icon: '👥', children: ['employees.html', 'profile.html', 'timeline.html', 'supervisors.html', 'seniority.html', 'qualifications.html', 'training.html', 'eligibility.html', 'availability.html'] },
-      { label: 'Requests', href: 'requests.html', icon: '✎', children: ['requests.html', 'approvals.html', 'leave.html', 'leave-banks.html', 'shift-trades.html'] },
-      { label: 'Overtime', href: 'open-shifts.html', icon: '⏱', children: ['open-shifts.html', 'ot-volunteer-board.html', 'mandation.html'] },
-      { label: 'Administration', href: 'settings.html', icon: '⚙', children: ['settings.html', 'data-tools.html', 'permissions.html', 'visibility.html', 'notifications.html', 'shortcodes.html', 'benefits.html'] },
-      { label: 'Reports', href: 'reports.html', icon: '◴' },
-      { label: 'System', href: 'settings.html', icon: '⌁', children: ['settings.html', 'data-tools.html', 'reports.html'] }
-    ];
+    const groups = navigationRegistry.groups || [];
 
     linksWrap.innerHTML = '';
     nav.classList.add('schedule-subnav--flyout');

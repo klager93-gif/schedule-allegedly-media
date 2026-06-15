@@ -1,0 +1,56 @@
+/*
+Signal Labs
+Area: Signal Schedule
+File: assets/routes.js
+Version: v5.4.0
+Purpose: Central route registry for standalone Signal Schedule navigation and future route moves.
+*/
+window.SIGNAL_SCHEDULE_ROUTES = Object.freeze({
+  home: 'index.html',
+  workspace: 'workspace.html',
+  builder: 'builder.html',
+  calendar: 'schedule.html',
+  weeklyBoard: 'weekly-board.html',
+  dailyBoard: 'daily-board.html',
+  employees: 'employees.html',
+  profile: 'profile.html',
+  timeline: 'timeline.html',
+  supervisors: 'supervisors.html',
+  seniority: 'seniority.html',
+  qualifications: 'qualifications.html',
+  training: 'training.html',
+  eligibility: 'eligibility.html',
+  availability: 'availability.html',
+  assignments: 'assignments.html',
+  assignmentGenerator: 'assignment-generator.html',
+  draftPlanning: 'draft-planning.html',
+  planning: 'planning.html',
+  publishing: 'publishing.html',
+  history: 'history.html',
+  dataTools: 'data-tools.html',
+  conflictDetection: 'conflict-detection.html',
+  coverage: 'coverage.html',
+  coverageSpots: 'coverage-spots.html',
+  staffing: 'staffing.html',
+  staffingEngine: 'staffing-engine.html',
+  requests: 'requests.html',
+  leave: 'leave.html',
+  leaveBanks: 'leave-banks.html',
+  openShifts: 'open-shifts.html',
+  otVolunteerBoard: 'ot-volunteer-board.html',
+  shiftTrades: 'shift-trades.html',
+  trades: 'trades.html',
+  approvals: 'approvals.html',
+  mandation: 'mandation.html',
+  permissions: 'permissions.html',
+  notifications: 'notifications.html',
+  shortcodes: 'shortcodes.html',
+  benefits: 'benefits.html',
+  visibility: 'visibility.html',
+  reports: 'reports.html',
+  settings: 'settings.html',
+  employeePortal: 'employee/index.html',
+  employeeCalendar: 'employee/calendar.html',
+  employeeRequests: 'employee/requests.html',
+  employeeProfile: 'employee/profile.html'
+});

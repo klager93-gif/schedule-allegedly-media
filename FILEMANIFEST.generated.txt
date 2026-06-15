@@ -3,7 +3,10 @@
 ADMIN_CHANGELOG.md
 BUILDMANIFEST.md
 CHANGELOG.md
+FILEMANIFEST.generated.txt
+FILEMANIFEST.md
 HOWTO.md
+LATEST_RELEASE.md
 MASTER-CHANGELOG.md
 PUBLIC_CHANGELOG.md
 README.md
@@ -134,11 +137,17 @@ api/coolify/sql/047_staffing_engine_schema.sql
 app-shell.css
 app-shell.js
 approvals.html
+assets/config.js
+assets/features.js
 assets/icons/apple-touch-icon.png
 assets/icons/favicon.ico
 assets/icons/favicon.svg
 assets/icons/site.webmanifest
+assets/navigation.js
 assets/release-metadata.js
+assets/roles.js
+assets/routes.js
+assets/status.js
 assets/themes/cad.css
 assets/themes/high-contrast.css
 assets/themes/light.css
@@ -212,6 +221,7 @@ data-tools.html
 docs/README.md
 docs/architecture/FILE_ORGANIZATION.md
 docs/architecture/METADATA-VALIDATION.md
+docs/architecture/REGISTRY-FOUNDATION.md
 docs/audits/ALPHA-INTEGRATION-AUDIT.md
 docs/engines/REQUEST-APPROVAL-ENGINE.md
 docs/engines/SCHEDULE-HISTORY-SNAPSHOT-ENGINE.md

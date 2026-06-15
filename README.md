@@ -1,28 +1,21 @@
-# Signal Schedule v5.3.0
+# Signal Schedule
 
-Signal Schedule is the scheduling, staffing, employee experience, and operational-memory system for public-safety-style agencies.
+Standalone repository for Signal Schedule.
 
-## Current release
+Current version: v5.4.0 — Configuration & Registry Foundation
 
-Signal Schedule v5.3.0 — Metadata Stability & Validation.
+Live domain: https://schedule.allegedly-media.com
 
-## Current foundations
+## Current foundation
 
-- Standalone repository and standalone deployment at `schedule.allegedly-media.com`.
-- One Agency / One Living Schedule / Many Snapshots.
-- Schedule History and snapshot storage.
-- Request, staffing, employee experience, and data tools foundations.
-- Central client-side release metadata source for app shell/footer consistency.
-- Release validation standards for footer/header/version/cache metadata.
+- Standalone root deployment
+- Schedule-specific assets/components/docs
+- Central release metadata
+- Route registry
+- Navigation registry
+- Configuration registry
+- Feature, role, and status registries
 
-## v5.3.0 files of interest
+## Deployment notes
 
-- `assets/release-metadata.js`
-- `app-shell.js`
-- `components/footer.js`
-- `docs/architecture/METADATA-VALIDATION.md`
-- `VALIDATION.md`
-
-## Database
-
-No database migration is required for v5.3.0.
+This is currently a static HTML/CSS/JS deployment. No database migration is required for v5.4.0.

@@ -152,3 +152,20 @@ Route validation
 ```
 
 Cosmetic metadata drift does not require an emergency hotfix, but it must be corrected in the next natural release.
+
+
+## Registry First Rule
+
+When changing shared release metadata, navigation, route paths, feature flags, roles, status labels, or default configuration, update the relevant registry file first.
+
+Registry files currently include:
+
+- `assets/release-metadata.js`
+- `assets/routes.js`
+- `assets/navigation.js`
+- `assets/config.js`
+- `assets/features.js`
+- `assets/roles.js`
+- `assets/status.js`
+
+Do not hardcode new shared navigation or metadata in individual pages unless there is a documented reason.
