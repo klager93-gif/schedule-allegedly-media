@@ -1,14 +1,18 @@
 # Signal Schedule
 
-Standalone scheduling platform foundation for public safety, dispatch, fire, EMS, corrections, nursing, and similar operations.
+Current release: **v5.12.0 — Visibility & View Engine**.
 
-Current release: **v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo**.
+Signal Schedule is a standalone scheduling platform foundation for public safety and shift-based teams.
 
-Key foundations now include standalone deployment, route/navigation registries, page architecture, request/leave/approval foundations, SQL audit documentation, and preview identity/login screens.
+## Current foundations
 
+- Standalone repository and domain
+- Route, navigation, config, feature, role, and status registries
+- Identity/login foundation
+- Agency setup wizard foundation
+- Request, leave bank, approval, and SQL audit foundations
+- Visibility and View Engine foundation
 
-## v5.11.0 Note — Agency Setup Wizard & Sanitized Identity Demo
+## Demo data
 
-- Use fictional demo agencies and users in Schedule UI/demo data unless explicitly requested otherwise.
-- First-login agency administrators should land in Agency Setup Wizard foundation before normal dashboard use.
-- Login/identity pages should use balanced software-style cards rather than oversized documentation placeholders.
+Demo identity and agency references use fictional sample data only.

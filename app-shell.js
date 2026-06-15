@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: app-shell.js
-Version: v5.11.0
+Version: v5.12.0
 Purpose: Desktop application shell using release, route, navigation, config, feature, role, status, and page architecture registries.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
   if (!body || body.dataset.signalArea !== 'Signal Schedule') return;
 
   const releaseMeta = window.SIGNAL_SCHEDULE_RELEASE || {};
-  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.11.0';
+  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.12.0';
   const releaseStatus = releaseMeta.status || 'Foundation';
   const title = body.dataset.signalTitle || document.title.replace('— Signal Schedule', '').trim() || 'Signal Schedule';
   const themeKey = 'signalScheduleTheme';
@@ -249,12 +249,22 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
           <span class="schedule-footer__title">Signal Schedule • ${version}</span>
           <span class="schedule-footer__meta">Built by Signal Labs</span>
         </div>
+        <div class="schedule-footer__identity" aria-label="Current preview user">${getFooterIdentity()}</div>
         <nav class="schedule-footer__links" aria-label="Schedule footer links">
           <a href="/README.md">Docs</a><span class="schedule-footer__dot">•</span>
           <a href="/ROADMAP.md">Roadmap</a><span class="schedule-footer__dot">•</span>
           <a href="/CHANGELOG.md">Changelog</a>
         </nav>
       </div>`;
+  }
+
+
+  function getFooterIdentity() {
+    const current = window.SIGNAL_SCHEDULE_CURRENT_USER || {};
+    const name = current.displayName || 'Jordan Miller';
+    const roles = Array.isArray(current.roles) && current.roles.length ? current.roles.join(' / ') : 'Administrator';
+    const agency = current.agencyName || 'City of Fairview';
+    return `<span>${escapeHtml(roles)}</span><span class="schedule-footer__dot">•</span><span>${escapeHtml(name)}</span><span class="schedule-footer__dot">•</span><span>${escapeHtml(agency)}</span>`;
   }
 
 

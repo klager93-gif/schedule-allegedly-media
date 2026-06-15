@@ -1,18 +1,9 @@
-# HOWTO
+# Signal Schedule HOWTO
 
-Use the static Schedule foundation by opening `index.html` or deploying the repository as a static site.
+## Deploy
 
-## v5.10 Identity Preview
+Copy this full replacement package into the `schedule-allegedly-media` repository root, commit, push, and let Coolify deploy.
 
-- Login preview: `/pages/identity/login.html`
-- Current user preview: `/pages/identity/current-user.html`
-- Preview data: `/data/current-user-preview.json`
+## v5.12 Preview
 
-The login foundation is not live authentication. It is a frontend and architecture preview for future backend-connected identity work.
-
-
-## v5.11.0 Note — Agency Setup Wizard & Sanitized Identity Demo
-
-- Use fictional demo agencies and users in Schedule UI/demo data unless explicitly requested otherwise.
-- First-login agency administrators should land in Agency Setup Wizard foundation before normal dashboard use.
-- Login/identity pages should use balanced software-style cards rather than oversized documentation placeholders.
+Open `/pages/settings/view-engine.html` to review the Visibility & View Engine foundation.

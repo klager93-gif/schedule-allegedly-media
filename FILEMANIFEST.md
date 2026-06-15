@@ -1,6 +1,4 @@
-# File Manifest — v5.11.0
-
-Total files: 465
+# File Manifest — v5.12.0
 
 - `.gitattributes`
 - `.gitignore`
@@ -219,6 +217,7 @@ Total files: 465
 - `data/staffing-engine-preview.json`
 - `data/supervisor-hierarchy-preview.json`
 - `data/training-certifications-preview.json`
+- `data/view-engine-preview.json`
 - `data/visibility-privacy-preview.json`
 - `data/vot-requests-preview.json`
 - `data/weekly-board-preview.json`
@@ -250,6 +249,7 @@ Total files: 465
 - `docs/foundation/REQUEST-FOUNDATION-v5.7.md`
 - `docs/foundation/REQUEST-HOURS-FOUNDATION.md`
 - `docs/foundation/SAVED-SCHEDULES-FOUNDATION.md`
+- `docs/foundation/VISIBILITY-VIEW-ENGINE-v5.12.md`
 - `docs/hotfixes/EMPLOYEE-PORTAL-NAVIGATION-HOTFIX.md`
 - `docs/migrations/STANDALONE-MIGRATION.md`
 - `docs/releases/LATEST_RELEASE.md`
@@ -348,6 +348,7 @@ Total files: 465
 - `pages/rules/shortcodes.html`
 - `pages/rules/shortcodes.js`
 - `pages/settings/settings.html`
+- `pages/settings/view-engine.html`
 - `pages/settings/visibility.css`
 - `pages/settings/visibility.html`
 - `pages/settings/visibility.js`

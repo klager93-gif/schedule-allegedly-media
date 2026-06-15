@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/app-shell.css
-Version: v5.11.0
+Version: v5.12.0
 Purpose: Desktop-first application shell, theme tokens, and connected flyout navigation for all Schedule pages.
 */
 :root,
@@ -892,3 +892,17 @@ body[data-signal-area="Signal Schedule"] .schedule-footer__dot {
     flex-direction: column !important;
   }
 }
+
+
+/* v5.12 Visibility & View Engine helpers */
+body[data-signal-area="Signal Schedule"] .schedule-footer__identity{display:flex;align-items:center;gap:10px;color:var(--ss-app-muted);font-size:.88rem;white-space:nowrap;}
+body[data-signal-area="Signal Schedule"] .view-engine-board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
+body[data-signal-area="Signal Schedule"] .view-engine-card{border:1px solid var(--ss-app-border);border-radius:14px;background:rgba(255,255,255,.035);padding:16px;}
+body[data-signal-area="Signal Schedule"] .view-engine-card strong{display:block;font-size:1.8rem;margin-bottom:4px;}
+body[data-signal-area="Signal Schedule"] .layer-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+body[data-signal-area="Signal Schedule"] .layer-pill{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--ss-app-border);border-radius:12px;padding:12px;background:rgba(255,255,255,.035);}
+body[data-signal-area="Signal Schedule"] .layer-toggle{width:42px;height:22px;border-radius:999px;background:#2563eb;box-shadow:inset 20px 0 0 rgba(255,255,255,.35);}
+body[data-signal-area="Signal Schedule"] .filter-chip-grid{display:flex;flex-wrap:wrap;gap:8px;}
+body[data-signal-area="Signal Schedule"] .filter-chip{border:1px solid var(--ss-app-border);border-radius:999px;padding:7px 10px;background:rgba(255,255,255,.04);font-weight:800;font-size:.82rem;}
+@media (max-width:1100px){body[data-signal-area="Signal Schedule"] .view-engine-board,body[data-signal-area="Signal Schedule"] .layer-grid{grid-template-columns:repeat(2,minmax(0,1fr));}body[data-signal-area="Signal Schedule"] .schedule-footer__identity{white-space:normal;}}
+@media (max-width:700px){body[data-signal-area="Signal Schedule"] .view-engine-board,body[data-signal-area="Signal Schedule"] .layer-grid{grid-template-columns:1fr;}}

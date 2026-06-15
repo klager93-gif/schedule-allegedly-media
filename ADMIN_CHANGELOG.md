@@ -1,4 +1,4 @@
-# v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
+# v5.12.0 — Visibility & View Engine
 
 - Staged login and current-user pages.
 - Added identity navigation and route registry entries.
@@ -6,7 +6,7 @@
 
 # Admin Changelog
 
-## v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
+## v5.12.0 — Visibility & View Engine
 
 - Added approval foundation data and decision model preview.
 - Added database naming contract for core identity versus schedule module tables.
@@ -16,7 +16,7 @@
 - Refreshed release metadata, cache busting, manifests, and validation.
 
 
-## v5.11.0 — Leave Banks & Data Layer Cleanup
+## v5.12.0 — Leave Banks & Data Layer Cleanup
 
 - Added leave bank transaction and adjustment foundation structures.
 - Added `assets/data-loader.js` fallback helpers.

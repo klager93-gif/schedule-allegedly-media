@@ -1,19 +1,16 @@
-# Build Manifest — v5.11.0
+# Build Manifest — v5.12.0
 
-Release: Agency Setup Wizard & Sanitized Identity Demo
-Date: 2026-06-15
-Package: schedule-allegedly-media-v5.11.0-agency-setup-sanitized-demo.zip
+Package: schedule-allegedly-media-v5.12.0-visibility-view-engine.zip
 
-Included:
-- Login layout cleanup
-- Agency Setup Wizard foundation
-- Sanitized fictional demo identity and agency data
-- Route/navigation registry updates
-- Updated manifests/checksums
+## Included
 
-Validation:
-- No macOS metadata files
-- No missing local HTML links
-- No missing JavaScript imports
-- No real personal or real-customer demo references
-- No live database changes
+- Visibility & View Engine foundation
+- Agency day-start setting foundation
+- Calendar layers and saved views
+- Footer identity preview
+- Route/navigation/config/feature registry updates
+- Refreshed docs/manifests/checksums
+
+## Database
+
+No database changes.

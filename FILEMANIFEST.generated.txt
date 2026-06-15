@@ -215,6 +215,7 @@ data/shift-trades-preview.json
 data/staffing-engine-preview.json
 data/supervisor-hierarchy-preview.json
 data/training-certifications-preview.json
+data/view-engine-preview.json
 data/visibility-privacy-preview.json
 data/vot-requests-preview.json
 data/weekly-board-preview.json
@@ -246,6 +247,7 @@ docs/foundation/PUBLISHING-FOUNDATION.md
 docs/foundation/REQUEST-FOUNDATION-v5.7.md
 docs/foundation/REQUEST-HOURS-FOUNDATION.md
 docs/foundation/SAVED-SCHEDULES-FOUNDATION.md
+docs/foundation/VISIBILITY-VIEW-ENGINE-v5.12.md
 docs/hotfixes/EMPLOYEE-PORTAL-NAVIGATION-HOTFIX.md
 docs/migrations/STANDALONE-MIGRATION.md
 docs/releases/LATEST_RELEASE.md
@@ -344,6 +346,7 @@ pages/rules/shortcodes.css
 pages/rules/shortcodes.html
 pages/rules/shortcodes.js
 pages/settings/settings.html
+pages/settings/view-engine.html
 pages/settings/visibility.css
 pages/settings/visibility.html
 pages/settings/visibility.js

@@ -1,8 +1,5 @@
 # Latest Release
 
-## Signal Schedule v5.11.0 — Agency Setup Wizard & Sanitized Identity Demo
+## Signal Schedule v5.12.0 — Visibility & View Engine
 
-Adds the first-login Agency Setup Wizard foundation, improves the login page layout, and sanitizes demo identity/agency data to avoid real personal or customer references.
-
-Status: Foundation
-Date: 2026-06-15
+Adds role-aware visibility foundations, calendar day-start settings, saved views, filters, calendar layers, and footer identity preview.

@@ -1,0 +1,46 @@
+{
+  "agencySettings": {
+    "dayStartsAt": "05:00",
+    "dayEndsAt": "04:59",
+    "weekStartsOn": "Sunday",
+    "timeFormat": "24-hour",
+    "defaultView": "Week"
+  },
+  "calendarLayers": [
+    "Employees",
+    "Requests",
+    "Training",
+    "Overtime",
+    "Coverage",
+    "Posts",
+    "Vacancies",
+    "Annotations"
+  ],
+  "employeeFilters": [
+    "Hide trainees",
+    "Hide administrators",
+    "Hide supervisors",
+    "Hide inactive employees",
+    "Show probationary employees",
+    "Show employees on leave"
+  ],
+  "savedViews": [
+    "Dispatch View",
+    "Supervisor View",
+    "Training View",
+    "Overtime View",
+    "Coverage View"
+  ],
+  "colorBy": [
+    "Shift group",
+    "Role",
+    "Post",
+    "Request type",
+    "Qualification",
+    "Employee"
+  ],
+  "notes": [
+    "A Schedule day may run 05:00-04:59 instead of midnight-to-midnight.",
+    "Layers behave like map/CAD layers and can be saved per user or agency view."
+  ]
+}

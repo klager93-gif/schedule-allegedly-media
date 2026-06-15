@@ -1,16 +1,22 @@
-# Validation Report — v5.11.0
+# Validation Report — v5.12.0
 
-Release: Agency Setup Wizard & Sanitized Identity Demo
+## Scope
 
-Checks performed:
+Visibility & View Engine foundation.
 
-- No macOS metadata files.
-- No missing local HTML links.
-- No missing JavaScript imports.
-- Route registry targets checked.
-- Footer/header/homepage metadata checked.
-- Login layout reviewed for balanced card proportions.
-- Demo data sanitized: no Jordan Miller, Fairview, or fairview.example references.
-- Agency setup route added and registered.
-- No live authentication changes.
-- No database changes.
+## Checks
+
+- Local HTML links missing: 0
+- Route registry targets missing: 0
+- macOS metadata files: 0
+- Footer/header/homepage metadata checked: yes
+- Personal/real demo references checked: yes
+- Database changes: none
+
+## Missing link details
+
+[]
+
+## Missing route details
+
+[]

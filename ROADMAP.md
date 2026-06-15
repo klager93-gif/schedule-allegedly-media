@@ -1,6 +1,6 @@
 # Signal Schedule Roadmap
 
-## Completed Foundation
+## Completed
 
 - v5.1 Standalone split
 - v5.2 Repository organization
@@ -12,19 +12,13 @@
 - v5.8 Leave banks and data layer cleanup
 - v5.9 Approval foundation, SQL audit, and UI modernization
 - v5.10 Identity and login foundation
+- v5.11 Agency setup wizard and sanitized demo data
+- v5.12 Visibility and View Engine
 
 ## Next
 
-- v5.11 Agency Setup Wizard using City of Fairview as the canonical sample tenant
-- v5.12 Visibility Engine
-- v5.13 Open Shift / VOT Foundation
-- v5.14 Staffing Foundation
-- v5.15 Assignment / Publishing / Backend Readiness
+- v5.13 Operations Foundation: Open Shift/VOT, notifications, dashboard widgets
+- v5.14 Staffing & Assignment Foundation
+- v5.15 Publishing & Data Management
+- v5.16 Advanced Tools & Backend Readiness
 - v6.0 Multi-User Request Engine
-
-
-## v5.11.0 Note — Agency Setup Wizard & Sanitized Identity Demo
-
-- Use fictional demo agencies and users in Schedule UI/demo data unless explicitly requested otherwise.
-- First-login agency administrators should land in Agency Setup Wizard foundation before normal dashboard use.
-- Login/identity pages should use balanced software-style cards rather than oversized documentation placeholders.
