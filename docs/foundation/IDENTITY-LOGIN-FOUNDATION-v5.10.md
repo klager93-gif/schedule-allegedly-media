@@ -1,4 +1,4 @@
-# Signal Schedule v5.12.0 — Visibility & View Engine
+# Signal Schedule v5.13.0 — Visibility & View Engine
 
 This release adds the first-login and current-user foundation for future multi-user Schedule access.
 

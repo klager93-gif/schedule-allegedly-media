@@ -1,16 +1,19 @@
-# Build Manifest — v5.12.0
+# Build Manifest — Signal Schedule v5.13.0
 
-Package: schedule-allegedly-media-v5.12.0-visibility-view-engine.zip
+## Release
+
+Signal Schedule v5.13.0 — Dashboard & Clean Route Foundation
 
 ## Included
 
-- Visibility & View Engine foundation
-- Agency day-start setting foundation
-- Calendar layers and saved views
-- Footer identity preview
-- Route/navigation/config/feature registry updates
-- Refreshed docs/manifests/checksums
+- Dashboard as user-facing label for `index.html`
+- Dashboard nav group
+- Rebuilt dashboard landing page
+- Agency branding placeholder logo and registry
+- Clean route foundation docs
+- Updated route/navigation registries
+- Refreshed metadata, changelogs, manifests, checksums, and validation
 
-## Database
+## Validation
 
-No database changes.
+See `VALIDATION.md`.

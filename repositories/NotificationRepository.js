@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/repositories/NotificationRepository.js
-Version: v5.12.0
+Version: v5.13.0
 Purpose: Repository boundary for notification foundation data
 */
 import { fetchNotificationPreview } from '../adapters/JsonNotificationAdapter.js';

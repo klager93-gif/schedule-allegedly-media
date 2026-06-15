@@ -1,4 +1,13 @@
-# v5.12.0 — Visibility & View Engine
+# v5.13.0 — Dashboard & Clean Route Foundation
+
+- Added Dashboard as the user-facing landing page label for `index.html`.
+- Added Dashboard nav group.
+- Rebuilt root dashboard with mission-control cards, schedule overview, layer preview, quick actions, and agency branding placeholder.
+- Added fictional Fairview Public Safety placeholder agency logo and branding registry.
+- Added clean route foundation documentation for future app-style URLs.
+- Refreshed metadata, manifests, checksums, and validation.
+
+# v5.13.0 — Visibility & View Engine
 
 - Staged login and current-user pages.
 - Added identity navigation and route registry entries.
@@ -6,7 +15,7 @@
 
 # Admin Changelog
 
-## v5.12.0 — Visibility & View Engine
+## v5.13.0 — Visibility & View Engine
 
 - Added approval foundation data and decision model preview.
 - Added database naming contract for core identity versus schedule module tables.
@@ -16,7 +25,7 @@
 - Refreshed release metadata, cache busting, manifests, and validation.
 
 
-## v5.12.0 — Leave Banks & Data Layer Cleanup
+## v5.13.0 — Leave Banks & Data Layer Cleanup
 
 - Added leave bank transaction and adjustment foundation structures.
 - Added `assets/data-loader.js` fallback helpers.

@@ -1,22 +1,14 @@
-# Validation Report — v5.12.0
+# Validation — Signal Schedule v5.13.0
 
-## Scope
+## Results
 
-Visibility & View Engine foundation.
-
-## Checks
-
-- Local HTML links missing: 0
-- Route registry targets missing: 0
+- Missing local HTML links: 0
+- Missing JavaScript/import assets: 0
+- Missing route registry targets: 0
 - macOS metadata files: 0
-- Footer/header/homepage metadata checked: yes
-- Personal/real demo references checked: yes
+- Dashboard route/nav: checked
+- Footer/header/homepage metadata: checked
+- Fictional demo data: checked
 - Database changes: none
 
-## Missing link details
-
-[]
-
-## Missing route details
-
-[]
+No blocking validation errors found.

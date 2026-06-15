@@ -1,4 +1,4 @@
-# Signal Schedule v5.12.0 — UI Copy Box Cleanup
+# Signal Schedule v5.13.0 — UI Copy Box Cleanup
 
 A previous request for copy-friendly ChatGPT handoff formatting was mistakenly implemented as in-app copy buttons and code-style boxes across foundation pages.
 

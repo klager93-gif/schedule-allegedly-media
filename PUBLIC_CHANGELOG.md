@@ -1,10 +1,19 @@
-# v5.12.0 — Visibility & View Engine
+# v5.13.0 — Dashboard & Clean Route Foundation
+
+- Added Dashboard as the user-facing landing page label for `index.html`.
+- Added Dashboard nav group.
+- Rebuilt root dashboard with mission-control cards, schedule overview, layer preview, quick actions, and agency branding placeholder.
+- Added fictional Fairview Public Safety placeholder agency logo and branding registry.
+- Added clean route foundation documentation for future app-style URLs.
+- Refreshed metadata, manifests, checksums, and validation.
+
+# v5.13.0 — Visibility & View Engine
 
 Signal Schedule now includes a preview login experience and current-user model for future multi-user access.
 
 # Public Changelog
 
-## v5.12.0 — Visibility & View Engine
+## v5.13.0 — Visibility & View Engine
 
 - Added approval foundation data and decision model preview.
 - Added database naming contract for core identity versus schedule module tables.
@@ -14,7 +23,7 @@ Signal Schedule now includes a preview login experience and current-user model f
 - Refreshed release metadata, cache busting, manifests, and validation.
 
 
-## v5.12.0 — Leave Banks & Data Cleanup
+## v5.13.0 — Leave Banks & Data Cleanup
 
 - Improved leave bank preview pages.
 - Added clearer balance, transaction, and adjustment foundations.

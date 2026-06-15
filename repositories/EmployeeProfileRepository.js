@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/repositories/EmployeeProfileRepository.js
-Version: v5.12.0
+Version: v5.13.0
 Purpose: Repository boundary for employee profile self-service data
 */
 import { fetchEmployeeProfilePreview } from '../adapters/JsonEmployeeProfileAdapter.js';

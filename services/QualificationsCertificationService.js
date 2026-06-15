@@ -1,6 +1,6 @@
 /*
 Signal Labs Tool File: schedule/services/QualificationsCertificationService.js
-Version: v5.12.0
+Version: v5.13.0
 Purpose: Qualifications & Certification Engine preview service and role visibility helpers.
 */
 export class QualificationsCertificationService {

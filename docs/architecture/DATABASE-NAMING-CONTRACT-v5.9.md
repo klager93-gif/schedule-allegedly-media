@@ -1,4 +1,4 @@
-# Signal Schedule v5.12.0 — Database Naming Contract
+# Signal Schedule v5.13.0 — Database Naming Contract
 
 ## Purpose
 

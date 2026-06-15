@@ -1,17 +1,13 @@
 .gitattributes
 .gitignore
 ADMIN_CHANGELOG.md
-BUILDMANIFEST.md
 CHANGELOG.md
-FILEMANIFEST.generated.txt
-FILEMANIFEST.md
 HOWTO.md
 LATEST_RELEASE.md
 MASTER-CHANGELOG.md
 PUBLIC_CHANGELOG.md
 README.md
 ROADMAP.md
-SHA256SUMS.txt
 STANDARDS.md
 VALIDATION.md
 adapters/JsonAssignmentEngineAdapter.js
@@ -137,6 +133,8 @@ api/coolify/sql/046_request_approval_engine_schema.sql
 api/coolify/sql/047_staffing_engine_schema.sql
 app-shell.css
 app-shell.js
+assets/agency-branding.js
+assets/agency-logo.svg
 assets/config.js
 assets/data-loader.js
 assets/features.js
@@ -221,6 +219,7 @@ data/vot-requests-preview.json
 data/weekly-board-preview.json
 data/workspace-foundation-preview.json
 docs/README.md
+docs/architecture/CLEAN-ROUTE-FOUNDATION.md
 docs/architecture/DATABASE-NAMING-CONTRACT-v5.9.md
 docs/architecture/FILE_ORGANIZATION.md
 docs/architecture/IDENTITY-SESSION-CONTRACT-v5.10.md
@@ -235,6 +234,7 @@ docs/audits/SQL-AUDIT-v5.9.md
 docs/engines/REQUEST-APPROVAL-ENGINE.md
 docs/engines/SCHEDULE-HISTORY-SNAPSHOT-ENGINE.md
 docs/engines/STAFFING-ENGINE.md
+docs/foundation/AGENCY-BRANDING-FOUNDATION.md
 docs/foundation/CALENDAR-FOUNDATION.md
 docs/foundation/EMPLOYEE-EXPERIENCE-DATA-TOOLS.md
 docs/foundation/EMPLOYEE-IDENTITY-FOUNDATION.md

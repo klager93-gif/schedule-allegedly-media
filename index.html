@@ -1,62 +1,27 @@
-<!--
-Signal Labs
-Area: Signal Schedule
-File: index.html
-Version: v5.12.0
-Purpose: Desktop application overview for Signal Schedule.
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signal Schedule — Desktop Workspace</title>
-<meta name="description" content="Desktop-first scheduling workspace for staffing, assignments, coverage, requests, approvals, seniority, mandation, and qualifications.">
-<link rel="stylesheet" href="/app-shell.css?v=5.12.0">
-<link rel="stylesheet" href="/pages/admin/foundation-admin.css?v=5.12.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signal Schedule | Dashboard</title>
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/app-shell.css?v=5.13.0" />
 </head>
-<body
-  data-signal-area="Signal Schedule"
-  data-signal-title="Overview"
-  data-signal-version="v5.12.0"
-  data-signal-description="Desktop-first Schedule workspace."
->
-<nav class="schedule-subnav" aria-label="Signal Schedule navigation"><div class="schedule-subnav__label"><span>Signal Schedule Navigation</span><span class="schedule-subnav__role">Role-based panels</span></div><div class="schedule-subnav__links"><a href="/index.html" aria-current="page">Overview</a><a href="/pages/employee/index.html" class="schedule-card"><strong>Employee Portal Preview</strong><span>View As employee/group/role/location/qualification preview for schedules, requests, OT, and profile.</span></a><a href="/pages/workspace/builder.html">Schedule Builder</a><a href="/pages/workspace/history.html">Schedule History</a><a href="/pages/workspace/workspace.html">Scheduling Workspace</a><a href="/pages/workspace/draft-planning.html">Draft Planning</a><a href="/pages/workspace/publishing.html">Publishing</a><a href="/pages/calendar/schedule.html">Calendar</a><a href="/pages/workspace/weekly-board.html">Weekly View</a><a href="/pages/workspace/daily-board.html">Daily Board</a><a href="/pages/people/employees.html">Employees</a><a href="/pages/people/profile.html">Profile</a><a href="/pages/people/timeline.html">Timeline</a><a href="/pages/people/supervisors.html">Supervisors</a><a href="/pages/people/seniority.html">Seniority & Rotation</a><a href="/pages/people/qualifications.html">Qualifications</a><a href="/pages/people/training.html">Training & Certs</a><a href="/pages/people/eligibility.html">Eligibility</a><a href="/pages/workspace/assignments.html">Assignments</a><a href="/pages/workspace/assignment-generator.html">Assignment Generator</a><a href="/pages/workspace/conflict-detection.html">Conflict Detection</a><a href="/pages/staffing/staffing.html">Minimum Staffing</a><a href="/pages/coverage/coverage.html">Coverage Board</a><a href="/pages/coverage/coverage-spots.html">Coverage Spots</a><a href="/pages/requests/approvals.html">Approvals</a><a href="/pages/requests/leave.html">Leave Requests</a><a href="/pages/requests/leave-banks.html">Leave Banks</a><a href="/pages/requests/open-shifts.html">Open Shifts</a><a href="/pages/requests/ot-volunteer-board.html">OT Volunteer Board</a><a href="/pages/requests/shift-trades.html">Shift Trades</a><a href="/pages/rules/mandation.html">Mandation</a><a href="/pages/rules/permissions.html">Permissions</a><a href="/pages/rules/notifications.html">Notifications</a><a href="/pages/settings/visibility.html">Visibility & Privacy</a><a href="/pages/rules/shortcodes.html">Shortcodes</a><a href="/pages/rules/benefits.html">Benefit Ledger</a><a href="/pages/reports/reports.html">Reports</a><a href="/pages/settings/settings.html">Settings</a></div></nav>
+<body>
+<div id="schedule-header"></div>
 
 <main class="schedule-shell schedule-dashboard">
-  <section class="schedule-hero schedule-hero--compact" aria-labelledby="scheduleTitle">
+  <section class="schedule-hero schedule-hero--compact" aria-labelledby="dashboardTitle">
     <div>
-      <p class="schedule-kicker">Signal Schedule Desktop</p>
-      <h1 id="scheduleTitle">Signal Schedule</h1>
-      <p class="schedule-subtitle">Operational scheduling workspace for coverage, assignments, requests, trades, mandation, seniority, qualifications, and audit-ready supervisor decisions.</p>
+      <p class="schedule-kicker">Signal Schedule Dashboard</p>
+      <h1 id="dashboardTitle">Dashboard</h1>
+      <p class="schedule-subtitle">Mission-control view for staffing, schedule health, requests, open shifts, calendar layers, and agency operations.</p>
     </div>
-    <div class="schedule-status-grid" aria-label="Workspace summary">
-      <div><strong>v5.12.0</strong><span>Identity Foundation</span></div>
-      <div><strong>35+</strong><span>Modules</span></div>
-      <div><strong>Desktop</strong><span>Primary UX</span></div>
-      <div><strong>Standalone</strong><span>Root Deploy</span></div>
-    </div>
-  </section>
-
-  <section class="schedule-card schedule-dashboard-grid" aria-labelledby="primaryWorkflows">
-    <div class="schedule-section-head">
-      <div>
-        <h2 id="primaryWorkflows">Primary Workflows</h2>
-        <p>Start from the operational screens supervisors will use most often.</p>
-      </div>
-    </div>
-    <div class="schedule-module-grid">
-      <a class="schedule-module-card is-primary" href="/pages/workspace/builder.html"><span>Schedule Builder</span><strong>Manual editable grid with validation and protected save-draft support.</strong></a>
-      <a class="schedule-module-card" href="/pages/workspace/history.html"><span>Schedule History</span><strong>Review snapshots, restore points, and published versions for the one living agency schedule.</strong></a>
-      <a class="schedule-module-card" href="/pages/workspace/workspace.html"><span>Scheduling Workspace</span><strong>Central grid, command toolbar, right inspector, and future draft planning surface.</strong></a>
-      <a class="schedule-module-card is-primary" href="/pages/workspace/weekly-board.html"><span>Weekly View</span><strong>Seven-day staffing grid with conflicts, open spots, leave, OT, and trades.</strong></a>
-      <a class="schedule-module-card" href="/pages/workspace/daily-board.html"><span>Daily Board</span><strong>One-day coverage and shift detail view.</strong></a>
-      <a class="schedule-module-card" href="/pages/workspace/assignments.html"><span>Assignments</span><strong>Assignment records by role, source, status, and coverage spot.</strong></a>
-      <a class="schedule-module-card" href="/pages/workspace/assignment-generator.html"><span>Assignment Generator</span><strong>Draft schedule generation preview before publish.</strong></a>
-      <a class="schedule-module-card is-primary" href="/pages/people/availability.html"><span>Availability & Preferences</span><strong>Employee availability, preferences, restrictions, and View As group filters.</strong></a>
-      <a class="schedule-module-card" href="/pages/workspace/conflict-detection.html"><span>Conflict Detection</span><strong>Double booking, rest, coverage, qualification, and leave conflicts.</strong></a>
-      <a class="schedule-module-card is-primary" href="/pages/workspace/publishing.html"><span>Publishing</span><strong>Draft-to-published schedule snapshots, readiness checks, rollback points, and employee visibility.</strong></a>
-      <a class="schedule-module-card" href="/pages/requests/approvals.html"><span>Approvals</span><strong>Request queues with authority and escalation rules.</strong></a>
+    <div class="schedule-status-grid" aria-label="Dashboard summary">
+      <div><strong>v5.13.0</strong><span>Dashboard Foundation</span></div>
+      <div><strong>05:00</strong><span>Operational Day Start</span></div>
+      <div><strong>8</strong><span>Calendar Layers</span></div>
+      <div><strong>Clean</strong><span>Route Planning</span></div>
     </div>
   </section>
 
@@ -64,33 +29,30 @@ Purpose: Desktop application overview for Signal Schedule.
     <section class="schedule-card">
       <div class="schedule-section-head">
         <div>
-          <h2>Staffing Controls</h2>
-          <p>Admin and supervisor foundations for building valid schedules.</p>
+          <h2>Agency Overview</h2>
+          <p>Fictional demo branding is shown here until an admin-level logo upload utility exists.</p>
         </div>
       </div>
-      <div class="schedule-table-list">
-        <a href="/pages/people/employees.html"><b>Employees</b><span>Identity, role, position, status, and employee records.</span></a>
-        <a href="/pages/coverage/coverage.html"><b>Coverage Board</b><span>Minimum/maximum staffing and role coverage status.</span></a>
-        <a href="/pages/coverage/coverage-spots.html"><b>Coverage Spots</b><span>Numbered staffing spots and open slot visibility.</span></a>
-        <a href="/pages/staffing/staffing.html"><b>Minimum Staffing</b><span>Role and time-block requirements.</span></a>
-        <a href="/pages/people/qualifications.html"><b>Qualifications</b><span>Licenses, certificates, expirations, and role requirements.</span></a>
-        <a href="/pages/people/availability.html"><b>Availability & Preferences</b><span>Availability windows, preference rules, restrictions, and builder warning inputs.</span></a>
+      <div class="schedule-rule-grid">
+        <div><img src="/assets/agency-logo.svg" alt="Fairview Public Safety placeholder logo" style="width:72px;height:72px;border-radius:18px;display:block;margin-bottom:12px;"><b>City of Fairview Public Safety</b><br><span>Demo agency branding placeholder.</span></div>
+        <div><b>Logged in as</b><br><span>Jordan Miller • Administrator • Scheduler</span></div>
+        <div><b>Current Agency</b><br><span>Fairview Public Safety</span></div>
+        <div><b>Setup Status</b><br><span>Agency setup wizard foundation ready.</span></div>
       </div>
     </section>
 
     <section class="schedule-card">
       <div class="schedule-section-head">
         <div>
-          <h2>Rules & Requests</h2>
-          <p>Policy-driven decisions with role-based panels and audit trails.</p>
+          <h2>Today at a Glance</h2>
+          <p>Dashboard cards are preview-only until live request, staffing, and identity services are connected.</p>
         </div>
       </div>
-      <div class="schedule-table-list">
-        <a href="/pages/rules/mandation.html"><b>Mandation</b><span>Rotation, eligibility, short-day rules, overrides, and audit preview.</span></a>
-        <a href="/pages/people/seniority.html"><b>Seniority</b><span>Lists, tie breakers, frozen lists, and scenario previews.</span></a>
-        <a href="/pages/requests/leave.html"><b>Leave Requests</b><span>Time-range leave requests, reasons, hours, and approval flow.</span></a>
-        <a href="/pages/requests/ot-volunteer-board.html"><b>OT Volunteer Board</b><span>Posted OT, volunteers, eligibility, and award review.</span></a>
-        <a href="/pages/requests/shift-trades.html"><b>Shift Trades</b><span>Employee acceptance, supervisor approval, cross-supervisor escalation.</span></a>
+      <div class="schedule-status-grid" aria-label="Operations summary">
+        <div><strong>6</strong><span>Pending Requests</span></div>
+        <div><strong>3</strong><span>Open Shifts</span></div>
+        <div><strong>2</strong><span>Coverage Alerts</span></div>
+        <div><strong>1</strong><span>Draft Schedule</span></div>
       </div>
     </section>
   </section>
@@ -98,35 +60,58 @@ Purpose: Desktop application overview for Signal Schedule.
   <section class="schedule-card">
     <div class="schedule-section-head">
       <div>
-        <h2>v5.12.0 Visibility & View Engine Notes</h2>
-        <p>This build adds preview-only login, current-user session modeling, role-aware navigation preparation, and database identity naming documentation before live authentication.</p>
+        <h2>Schedule Overview</h2>
+        <p>The dashboard uses the same view-engine ideas staged in v5.12: saved views, filters, color modes, and operational-day boundaries.</p>
       </div>
+      <a class="schedule-button" href="/pages/calendar/schedule.html">Open Calendar</a>
     </div>
-    <div class="schedule-rule-grid">
-      <div>Schedule-only beta foundation. Paycheck, Overtime, Timeoff, and shared assets are not modified.</div>
-      <div>Legacy centered website styles are no longer loaded by Schedule HTML pages.</div>
-      <div>Connected flyout navigation remains the desktop default.</div>
-      <div>Full-replacement package excludes .git, __MACOSX, .DS_Store, and AppleDouble files.</div>
+    <div class="schedule-module-grid">
+      <a class="schedule-module-card is-primary" href="/pages/settings/view-engine.html"><span>View Engine</span><strong>Day starts at 05:00, week starts, default views, saved filters, and layer controls.</strong></a>
+      <a class="schedule-module-card" href="/pages/workspace/weekly-board.html"><span>Weekly Board</span><strong>Preview weekly coverage, leave, open shifts, requests, and staffing alerts.</strong></a>
+      <a class="schedule-module-card" href="/pages/workspace/daily-board.html"><span>Daily Board</span><strong>Operational day view designed around agency shift start time.</strong></a>
+      <a class="schedule-module-card" href="/pages/workspace/publishing.html"><span>Publishing</span><strong>Draft schedule readiness, publish checks, rollback, and snapshots.</strong></a>
     </div>
   </section>
 
-<section class="schedule-card"><div class="schedule-section-head"><div><h2>v5.6 Foundation Additions</h2><p>Workspace polish, demo controls, settings scaffolding, request/leave/open-shift/approval foundations, health validation, print/export, and backend readiness are now tracked as first-class foundation modules.</p></div></div><div class="schedule-module-grid"><a class="schedule-module-card" href="/pages/admin/system-health.html"><span>System Health</span><strong>Validation and metadata readiness.</strong></a><a class="schedule-module-card" href="/pages/admin/data-export.html"><span>Data Export</span><strong>Demo data, export, and print foundation.</strong></a><a class="schedule-module-card" href="/pages/admin/backend-readiness.html"><span>Backend Readiness</span><strong>Database/API readiness before v6.</strong></a></div></section>
+  <section class="schedule-workspace-split">
+    <section class="schedule-card">
+      <div class="schedule-section-head"><div><h2>Calendar Layers</h2><p>Layer controls should become a signature Schedule feature.</p></div></div>
+      <div class="schedule-rule-grid">
+        <div>Employees</div><div>Requests</div><div>Training</div><div>Overtime</div><div>Coverage</div><div>Posts</div><div>Vacancies</div><div>Annotations</div>
+      </div>
+    </section>
+    <section class="schedule-card">
+      <div class="schedule-section-head"><div><h2>Quick Actions</h2><p>Shortcuts to the workflows supervisors and schedulers will use most often.</p></div></div>
+      <div class="schedule-table-list">
+        <a href="/pages/requests/requests.html"><b>Create Request</b><span>Time off, training, trade, or VOT foundation.</span></a>
+        <a href="/pages/requests/open-shifts.html"><b>Open Shift Board</b><span>Posted shifts and volunteer opportunities.</span></a>
+        <a href="/pages/workspace/builder.html"><b>Create Schedule</b><span>Draft schedule builder foundation.</span></a>
+        <a href="/pages/workspace/publishing.html"><b>Publish Schedule</b><span>Publication readiness and rollback planning.</span></a>
+      </div>
+    </section>
+  </section>
+
+  <section class="schedule-card">
+    <div class="schedule-section-head"><div><h2>Clean Route Foundation</h2><p>Signal Schedule still uses static HTML files underneath, but v5.13 defines the direction for professional app-style URLs.</p></div></div>
+    <div class="schedule-rule-grid">
+      <div><b>Technical entry</b><br><span>index.html remains the static site entry point.</span></div>
+      <div><b>User-facing name</b><br><span>Navigation presents this page as Dashboard.</span></div>
+      <div><b>Future route style</b><br><span>/dashboard, /calendar, /requests, /admin/settings.</span></div>
+      <div><b>No PHP switch</b><br><span>Professional routing should come from app routing/backend controllers, not file extensions.</span></div>
+    </div>
+  </section>
 </main>
 
-
-<section class="schedule-card"><h2>v5.9 Approval Foundation</h2><p>Approval workflows, SQL audit documentation, database naming contract, and foundation UI cleanup are now included.</p></section>
-
-<section class="schedule-card"><div class="schedule-section-head"><div><h2>v5.10 Identity Foundation</h2><p>Login, current-user context, and role-aware shell preparation are now staged for future multi-user Schedule releases.</p></div></div><div class="schedule-module-grid"><a class="schedule-module-card is-primary" href="/pages/identity/login.html"><span>Login Foundation</span><strong>Preview the future sign-in experience for agency users.</strong></a><a class="schedule-module-card" href="/pages/identity/current-user.html"><span>Current User</span><strong>Review the session and role context future pages will consume.</strong></a><a class="schedule-module-card" href="/pages/rules/permissions.html"><span>Permissions</span><strong>Connect identity to role and field access foundations.</strong></a></div></section>
-<section class="schedule-card"><div class="schedule-section-head"><div><h2>v5.12 Visibility & View Engine</h2><p>Role-aware views, agency day-start settings, saved views, and calendar layers are now staged as first-class foundations.</p></div></div><div class="schedule-module-grid"><a class="schedule-module-card is-primary" href="/pages/settings/view-engine.html"><span>View Engine</span><strong>Day starts at 05:00, layers, filters, saved views, and coloring options.</strong></a><a class="schedule-module-card" href="/pages/settings/visibility.html"><span>Visibility & Privacy</span><strong>Role and group visibility policies.</strong></a><a class="schedule-module-card" href="/pages/calendar/schedule.html"><span>Calendar</span><strong>Future layer-aware calendar surface.</strong></a></div></section>
 <div id="schedule-footer"></div>
-<script src="/assets/release-metadata.js?v=5.12.0"></script>
-<script src="/assets/config.js?v=5.12.0"></script>
-<script src="/assets/routes.js?v=5.12.0"></script>
-<script src="/assets/navigation.js?v=5.12.0"></script>
-<script src="/assets/features.js?v=5.12.0"></script>
-<script src="/assets/roles.js?v=5.12.0"></script>
-<script src="/assets/status.js?v=5.12.0"></script>
-<script src="/assets/data-loader.js?v=5.12.0"></script>
-<script src="/app-shell.js?v=5.12.0"></script>
+<script src="/assets/release-metadata.js?v=5.13.0"></script>
+<script src="/assets/config.js?v=5.13.0"></script>
+<script src="/assets/routes.js?v=5.13.0"></script>
+<script src="/assets/navigation.js?v=5.13.0"></script>
+<script src="/assets/features.js?v=5.13.0"></script>
+<script src="/assets/roles.js?v=5.13.0"></script>
+<script src="/assets/status.js?v=5.13.0"></script>
+<script src="/assets/data-loader.js?v=5.13.0"></script>
+<script src="/assets/agency-branding.js?v=5.13.0"></script>
+<script src="/app-shell.js?v=5.13.0"></script>
 </body>
 </html>

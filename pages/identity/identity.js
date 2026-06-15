@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: pages/identity/identity.js
-Version: v5.12.0
+Version: v5.13.0
 Purpose: Preview-only current user/session and agency setup foundation behavior.
 */
 (function(){

@@ -1,6 +1,6 @@
-# Request Foundation v5.12.0
+# Request Foundation v5.13.0
 
-Signal Schedule v5.12.0 adds request foundation structures before the full v6 Request Engine.
+Signal Schedule v5.13.0 adds request foundation structures before the full v6 Request Engine.
 
 ## Scope
 
@@ -22,4 +22,4 @@ Signal Schedule v5.12.0 adds request foundation structures before the full v6 Re
 - `schedule_request_reasons`
 - `schedule_request_history`
 
-No live database migration is required for v5.12.0.
+No live database migration is required for v5.13.0.

@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/services/RolesPermissionsService.js
-Version: v5.12.0
+Version: v5.13.0
 Purpose: Service layer for roles and permissions preview logic
 */
 import { listRolesPermissionsPreview } from '../repositories/RolesPermissionsRepository.js';

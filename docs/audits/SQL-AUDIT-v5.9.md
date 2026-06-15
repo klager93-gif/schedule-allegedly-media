@@ -1,4 +1,4 @@
-# Signal Schedule v5.12.0 — SQL Audit Snapshot
+# Signal Schedule v5.13.0 — SQL Audit Snapshot
 
 The live Postgres database currently reports **118 public tables**. This means the backend foundation is farther along than the static UI initially suggested.
 

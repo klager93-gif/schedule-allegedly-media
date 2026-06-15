@@ -19,3 +19,8 @@ Core identity tables are unprefixed: employees, users, roles, user_roles, role_p
 ## View engine rule
 
 Agency calendar day-start time, role visibility, saved views, filters, layers, and coloring are first-class settings/foundations, not scattered per-page assumptions.
+
+
+## Clean Route Standard
+
+Do not switch technologies just to hide file extensions. Clean routes should be delivered through routing/rewrite architecture while preserving stable route registry entries during static foundation builds.

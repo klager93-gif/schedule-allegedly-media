@@ -22,3 +22,8 @@
 - v5.15 Publishing & Data Management
 - v5.16 Advanced Tools & Backend Readiness
 - v6.0 Multi-User Request Engine
+
+
+## v5.13.0 Dashboard & Clean Route Foundation
+
+Adds dashboard navigation, agency branding placeholder, and clean route planning. The long-term dashboard target remains the mission-control layout with metrics, layer controls, quick actions, schedule overview, and agency branding.

@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v5.12.0
+Version: v5.13.0
 Purpose: Central navigation registry for connected Schedule flyout navigation.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Central navigation registry for connected Schedule flyout navigation.
   const path = (key, fallback) => routes[key] || fallback;
   window.SIGNAL_SCHEDULE_NAVIGATION = Object.freeze({
     labels: Object.freeze({
-      [path('home','index.html')]: 'Overview',
+      [path('dashboard','index.html')]: 'Dashboard',
       [path('login','pages/identity/login.html')]: 'Login',
       [path('currentUser','pages/identity/current-user.html')]: 'Current User',
       [path('agencySetup','pages/identity/agency-setup.html')]: 'Agency Setup',
@@ -67,6 +67,7 @@ Purpose: Central navigation registry for connected Schedule flyout navigation.
       [path('databaseAudit','pages/admin/database-audit.html')]: 'Database Audit',
     }),
     groups: Object.freeze([
+      { label: 'Dashboard', href: path('dashboard','index.html'), icon: '◆', children: [path('dashboard','index.html'), path('calendar','pages/calendar/schedule.html'), path('requests','pages/requests/requests.html'), path('openShifts','pages/requests/open-shifts.html'), path('viewEngine','pages/settings/view-engine.html')] },
       { label: 'Identity', href: path('login','pages/identity/login.html'), icon: '🔐', children: [path('login','pages/identity/login.html'), path('currentUser','pages/identity/current-user.html'), path('agencySetup','pages/identity/agency-setup.html'), path('permissions','pages/rules/permissions.html')] },
       { label: 'My Schedule', href: path('employeePortal','pages/employee/index.html'), icon: '◉', children: [path('employeePortal','pages/employee/index.html'), path('employeeCalendar','pages/employee/calendar.html'), path('employeeRequests','pages/employee/requests.html'), path('employeeProfile','pages/employee/profile.html')] },
       { label: 'Scheduling', href: path('builder','pages/workspace/builder.html'), icon: '▣', children: [path('builder','pages/workspace/builder.html'), path('workspace','pages/workspace/workspace.html'), path('history','pages/workspace/history.html'), path('publishing','pages/workspace/publishing.html'), path('weeklyBoard','pages/workspace/weekly-board.html'), path('dailyBoard','pages/workspace/daily-board.html'), path('calendar','pages/calendar/schedule.html'), path('viewEngine','pages/settings/view-engine.html'), path('planning','pages/workspace/planning.html'), path('draftPlanning','pages/workspace/draft-planning.html')] },
