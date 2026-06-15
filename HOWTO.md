@@ -1,9 +1,3 @@
 # Signal Schedule HOWTO
 
-## Deployment
-
-Deploy as a static site from the repository root. `index.html` remains in the root. Feature pages live under `/pages/`.
-
-## Route changes
-
-When adding or moving pages, update `assets/routes.js`, `assets/navigation.js`, validation docs, and manifests.
+Deploy as a static site from repository root. Keep `index.html` at root and feature pages under `/pages/`. Use the route registry for links. Do not restore the old `/employee/` root folder; employee portal routes now live under `/pages/employee/`.

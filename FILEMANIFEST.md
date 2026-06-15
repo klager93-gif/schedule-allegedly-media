@@ -1,4 +1,4 @@
-# File Manifest — v5.5.0
+# File Manifest — Signal Schedule v5.6.0
 
 - `.gitattributes`
 - `.gitignore`
@@ -173,6 +173,7 @@
 - `data/coverage-board-preview.json`
 - `data/coverage-spots-preview.json`
 - `data/daily-board-preview.json`
+- `data/demo-presets.json`
 - `data/draft-planning-preview.json`
 - `data/employee-assignments.json`
 - `data/employee-availability-preferences-preview.json`
@@ -181,6 +182,7 @@
 - `data/employee-profile-preview.json`
 - `data/employee-timeline-preview.json`
 - `data/employees.json`
+- `data/export-foundation-preview.json`
 - `data/leave-banks-preview.json`
 - `data/leave-request-types.json`
 - `data/leave-requests-preview.json`
@@ -202,6 +204,7 @@
 - `data/schedule-publication-preview.json`
 - `data/seniority-engine-preview.json`
 - `data/seniority-rotation-preview.json`
+- `data/settings-foundation-preview.json`
 - `data/shift-eligibility-preview.json`
 - `data/shift-trades-preview.json`
 - `data/staffing-engine-preview.json`
@@ -210,6 +213,7 @@
 - `data/visibility-privacy-preview.json`
 - `data/vot-requests-preview.json`
 - `data/weekly-board-preview.json`
+- `data/workspace-foundation-preview.json`
 - `docs/README.md`
 - `docs/architecture/FILE_ORGANIZATION.md`
 - `docs/architecture/METADATA-VALIDATION.md`
@@ -232,14 +236,14 @@
 - `docs/migrations/STANDALONE-MIGRATION.md`
 - `docs/releases/LATEST_RELEASE.md`
 - `docs/ui/SAVED-SCHEDULES-UI.md`
-- `employee/calendar.html`
-- `employee/index.html`
-- `employee/profile.html`
-- `employee/requests.html`
 - `index.html`
+- `pages/admin/backend-readiness.html`
+- `pages/admin/data-export.html`
 - `pages/admin/data-tools.css`
 - `pages/admin/data-tools.html`
 - `pages/admin/data-tools.js`
+- `pages/admin/foundation-admin.css`
+- `pages/admin/system-health.html`
 - `pages/calendar/schedule-calendar.css`
 - `pages/calendar/schedule-calendar.js`
 - `pages/calendar/schedule.html`
@@ -249,8 +253,12 @@
 - `pages/coverage/coverage-spots.html`
 - `pages/coverage/coverage-spots.js`
 - `pages/coverage/coverage.html`
+- `pages/employee/calendar.html`
 - `pages/employee/employee-portal.css`
 - `pages/employee/employee-portal.js`
+- `pages/employee/index.html`
+- `pages/employee/profile.html`
+- `pages/employee/requests.html`
 - `pages/people/availability.css`
 - `pages/people/availability.html`
 - `pages/people/availability.js`

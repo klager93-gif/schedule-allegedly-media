@@ -169,3 +169,8 @@ Registry files currently include:
 - `assets/status.js`
 
 Do not hardcode new shared navigation or metadata in individual pages unless there is a documented reason.
+
+
+## v5.6 Route Placement Rule
+
+Feature pages belong under `/pages/` and must be registered in `assets/routes.js`. The old root `/employee/` folder must not be restored; employee-facing preview pages live under `/pages/employee/`. Root should contain `index.html` and project documentation only.

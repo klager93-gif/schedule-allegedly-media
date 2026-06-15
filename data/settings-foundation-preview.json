@@ -1,0 +1,16 @@
+{
+  "version": "v5.6.0",
+  "agencyDefaults": {
+    "weekStartsOn": "Sunday",
+    "timeFormat": "24-hour",
+    "requestIncrementMinutes": 15,
+    "payPeriodLengthDays": 14
+  },
+  "presetManagers": [
+    "roles",
+    "ranks",
+    "positions",
+    "request reasons",
+    "leave types"
+  ]
+}

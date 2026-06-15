@@ -1,6 +1,6 @@
 # Page Architecture & Route Registry Migration
 
-Version: v5.5.0
+Version: v5.6.0
 
 Signal Schedule now keeps public HTML routes in categorized `/pages/` folders while preserving `index.html` at the repository root.
 

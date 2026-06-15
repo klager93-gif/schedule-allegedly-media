@@ -1,14 +1,14 @@
 # Signal Schedule Roadmap
 
-## Current
+## v5.x Foundation Era
 
-- v5.5.0 — Page Architecture & Route Registry Migration
+- v5.1 Standalone repo/domain split.
+- v5.2 Repository organization.
+- v5.3 Metadata stability.
+- v5.4 Configuration and registries.
+- v5.5 Page architecture and route migration.
+- v5.6 Workspace and foundation UX.
 
 ## Next
 
-- v5.6.x — Foundation-era feature scaffolding
-- v6.0.0 — Request Engine
-- v7.x — Staffing and assignments
-- v8.x — Mandation
-- v9.x — Publishing
-- v10.x — Employee Portal
+Continue building request, leave bank, open shift, approval, validation, export, and backend readiness foundations until Schedule is ready for **v6.0 Request Engine**.

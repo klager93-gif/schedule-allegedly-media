@@ -23,6 +23,6 @@ The old Signal Labs root `/assets/global.css`, `/assets/global.js`, and shared h
 `app-shell.js` was patched so path detection works when Signal Schedule is deployed at the domain root, such as:
 
 - `/index.html`
-- `/employee/index.html`
+- `/pages/employee/index.html`
 
 It remains backward-compatible with the older `/schedule/` path form.

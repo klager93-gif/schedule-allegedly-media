@@ -1,0 +1,17 @@
+{
+  "version": "v5.6.0",
+  "dashboards": [
+    "admin",
+    "employee",
+    "supervisor",
+    "scheduler"
+  ],
+  "cards": [
+    "pending approvals",
+    "open shifts",
+    "coverage warnings",
+    "leave balances",
+    "upcoming schedule",
+    "backend readiness"
+  ]
+}

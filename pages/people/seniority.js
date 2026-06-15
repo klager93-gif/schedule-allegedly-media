@@ -1,6 +1,6 @@
 /*
 Signal Labs Tool File: schedule/pages/people/seniority.js
-Version: v5.5.0
+Version: v5.6.0
 Purpose: Seniority Engine preview UI.
 */
 import { JsonSeniorityEngineAdapter } from '../../adapters/JsonSeniorityEngineAdapter.js';

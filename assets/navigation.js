@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v5.5.0
+Version: v5.6.0
 Purpose: Central navigation registry for connected Schedule flyout navigation.
 */
 (function () {
@@ -53,13 +53,16 @@ Purpose: Central navigation registry for connected Schedule flyout navigation.
       [path('visibility','visibility.html')]: 'Visibility & Privacy',
       [path('reports','reports.html')]: 'Reports',
       [path('settings','settings.html')]: 'Settings',
-      [path('employeePortal','employee/index.html')]: 'Employee Portal',
-      [path('employeeCalendar','employee/calendar.html')]: 'Employee Calendar',
-      [path('employeeRequests','employee/requests.html')]: 'Employee Requests',
-      [path('employeeProfile','employee/profile.html')]: 'Employee Profile'
+      [path('employeePortal','pages/employee/index.html')]: 'Employee Portal',
+      [path('employeeCalendar','pages/employee/calendar.html')]: 'Employee Calendar',
+      [path('employeeRequests','pages/employee/requests.html')]: 'Employee Requests',
+      [path('employeeProfile','pages/employee/profile.html')]: 'Employee Profile',
+      [path('systemHealth','pages/admin/system-health.html')]: 'System Health',
+      [path('dataExport','pages/admin/data-export.html')]: 'Data Export',
+      [path('backendReadiness','pages/admin/backend-readiness.html')]: 'Backend Readiness',
     }),
     groups: Object.freeze([
-      { label: 'Me', href: path('employeePortal','employee/index.html'), icon: '◉', children: [path('employeePortal','employee/index.html'), path('employeeCalendar','employee/calendar.html'), path('employeeRequests','employee/requests.html'), path('employeeProfile','employee/profile.html'), path('notifications','notifications.html')] },
+      { label: 'Me', href: path('employeePortal','pages/employee/index.html'), icon: '◉', children: [path('employeePortal','pages/employee/index.html'), path('employeeCalendar','pages/employee/calendar.html'), path('employeeRequests','pages/employee/requests.html'), path('employeeProfile','pages/employee/profile.html'), path('notifications','notifications.html')] },
       { label: 'Scheduling', href: path('builder','builder.html'), icon: '▣', children: [path('builder','builder.html'), path('workspace','workspace.html'), path('history','history.html'), path('publishing','publishing.html'), path('weeklyBoard','weekly-board.html'), path('dailyBoard','daily-board.html'), path('calendar','schedule.html'), path('planning','planning.html'), path('draftPlanning','draft-planning.html')] },
       { label: 'Staffing', href: path('staffingEngine','staffing-engine.html'), icon: '▥', children: [path('staffingEngine','staffing-engine.html'), path('coverage','coverage.html'), path('coverageSpots','coverage-spots.html'), path('staffing','staffing.html'), path('assignments','assignments.html'), path('assignmentGenerator','assignment-generator.html'), path('conflictDetection','conflict-detection.html')] },
       { label: 'Personnel', href: path('employees','employees.html'), icon: '👥', children: [path('employees','employees.html'), path('profile','profile.html'), path('timeline','timeline.html'), path('supervisors','supervisors.html'), path('seniority','seniority.html'), path('qualifications','qualifications.html'), path('training','training.html'), path('eligibility','eligibility.html'), path('availability','availability.html')] },

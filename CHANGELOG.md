@@ -1,6 +1,18 @@
+# Signal Schedule v5.6.0 — Workspace & Foundation UX
+
+- Fixed `/employee/` drift by moving employee portal HTML routes into `/pages/employee/`.
+- Added admin System Health page.
+- Added Data Export & Demo Controls foundation page.
+- Added Backend Readiness foundation page.
+- Added workspace dashboard foundation for Admin, Scheduler, Supervisor, and Employee views.
+- Added request, leave bank, open shift, approval, and settings foundation UI notes.
+- Added demo preset, settings, export, and workspace preview data files.
+- Updated route and navigation registries for all new pages.
+- Refreshed footer/header/homepage metadata, manifests, and checksums.
+
 # Changelog
 
-## v5.5.0 — Page Architecture & Route Registry Migration
+## v5.6.0 — Page Architecture & Route Registry Migration
 
 - Moved feature HTML routes from repo root into categorized `/pages/` directories.
 - Kept `index.html` at repo root for static deployment.
@@ -10,7 +22,7 @@
 - Added page architecture documentation.
 - Regenerated manifests and validation artifacts.
 
-## v5.5.0 — Page Architecture & Route Registry Migration
+## v5.6.0 — Page Architecture & Route Registry Migration
 Date: 2026-06-15
 
 - Added release, route, navigation, configuration, feature, role, and status registries under `/assets/`.
@@ -19,11 +31,11 @@ Date: 2026-06-15
 - Added registry scripts to Schedule HTML routes without moving existing route files.
 - Regenerated manifests, checksums, and validation report.
 
-## v5.5.0 — Page Architecture & Route Registry Migration
+## v5.6.0 — Page Architecture & Route Registry Migration
 
 - Added a central client-side release metadata source at `assets/release-metadata.js`.
 - Updated app shell and footer version handling to reduce footer/header drift.
-- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.5.0.
+- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.6.0.
 - Added metadata validation documentation and strengthened release standards.
 - Regenerated file manifests and SHA256 checksums.
 - No database changes.

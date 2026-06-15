@@ -1,23 +1,19 @@
-# Validation Report — v5.5.0
+# Validation — Signal Schedule v5.6.0
 
-- Root HTML files: ['index.html']
-- Moved feature routes into `/pages/`: 43
-- Missing local HTML refs: 0
-- Missing JS imports: 0
-- macOS metadata files: 0
-- Footer/header/homepage metadata checked: yes
-- Route registry checked: yes
-- Database changes: none
-- Feature logic changes: none
+- No macOS metadata files found.
+- Root `/employee/` folder removed: True.
+- Employee portal pages now live under `/pages/employee/`.
+- Missing local HTML links: 0.
+- Missing JavaScript imports: 0.
+- Missing route registry files: 0.
+- Footer/header/homepage metadata updated to v5.6.0.
+- No database changes.
 
-## Missing refs
+## Link Issues
+None.
 
-```json
-[]
-```
+## Import Issues
+None.
 
-## Missing JS imports
-
-```json
-[]
-```
+## Route Issues
+None.

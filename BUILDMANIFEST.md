@@ -1,16 +1,16 @@
-# Build Manifest — v5.5.0
+# Build Manifest — Signal Schedule v5.6.0
 
-Package: schedule-allegedly-media-v5.5.0-page-architecture.zip
+Package: `schedule-allegedly-media-v5.6.0-workspace-foundation.zip`
 
-Included:
-- Page route migration into categorized `/pages/` directories
-- Route registry update
-- App shell root-relative navigation resolution
-- Metadata/footer/header validation
-- Manifest and checksum regeneration
+## Scope
 
-Validation:
-- Missing local HTML refs: 0
+Workspace & Foundation UX, employee route cleanup, admin health/export/backend readiness, and foundation UI scaffolding.
+
+## Validation
+
+- Missing local HTML links: 0
 - Missing JS imports: 0
+- Missing route registry files: 0
+- Root `/employee/` folder exists: False
 - macOS metadata files: 0
-- Root HTML files: index.html
+- Database changes: none
