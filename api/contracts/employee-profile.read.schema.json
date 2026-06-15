@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://signal-labs.local/schedule/contracts/employee-profile.read.schema.json",
+  "$id": "https://schedule.allegedly-media.com/contracts/employee-profile.read.schema.json",
   "title": "Employee Profile Self-Service Preview",
   "type": "object",
   "required": [

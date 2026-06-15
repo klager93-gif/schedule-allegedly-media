@@ -1,15 +1,15 @@
 /*
 Signal Labs
 Area: Signal Schedule
-File: schedule/components/footer.js
+File: components/footer.js
 Version: v5.1.0
-Purpose: Render lightweight Schedule-specific footer across /schedule/ pages
+Purpose: Render lightweight Schedule-specific footer across standalone Signal Schedule pages
 */
 (function () {
   const mount = document.getElementById('schedule-footer');
   if (!mount) return;
 
-  const version = document.body?.dataset?.signalVersion || 'v3.6.0';
+  const version = document.body?.dataset?.signalVersion || 'v5.1.0';
 
   mount.innerHTML = `
     <footer class="schedule-footer" aria-label="Signal Schedule footer">

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://signal-labs.local/schedule/api/contracts/staffing-engine.read.schema.json",
+  "$id": "https://schedule.allegedly-media.com/api/contracts/staffing-engine.read.schema.json",
   "title": "Signal Schedule Staffing Engine Read Contract",
   "type": "object",
   "required": ["summary", "coverage", "candidates", "queues", "integrityChecks"],

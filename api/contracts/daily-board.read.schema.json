@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://tools.allegedly-media.com/schedule/api/contracts/daily-board.read.schema.json",
+  "$id": "https://schedule.allegedly-media.com/api/contracts/daily-board.read.schema.json",
   "title": "Signal Schedule Daily Board Read Contract",
   "type": "object",
   "required": ["summary", "days", "rules"],

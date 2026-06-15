@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://tools.allegedly-media.com/schedule/api/contracts/visibility-privacy.read.schema.json",
+  "$id": "https://schedule.allegedly-media.com/api/contracts/visibility-privacy.read.schema.json",
   "title": "Signal Schedule Visibility & Privacy Read Contract",
   "type": "object",
   "required": ["meta", "summary", "userGroups", "scheduleVisibilityRules", "leaveVisibilityRules"],

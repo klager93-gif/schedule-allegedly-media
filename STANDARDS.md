@@ -3,7 +3,7 @@
 **Philosophy:** Useful tools without the noise.  
 **Operating rule:** Files do not lie.
 
-This file is the authoritative standards copy for the Signal Labs repository.
+This file is the authoritative standards copy for the standalone Signal Schedule repository.
 
 ## 1. Development Standards
 
@@ -17,37 +17,33 @@ This file is the authoritative standards copy for the Signal Labs repository.
 
 ### Monorepo Boundary Rule
 
-Signal Labs remains a monorepo for now. The root owns shared site infrastructure, shared assets, global navigation, and deployment packaging. Individual tools own their own application files and tool-specific documentation.
+Signal Schedule now deploys from a standalone repository. The repository root owns Schedule pages, app shell assets, documentation, API contracts, adapters, repositories, services, data, and SQL migrations.
 
-Root-owned areas include:
+Standalone Schedule-owned areas include:
 
 ```text
 /
 /assets/
-/docs/
+/components/
+/pages/
+/api/
+/adapters/
+/repositories/
+/services/
+/data/
+/sql/
 /standards/
-/build/
 ```
 
-Tool-owned areas include:
-
-```text
-/paycheck/
-/overtime/
-/timeoff/
-/schedule/
-/pay-planner/
-```
-
-A tool update should only replace that tool folder, root docs if needed, and shared assets only when explicitly changed.
+Root files are expected in this repository because Schedule is no longer embedded under `/schedule/` in the tools monorepo.
 
 ### Repo-Ready Module Rule
 
-Each major tool should be maintained as if it could become a separate repository later. Tool-specific infrastructure, docs, data, APIs, adapters, mocks, and migration files belong inside that tool folder unless intentionally shared by multiple tools.
+Each major tool should be maintained as if it could become a separate repository later. Schedule-specific infrastructure, docs, data, APIs, adapters, mocks, and migration files belong inside this standalone repository.
 
 ### Root Clutter Rule
 
-No new tool-specific folders, backend components, APIs, functions, or infrastructure files should be placed in the repository root unless they are intentionally shared by multiple tools and the release notes justify it.
+New Schedule folders, backend components, APIs, functions, and infrastructure files may live in this repository when they belong to Signal Schedule and are documented in release notes.
 
 ## 3. Release Standards
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://tools.allegedly-media.com/schedule/api/contracts/mandation-engine.read.schema.json",
+  "$id": "https://schedule.allegedly-media.com/api/contracts/mandation-engine.read.schema.json",
   "title": "Signal Schedule Mandation Engine Read Contract",
   "type": "object",
   "required": ["meta", "summary", "policyProfile", "shortages", "rotation", "evaluations", "overrideLog", "employeeView", "rules"],

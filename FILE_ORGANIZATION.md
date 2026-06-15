@@ -1,18 +1,18 @@
 # Schedule File Organization
 
-As of v5.1.0, public Schedule HTML pages remain at `/schedule/*.html` to avoid breaking links. Page-specific CSS and JS support files are grouped under `/schedule/pages/` by module.
+As of the standalone v5.1.0 migration, public Schedule HTML pages live at the repository root so the product can deploy directly at `schedule.allegedly-media.com`. Page-specific CSS and JS support files are grouped under `/pages/` by module.
 
 ## Page support folders
 
-- `/schedule/pages/calendar/`
-- `/schedule/pages/coverage/`
-- `/schedule/pages/people/`
-- `/schedule/pages/requests/`
-- `/schedule/pages/rules/`
-- `/schedule/pages/settings/`
-- `/schedule/pages/workspace/`
+- `/pages/calendar/`
+- `/pages/coverage/`
+- `/pages/people/`
+- `/pages/requests/`
+- `/pages/rules/`
+- `/pages/settings/`
+- `/pages/workspace/`
 
-## Files intentionally kept at Schedule root
+## Files intentionally kept at repository root
 
 - Public HTML pages
 - `app-shell.css`

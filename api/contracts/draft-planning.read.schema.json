@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://tools.allegedly-media.com/schedule/api/contracts/draft-planning.read.schema.json",
+  "$id": "https://schedule.allegedly-media.com/api/contracts/draft-planning.read.schema.json",
   "title": "Signal Schedule Draft Planning Read Contract",
   "type": "object",
   "required": ["meta", "summary", "draftRuns", "moveQueue", "publishChecklist", "rules"],

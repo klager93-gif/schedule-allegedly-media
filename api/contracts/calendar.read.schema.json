@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://signal-labs.local/schedule/calendar.read.schema.json",
+  "$id": "https://schedule.allegedly-media.com/calendar.read.schema.json",
   "title": "Signal Schedule Calendar Read Contract",
   "type": "object",
   "required": ["preview", "events"],

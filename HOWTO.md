@@ -17,7 +17,7 @@ Upload the full replacement package.
 From `psql`, run the SQL file:
 
 ```sql
-\i /app/schedule/api/coolify/sql/045_employee_experience_data_tools_schema.sql
+\i /app/api/coolify/sql/045_employee_experience_data_tools_schema.sql
 ```
 
 If the migration tracker does not update automatically, add the row manually:
@@ -45,12 +45,12 @@ Expected top row:
 
 ## Test pages
 
-- `/schedule/data-tools.html`
-- `/schedule/employee/index.html`
-- `/schedule/employee/calendar.html`
-- `/schedule/employee/requests.html`
-- `/schedule/employee/profile.html`
-- `/schedule/history.html`
+- `/data-tools.html`
+- `/employee/index.html`
+- `/employee/calendar.html`
+- `/employee/requests.html`
+- `/employee/profile.html`
+- `/history.html`
 
 ## Postgres pager
 

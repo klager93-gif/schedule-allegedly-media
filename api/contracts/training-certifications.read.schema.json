@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://signal-labs.local/schedule/contracts/training-certifications.read.schema.json",
+  "$id": "https://schedule.allegedly-media.com/contracts/training-certifications.read.schema.json",
   "title": "Training Certifications Read Contract",
   "type": "object",
   "required": ["summary", "records"],

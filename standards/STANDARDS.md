@@ -33,7 +33,7 @@ Changes to shared assets, headers, footers, global CSS, or global JS must be val
 
 ## 7. Tool Ownership and Portability
 
-Tool-specific infrastructure belongs inside the tool folder. For Schedule, adapters, repositories, services, models, validators, API, data, and SQL belong under /schedule/.
+Schedule-specific infrastructure belongs inside this standalone repository. Adapters, repositories, services, models, validators, API, data, and SQL belong under their root-level Schedule folders.
 
 ## 8. Navigation Responsibility
 

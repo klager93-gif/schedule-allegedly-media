@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://tools.allegedly-media.com/schedule/api/contracts/saved-schedules.write.schema.json",
+  "$id": "https://schedule.allegedly-media.com/api/contracts/saved-schedules.write.schema.json",
   "title": "Signal Schedule Saved Schedule Write Contract",
   "version": "v5.1.0",
   "type": "object",

@@ -33,7 +33,7 @@ Backend releases must preserve service/repository/adapter boundaries. Do not cou
 
 ## Rule 25 — Tools Own Their Infrastructure
 
-No new folders, backend components, APIs, functions, or infrastructure files should be placed in the repository root unless they are intentionally shared by multiple tools. Tool-specific infrastructure belongs inside that tool’s directory, such as `/schedule/`. Root-level additions require explicit justification.
+No new folders, backend components, APIs, functions, or infrastructure files should be placed in the repository root unless they are intentionally shared by multiple tools. Tool-specific infrastructure belongs inside that tool’s directory, such as this standalone Schedule repository. Root-level additions require explicit justification.
 
 ## Rule 26 — Build Response Standard
 

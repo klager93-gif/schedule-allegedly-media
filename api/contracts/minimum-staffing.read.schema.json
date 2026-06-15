@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://signal-labs.local/schedule/api/contracts/minimum-staffing.read.schema.json",
+  "$id": "https://schedule.allegedly-media.com/api/contracts/minimum-staffing.read.schema.json",
   "title": "Signal Schedule Minimum Staffing Read Response",
   "type": "object",
   "required": [
