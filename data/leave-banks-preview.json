@@ -267,6 +267,52 @@
     "Approved leave requests should create ledger entries instead of silently changing balances.",
     "Admin balance adjustments require a reason, author, timestamp, and affected bank.",
     "Negative balances should be agency configurable and flagged before approval.",
-    "Accrual math remains preview-only until payroll period settings are finalized."
-  ]
+    "Accrual math remains preview-only until payroll period settings are finalized.",
+    "v5.8 adds graceful data fallback so leave bank pages can render even when preview JSON is unavailable.",
+    "Leave bank transaction history is modeled separately from manual adjustments to prepare for audit-grade posting."
+  ],
+  "version": "5.8.0",
+  "transactions": [
+    {
+      "id": "txn-001",
+      "employee": "Morgan Price",
+      "bank": "Vacation",
+      "type": "debit",
+      "hours": 8,
+      "source": "Approved request req-1001",
+      "postedAt": "2026-06-03T08:00:00",
+      "postedBy": "System Preview"
+    },
+    {
+      "id": "txn-002",
+      "employee": "Morgan Price",
+      "bank": "Comp Time",
+      "type": "credit",
+      "hours": 2,
+      "source": "Callback converted to comp",
+      "postedAt": "2026-06-12T09:20:00",
+      "postedBy": "Admin Demo"
+    },
+    {
+      "id": "txn-003",
+      "employee": "Avery Brooks",
+      "bank": "Training Bank",
+      "type": "credit",
+      "hours": 40,
+      "source": "Annual training allotment",
+      "postedAt": "2026-06-10T08:00:00",
+      "postedBy": "Admin Demo"
+    }
+  ],
+  "adjustmentDraft": {
+    "requiredFields": [
+      "employee",
+      "bank",
+      "changeHours",
+      "reason",
+      "effectiveDate",
+      "enteredBy"
+    ],
+    "adminNotes": "Adjustments remain preview-only until database-backed ledger posting is enabled."
+  }
 }

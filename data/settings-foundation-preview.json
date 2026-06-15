@@ -1,5 +1,5 @@
 {
-  "version": "v5.7.0",
+  "version": "v5.8.0",
   "agencyDefaults": {
     "weekStartsOn": "Sunday",
     "timeFormat": "24-hour",

@@ -175,9 +175,6 @@ Do not hardcode new shared navigation or metadata in individual pages unless the
 
 Feature pages belong under `/pages/` and must be registered in `assets/routes.js`. The old root `/employee/` folder must not be restored; employee-facing preview pages live under `/pages/employee/`. Root should contain `index.html` and project documentation only.
 
+## Data Layer Fallback Rule
 
-## v5.7.0 Notes
-
-- Navigation cleanup: Me is now My Schedule and duplicate nav entries were removed.
-- Data path cleanup: moved pages use root-safe `/data/` JSON paths.
-- Request foundation: request types, statuses, reasons, increments, hours, overrides, and history are documented for the v6 Request Engine.
+Foundation pages must not show raw fetch, 404, or JSON parse errors to end users. Optional preview JSON should render a neutral empty/foundation state and log technical details to the console.

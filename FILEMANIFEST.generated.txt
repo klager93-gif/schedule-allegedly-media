@@ -1,12 +1,9 @@
-# Signal Schedule v5.7.0 File Manifest Generated
-
-Total files: 444
-
 .gitattributes
 .gitignore
 ADMIN_CHANGELOG.md
 BUILDMANIFEST.md
 CHANGELOG.md
+FILEMANIFEST.generated.txt
 FILEMANIFEST.md
 HOWTO.md
 LATEST_RELEASE.md
@@ -14,6 +11,7 @@ MASTER-CHANGELOG.md
 PUBLIC_CHANGELOG.md
 README.md
 ROADMAP.md
+SHA256SUMS.txt
 STANDARDS.md
 VALIDATION.md
 adapters/JsonAssignmentEngineAdapter.js
@@ -222,6 +220,7 @@ docs/architecture/METADATA-VALIDATION.md
 docs/architecture/PAGE-ARCHITECTURE.md
 docs/architecture/REGISTRY-FOUNDATION.md
 docs/audits/ALPHA-INTEGRATION-AUDIT.md
+docs/audits/DATA-LAYER-AUDIT-v5.8.md
 docs/audits/DATA-PATH-DRIFT-AUDIT-v5.7.md
 docs/audits/NAVIGATION-DRIFT-AUDIT-v5.7.md
 docs/engines/REQUEST-APPROVAL-ENGINE.md
@@ -230,6 +229,7 @@ docs/engines/STAFFING-ENGINE.md
 docs/foundation/CALENDAR-FOUNDATION.md
 docs/foundation/EMPLOYEE-EXPERIENCE-DATA-TOOLS.md
 docs/foundation/EMPLOYEE-IDENTITY-FOUNDATION.md
+docs/foundation/LEAVE-BANKS-FOUNDATION-v5.8.md
 docs/foundation/LEAVE-REQUESTS-FOUNDATION.md
 docs/foundation/MINIMUM-STAFFING-FOUNDATION.md
 docs/foundation/OPEN-SHIFTS-FOUNDATION.md
@@ -438,6 +438,7 @@ services/SupervisorHierarchyService.js
 services/TrainingCertificationService.js
 services/VisibilityPrivacyService.js
 services/WeeklyBoardService.js
+sql/058_leave_banks_foundation.sql
 standards/COMPONENT_STANDARDS.md
 standards/DEVELOPMENT_STANDARDS.md
 standards/DOCUMENTATION_STANDARDS.md

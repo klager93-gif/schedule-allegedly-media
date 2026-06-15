@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/pages/requests/leave-banks.js
-Version: v5.7.0
+Version: v5.8.0
 Purpose: Render Leave Banks Foundation preview
 */
 import { getLeaveBanksDashboard } from '../../services/LeaveBanksService.js';
@@ -52,6 +52,19 @@ function renderAdjustments(items) {
   node.innerHTML = (items || []).map((item) => `<article class="leave-bank-adjustment"><div class="leave-bank-row"><strong>${item.employee}</strong><span class="leave-bank-chip">${item.change > 0 ? '+' : ''}${hours(item.change)}</span></div><p>${item.bank} · ${item.reason}</p><small>${new Date(item.createdAt).toLocaleString()} · ${item.enteredBy}</small></article>`).join('');
 }
 
+function renderTransactions(items) {
+  const node = document.querySelector('[data-leave-bank-transactions]');
+  if (!node) return;
+  node.innerHTML = (items || []).map((item) => `<article class="leave-bank-adjustment"><div class="leave-bank-row"><strong>${item.employee}</strong><span class="leave-bank-chip">${item.type} · ${hours(item.hours)}</span></div><p>${item.bank} · ${item.source}</p><small>${new Date(item.postedAt).toLocaleString()} · ${item.postedBy}</small></article>`).join('') || '<p class="schedule-muted">No transaction preview data available yet.</p>';
+}
+
+function renderAdjustmentDraft(item) {
+  const node = document.querySelector('[data-leave-bank-adjustment-draft]');
+  if (!node) return;
+  const fields = (item?.requiredFields || []).map((field) => `<span class="leave-bank-chip">${field}</span>`).join('');
+  node.innerHTML = `<p>${item?.adminNotes || 'Adjustment form foundation is ready for admin-entered corrections.'}</p><div class="leave-bank-row">${fields}</div>`;
+}
+
 function renderRules(items) {
   const node = document.querySelector('[data-leave-bank-rules]');
   if (!node) return;
@@ -66,9 +79,17 @@ async function init() {
     renderImpacts(data.pendingImpacts);
     renderEmployees(data.employeeBalances);
     renderAdjustments(data.adjustments);
+    renderTransactions(data.transactions);
+    renderAdjustmentDraft(data.adjustmentDraft);
     renderRules(data.rules);
   } catch (error) {
-    console.error(error);
+    console.warn('[Signal Schedule] Leave bank preview fallback:', error.message);
+    const shell = document.querySelector('.leave-bank-shell');
+    window.SignalScheduleData?.renderDataNotice?.(shell, {
+      title: 'Leave bank foundation ready',
+      message: 'Preview data was not available, but the leave bank layout and controls are ready.',
+      detail: error.message
+    });
   }
 }
 

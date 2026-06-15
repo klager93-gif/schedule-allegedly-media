@@ -1,14 +1,11 @@
-# Signal Schedule v5.7.0 — Workspace & Foundation UX
+# Changelog
 
-## Signal Schedule v5.7.0 — Request Foundation & Navigation Cleanup
+## v5.8.0 — Leave Banks & Data Layer Cleanup
 
-- Renamed Me navigation to My Schedule.
-- Removed duplicate navigation ownership for Data Tools, Settings, and Notifications.
-- Fixed moved-page JSON path drift that caused HTML 404 pages to be parsed as JSON.
-- Added root-safe JSON loader helper and clearer JSON failure messaging.
-- Added request foundation preview data, documentation, and UI notes.
-- Normalized stale module version headers to v5.7.0.
-
+- Added leave bank foundation UI improvements for balances, pending impacts, transactions, and adjustment-entry readiness.
+- Added data layer cleanup so optional preview JSON failures render neutral foundation states instead of alarming errors.
+- Added leave bank sample data, SQL draft, and documentation.
+- Updated validation coverage for data references and JSON fallback handling.
 
 - Fixed `/employee/` drift by moving employee portal HTML routes into `/pages/employee/`.
 - Added admin System Health page.
@@ -22,7 +19,7 @@
 
 # Changelog
 
-## v5.7.0 — Page Architecture & Route Registry Migration
+## v5.6.0 — Page Architecture & Route Registry Migration
 
 - Moved feature HTML routes from repo root into categorized `/pages/` directories.
 - Kept `index.html` at repo root for static deployment.
@@ -32,7 +29,7 @@
 - Added page architecture documentation.
 - Regenerated manifests and validation artifacts.
 
-## v5.7.0 — Page Architecture & Route Registry Migration
+## v5.6.0 — Page Architecture & Route Registry Migration
 Date: 2026-06-15
 
 - Added release, route, navigation, configuration, feature, role, and status registries under `/assets/`.
@@ -41,11 +38,11 @@ Date: 2026-06-15
 - Added registry scripts to Schedule HTML routes without moving existing route files.
 - Regenerated manifests, checksums, and validation report.
 
-## v5.7.0 — Page Architecture & Route Registry Migration
+## v5.6.0 — Page Architecture & Route Registry Migration
 
 - Added a central client-side release metadata source at `assets/release-metadata.js`.
 - Updated app shell and footer version handling to reduce footer/header drift.
-- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.7.0.
+- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.6.0.
 - Added metadata validation documentation and strengthened release standards.
 - Regenerated file manifests and SHA256 checksums.
 - No database changes.
@@ -119,4 +116,3 @@ No SQL migration required.
 - Cleaned confusing navigation labels.
 - Added coverage/vacancy, candidate, OT/callback/mandation, fairness, explainability, and integrity-check foundations.
 - Added migration 047.
-

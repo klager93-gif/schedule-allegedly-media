@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/adapters/JsonCoverageSpotsAdapter.js
-Version: v5.7.0
+Version: v5.8.0
 Purpose: JSON adapter for coverage spots foundation preview data
 */
 export async function fetchCoverageSpotsPreview() {

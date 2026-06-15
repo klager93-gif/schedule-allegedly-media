@@ -1,14 +1,10 @@
-# Signal Schedule v5.7.0 — Workspace & Foundation UX
+# Public Changelog
 
-## Signal Schedule v5.7.0 — Request Foundation & Navigation Cleanup
+## v5.8.0 — Leave Banks & Data Cleanup
 
-- Renamed Me navigation to My Schedule.
-- Removed duplicate navigation ownership for Data Tools, Settings, and Notifications.
-- Fixed moved-page JSON path drift that caused HTML 404 pages to be parsed as JSON.
-- Added root-safe JSON loader helper and clearer JSON failure messaging.
-- Added request foundation preview data, documentation, and UI notes.
-- Normalized stale module version headers to v5.7.0.
-
+- Improved leave bank preview pages.
+- Added clearer balance, transaction, and adjustment foundations.
+- Cleaned up confusing data-load messages on foundation pages.
 
 - Fixed `/employee/` drift by moving employee portal HTML routes into `/pages/employee/`.
 - Added admin System Health page.
@@ -22,13 +18,13 @@
 
 # Public Changelog
 
-## v5.7.0 — Page Architecture & Route Registry Migration
+## v5.6.0 — Page Architecture & Route Registry Migration
 
 - Organized feature pages into categorized `/pages/` folders.
 - Updated route/navigation registries and app shell route resolution.
 - Validated local links, JS imports, metadata, and macOS metadata exclusions.
 
-## v5.7.0 — Page Architecture & Route Registry Migration
+## v5.6.0 — Page Architecture & Route Registry Migration
 Date: 2026-06-15
 
 - Added release, route, navigation, configuration, feature, role, and status registries under `/assets/`.
@@ -37,11 +33,11 @@ Date: 2026-06-15
 - Added registry scripts to Schedule HTML routes without moving existing route files.
 - Regenerated manifests, checksums, and validation report.
 
-## v5.7.0 — Page Architecture & Route Registry Migration
+## v5.6.0 — Page Architecture & Route Registry Migration
 
 - Added a central client-side release metadata source at `assets/release-metadata.js`.
 - Updated app shell and footer version handling to reduce footer/header drift.
-- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.7.0.
+- Refreshed homepage, app shell, component defaults, cache-busting values, and visible release metadata to v5.6.0.
 - Added metadata validation documentation and strengthened release standards.
 - Regenerated file manifests and SHA256 checksums.
 - No database changes.
@@ -227,4 +223,3 @@ Adds role/group-based schedule visibility and privacy controls. Employees can be
 
 - Added new Staffing Engine foundation for coverage, vacancies, assignments, OT/callback/mandation previews, and schedule integrity checks.
 - Cleaned navigation labels.
-

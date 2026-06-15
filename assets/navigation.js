@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v5.7.0
+Version: v5.8.0
 Purpose: Central navigation registry for connected Schedule flyout navigation.
 */
 (function () {

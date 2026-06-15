@@ -1,14 +1,18 @@
-# Latest Release
+# Latest Release — Signal Schedule v5.8.0
 
-## Signal Schedule v5.7.0 — Request Foundation & Navigation Cleanup
+**Release:** Leave Banks & Data Layer Cleanup  
+**Date:** 2026-06-15  
+**Status:** Foundation
 
-v5.7.0 cleans navigation ownership, fixes moved-page JSON drift, and adds the request foundation needed before the full v6 Request Engine.
+## Included
 
-## Highlights
+- Leave bank foundation UI improvements.
+- Vacation, sick, personal, comp time, holiday, and training bank preview support.
+- Leave balance cards, transaction history foundation, and adjustment entry foundation.
+- Data layer cleanup for optional preview JSON.
+- Graceful fallback helpers for foundation pages.
+- Leave bank SQL draft and docs.
 
-- `Me` navigation renamed to `My Schedule`.
-- Data Tools, Settings, and Notifications now have single nav ownership.
-- Moved pages now use root-safe `/data/` JSON paths.
-- Data Tools no longer parses HTML fallback pages as JSON.
-- Request foundation data and documentation added.
-- Footer/header/homepage metadata validated.
+## Database
+
+No live database migration is required. SQL is included as a preview foundation draft only.

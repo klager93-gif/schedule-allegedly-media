@@ -13,9 +13,6 @@
 
 Continue building request, leave bank, open shift, approval, validation, export, and backend readiness foundations until Schedule is ready for **v6.0 Request Engine**.
 
+## Current: v5.8.0
 
-## v5.7.0 Notes
-
-- Navigation cleanup: Me is now My Schedule and duplicate nav entries were removed.
-- Data path cleanup: moved pages use root-safe `/data/` JSON paths.
-- Request foundation: request types, statuses, reasons, increments, hours, overrides, and history are documented for the v6 Request Engine.
+Leave Banks & Data Layer Cleanup is complete. Next natural direction: approval/open-shift depth, then request engine integration.

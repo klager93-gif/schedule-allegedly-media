@@ -1,12 +1,13 @@
-# Signal Schedule v5.7.0 File Manifest
+# File Manifest — Signal Schedule v5.8.0
 
-Generated package manifest for v5.7.0.
+Total files: 449
 
 - `.gitattributes`
 - `.gitignore`
 - `ADMIN_CHANGELOG.md`
 - `BUILDMANIFEST.md`
 - `CHANGELOG.md`
+- `FILEMANIFEST.generated.txt`
 - `FILEMANIFEST.md`
 - `HOWTO.md`
 - `LATEST_RELEASE.md`
@@ -14,6 +15,7 @@ Generated package manifest for v5.7.0.
 - `PUBLIC_CHANGELOG.md`
 - `README.md`
 - `ROADMAP.md`
+- `SHA256SUMS.txt`
 - `STANDARDS.md`
 - `VALIDATION.md`
 - `adapters/JsonAssignmentEngineAdapter.js`
@@ -222,6 +224,7 @@ Generated package manifest for v5.7.0.
 - `docs/architecture/PAGE-ARCHITECTURE.md`
 - `docs/architecture/REGISTRY-FOUNDATION.md`
 - `docs/audits/ALPHA-INTEGRATION-AUDIT.md`
+- `docs/audits/DATA-LAYER-AUDIT-v5.8.md`
 - `docs/audits/DATA-PATH-DRIFT-AUDIT-v5.7.md`
 - `docs/audits/NAVIGATION-DRIFT-AUDIT-v5.7.md`
 - `docs/engines/REQUEST-APPROVAL-ENGINE.md`
@@ -230,6 +233,7 @@ Generated package manifest for v5.7.0.
 - `docs/foundation/CALENDAR-FOUNDATION.md`
 - `docs/foundation/EMPLOYEE-EXPERIENCE-DATA-TOOLS.md`
 - `docs/foundation/EMPLOYEE-IDENTITY-FOUNDATION.md`
+- `docs/foundation/LEAVE-BANKS-FOUNDATION-v5.8.md`
 - `docs/foundation/LEAVE-REQUESTS-FOUNDATION.md`
 - `docs/foundation/MINIMUM-STAFFING-FOUNDATION.md`
 - `docs/foundation/OPEN-SHIFTS-FOUNDATION.md`
@@ -438,6 +442,7 @@ Generated package manifest for v5.7.0.
 - `services/TrainingCertificationService.js`
 - `services/VisibilityPrivacyService.js`
 - `services/WeeklyBoardService.js`
+- `sql/058_leave_banks_foundation.sql`
 - `standards/COMPONENT_STANDARDS.md`
 - `standards/DEVELOPMENT_STANDARDS.md`
 - `standards/DOCUMENTATION_STANDARDS.md`

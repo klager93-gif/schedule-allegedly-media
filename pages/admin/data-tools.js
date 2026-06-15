@@ -2,17 +2,46 @@
 Signal Labs
 Area: Signal Schedule
 File: pages/admin/data-tools.js
-Version: v5.7.0
-Purpose: Render employee experience data tools preview with root-safe JSON loading.
+Version: v5.8.0
+Purpose: Render employee experience data tools preview with graceful foundation data fallback.
 */
 const esc = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
+
+const fallbackData = {
+  summary: 'Data tools are ready for templates, imports, exports, and profile-field management. Preview data will appear when available.',
+  roles: ['Admin inherits employee self-service tools', 'Supervisor review/control options remain staged'],
+  templates: ['Employee profile template', 'Availability import template', 'Leave bank starting balance template'],
+  imports: ['Employee roster', 'Leave balances', 'Availability preferences'],
+  exports: ['Employee profile CSV', 'Leave bank CSV', 'Request audit CSV'],
+  profileFields: ['Preferred name', 'Contact info', 'Emergency contact', 'Availability notes', 'Qualifications']
+};
+
+function list(items) {
+  return `<ul>${(items || []).map((item) => `<li>${esc(item)}</li>`).join('')}</ul>`;
+}
+
+function fill(selector, html) {
+  const node = document.querySelector(selector);
+  if (node) node.innerHTML = html;
+}
+
 function render(data){
   const shell=document.querySelector('.data-tools-shell');
   if(!shell)return;
-  shell.insertAdjacentHTML('beforeend',`<section class="schedule-card"><h2>Data preview loaded</h2><p>${esc(data.summary || 'Data tools preview data is available.')}</p></section>`);
+  fill('[data-role-inheritance]', list(data.roles || data.roleInheritance));
+  fill('[data-template-list]', list(data.templates));
+  fill('[data-import-list]', list(data.imports));
+  fill('[data-export-list]', list(data.exports));
+  fill('[data-profile-fields]', list(data.profileFields || data.fields));
+  shell.insertAdjacentHTML('beforeend', `<section class="schedule-card"><h2>Data Layer Ready</h2><p>${esc(data.summary || fallbackData.summary)}</p><p class="schedule-muted">v5.8.0 uses graceful fallback data so missing preview JSON no longer displays alarming fetch errors.</p></section>`);
 }
-function showError(error){
-  const shell=document.querySelector('.data-tools-shell');
-  if(shell)shell.insertAdjacentHTML('beforeend',`<section class="schedule-card"><h2>Data failed to load</h2><p>${esc(error.message)}</p><p class="schedule-muted">v5.7 uses root-safe /data/ paths so moved pages no longer parse HTML 404 pages as JSON.</p></section>`);
+
+async function init(){
+  const loader = window.SignalScheduleData;
+  const data = loader?.loadJsonOrFallback
+    ? await loader.loadJsonOrFallback('/data/employee-experience-data-tools-preview.json', fallbackData)
+    : fallbackData;
+  render(data || fallbackData);
 }
-(window.SignalScheduleData?.loadJson ? window.SignalScheduleData.loadJson('/data/employee-experience-data-tools-preview.json') : fetch('/data/employee-experience-data-tools-preview.json').then(r=>r.json())).then(render).catch(showError);
+
+init();

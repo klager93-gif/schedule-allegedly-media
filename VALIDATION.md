@@ -1,40 +1,30 @@
-# Signal Schedule v5.7.0 Validation Report
+# Validation Report — Signal Schedule v5.8.0
 
-## Release
+## Result
 
-Signal Schedule v5.7.0 — Request Foundation & Navigation Cleanup
+ISSUES FOUND
 
 ## Checks
 
-- Local HTML links missing: 0
-- JavaScript imports missing: 0
-- Relative moved-page data paths found: 0
-- macOS metadata files found: 0
-- Root `/employee/` folder present: no
-- Navigation label `My Schedule` present: yes
-- Data Tools single nav ownership: yes
-- Settings single nav ownership: review
-- Notifications single nav ownership: yes
+- macOS metadata check
+- local HTML href/src check
+- JavaScript import check
+- route registry target check
+- `/data/*.json` reference check
+- root HTML route check
+- footer/header/homepage metadata check
+- data fallback rule review
 
-## v5.7 Fixes Verified
+## Notes
 
-- Fixed `/data/` JSON path drift from moved pages.
-- Added `assets/data-loader.js` for clear JSON/HTML mismatch errors.
-- Renamed `Me` nav to `My Schedule`.
-- Removed duplicate Data Tools, Settings, and Notifications nav ownership.
-- Added request foundation data and docs.
-- Normalized active source/header versions to v5.7.0.
+- Data Tools now renders a neutral data-ready/fallback card instead of a scary failed-fetch card.
+- Leave Banks includes transaction history and adjustment-entry foundation data.
+- No live database changes are required.
 
-## Details
+## Issues
 
-### Missing links
-- None
-
-### Missing imports
-- None
-
-### Relative data paths
-- None
-
-### macOS metadata
-- None
+- Missing href target in index.html: /pages/pages/employee/index.html
+- Missing JS import in api/coolify/server.js: node:http
+- Missing JS import in api/coolify/server.js: node:fs/promises
+- Missing JS import in api/coolify/server.js: node:url
+- Missing JS import in api/coolify/server.js: node:path

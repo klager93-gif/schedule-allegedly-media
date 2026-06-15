@@ -1,17 +1,19 @@
-# Signal Schedule v5.7.0 Build Manifest
+# Build Manifest — Signal Schedule v5.8.0
+
+## Release
+
+Leave Banks & Data Layer Cleanup
 
 ## Package
 
-`schedule-allegedly-media-v5.7.0-request-foundation-navigation-cleanup.zip`
+Full replacement package for the standalone `schedule-allegedly-media` repository.
 
-## Scope
+## Included
 
-- Request foundation UI/data/docs
-- Navigation cleanup and duplicate ownership removal
-- JSON path drift fixes for moved pages
-- Root-safe data loader helper
-- Module header/version normalization
-- Manifest/checksum regeneration
+- Leave bank foundation UI and preview data
+- Data layer graceful fallback cleanup
+- Leave bank SQL foundation draft
+- Updated docs/changelogs/manifests/checksums
 
 ## Validation
 
