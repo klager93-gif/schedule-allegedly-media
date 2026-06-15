@@ -271,7 +271,7 @@
     "v5.8 adds graceful data fallback so leave bank pages can render even when preview JSON is unavailable.",
     "Leave bank transaction history is modeled separately from manual adjustments to prepare for audit-grade posting."
   ],
-  "version": "5.9.0",
+  "version": "5.10.0",
   "transactions": [
     {
       "id": "txn-001",

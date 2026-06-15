@@ -187,3 +187,8 @@ Core identity tables are intentionally unprefixed: `employees`, `users`, `roles`
 ## v5.9 UI Copy Widget Rule
 
 Do not add copy buttons or code-style copy boxes to normal product UI just because ChatGPT handoff text uses copy-friendly formatting. Reserve in-app copy affordances for genuinely technical screens such as SQL, API contracts, or export payloads.
+
+
+## Identity/Login Rule
+
+Login UI may be previewed before live authentication, but every identity release must clearly separate preview-only session data from backend-enforced authentication. Identity references must use the live database naming contract: `users`, `roles`, `user_roles`, `role_permissions`, and `employees` for core identity tables.

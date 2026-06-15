@@ -1,6 +1,6 @@
-# Leave Banks Foundation v5.9.0
+# Leave Banks Foundation v5.10.0
 
-Signal Schedule v5.9.0 adds the leave bank foundation UI and data model readiness.
+Signal Schedule v5.10.0 adds the leave bank foundation UI and data model readiness.
 
 ## Scope
 
@@ -19,4 +19,4 @@ Signal Schedule v5.9.0 adds the leave bank foundation UI and data model readines
 - `schedule_leave_balances`
 - `schedule_leave_transactions`
 
-No live database migration is required for v5.9.0.
+No live database migration is required for v5.10.0.

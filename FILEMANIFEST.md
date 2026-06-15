@@ -1,4 +1,4 @@
-# File Manifest
+# File Manifest — v5.10.0
 
 - `.gitattributes`
 - `.gitignore`
@@ -11,7 +11,6 @@
 - `README.md`
 - `ROADMAP.md`
 - `STANDARDS.md`
-- `VALIDATION.md`
 - `adapters/JsonAssignmentEngineAdapter.js`
 - `adapters/JsonAssignmentGeneratorAdapter.js`
 - `adapters/JsonBenefitLedgerAdapter.js`
@@ -170,6 +169,7 @@
 - `data/conflict-detection-preview.json`
 - `data/coverage-board-preview.json`
 - `data/coverage-spots-preview.json`
+- `data/current-user-preview.json`
 - `data/daily-board-preview.json`
 - `data/database-audit-preview.json`
 - `data/demo-presets.json`
@@ -182,6 +182,7 @@
 - `data/employee-timeline-preview.json`
 - `data/employees.json`
 - `data/export-foundation-preview.json`
+- `data/identity-session-preview.json`
 - `data/leave-banks-preview.json`
 - `data/leave-request-types.json`
 - `data/leave-requests-preview.json`
@@ -217,6 +218,7 @@
 - `docs/README.md`
 - `docs/architecture/DATABASE-NAMING-CONTRACT-v5.9.md`
 - `docs/architecture/FILE_ORGANIZATION.md`
+- `docs/architecture/IDENTITY-SESSION-CONTRACT-v5.10.md`
 - `docs/architecture/METADATA-VALIDATION.md`
 - `docs/architecture/PAGE-ARCHITECTURE.md`
 - `docs/architecture/REGISTRY-FOUNDATION.md`
@@ -231,6 +233,7 @@
 - `docs/foundation/CALENDAR-FOUNDATION.md`
 - `docs/foundation/EMPLOYEE-EXPERIENCE-DATA-TOOLS.md`
 - `docs/foundation/EMPLOYEE-IDENTITY-FOUNDATION.md`
+- `docs/foundation/IDENTITY-LOGIN-FOUNDATION-v5.10.md`
 - `docs/foundation/LEAVE-BANKS-FOUNDATION-v5.8.md`
 - `docs/foundation/LEAVE-REQUESTS-FOUNDATION.md`
 - `docs/foundation/MINIMUM-STAFFING-FOUNDATION.md`
@@ -268,6 +271,10 @@
 - `pages/employee/index.html`
 - `pages/employee/profile.html`
 - `pages/employee/requests.html`
+- `pages/identity/current-user.html`
+- `pages/identity/identity.css`
+- `pages/identity/identity.js`
+- `pages/identity/login.html`
 - `pages/people/availability.css`
 - `pages/people/availability.html`
 - `pages/people/availability.js`

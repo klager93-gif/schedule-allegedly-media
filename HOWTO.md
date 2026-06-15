@@ -1,10 +1,11 @@
-# How to Use Signal Schedule v5.9.0
+# HOWTO
 
-Use the navigation groups to review My Schedule, Scheduling, Staffing, Personnel, Requests, Overtime, Administration, Reports, and System pages.
+Use the static Schedule foundation by opening `index.html` or deploying the repository as a static site.
 
-For database work, see:
+## v5.10 Identity Preview
 
-- `docs/architecture/DATABASE-NAMING-CONTRACT-v5.9.md`
-- `docs/audits/SQL-AUDIT-v5.9.md`
+- Login preview: `/pages/identity/login.html`
+- Current user preview: `/pages/identity/current-user.html`
+- Preview data: `/data/current-user-preview.json`
 
-Core identity tables are unprefixed (`employees`, `users`, `roles`). Schedule module tables generally use the `schedule_` prefix.
+The login foundation is not live authentication. It is a frontend and architecture preview for future backend-connected identity work.

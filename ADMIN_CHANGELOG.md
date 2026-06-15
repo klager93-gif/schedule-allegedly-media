@@ -1,6 +1,12 @@
+# v5.10.0 — Identity & Login Foundation
+
+- Staged login and current-user pages.
+- Added identity navigation and route registry entries.
+- Documented identity table expectations against the live database naming contract.
+
 # Admin Changelog
 
-## v5.9.0 — Approval Foundation, SQL Audit & UI Modernization
+## v5.10.0 — Identity & Login Foundation
 
 - Added approval foundation data and decision model preview.
 - Added database naming contract for core identity versus schedule module tables.
@@ -10,7 +16,7 @@
 - Refreshed release metadata, cache busting, manifests, and validation.
 
 
-## v5.9.0 — Leave Banks & Data Layer Cleanup
+## v5.10.0 — Leave Banks & Data Layer Cleanup
 
 - Added leave bank transaction and adjustment foundation structures.
 - Added `assets/data-loader.js` fallback helpers.

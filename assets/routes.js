@@ -2,11 +2,13 @@
 Signal Labs
 Area: Signal Schedule
 File: assets/routes.js
-Version: v5.9.0
+Version: v5.10.0
 Purpose: Central route registry for standalone Signal Schedule page architecture and foundation workspaces.
 */
 window.SIGNAL_SCHEDULE_ROUTES = Object.freeze({
   home: 'index.html',
+  login: 'pages/identity/login.html',
+  currentUser: 'pages/identity/current-user.html',
   workspace: 'pages/workspace/workspace.html',
   builder: 'pages/workspace/builder.html',
   calendar: 'pages/calendar/schedule.html',

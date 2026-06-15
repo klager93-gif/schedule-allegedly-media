@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: app-shell.js
-Version: v5.9.0
+Version: v5.10.0
 Purpose: Desktop application shell using release, route, navigation, config, feature, role, status, and page architecture registries.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
   if (!body || body.dataset.signalArea !== 'Signal Schedule') return;
 
   const releaseMeta = window.SIGNAL_SCHEDULE_RELEASE || {};
-  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.9.0';
+  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.10.0';
   const releaseStatus = releaseMeta.status || 'Foundation';
   const title = body.dataset.signalTitle || document.title.replace('— Signal Schedule', '').trim() || 'Signal Schedule';
   const themeKey = 'signalScheduleTheme';
@@ -156,6 +156,8 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
         <h1>${escapeHtml(title)}</h1>
       </div>
       <div class="schedule-app-toolbar__meta" aria-label="Workspace controls">
+        <a class="schedule-app-chip schedule-app-chip--good" href="/pages/identity/login.html">Login foundation</a>
+        <a class="schedule-app-chip" href="/pages/identity/current-user.html">Current user</a>
         <div class="schedule-theme-menu" data-schedule-theme-menu>
           <button class="schedule-control schedule-theme-menu__button" type="button" data-schedule-theme-button aria-haspopup="listbox" aria-expanded="false">
             <span class="schedule-control__label">Theme</span>

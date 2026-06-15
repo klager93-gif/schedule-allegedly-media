@@ -1,6 +1,10 @@
+# v5.10.0 — Identity & Login Foundation
+
+Signal Schedule now includes a preview login experience and current-user model for future multi-user access.
+
 # Public Changelog
 
-## v5.9.0 — Approval Foundation, SQL Audit & UI Modernization
+## v5.10.0 — Identity & Login Foundation
 
 - Added approval foundation data and decision model preview.
 - Added database naming contract for core identity versus schedule module tables.
@@ -10,7 +14,7 @@
 - Refreshed release metadata, cache busting, manifests, and validation.
 
 
-## v5.9.0 — Leave Banks & Data Cleanup
+## v5.10.0 — Leave Banks & Data Cleanup
 
 - Improved leave bank preview pages.
 - Added clearer balance, transaction, and adjustment foundations.

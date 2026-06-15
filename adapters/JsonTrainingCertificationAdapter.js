@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/adapters/JsonTrainingCertificationAdapter.js
-Version: v5.9.0
+Version: v5.10.0
 Purpose: JSON adapter for Training & Certifications preview data
 */
 export async function getTrainingCertificationPreview() {

@@ -1,0 +1,8 @@
+/*
+Signal Labs
+Area: Signal Schedule
+File: pages/identity/identity.css
+Version: v5.10.0
+Purpose: Identity and login foundation styles.
+*/
+.identity-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;align-items:start}.identity-form{display:grid;gap:12px}.identity-field{display:grid;gap:6px}.identity-field label{font-weight:700}.identity-field input,.identity-field select{width:100%;border:1px solid rgba(148,163,184,.35);border-radius:12px;padding:12px;background:rgba(15,23,42,.62);color:inherit}.identity-actions{display:flex;gap:10px;flex-wrap:wrap}.identity-button{border:0;border-radius:999px;padding:11px 16px;font-weight:800;cursor:pointer;background:#38bdf8;color:#082f49}.identity-button.secondary{background:rgba(148,163,184,.18);color:inherit;border:1px solid rgba(148,163,184,.35)}.identity-session-card{border:1px solid rgba(148,163,184,.28);border-radius:18px;padding:16px;background:rgba(15,23,42,.55)}.identity-pill-row{display:flex;gap:8px;flex-wrap:wrap}.identity-pill{border:1px solid rgba(148,163,184,.28);border-radius:999px;padding:6px 10px;background:rgba(15,23,42,.4);font-size:.86rem}.identity-warning{border-left:4px solid #f59e0b;padding:12px 14px;border-radius:12px;background:rgba(245,158,11,.1)}@media(max-width:900px){.identity-grid{grid-template-columns:1fr}}

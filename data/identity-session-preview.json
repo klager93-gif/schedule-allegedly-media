@@ -1,0 +1,13 @@
+{
+  "sessionState": "preview",
+  "authProvider": "Signal Schedule Local Auth (planned)",
+  "tables": [
+    "users",
+    "roles",
+    "user_roles",
+    "role_permissions",
+    "employees"
+  ],
+  "multiTenantModel": "single database with agency_id tenant separation",
+  "sampleAgency": "City of Minooka"
+}

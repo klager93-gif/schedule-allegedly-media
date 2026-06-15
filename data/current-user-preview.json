@@ -1,0 +1,20 @@
+{
+  "displayName": "Kristopher Ohligschlager",
+  "email": "admin@minooka.example",
+  "agencyId": "city-minooka-il",
+  "agencyName": "City of Minooka",
+  "roles": [
+    "Administrator",
+    "Scheduler"
+  ],
+  "permissions": [
+    "agency.setup.manage",
+    "employees.manage",
+    "schedule.manage",
+    "requests.approve",
+    "system.audit.view"
+  ],
+  "status": "Setup Pending",
+  "loginMode": "Preview Session",
+  "landingPage": "/pages/admin/agency-setup.html"
+}

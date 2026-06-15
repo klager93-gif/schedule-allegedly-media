@@ -1,23 +1,24 @@
-# Build Manifest
+# Build Manifest — v5.10.0
 
-Release: Signal Schedule v5.9.0 — Approval Foundation, SQL Audit & UI Modernization
+Package: `schedule-allegedly-media-v5.10.0-identity-login-foundation.zip`
 
-Package type: Full replacement for standalone `schedule-allegedly-media` repository.
+## Included
 
-Included:
+- Identity/login foundation pages
+- Current-user session preview
+- Identity route/navigation registry entries
+- Role-aware app-shell links
+- City of Minooka preview session data
+- Identity/session documentation
+- Refreshed manifests and checksums
 
-- Approval foundation and decision model preview.
-- Database naming contract.
-- SQL audit snapshot for the live 118-table Postgres inventory.
-- UI copy widget cleanup.
-- Database Audit system page.
-- Updated docs, metadata, manifests, and checksums.
+## Excluded
 
-Validation summary:
+- `.git/`
+- `__MACOSX/`
+- `.DS_Store`
+- AppleDouble `._*` files
 
-- Missing HTML links: 0
-- Missing scripts: 0
-- Missing JS imports: 0
-- Missing route targets: 0
-- Remaining in-app copy widgets: 0
-- macOS metadata files: 0
+## Database
+
+No live database changes.
