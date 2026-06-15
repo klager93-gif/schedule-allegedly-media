@@ -1,4 +1,8 @@
-# File Manifest — v5.14.0
+# File Manifest — v5.14.1
+
+Generated for Dashboard Replica Shell Repair.
+
+## Files
 
 - `.gitattributes`
 - `.gitignore`
@@ -142,6 +146,7 @@
 - `assets/agency-branding.js`
 - `assets/agency-logo.svg`
 - `assets/config.js`
+- `assets/dashboard.css`
 - `assets/data-loader.js`
 - `assets/features.js`
 - `assets/icons/apple-touch-icon.png`
@@ -152,6 +157,7 @@
 - `assets/release-metadata.js`
 - `assets/roles.js`
 - `assets/routes.js`
+- `assets/signal-schedule-logo.svg`
 - `assets/status.js`
 - `assets/themes/cad.css`
 - `assets/themes/high-contrast.css`

@@ -1,4 +1,12 @@
-# v5.14.0 — Dashboard & Clean Route Foundation
+# v5.14.1 — Dashboard Replica Shell Repair
+
+- Rebuilt root dashboard from scratch to match the target mission-control layout more closely.
+- Added temporary dashboard-specific CSS while the broader app theme migrates.
+- Added reusable code-built Signal Schedule SVG logo and wordmark.
+- Restored sidebar, top header, metric cards, schedule overview, calendar layers, side widgets, and footer identity preview.
+- No database changes.
+
+# v5.14.1 — Dashboard & Clean Route Foundation
 
 - Added Dashboard as the user-facing landing page label for `index.html`.
 - Added Dashboard nav group.
@@ -7,13 +15,13 @@
 - Added clean route foundation documentation for future app-style URLs.
 - Refreshed metadata, manifests, checksums, and validation.
 
-# v5.14.0 — Visibility & View Engine
+# v5.14.1 — Visibility & View Engine
 
 Added login/current-user foundation, identity route registry entries, preview session data, and identity/session architecture docs.
 
 # Master-Changelog
 
-## v5.14.0 — Visibility & View Engine
+## v5.14.1 — Visibility & View Engine
 
 - Added approval foundation data and decision model preview.
 - Added database naming contract for core identity versus schedule module tables.
@@ -23,7 +31,7 @@ Added login/current-user foundation, identity route registry entries, preview se
 - Refreshed release metadata, cache busting, manifests, and validation.
 
 
-## v5.14.0 — Leave Banks & Data Layer Cleanup
+## v5.14.1 — Leave Banks & Data Layer Cleanup
 
 - Leave bank foundation UI expanded.
 - Data tools failed-fetch display replaced with graceful fallback state.

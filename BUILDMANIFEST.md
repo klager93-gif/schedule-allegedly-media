@@ -1,5 +1,5 @@
-# Build Manifest — v5.14.0
+# Build Manifest — v5.14.1
 
-Package: schedule-allegedly-media-v5.14.0-dashboard-css-repair-operations-foundation.zip
+Package: schedule-allegedly-media-v5.14.1-dashboard-replica-shell-repair.zip
 
-Includes dashboard CSS scope repair and operations foundation.
+Purpose: Patch v5.14.0 dashboard by rebuilding the root dashboard with a dedicated dashboard shell, temporary dashboard CSS, and code-built Signal Schedule logo.

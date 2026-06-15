@@ -2,17 +2,17 @@
 Signal Labs
 Area: Signal Schedule
 File: assets/release-metadata.js
-Version: v5.14.0
+Version: v5.14.1
 Purpose: Single client-side release metadata source for app shell, footer, registries, and validation.
 */
 window.SIGNAL_SCHEDULE_RELEASE = Object.freeze({
   product: 'Signal Schedule',
-  version: '5.14.0',
-  releaseName: 'Visibility & View Engine',
-  status: 'Foundation',
+  version: '5.14.1',
+  releaseName: 'Dashboard Replica Shell Repair',
+  status: 'Patch',
   date: '2026-06-15',
   domain: 'https://schedule.allegedly-media.com',
   updated: '2026-06-15',
-  cacheKey: '5.14.0',
+  cacheKey: '5.14.1',
   repository: 'schedule-allegedly-media'
 });

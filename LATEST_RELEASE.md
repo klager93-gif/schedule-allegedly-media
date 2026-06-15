@@ -1,6 +1,9 @@
-# Signal Schedule v5.14.0
+# Signal Schedule v5.14.1
 
-Dashboard CSS Repair & Operations Foundation.
+Dashboard Replica Shell Repair.
 
-- Fixed Dashboard CSS scope by adding required body data attributes to index.html.
-- Added operations foundation layer for open shifts, VOT, notifications, approvals, and dashboard widgets.
+- Rebuilt index.html as a dashboard-first mission-control screen.
+- Added temporary dashboard-specific CSS for the target dashboard direction.
+- Added reusable SVG Signal Schedule shield/wordmark logo.
+- Restored dashboard sidebar, top header, metric cards, schedule overview, calendar layers, leave balances, announcements, and footer identity preview.
+- No database changes.

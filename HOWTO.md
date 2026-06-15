@@ -1,6 +1,6 @@
 # HOWTO
 
-Updated for Signal Schedule v5.14.0 — Dashboard CSS Repair & Operations Foundation.
+Updated for Signal Schedule v5.14.1 — Dashboard Replica Shell Repair.
 
 # Signal Schedule HOWTO
 

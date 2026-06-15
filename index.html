@@ -5,129 +5,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Signal Schedule | Dashboard</title>
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/app-shell.css?v=5.14.0" />
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.14.1" />
 </head>
-<body data-signal-area="Signal Schedule" data-signal-title="Dashboard" data-signal-version="v5.14.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Mission-control view for staffing, schedule health, requests, open shifts, calendar layers, and agency operations.">
-<div id="schedule-header"></div>
+<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="Dashboard" data-signal-version="v5.14.1" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Mission-control view for staffing, schedule health, requests, open shifts, calendar layers, and agency operations.">
+  <div class="signal-dashboard-shell">
+    <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
+      <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
+        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule" />
+        <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
+      </a>
 
-<main class="schedule-shell schedule-dashboard">
-  <section class="schedule-hero schedule-hero--compact" aria-labelledby="dashboardTitle">
-    <div>
-      <p class="schedule-kicker">Signal Schedule Dashboard</p>
-      <h1 id="dashboardTitle">Dashboard</h1>
-      <p class="schedule-subtitle">Mission-control view for staffing, schedule health, requests, open shifts, calendar layers, and agency operations.</p>
-    </div>
-    <div class="schedule-status-grid" aria-label="Dashboard summary">
-      <div><strong>v5.14.0</strong><span>Dashboard Foundation</span></div>
-      <div><strong>05:00</strong><span>Operational Day Start</span></div>
-      <div><strong>8</strong><span>Calendar Layers</span></div>
-      <div><strong>Clean</strong><span>Route Planning</span></div>
-    </div>
-  </section>
+      <nav class="signal-dashboard-nav">
+        <a class="is-active" href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <a href="/pages/calendar/schedule.html"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⚙</span><span>System</span></a>
+        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">◇</span><span>Admin</span></a>
+      </nav>
 
-  <section class="schedule-workspace-split">
-    <section class="schedule-card">
-      <div class="schedule-section-head">
-        <div>
-          <h2>Agency Overview</h2>
-          <p>Fictional demo branding is shown here until an admin-level logo upload utility exists.</p>
+      <div class="signal-dashboard-quick">
+        <div class="signal-dashboard-nav__section">Quick Actions</div>
+        <div class="signal-dashboard-action">
+          <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">＋</span><span>Add Request</span></a>
+          <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shift Board</span></a>
+          <a href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▣</span><span>Create Schedule</span></a>
+          <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>View Daily Board</span></a>
         </div>
       </div>
-      <div class="schedule-rule-grid">
-        <div><img src="/assets/agency-logo.svg" alt="Fairview Public Safety placeholder logo" style="width:72px;height:72px;border-radius:18px;display:block;margin-bottom:12px;"><b>City of Fairview Public Safety</b><br><span>Demo agency branding placeholder.</span></div>
-        <div><b>Logged in as</b><br><span>Jordan Miller • Administrator • Scheduler</span></div>
-        <div><b>Current Agency</b><br><span>Fairview Public Safety</span></div>
-        <div><b>Setup Status</b><br><span>Agency setup wizard foundation ready.</span></div>
-      </div>
-    </section>
 
-    <section class="schedule-card">
-      <div class="schedule-section-head">
+      <div class="signal-dashboard-user" aria-label="Current user preview">
+        <div class="signal-dashboard-avatar">JM</div>
         <div>
-          <h2>Today at a Glance</h2>
-          <p>Dashboard cards are preview-only until live request, staffing, and identity services are connected.</p>
+          <strong>Jordan Miller</strong>
+          <small>Administrator<br>City of Fairview</small>
         </div>
       </div>
-      <div class="schedule-status-grid" aria-label="Operations summary">
-        <div><strong>6</strong><span>Pending Requests</span></div>
-        <div><strong>3</strong><span>Open Shifts</span></div>
-        <div><strong>2</strong><span>Coverage Alerts</span></div>
-        <div><strong>1</strong><span>Draft Schedule</span></div>
-      </div>
-    </section>
-  </section>
+    </aside>
 
-  <section class="schedule-card">
-    <div class="schedule-section-head">
-      <div>
-        <h2>Schedule Overview</h2>
-        <p>The dashboard uses the same view-engine ideas staged in v5.12: saved views, filters, color modes, and operational-day boundaries.</p>
-      </div>
-      <a class="schedule-button" href="/pages/calendar/schedule.html">Open Calendar</a>
+    <div class="signal-dashboard-main">
+      <header class="signal-dashboard-topbar">
+        <div class="signal-dashboard-title">
+          <h1>Dashboard</h1>
+          <p>Overview of today’s schedule and activity</p>
+        </div>
+        <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation">
+          <a class="is-active" href="/index.html">Dashboard</a>
+          <a href="/pages/calendar/schedule.html">Schedules⌄</a>
+          <a href="/pages/requests/requests.html">Requests⌄</a>
+          <a href="/pages/people/employees.html">Employees⌄</a>
+          <a href="/pages/reports/reports.html">Reports⌄</a>
+          <a href="/pages/admin/system-health.html">System⌄</a>
+        </nav>
+        <div class="signal-dashboard-top-actions">
+          <span aria-label="Search">⌕</span>
+          <span aria-label="Notifications">🔔<span class="signal-dashboard-badge">3</span></span>
+          <a class="signal-dashboard-pill" href="/pages/identity/current-user.html">JM</a>
+        </div>
+      </header>
+
+      <main class="signal-dashboard-content">
+        <div class="signal-dashboard-status">
+          <span class="signal-dashboard-pill">v5.14.1</span>
+          <strong>Administrator</strong><span>•</span><strong>Jordan Miller</strong><span>•</span><strong>City of Fairview</strong>
+          <span class="signal-dashboard-dot" aria-hidden="true"></span><span>All systems operational</span>
+        </div>
+
+        <section class="signal-dashboard-metrics" aria-label="Dashboard metrics">
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-blue">👥</div><div><small>Pending Requests</small><strong>18</strong><em class="signal-blue">↑ 4 from yesterday</em></div>
+          </article>
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-green">✓</div><div><small>Open Shifts</small><strong>7</strong><em class="signal-green">↓ 2 from yesterday</em></div>
+          </article>
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-yellow">⚠</div><div><small>Coverage Alerts</small><strong>5</strong><em class="signal-orange">↑ 1 critical</em></div>
+          </article>
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-purple">◷</div><div><small>Upcoming Overtime</small><strong>12</strong><em class="signal-purple">Next 7 days</em></div>
+          </article>
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-cyan">▣</div><div><small>Unpublished Schedules</small><strong>3</strong><em class="signal-cyan">Drafts in progress</em></div>
+          </article>
+        </section>
+
+        <section class="signal-dashboard-grid">
+          <div>
+            <section class="signal-dashboard-panel" aria-label="Schedule overview">
+              <div class="signal-dashboard-panel__head"><h2>▣ Schedule Overview</h2><a href="/pages/settings/view-engine.html">⚙</a></div>
+              <div class="signal-dashboard-calendar-toolbar">
+                <a class="signal-dashboard-btn" href="/pages/workspace/weekly-board.html">‹</a>
+                <a class="signal-dashboard-btn" href="/pages/workspace/weekly-board.html">Today</a>
+                <div class="signal-dashboard-week-title">Jun 15 – Jun 21, 2026⌄</div>
+                <div class="signal-dashboard-tabs"><span>Day</span><span class="is-active">Week</span><span>Timeline</span><span>Month</span></div>
+                <a class="signal-dashboard-btn" href="/pages/settings/view-engine.html">⚙</a>
+              </div>
+              <div class="signal-dashboard-board">
+                <div class="signal-dashboard-board-grid">
+                  <div></div><div class="signal-dashboard-day">Sun<strong>15</strong></div><div class="signal-dashboard-day">Mon<strong>16</strong></div><div class="signal-dashboard-day">Tue<strong>17</strong></div><div class="signal-dashboard-day is-today">Wed<strong>18</strong></div><div class="signal-dashboard-day">Thu<strong>19</strong></div><div class="signal-dashboard-day">Fri<strong>20</strong></div><div class="signal-dashboard-day">Sat<strong>21</strong></div>
+                  <div class="signal-dashboard-row-label"><span class="signal-green">●</span>A Days <span class="signal-dashboard-count">12</span></div><div><span class="signal-dashboard-shift shift-green">0600–1800 <span>8</span></span></div><div><span class="signal-dashboard-shift shift-green">0600–1800 <span>8</span></span></div><div><span class="signal-dashboard-shift shift-green">0600–1800 <span>8</span></span></div><div><span class="signal-dashboard-shift shift-green">0600–1800 <span>8</span></span></div><div><span class="signal-dashboard-shift shift-green">0600–1800 <span>7</span></span></div><div><span class="signal-dashboard-shift shift-green">0600–1800 <span>3</span></span></div><div><span class="signal-dashboard-shift shift-green">0600–1800 <span>7</span></span></div>
+                  <div class="signal-dashboard-row-label"><span class="signal-blue">●</span>A Nights <span class="signal-dashboard-count">11</span></div><div><span class="signal-dashboard-shift shift-blue">1800–0600 <span>7</span></span></div><div><span class="signal-dashboard-shift shift-blue">1800–0600 <span>7</span></span></div><div><span class="signal-dashboard-shift shift-blue">1800–0600 <span>7</span></span></div><div><span class="signal-dashboard-shift shift-blue">1800–0600 <span>7</span></span></div><div><span class="signal-dashboard-shift shift-blue">1800–0600 <span>7</span></span></div><div><span class="signal-dashboard-shift shift-blue">1800–0600 <span>7</span></span></div><div><span class="signal-dashboard-shift shift-blue">1800–0600 <span>7</span></span></div>
+                  <div class="signal-dashboard-row-label"><span class="signal-yellow">●</span>B Days <span class="signal-dashboard-count">10</span></div><div><span class="signal-dashboard-shift shift-gold">0600–1800 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-gold">0600–1800 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-gold">0600–1800 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-gold">0600–1800 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-gold">0600–1800 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-gold">0600–1800 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-gold">0600–1800 <span>5</span></span></div>
+                  <div class="signal-dashboard-row-label"><span class="signal-purple">●</span>B Nights <span class="signal-dashboard-count">9</span></div><div><span class="signal-dashboard-shift shift-purple">1800–0600 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-purple">1800–0600 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-purple">1800–0600 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-purple">1800–0600 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-purple">1800–0600 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-purple">1800–0600 <span>6</span></span></div><div><span class="signal-dashboard-shift shift-purple">1800–0600 <span>6</span></span></div>
+                  <div class="signal-dashboard-row-label"><span class="signal-cyan">●</span>Dispatch <span class="signal-dashboard-count">14</span></div><div><span class="signal-dashboard-shift shift-teal">0500–1700 <span>9</span></span></div><div><span class="signal-dashboard-shift shift-teal">0500–1700 <span>9</span></span></div><div><span class="signal-dashboard-shift shift-teal">0500–1700 <span>9</span></span></div><div><span class="signal-dashboard-shift shift-teal">0500–1700 <span>9</span></span></div><div><span class="signal-dashboard-shift shift-teal">0500–1700 <span>9</span></span></div><div><span class="signal-dashboard-shift shift-teal">0500–1700 <span>9</span></span></div><div><span class="signal-dashboard-shift shift-teal">0500–1700 <span>8</span></span></div>
+                  <div class="signal-dashboard-row-label">Coverage Minimum</div><div class="signal-dashboard-minimum is-good">34 / 32</div><div class="signal-dashboard-minimum is-warn">31 / 32</div><div class="signal-dashboard-minimum is-good">32 / 32</div><div class="signal-dashboard-minimum is-short">28 / 32</div><div class="signal-dashboard-minimum is-good">33 / 32</div><div class="signal-dashboard-minimum is-good">32 / 32</div><div class="signal-dashboard-minimum is-short">27 / 32</div>
+                </div>
+              </div>
+              <div class="signal-dashboard-link-center"><a href="/pages/calendar/schedule.html">View Full Calendar →</a></div>
+            </section>
+
+            <section class="signal-dashboard-panel signal-dashboard-layers" aria-label="Calendar layers">
+              <div class="signal-dashboard-panel__head"><h2>▤ Calendar Layers</h2><a href="/pages/settings/view-engine.html">⚙ Configure Layers</a></div>
+              <div class="signal-dashboard-layer-grid">
+                <div class="signal-dashboard-layer"><span>♙ Employees</span><span class="signal-dashboard-toggle"></span></div>
+                <div class="signal-dashboard-layer"><span>▱ Requests</span><span class="signal-dashboard-toggle"></span></div>
+                <div class="signal-dashboard-layer"><span>⌂ Training</span><span class="signal-dashboard-toggle"></span></div>
+                <div class="signal-dashboard-layer"><span>🔔 Overtime</span><span class="signal-dashboard-toggle"></span></div>
+                <div class="signal-dashboard-layer"><span>◇ Coverage</span><span class="signal-dashboard-toggle"></span></div>
+                <div class="signal-dashboard-layer"><span>▥ Posts</span><span class="signal-dashboard-toggle"></span></div>
+                <div class="signal-dashboard-layer"><span>⚠ Vacancies</span><span class="signal-dashboard-toggle"></span></div>
+                <div class="signal-dashboard-layer"><span>✎ Annotations</span><span class="signal-dashboard-toggle"></span></div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="signal-dashboard-side">
+            <section class="signal-dashboard-panel">
+              <div class="signal-dashboard-panel__head"><h2>▣ My Upcoming Shifts</h2><a href="/pages/calendar/schedule.html">View Calendar →</a></div>
+              <div class="signal-dashboard-list">
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot"></span><span>Wed, Jun 18 • 0600 – 1800 • A Days</span><span class="signal-dashboard-hours">8.0h</span></div>
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot"></span><span>Thu, Jun 19 • 0600 – 1800 • A Days</span><span class="signal-dashboard-hours">8.0h</span></div>
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot"></span><span>Fri, Jun 20 • 0600 – 1800 • A Days</span><span class="signal-dashboard-hours">8.0h</span></div>
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot is-blue"></span><span>Sat, Jun 21 • 1800 – 0600 • A Nights</span><span class="signal-dashboard-hours">12.0h</span></div>
+              </div>
+            </section>
+
+            <section class="signal-dashboard-panel">
+              <div class="signal-dashboard-panel__head"><h2>▤ Leave Balances</h2><a href="/pages/requests/leave-banks.html">View All →</a></div>
+              <div class="signal-dashboard-balance"><span>Vacation</span><div class="signal-dashboard-bar"><span style="width:78%"></span></div><strong>96.0 hrs</strong></div>
+              <div class="signal-dashboard-balance"><span>Sick</span><div class="signal-dashboard-bar"><span class="sick" style="width:62%"></span></div><strong>64.0 hrs</strong></div>
+              <div class="signal-dashboard-balance"><span>Personal</span><div class="signal-dashboard-bar"><span class="personal" style="width:35%"></span></div><strong>24.0 hrs</strong></div>
+              <div class="signal-dashboard-balance"><span>Comp Time</span><div class="signal-dashboard-bar"><span class="comp" style="width:18%"></span></div><strong>12.5 hrs</strong></div>
+            </section>
+
+            <section class="signal-dashboard-panel">
+              <div class="signal-dashboard-panel__head"><h2>⚑ Announcements</h2><a href="/pages/rules/notifications.html">View All →</a></div>
+              <div class="signal-dashboard-announcement"><span class="signal-dashboard-icon signal-blue">📣</span><div><strong>Schedule for Jun 29 – Jul 12 being published</strong><small>Jun 15, 2026 • System Administrator</small></div></div>
+              <div class="signal-dashboard-announcement"><span class="signal-dashboard-icon signal-blue">ⓘ</span><div><strong>VOT Opportunity: Jun 21 Night Shift</strong><small>Jun 14, 2026 • Scheduler</small></div></div>
+            </section>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="signal-dashboard-footer">
+        <div>© 2026 Signal Schedule <span>•</span> v5.14.1 <span>•</span> All rights reserved</div>
+        <div>Administrator <span>•</span> Jordan Miller <span>•</span> <a href="/pages/identity/current-user.html">City of Fairview</a></div>
+        <nav aria-label="Footer links"><a href="/README.md">Documentation ↗</a></nav>
+      </footer>
     </div>
-    <div class="schedule-module-grid">
-      <a class="schedule-module-card is-primary" href="/pages/settings/view-engine.html"><span>View Engine</span><strong>Day starts at 05:00, week starts, default views, saved filters, and layer controls.</strong></a>
-      <a class="schedule-module-card" href="/pages/workspace/weekly-board.html"><span>Weekly Board</span><strong>Preview weekly coverage, leave, open shifts, requests, and staffing alerts.</strong></a>
-      <a class="schedule-module-card" href="/pages/workspace/daily-board.html"><span>Daily Board</span><strong>Operational day view designed around agency shift start time.</strong></a>
-      <a class="schedule-module-card" href="/pages/workspace/publishing.html"><span>Publishing</span><strong>Draft schedule readiness, publish checks, rollback, and snapshots.</strong></a>
-    </div>
-  </section>
-
-  <section class="schedule-workspace-split">
-    <section class="schedule-card">
-      <div class="schedule-section-head"><div><h2>Calendar Layers</h2><p>Layer controls should become a signature Schedule feature.</p></div></div>
-      <div class="schedule-rule-grid">
-        <div class="calendar-layer-chip">Employees</div><div class="calendar-layer-chip">Requests</div><div class="calendar-layer-chip">Training</div><div class="calendar-layer-chip">Overtime</div><div class="calendar-layer-chip">Coverage</div><div class="calendar-layer-chip">Posts</div><div class="calendar-layer-chip">Vacancies</div><div class="calendar-layer-chip">Annotations</div>
-      </div>
-    </section>
-    <section class="schedule-card">
-      <div class="schedule-section-head"><div><h2>Quick Actions</h2><p>Shortcuts to the workflows supervisors and schedulers will use most often.</p></div></div>
-      <div class="schedule-table-list">
-        <a href="/pages/requests/requests.html"><b>Create Request</b><span>Time off, training, trade, or VOT foundation.</span></a>
-        <a href="/pages/requests/open-shifts.html"><b>Open Shift Board</b><span>Posted shifts and volunteer opportunities.</span></a>
-        <a href="/pages/workspace/builder.html"><b>Create Schedule</b><span>Draft schedule builder foundation.</span></a>
-        <a href="/pages/workspace/publishing.html"><b>Publish Schedule</b><span>Publication readiness and rollback planning.</span></a>
-      </div>
-    </section>
-  </section>
-
-
-  <section class="schedule-card">
-    <div class="schedule-section-head">
-      <div>
-        <h2>Operations Foundation</h2>
-        <p>v5.14 stages open shifts, VOT, notifications, and dashboard widgets as the next operational layer.</p>
-      </div>
-    </div>
-    <div class="schedule-module-grid">
-      <a class="schedule-module-card" href="/pages/requests/open-shifts.html"><span>Open Shifts</span><strong>Posted staffing opportunities and coverage gaps.</strong></a>
-      <a class="schedule-module-card" href="/pages/requests/ot-volunteer-board.html"><span>VOT Board</span><strong>Volunteer list, eligibility preview, and award queue foundation.</strong></a>
-      <a class="schedule-module-card" href="/pages/rules/notifications.html"><span>Notifications</span><strong>Channels, preferences, queues, and future digest rules.</strong></a>
-      <a class="schedule-module-card" href="/pages/requests/approvals.html"><span>Approval Work</span><strong>Pending approvals and decision tracking.</strong></a>
-    </div>
-  </section>
-
-  <section class="schedule-card">
-    <div class="schedule-section-head"><div><h2>Clean Route Foundation</h2><p>Signal Schedule still uses static HTML files underneath, but v5.13 defines the direction for professional app-style URLs.</p></div></div>
-    <div class="schedule-rule-grid">
-      <div><b>Technical entry</b><br><span>index.html remains the static site entry point.</span></div>
-      <div><b>User-facing name</b><br><span>Navigation presents this page as Dashboard.</span></div>
-      <div><b>Future route style</b><br><span>/dashboard, /calendar, /requests, /admin/settings.</span></div>
-      <div><b>No PHP switch</b><br><span>Professional routing should come from app routing/backend controllers, not file extensions.</span></div>
-    </div>
-  </section>
-</main>
-
-<div id="schedule-footer"></div>
-<script src="/assets/release-metadata.js?v=5.14.0"></script>
-<script src="/assets/config.js?v=5.14.0"></script>
-<script src="/assets/routes.js?v=5.14.0"></script>
-<script src="/assets/navigation.js?v=5.14.0"></script>
-<script src="/assets/features.js?v=5.14.0"></script>
-<script src="/assets/roles.js?v=5.14.0"></script>
-<script src="/assets/status.js?v=5.14.0"></script>
-<script src="/assets/data-loader.js?v=5.14.0"></script>
-<script src="/assets/agency-branding.js?v=5.14.0"></script>
-<script src="/app-shell.js?v=5.14.0"></script>
+  </div>
 </body>
 </html>
