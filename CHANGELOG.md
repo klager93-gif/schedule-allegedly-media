@@ -1,4 +1,4 @@
-# v5.13.0 — Dashboard & Clean Route Foundation
+# v5.14.0 — Dashboard & Clean Route Foundation
 
 - Added Dashboard as the user-facing landing page label for `index.html`.
 - Added Dashboard nav group.
@@ -9,7 +9,7 @@
 
 # Changelog
 
-## v5.13.0 — Visibility & View Engine
+## v5.14.0 — Visibility & View Engine
 
 - Cleaned up the login foundation layout so identity cards have balanced proportions and clearer hierarchy.
 - Added Agency Setup Wizard foundation for first-login agency onboarding.
@@ -17,7 +17,7 @@
 - Added fictional City of Fairview preview agency and Jordan Miller administrator session.
 - Updated route/navigation registries for Agency Setup.
 
-# v5.13.0 — Visibility & View Engine
+# v5.14.0 — Visibility & View Engine
 
 - Added login foundation page.
 - Added current-user/session preview page.
@@ -29,7 +29,7 @@
 
 # Changelog
 
-## v5.13.0 — Visibility & View Engine
+## v5.14.0 — Visibility & View Engine
 
 - Added approval foundation data and decision model preview.
 - Added database naming contract for core identity versus schedule module tables.
@@ -39,7 +39,7 @@
 - Refreshed release metadata, cache busting, manifests, and validation.
 
 
-## v5.13.0 — Leave Banks & Data Layer Cleanup
+## v5.14.0 — Leave Banks & Data Layer Cleanup
 
 - Added leave bank foundation UI improvements for balances, pending impacts, transactions, and adjustment-entry readiness.
 - Added data layer cleanup so optional preview JSON failures render neutral foundation states instead of alarming errors.

@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: assets/agency-branding.js
-Version: v5.13.0
+Version: v5.14.0
 Purpose: Fictional agency branding preview for dashboard and future admin logo upload foundation.
 */
 window.SIGNAL_SCHEDULE_AGENCY_BRANDING = Object.freeze({

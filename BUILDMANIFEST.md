@@ -1,19 +1,5 @@
-# Build Manifest — Signal Schedule v5.13.0
+# Build Manifest — v5.14.0
 
-## Release
+Package: schedule-allegedly-media-v5.14.0-dashboard-css-repair-operations-foundation.zip
 
-Signal Schedule v5.13.0 — Dashboard & Clean Route Foundation
-
-## Included
-
-- Dashboard as user-facing label for `index.html`
-- Dashboard nav group
-- Rebuilt dashboard landing page
-- Agency branding placeholder logo and registry
-- Clean route foundation docs
-- Updated route/navigation registries
-- Refreshed metadata, changelogs, manifests, checksums, and validation
-
-## Validation
-
-See `VALIDATION.md`.
+Includes dashboard CSS scope repair and operations foundation.

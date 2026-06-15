@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Signal Schedule | Dashboard</title>
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/app-shell.css?v=5.13.0" />
+  <link rel="stylesheet" href="/app-shell.css?v=5.14.0" />
 </head>
-<body>
+<body data-signal-area="Signal Schedule" data-signal-title="Dashboard" data-signal-version="v5.14.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Mission-control view for staffing, schedule health, requests, open shifts, calendar layers, and agency operations.">
 <div id="schedule-header"></div>
 
 <main class="schedule-shell schedule-dashboard">
@@ -18,7 +18,7 @@
       <p class="schedule-subtitle">Mission-control view for staffing, schedule health, requests, open shifts, calendar layers, and agency operations.</p>
     </div>
     <div class="schedule-status-grid" aria-label="Dashboard summary">
-      <div><strong>v5.13.0</strong><span>Dashboard Foundation</span></div>
+      <div><strong>v5.14.0</strong><span>Dashboard Foundation</span></div>
       <div><strong>05:00</strong><span>Operational Day Start</span></div>
       <div><strong>8</strong><span>Calendar Layers</span></div>
       <div><strong>Clean</strong><span>Route Planning</span></div>
@@ -77,7 +77,7 @@
     <section class="schedule-card">
       <div class="schedule-section-head"><div><h2>Calendar Layers</h2><p>Layer controls should become a signature Schedule feature.</p></div></div>
       <div class="schedule-rule-grid">
-        <div>Employees</div><div>Requests</div><div>Training</div><div>Overtime</div><div>Coverage</div><div>Posts</div><div>Vacancies</div><div>Annotations</div>
+        <div class="calendar-layer-chip">Employees</div><div class="calendar-layer-chip">Requests</div><div class="calendar-layer-chip">Training</div><div class="calendar-layer-chip">Overtime</div><div class="calendar-layer-chip">Coverage</div><div class="calendar-layer-chip">Posts</div><div class="calendar-layer-chip">Vacancies</div><div class="calendar-layer-chip">Annotations</div>
       </div>
     </section>
     <section class="schedule-card">
@@ -89,6 +89,22 @@
         <a href="/pages/workspace/publishing.html"><b>Publish Schedule</b><span>Publication readiness and rollback planning.</span></a>
       </div>
     </section>
+  </section>
+
+
+  <section class="schedule-card">
+    <div class="schedule-section-head">
+      <div>
+        <h2>Operations Foundation</h2>
+        <p>v5.14 stages open shifts, VOT, notifications, and dashboard widgets as the next operational layer.</p>
+      </div>
+    </div>
+    <div class="schedule-module-grid">
+      <a class="schedule-module-card" href="/pages/requests/open-shifts.html"><span>Open Shifts</span><strong>Posted staffing opportunities and coverage gaps.</strong></a>
+      <a class="schedule-module-card" href="/pages/requests/ot-volunteer-board.html"><span>VOT Board</span><strong>Volunteer list, eligibility preview, and award queue foundation.</strong></a>
+      <a class="schedule-module-card" href="/pages/rules/notifications.html"><span>Notifications</span><strong>Channels, preferences, queues, and future digest rules.</strong></a>
+      <a class="schedule-module-card" href="/pages/requests/approvals.html"><span>Approval Work</span><strong>Pending approvals and decision tracking.</strong></a>
+    </div>
   </section>
 
   <section class="schedule-card">
@@ -103,15 +119,15 @@
 </main>
 
 <div id="schedule-footer"></div>
-<script src="/assets/release-metadata.js?v=5.13.0"></script>
-<script src="/assets/config.js?v=5.13.0"></script>
-<script src="/assets/routes.js?v=5.13.0"></script>
-<script src="/assets/navigation.js?v=5.13.0"></script>
-<script src="/assets/features.js?v=5.13.0"></script>
-<script src="/assets/roles.js?v=5.13.0"></script>
-<script src="/assets/status.js?v=5.13.0"></script>
-<script src="/assets/data-loader.js?v=5.13.0"></script>
-<script src="/assets/agency-branding.js?v=5.13.0"></script>
-<script src="/app-shell.js?v=5.13.0"></script>
+<script src="/assets/release-metadata.js?v=5.14.0"></script>
+<script src="/assets/config.js?v=5.14.0"></script>
+<script src="/assets/routes.js?v=5.14.0"></script>
+<script src="/assets/navigation.js?v=5.14.0"></script>
+<script src="/assets/features.js?v=5.14.0"></script>
+<script src="/assets/roles.js?v=5.14.0"></script>
+<script src="/assets/status.js?v=5.14.0"></script>
+<script src="/assets/data-loader.js?v=5.14.0"></script>
+<script src="/assets/agency-branding.js?v=5.14.0"></script>
+<script src="/app-shell.js?v=5.14.0"></script>
 </body>
 </html>

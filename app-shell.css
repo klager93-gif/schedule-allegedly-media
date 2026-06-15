@@ -2,7 +2,7 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/app-shell.css
-Version: v5.13.0
+Version: v5.14.0
 Purpose: Desktop-first application shell, theme tokens, and connected flyout navigation for all Schedule pages.
 */
 :root,
@@ -906,3 +906,18 @@ body[data-signal-area="Signal Schedule"] .filter-chip-grid{display:flex;flex-wra
 body[data-signal-area="Signal Schedule"] .filter-chip{border:1px solid var(--ss-app-border);border-radius:999px;padding:7px 10px;background:rgba(255,255,255,.04);font-weight:800;font-size:.82rem;}
 @media (max-width:1100px){body[data-signal-area="Signal Schedule"] .view-engine-board,body[data-signal-area="Signal Schedule"] .layer-grid{grid-template-columns:repeat(2,minmax(0,1fr));}body[data-signal-area="Signal Schedule"] .schedule-footer__identity{white-space:normal;}}
 @media (max-width:700px){body[data-signal-area="Signal Schedule"] .view-engine-board,body[data-signal-area="Signal Schedule"] .layer-grid{grid-template-columns:1fr;}}
+
+
+/* v5.14.0 Dashboard CSS repair and operations foundation polish */
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-hero{background:linear-gradient(135deg,var(--ss-app-panel),var(--ss-app-panel-soft));border:1px solid var(--ss-app-border);border-radius:18px;box-shadow:var(--ss-shadow);}
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-status-grid div{min-height:72px;display:flex;flex-direction:column;justify-content:center;gap:4px;}
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-status-grid strong{font-size:1.35rem;}
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-module-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-rule-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-rule-grid div,
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-module-card{background:var(--ss-app-panel-soft);border:1px solid var(--ss-app-border);border-radius:14px;box-shadow:none;}
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-module-card:hover{border-color:var(--ss-app-border-strong);transform:translateY(-1px);}
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .calendar-layer-chip{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+body[data-signal-area="Signal Schedule"] .schedule-dashboard .calendar-layer-chip::after{content:"On";font-size:.72rem;font-weight:800;color:var(--ss-app-good);background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.22);border-radius:999px;padding:3px 8px;}
+@media (max-width:1200px){body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-module-grid,body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-rule-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:720px){body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-module-grid,body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-rule-grid{grid-template-columns:1fr;}}

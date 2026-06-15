@@ -1,6 +1,6 @@
 # Signal Schedule
 
-Current release: **v5.13.0 — Visibility & View Engine**.
+Current release: **v5.14.0 — Visibility & View Engine**.
 
 Signal Schedule is a standalone scheduling platform foundation for public safety and shift-based teams.
 
@@ -18,6 +18,6 @@ Signal Schedule is a standalone scheduling platform foundation for public safety
 Demo identity and agency references use fictional sample data only.
 
 
-## v5.13.0 Dashboard Direction
+## v5.14.0 Dashboard Direction
 
 `index.html` is the technical static entry point, but the product should present it as the Dashboard. Future releases should move toward clean app-style routes such as `/dashboard`, `/calendar`, and `/requests`.

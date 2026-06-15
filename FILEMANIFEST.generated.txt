@@ -1,13 +1,17 @@
 .gitattributes
 .gitignore
 ADMIN_CHANGELOG.md
+BUILDMANIFEST.md
 CHANGELOG.md
+FILEMANIFEST.generated.txt
+FILEMANIFEST.md
 HOWTO.md
 LATEST_RELEASE.md
 MASTER-CHANGELOG.md
 PUBLIC_CHANGELOG.md
 README.md
 ROADMAP.md
+SHA256SUMS.txt
 STANDARDS.md
 VALIDATION.md
 adapters/JsonAssignmentEngineAdapter.js
@@ -282,6 +286,7 @@ pages/identity/current-user.html
 pages/identity/identity.css
 pages/identity/identity.js
 pages/identity/login.html
+pages/operations/operations.html
 pages/people/availability.css
 pages/people/availability.html
 pages/people/availability.js

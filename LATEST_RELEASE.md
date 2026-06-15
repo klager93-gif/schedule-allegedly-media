@@ -1,7 +1,6 @@
-# Latest Release
+# Signal Schedule v5.14.0
 
-## Signal Schedule v5.13.0 — Dashboard & Clean Route Foundation
+Dashboard CSS Repair & Operations Foundation.
 
-This release makes the root entry page function as the Dashboard, adds a Dashboard navigation link, introduces fictional agency branding on the dashboard, and documents the clean route direction for future app-style URLs.
-
-No database changes.
+- Fixed Dashboard CSS scope by adding required body data attributes to index.html.
+- Added operations foundation layer for open shifts, VOT, notifications, approvals, and dashboard widgets.

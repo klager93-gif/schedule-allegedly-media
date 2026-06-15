@@ -1,3 +1,7 @@
+# STANDARDS
+
+Updated for Signal Schedule v5.14.0 — Dashboard CSS Repair & Operations Foundation.
+
 # Signal Schedule Standards
 
 ## Release validation
