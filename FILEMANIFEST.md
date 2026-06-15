@@ -1,23 +1,18 @@
-# File Manifest — v5.14.1
+# File Manifest — v5.14.2
 
-Generated for Dashboard Replica Shell Repair.
-
-## Files
+Generated for Dashboard Responsive Navigation Polish.
 
 - `.gitattributes`
 - `.gitignore`
 - `ADMIN_CHANGELOG.md`
 - `BUILDMANIFEST.md`
 - `CHANGELOG.md`
-- `FILEMANIFEST.generated.txt`
-- `FILEMANIFEST.md`
 - `HOWTO.md`
 - `LATEST_RELEASE.md`
 - `MASTER-CHANGELOG.md`
 - `PUBLIC_CHANGELOG.md`
 - `README.md`
 - `ROADMAP.md`
-- `SHA256SUMS.txt`
 - `STANDARDS.md`
 - `VALIDATION.md`
 - `adapters/JsonAssignmentEngineAdapter.js`

@@ -1,6 +1,6 @@
 # HOWTO
 
-Updated for Signal Schedule v5.14.1 — Dashboard Replica Shell Repair.
+Updated for Signal Schedule v5.14.2 — Dashboard Responsive Navigation Polish.
 
 # Signal Schedule HOWTO
 

@@ -1,6 +1,6 @@
 # ROADMAP
 
-Updated for Signal Schedule v5.14.1 — Dashboard Replica Shell Repair.
+Updated for Signal Schedule v5.14.2 — Dashboard Responsive Navigation Polish.
 
 # Signal Schedule Roadmap
 
@@ -28,6 +28,6 @@ Updated for Signal Schedule v5.14.1 — Dashboard Replica Shell Repair.
 - v6.0 Multi-User Request Engine
 
 
-## v5.14.1 Dashboard & Clean Route Foundation
+## v5.14.2 Dashboard & Clean Route Foundation
 
 Adds dashboard navigation, agency branding placeholder, and clean route planning. The long-term dashboard target remains the mission-control layout with metrics, layer controls, quick actions, schedule overview, and agency branding.

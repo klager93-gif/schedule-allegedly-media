@@ -2,8 +2,8 @@
 Signal Labs
 Area: Signal Schedule
 File: schedule/components/tag.js
-Version: v5.14.1
+Version: v5.14.2
 Purpose: Reusable status tag metadata helpers.
 */
-export const tagComponentVersion = "v5.14.1";
+export const tagComponentVersion = "v5.14.2";
 export function statusTag(label, tone = "neutral") { return { label, tone }; }
