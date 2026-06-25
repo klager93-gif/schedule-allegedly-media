@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/requests/request-engine.js
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Render Request & Approval Engine foundation preview.
 */
 const $ = (selector) => document.querySelector(selector);
@@ -59,7 +59,6 @@ function render(data) {
   $('[data-request-policy]').innerHTML = (data.policyChecks || []).map((item) => `<li>${safe(item)}</li>`).join('');
 }
 
-});
 
 loadPreview().then(render).catch((error) => {
   console.error(error);

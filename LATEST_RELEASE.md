@@ -1,4 +1,4 @@
-# Signal Schedule v5.14.2
+# Signal Schedule v5.14.3
 
 Dashboard Responsive Navigation Polish.
 

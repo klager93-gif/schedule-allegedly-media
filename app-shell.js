@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: app-shell.js
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Desktop application shell using release, route, navigation, config, feature, role, status, and page architecture registries.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
   if (!body || body.dataset.signalArea !== 'Signal Schedule') return;
 
   const releaseMeta = window.SIGNAL_SCHEDULE_RELEASE || {};
-  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.14.2';
+  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.14.3';
   const releaseStatus = releaseMeta.status || 'Foundation';
   const title = body.dataset.signalTitle || document.title.replace('— Signal Schedule', '').trim() || 'Signal Schedule';
   const themeKey = 'signalScheduleTheme';
@@ -247,7 +247,7 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
       <div class="schedule-footer__inner">
         <div class="schedule-footer__brand">
           <span class="schedule-footer__title">Signal Schedule • ${version}</span>
-          <span class="schedule-footer__meta">Built by Signal Labs</span>
+          <span class="schedule-footer__meta">Built by Signal Schedule</span>
         </div>
         <div class="schedule-footer__identity" aria-label="Current preview user">${getFooterIdentity()}</div>
         <nav class="schedule-footer__links" aria-label="Schedule footer links">

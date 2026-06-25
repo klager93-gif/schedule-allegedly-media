@@ -7,7 +7,7 @@ Root front-desk files stay at root. Operational docs live in docs/. Build files 
 
 ## Current Release Workflow
 
-Release archives are backups. Signal Labs stores complete release ZIPs in dated `Releases/` folders and does not require duplicate backup folders for normal releases.
+Release archives are backups. Signal Schedule stores complete release ZIPs in dated `Releases/` folders and does not require duplicate backup folders for normal releases.
 
 
 ## Tool-Owned Infrastructure

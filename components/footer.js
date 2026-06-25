@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: components/footer.js
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Render lightweight Schedule-specific footer across standalone Signal Schedule pages using release metadata.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Render lightweight Schedule-specific footer across standalone Signal Sc
   if (!mount) return;
 
   const release = window.SIGNAL_SCHEDULE_RELEASE || {};
-  const version = release.version || document.body?.dataset?.signalVersion || 'v5.14.2';
+  const version = release.version || document.body?.dataset?.signalVersion || 'v5.14.3';
   const releaseName = release.releaseName || 'Configuration & Registry Foundation';
 
   mount.innerHTML = `
@@ -18,7 +18,7 @@ Purpose: Render lightweight Schedule-specific footer across standalone Signal Sc
       <div class="schedule-footer__inner">
         <div class="schedule-footer__brand">
           <span class="schedule-footer__title">Signal Schedule · ${version}</span>
-          <span class="schedule-footer__meta">${releaseName} · Built by Signal Labs</span>
+          <span class="schedule-footer__meta">${releaseName} · Built by Signal Schedule</span>
         </div>
         <nav class="schedule-footer__links" aria-label="Schedule documentation links">
           <a href="README.md">Docs</a>

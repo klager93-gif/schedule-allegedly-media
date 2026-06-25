@@ -6,7 +6,7 @@ Hotfixes include only affected files and required internal changelog updates.
 
 ## Full Replacement Rule
 
-Before full-replacement packages, ask whether the user is deleting/replacing the whole Signal Labs folder.
+Before full-replacement packages, ask whether the user is deleting/replacing the whole Signal Schedule folder.
 
 If yes, include every live top-level folder, even unchanged ones.
 

@@ -1,4 +1,4 @@
-# Signal Labs Development Standards v3.0
+# Signal Schedule Development Standards v3.0
 
 ## Core Philosophy
 

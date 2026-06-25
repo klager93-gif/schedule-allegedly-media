@@ -1,4 +1,4 @@
--- Signal Labs
+-- Signal Schedule
 -- Area: Signal Schedule
 -- File: schedule/api/coolify/sql/020_employee_timeline_audit_trail_schema.sql
 -- Version: v2.14.0

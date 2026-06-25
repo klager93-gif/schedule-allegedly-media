@@ -1,6 +1,6 @@
 /*
-Signal Labs Tool File: schedule/pages/people/qualifications.js
-Version: v5.14.2
+Signal Schedule File: schedule/pages/people/qualifications.js
+Version: v5.14.3
 Purpose: Render Qualifications & Certification Engine preview with license numbers, notes, and role-based panels.
 */
 import { JsonQualificationsCertificationAdapter } from '../../adapters/JsonQualificationsCertificationAdapter.js';

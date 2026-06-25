@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: schedule/app-shell.css
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Desktop-first application shell, theme tokens, and connected flyout navigation for all Schedule pages.
 */
 :root,
@@ -908,7 +908,7 @@ body[data-signal-area="Signal Schedule"] .filter-chip{border:1px solid var(--ss-
 @media (max-width:700px){body[data-signal-area="Signal Schedule"] .view-engine-board,body[data-signal-area="Signal Schedule"] .layer-grid{grid-template-columns:1fr;}}
 
 
-/* v5.14.2 Dashboard CSS repair and operations foundation polish */
+/* v5.14.3 Dashboard CSS repair and operations foundation polish */
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-hero{background:linear-gradient(135deg,var(--ss-app-panel),var(--ss-app-panel-soft));border:1px solid var(--ss-app-border);border-radius:18px;box-shadow:var(--ss-shadow);}
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-status-grid div{min-height:72px;display:flex;flex-direction:column;justify-content:center;gap:4px;}
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-status-grid strong{font-size:1.35rem;}

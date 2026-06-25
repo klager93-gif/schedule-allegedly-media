@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: pages/identity/identity.css
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Identity, login, and agency setup foundation styles.
 */
 .identity-grid{display:grid;grid-template-columns:minmax(320px,1fr) minmax(320px,1fr);gap:18px;align-items:stretch}

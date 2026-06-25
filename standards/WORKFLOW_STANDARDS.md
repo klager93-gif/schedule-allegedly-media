@@ -10,7 +10,7 @@
 
 ## Session Startup
 
-At the start of a Signal Labs work session:
+At the start of a Signal Schedule work session:
 
 - Chat title should be YYYY-MM-DD.
 - Review current versions.

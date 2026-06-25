@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: schedule/services/TrainingCertificationService.js
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Training & Certifications service helpers
 */
 import { getPreview } from '../repositories/TrainingCertificationRepository.js';

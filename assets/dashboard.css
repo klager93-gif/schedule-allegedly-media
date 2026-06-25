@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: assets/dashboard.css
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Temporary dashboard-specific shell and mission-control styling while the app-wide theme migrates toward the target dashboard direction.
 */
 :root {
@@ -153,7 +153,7 @@ body.signal-dashboard-page {
 }
 
 
-/* v5.14.2 responsive shell, dropdowns, search, and role-aware dashboard widgets */
+/* v5.14.3 responsive shell, dropdowns, search, and role-aware dashboard widgets */
 .signal-dashboard-topnav { gap: 4px; align-self: stretch; }
 .signal-dashboard-menu { position: relative; display: flex; align-items: stretch; }
 .signal-dashboard-menu > a,

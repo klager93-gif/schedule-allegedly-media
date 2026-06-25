@@ -16,7 +16,7 @@ The following root-level support files were copied into the standalone package b
 - `/standards/`
 - `/assets/icons/`
 
-The old Signal Labs root `/assets/global.css`, `/assets/global.js`, and shared header/footer components were not copied because Signal Schedule v5.1.0 uses its own `app-shell.css`, `app-shell.js`, and Schedule-specific navigation/footer.
+The old Signal Schedule root `/assets/global.css`, `/assets/global.js`, and shared header/footer components were not copied because Signal Schedule v5.1.0 uses its own `app-shell.css`, `app-shell.js`, and Schedule-specific navigation/footer.
 
 ## Code patch
 

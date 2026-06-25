@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: assets/data-loader.js
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Root-safe JSON loading helpers with graceful fallback support for foundation pages.
 */
 (function () {

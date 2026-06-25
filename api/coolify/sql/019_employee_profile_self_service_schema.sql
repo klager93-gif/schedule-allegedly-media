@@ -1,4 +1,4 @@
--- Signal Labs
+-- Signal Schedule
 -- Area: Signal Schedule
 -- File: schedule/api/coolify/sql/019_employee_profile_self_service_schema.sql
 -- Version: v2.14.0

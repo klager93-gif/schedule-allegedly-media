@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: schedule/repositories/OtVolunteerBoardRepository.js
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Repository boundary for OT Volunteer Board Foundation
 */
 import { fetchOtVolunteerBoardPreview } from '../adapters/JsonOtVolunteerBoardAdapter.js';

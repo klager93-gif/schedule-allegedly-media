@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/rules/mandation.css
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Mandation Engine Foundation styling
 */
 .mandation-shell { width:min(1180px,calc(100% - 32px)); margin:0 auto 56px; color:#e5eefb; }

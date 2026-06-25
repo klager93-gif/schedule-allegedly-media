@@ -1,4 +1,4 @@
-# Data Path Drift Audit v5.14.2
+# Data Path Drift Audit v5.14.3
 
 ## Fixed
 
@@ -8,4 +8,4 @@ Those paths can resolve under `/pages/.../data/` after route migration and retur
 
 `Unexpected token '<', "<html>..." is not valid JSON`
 
-v5.14.2 normalizes preview JSON paths to `/data/...` and adds `assets/data-loader.js` for clearer JSON failures.
+v5.14.3 normalizes preview JSON paths to `/data/...` and adds `assets/data-loader.js` for clearer JSON failures.

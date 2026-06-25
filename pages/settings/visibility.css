@@ -1,8 +1,8 @@
 /*
-Signal Labs
+Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/settings/visibility.css
-Version: v5.14.2
+Version: v5.14.3
 Purpose: Schedule Visibility & Privacy Controls page styles.
 */
 .visibility-shell { display: grid; gap: var(--space-4, 1rem); }

@@ -1,4 +1,4 @@
-# v5.14.2 — Dashboard Responsive Navigation Polish
+# v5.14.3 — Dashboard Responsive Navigation Polish
 
 - Improved dashboard responsive scaling for desktop and ultrawide displays.
 - Restored My Schedule to the dashboard sidebar.
