@@ -1,4 +1,4 @@
-# Identity Session Contract v5.14.3
+# Identity Session Contract v5.15.0
 
 Preview session shape:
 

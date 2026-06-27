@@ -1,6 +1,6 @@
-# Agency Branding Foundation — v5.14.3
+# Agency Branding Foundation — v5.15.0
 
-v5.14.3 adds a fictional placeholder logo and agency branding registry for dashboard use.
+v5.15.0 adds a fictional placeholder logo and agency branding registry for dashboard use.
 
 ## Current demo agency
 

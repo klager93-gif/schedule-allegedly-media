@@ -1,10 +1,3 @@
-# Signal Schedule File Manifest
-
-Version: v5.14.3
-
-Total files: 474
-
-```text
 .gitattributes
 .gitignore
 ADMIN_CHANGELOG.md
@@ -18,6 +11,7 @@ MASTER-CHANGELOG.md
 PUBLIC_CHANGELOG.md
 README.md
 ROADMAP.md
+SHA256SUMS.txt
 STANDARDS.md
 VALIDATION.md
 adapters/JsonAssignmentEngineAdapter.js
@@ -274,6 +268,7 @@ pages/admin/data-tools.js
 pages/admin/database-audit.html
 pages/admin/foundation-admin.css
 pages/admin/system-health.html
+pages/admin/ui-catalog.html
 pages/calendar/schedule-calendar.css
 pages/calendar/schedule-calendar.js
 pages/calendar/schedule.html
@@ -479,4 +474,3 @@ standards/REPOSITORY_STANDARDS.md
 standards/STANDARDS.md
 standards/UX_STANDARDS.md
 standards/WORKFLOW_STANDARDS.md
-```

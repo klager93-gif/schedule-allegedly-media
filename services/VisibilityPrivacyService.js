@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/services/VisibilityPrivacyService.js
-Version: v5.14.3
+Version: v5.15.0
 Purpose: Schedule Visibility & Privacy Controls preview service and policy helpers.
 */
 export class VisibilityPrivacyService {

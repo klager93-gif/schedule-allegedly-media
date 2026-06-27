@@ -1,6 +1,6 @@
 # HOWTO
 
-Updated for Signal Schedule v5.14.3 — Dashboard Responsive Navigation Polish.
+Updated for Signal Schedule v5.15.0 — Dashboard Responsive Navigation Polish.
 
 # Signal Schedule HOWTO
 

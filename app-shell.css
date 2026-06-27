@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/app-shell.css
-Version: v5.14.3
+Version: v5.15.0
 Purpose: Desktop-first application shell, theme tokens, and connected flyout navigation for all Schedule pages.
 */
 :root,
@@ -908,7 +908,7 @@ body[data-signal-area="Signal Schedule"] .filter-chip{border:1px solid var(--ss-
 @media (max-width:700px){body[data-signal-area="Signal Schedule"] .view-engine-board,body[data-signal-area="Signal Schedule"] .layer-grid{grid-template-columns:1fr;}}
 
 
-/* v5.14.3 Dashboard CSS repair and operations foundation polish */
+/* v5.15.0 Dashboard CSS repair and operations foundation polish */
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-hero{background:linear-gradient(135deg,var(--ss-app-panel),var(--ss-app-panel-soft));border:1px solid var(--ss-app-border);border-radius:18px;box-shadow:var(--ss-shadow);}
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-status-grid div{min-height:72px;display:flex;flex-direction:column;justify-content:center;gap:4px;}
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-status-grid strong{font-size:1.35rem;}
@@ -921,3 +921,48 @@ body[data-signal-area="Signal Schedule"] .schedule-dashboard .calendar-layer-chi
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .calendar-layer-chip::after{content:"On";font-size:.72rem;font-weight:800;color:var(--ss-app-good);background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.22);border-radius:999px;padding:3px 8px;}
 @media (max-width:1200px){body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-module-grid,body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-rule-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media (max-width:720px){body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-module-grid,body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-rule-grid{grid-template-columns:1fr;}}
+
+/* v5.15.0 Foundation standardization primitives */
+.schedule-page-header{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin:0 0 18px;}
+.schedule-page-header__kicker{margin:0 0 6px;color:var(--ss-app-muted);font-size:.74rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;}
+.schedule-page-header h1{margin:0;color:var(--ss-app-text);font-size:1.9rem;line-height:1.1;}
+.schedule-page-header p{max-width:820px;margin:8px 0 0;color:var(--ss-app-muted);font-size:.96rem;line-height:1.55;}
+.schedule-action-bar,.schedule-filter-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 16px;padding:12px;border:1px solid var(--ss-app-border);border-radius:16px;background:var(--ss-app-panel);box-shadow:var(--ss-shadow);}
+.schedule-action-group,.schedule-filter-group{display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
+.schedule-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;padding:0 13px;border:1px solid var(--ss-app-border-strong);border-radius:11px;background:var(--ss-app-panel-soft);color:var(--ss-app-text);font:inherit;font-size:.84rem;font-weight:850;text-decoration:none;cursor:pointer;}
+.schedule-button:hover{border-color:var(--ss-app-accent);background:var(--ss-app-accent-soft);color:var(--ss-app-text);}
+.schedule-button--primary{border-color:color-mix(in srgb,var(--ss-app-accent) 76%,var(--ss-app-border));background:var(--ss-app-accent);color:#fff;}
+.schedule-button--primary:hover{background:color-mix(in srgb,var(--ss-app-accent) 88%,#000 12%);color:#fff;}
+.schedule-button--danger{border-color:color-mix(in srgb,var(--ss-app-danger) 65%,var(--ss-app-border));color:var(--ss-app-danger);}
+.schedule-input,.schedule-select,.schedule-textarea{min-height:36px;border:1px solid var(--ss-app-border);border-radius:11px;background:var(--ss-app-panel-soft);color:var(--ss-app-text);font:inherit;font-size:.84rem;padding:0 11px;box-sizing:border-box;}
+.schedule-textarea{min-height:92px;padding:10px 11px;resize:vertical;}
+.schedule-label{display:grid;gap:6px;color:var(--ss-app-text);font-size:.8rem;font-weight:850;}
+.schedule-label small{color:var(--ss-app-muted);font-weight:700;}
+.schedule-card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:0 0 18px;}
+.schedule-metric-card,.schedule-info-card,.schedule-list-card,.schedule-action-card{border:1px solid var(--ss-app-border);border-radius:18px;background:var(--ss-app-panel);box-shadow:var(--ss-shadow);padding:16px;}
+.schedule-metric-card small,.schedule-info-card small{display:block;color:var(--ss-app-muted);font-size:.73rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;}
+.schedule-metric-card strong{display:block;margin-top:8px;font-size:2rem;line-height:1;color:var(--ss-app-text);}
+.schedule-metric-card span{display:block;margin-top:8px;color:var(--ss-app-muted);font-size:.82rem;font-weight:750;}
+.schedule-badge{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--ss-app-border);border-radius:999px;background:var(--ss-app-panel-soft);color:var(--ss-app-text);font-size:.73rem;font-weight:900;line-height:1;padding:6px 9px;}
+.schedule-badge--good{border-color:color-mix(in srgb,var(--ss-app-good) 45%,var(--ss-app-border));background:color-mix(in srgb,var(--ss-app-good) 13%,var(--ss-app-panel));color:var(--ss-app-good);}
+.schedule-badge--warn{border-color:color-mix(in srgb,var(--ss-app-warning) 45%,var(--ss-app-border));background:color-mix(in srgb,var(--ss-app-warning) 13%,var(--ss-app-panel));color:var(--ss-app-warning);}
+.schedule-badge--danger{border-color:color-mix(in srgb,var(--ss-app-danger) 45%,var(--ss-app-border));background:color-mix(in srgb,var(--ss-app-danger) 13%,var(--ss-app-panel));color:var(--ss-app-danger);}
+.schedule-table-wrap{overflow:auto;border:1px solid var(--ss-app-border);border-radius:16px;background:var(--ss-app-panel);box-shadow:var(--ss-shadow);}
+.schedule-table{width:100%;border-collapse:collapse;color:var(--ss-app-text);font-size:.88rem;}
+.schedule-table th,.schedule-table td{padding:12px 14px;border-bottom:1px solid var(--ss-app-border);text-align:left;vertical-align:middle;}
+.schedule-table th{background:var(--ss-app-panel-soft);color:var(--ss-app-muted);font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;}
+.schedule-table tbody tr:hover{background:color-mix(in srgb,var(--ss-app-accent) 7%,transparent);}
+.schedule-table tbody tr:last-child td{border-bottom:0;}
+.schedule-alert{border:1px solid var(--ss-app-border);border-left:5px solid var(--ss-app-accent);border-radius:14px;background:var(--ss-app-panel);box-shadow:var(--ss-shadow);padding:14px 16px;margin:0 0 14px;}
+.schedule-alert strong{display:block;margin-bottom:4px;color:var(--ss-app-text);}
+.schedule-alert p{margin:0;color:var(--ss-app-muted);line-height:1.45;}
+.schedule-alert--success{border-left-color:var(--ss-app-good);}.schedule-alert--warning{border-left-color:var(--ss-app-warning);}.schedule-alert--danger{border-left-color:var(--ss-app-danger);}
+.schedule-empty-state{display:grid;place-items:center;text-align:center;min-height:180px;border:1px dashed var(--ss-app-border-strong);border-radius:18px;background:var(--ss-app-panel-soft);color:var(--ss-app-muted);padding:24px;}
+.schedule-empty-state strong{display:block;color:var(--ss-app-text);font-size:1.05rem;margin-bottom:6px;}
+.schedule-modal-preview{max-width:520px;border:1px solid var(--ss-app-border);border-radius:20px;background:var(--ss-app-panel);box-shadow:0 24px 68px rgba(0,0,0,.28);padding:18px;}
+.schedule-modal-preview__footer{display:flex;justify-content:flex-end;gap:9px;margin-top:18px;padding-top:14px;border-top:1px solid var(--ss-app-border);}
+.schedule-component-section{margin:0 0 22px;}
+.schedule-component-section h2{margin:0 0 12px;color:var(--ss-app-text);}
+.schedule-component-demo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+@media (max-width:900px){.schedule-page-header{display:block}.schedule-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.schedule-action-bar,.schedule-filter-bar{align-items:stretch}.schedule-action-group,.schedule-filter-group{width:100%;}.schedule-input,.schedule-select{width:100%;}.schedule-button{flex:1;}}
+@media (max-width:640px){.schedule-card-grid{grid-template-columns:1fr;}}

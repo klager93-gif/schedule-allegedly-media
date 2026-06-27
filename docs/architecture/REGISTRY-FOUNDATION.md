@@ -1,6 +1,6 @@
 # Registry Foundation
 
-Version: v5.14.3
+Version: v5.15.0
 Date: 2026-06-15
 
 Signal Schedule now uses a client-side registry layer for shared release and navigation behavior.
@@ -21,4 +21,4 @@ Future releases should update the registry first when changing shared navigation
 
 ## Route caution
 
-HTML files remain at repo root in v5.14.3. Page moves are intentionally deferred to avoid route drift during the foundation era.
+HTML files remain at repo root in v5.15.0. Page moves are intentionally deferred to avoid route drift during the foundation era.

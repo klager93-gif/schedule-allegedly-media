@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/people/supervisors.js
-Version: v5.14.3
+Version: v5.15.0
 Purpose: Render Supervisors & Organizational Hierarchy preview
 */
 import { getSupervisorHierarchyPreview } from '../../services/SupervisorHierarchyService.js';

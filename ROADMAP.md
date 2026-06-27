@@ -1,6 +1,13 @@
+# Immediate Roadmap
+
+## v5.15.x Foundation polish
+- Review UI Component Catalog and apply component standards across remaining module pages.
+- Continue navigation, route, placeholder, and metadata audits.
+- Prepare v6 operational scheduling modules after the foundation is stable.
+
 # ROADMAP
 
-Updated for Signal Schedule v5.14.3 — Dashboard Responsive Navigation Polish.
+Updated for Signal Schedule v5.15.0 — Dashboard Responsive Navigation Polish.
 
 # Signal Schedule Roadmap
 
@@ -28,6 +35,6 @@ Updated for Signal Schedule v5.14.3 — Dashboard Responsive Navigation Polish.
 - v6.0 Multi-User Request Engine
 
 
-## v5.14.3 Dashboard & Clean Route Foundation
+## v5.15.0 Dashboard & Clean Route Foundation
 
 Adds dashboard navigation, agency branding placeholder, and clean route planning. The long-term dashboard target remains the mission-control layout with metrics, layer controls, quick actions, schedule overview, and agency branding.

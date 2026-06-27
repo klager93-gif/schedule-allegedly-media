@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/people/training.js
-Version: v5.14.3
+Version: v5.15.0
 Purpose: Training & Certifications preview interactions
 */
 import { loadTrainingCertificationPreview, filterTrainingRecords } from '../../services/TrainingCertificationService.js';

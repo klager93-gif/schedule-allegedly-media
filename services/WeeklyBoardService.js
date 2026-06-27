@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/services/WeeklyBoardService.js
-Version: v5.14.3
+Version: v5.15.0
 Purpose: Service calculations for Weekly Schedule View foundation
 */
 import { listWeeklyBoardPreview } from '../repositories/WeeklyBoardRepository.js';

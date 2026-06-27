@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: app-shell.js
-Version: v5.14.3
+Version: v5.15.0
 Purpose: Desktop application shell using release, route, navigation, config, feature, role, status, and page architecture registries.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
   if (!body || body.dataset.signalArea !== 'Signal Schedule') return;
 
   const releaseMeta = window.SIGNAL_SCHEDULE_RELEASE || {};
-  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.14.3';
+  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.15.0';
   const releaseStatus = releaseMeta.status || 'Foundation';
   const title = body.dataset.signalTitle || document.title.replace('— Signal Schedule', '').trim() || 'Signal Schedule';
   const themeKey = 'signalScheduleTheme';

@@ -1,4 +1,12 @@
-# v5.14.3 — Dashboard Responsive Navigation Polish
+## v5.15.0 — UI & Foundation Standardization
+
+- Added internal UI Component Catalog for Schedule-only component standards.
+- Added reusable foundation CSS primitives for action bars, filters, cards, tables, forms, badges, alerts, empty states, and modal previews.
+- Registered UI Catalog in route/navigation foundations.
+- Updated release/cache markers to v5.15.0.
+- No server or Coolify configuration changes required.
+
+# v5.15.0 — Dashboard Responsive Navigation Polish
 
 - Improved dashboard responsive scaling for desktop and ultrawide displays.
 - Restored My Schedule to the dashboard sidebar.

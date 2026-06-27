@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/adapters/JsonQualificationsCertificationAdapter.js
-Version: v5.14.3
+Version: v5.15.0
 Purpose: JSON adapter for Qualifications & Certification Engine preview data.
 */
 export class JsonQualificationsCertificationAdapter {

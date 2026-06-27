@@ -1,6 +1,6 @@
 # STANDARDS
 
-Updated for Signal Schedule v5.14.3 — Dashboard Responsive Navigation Polish.
+Updated for Signal Schedule v5.15.0 — Dashboard Responsive Navigation Polish.
 
 # Signal Schedule Standards
 
@@ -28,3 +28,7 @@ Agency calendar day-start time, role visibility, saved views, filters, layers, a
 ## Clean Route Standard
 
 Do not switch technologies just to hide file extensions. Clean routes should be delivered through routing/rewrite architecture while preserving stable route registry entries during static foundation builds.
+
+## v5.15.0 UI Component Catalog Rule
+
+Use `/pages/admin/ui-catalog.html` as the Schedule-only reference for reusable page headers, action bars, filters, buttons, cards, forms, tables, badges, alerts, empty states, and modal/dialog patterns. Do not borrow UI or CSS patterns from unrelated projects unless explicitly approved.

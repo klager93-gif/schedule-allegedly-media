@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/admin/database-audit.html
-Version: v5.14.3
+Version: v5.15.0
 Purpose: Database naming contract and SQL audit foundation page.
 -->
 <!DOCTYPE html>
@@ -11,14 +11,14 @@ Purpose: Database naming contract and SQL audit foundation page.
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Database Audit — Signal Schedule</title>
-<link rel="stylesheet" href="/app-shell.css?v=5.14.3">
-<link rel="stylesheet" href="/pages/admin/foundation-admin.css?v=5.14.3">
+<link rel="stylesheet" href="/app-shell.css?v=5.15.0">
+<link rel="stylesheet" href="/pages/admin/foundation-admin.css?v=5.15.0">
 </head>
-<body data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Database Audit" data-signal-version="v5.14.3" data-signal-theme="Database Naming Contract" data-signal-status="Foundation" data-signal-description="Review the live table naming contract and confirmed SQL foundation before backend-connected releases.">
+<body data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Database Audit" data-signal-version="v5.15.0" data-signal-theme="Database Naming Contract" data-signal-status="Foundation" data-signal-description="Review the live table naming contract and confirmed SQL foundation before backend-connected releases.">
 <div id="sl-header"></div>
 <main class="foundation-shell">
   <section class="foundation-hero">
-    <div><p class="foundation-kicker">System</p><h1>Database Audit</h1><p>v5.14.3 records the table naming contract discovered during live Postgres review: core identity tables are unprefixed while Schedule module tables use the <strong>schedule_</strong> prefix.</p></div>
+    <div><p class="foundation-kicker">System</p><h1>Database Audit</h1><p>v5.15.0 records the table naming contract discovered during live Postgres review: core identity tables are unprefixed while Schedule module tables use the <strong>schedule_</strong> prefix.</p></div>
   </section>
   <section class="schedule-card">
     <h2>Confirmed Naming Contract</h2>
@@ -42,14 +42,14 @@ Purpose: Database naming contract and SQL audit foundation page.
   if(mount) mount.innerHTML=`<article class="foundation-card"><h3>${data.tableCount} tables confirmed</h3><p>Live public schema inventory captured for backend readiness.</p></article><article class="foundation-card"><h3>Core Tables</h3><p>${data.coreTables.join(', ')}</p></article><article class="foundation-card"><h3>Approval Tables</h3><p>${data.approvalTables.join(', ')}</p></article><article class="foundation-card"><h3>Warnings</h3><p>${data.warnings.join(' ')}</p></article>`;
 })();
 </script>
-<script src="/assets/release-metadata.js?v=5.14.3"></script>
-<script src="/assets/config.js?v=5.14.3"></script>
-<script src="/assets/routes.js?v=5.14.3"></script>
-<script src="/assets/navigation.js?v=5.14.3"></script>
-<script src="/assets/features.js?v=5.14.3"></script>
-<script src="/assets/roles.js?v=5.14.3"></script>
-<script src="/assets/status.js?v=5.14.3"></script>
-<script src="/assets/data-loader.js?v=5.14.3"></script>
-<script src="/app-shell.js?v=5.14.3"></script>
+<script src="/assets/release-metadata.js?v=5.15.0"></script>
+<script src="/assets/config.js?v=5.15.0"></script>
+<script src="/assets/routes.js?v=5.15.0"></script>
+<script src="/assets/navigation.js?v=5.15.0"></script>
+<script src="/assets/features.js?v=5.15.0"></script>
+<script src="/assets/roles.js?v=5.15.0"></script>
+<script src="/assets/status.js?v=5.15.0"></script>
+<script src="/assets/data-loader.js?v=5.15.0"></script>
+<script src="/app-shell.js?v=5.15.0"></script>
 </body>
 </html>
