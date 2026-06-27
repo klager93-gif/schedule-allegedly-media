@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/adapters/JsonCalendarAdapter.js
-Version: v5.15.1
+Version: v5.15.2
 Purpose: Browser-side JSON adapter for Calendar Foundation preview data.
 */
 export class JsonCalendarAdapter {

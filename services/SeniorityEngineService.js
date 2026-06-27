@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/services/SeniorityEngineService.js
-Version: v5.15.1
+Version: v5.15.2
 Purpose: Seniority Engine preview calculations and ordering helpers.
 */
 const DATE_FIELDS = {

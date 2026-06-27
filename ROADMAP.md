@@ -1,6 +1,6 @@
-# Immediate Roadmap
+## Current: v5.15.2 Working Dashboard Split
 
-## Current: v5.15.1 Design System Rollout
+## Current: v5.15.2 Working Dashboard Split
 - UI Catalog standards are now active through the app shell.
 - `/index.html` remains the independent visual target/placeholder.
 - Existing operational pages now normalize buttons, tables, forms, badges, surfaces, and command bars.

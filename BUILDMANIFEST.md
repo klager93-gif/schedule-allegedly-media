@@ -1,19 +1,10 @@
-# Build Manifest — Signal Schedule v5.15.1
+# Build Manifest — Signal Schedule v5.15.2
+
+Signal Schedule v5.15.2 — Working Dashboard Split
 
 Generated: 2026-06-27
 
-## Release
-
-Signal Schedule v5.15.1 — Design System Rollout
-
-## Package Rules
-
-- Full replacement ZIP.
-- Excludes `.git`, `__MACOSX`, and `.DS_Store`.
-- No Coolify/server configuration change required.
-
-## Scope
-
-- UI Catalog standards applied through shared app shell.
-- Automatic normalization of legacy app pages.
-- Public `index.html` preserved as independent visual target/placeholder.
+Primary changes:
+- Moved dashboard visual reference to pages/admin/dashboard-reference.html.
+- Rebuilt index.html as the working app dashboard entry.
+- Updated route/navigation registry and version markers.

@@ -1,10 +1,18 @@
-## v5.15.1 — Design System Rollout
+## v5.15.2 — Working Dashboard Split
+
+- Moved the previous `index.html` visual dashboard target to `pages/admin/dashboard-reference.html`.
+- Rebuilt `index.html` as the working application dashboard entry point.
+- Added dashboard reference route to central route/navigation registries.
+- Preserved UI Catalog and reference links for ongoing design-system rollout.
+- Updated release/cache markers to v5.15.2.
+
+## v5.15.2 — Design System Rollout
 
 - Applied UI Catalog standards across existing Schedule pages through the shared app shell.
 - Added automatic normalization for buttons, forms, tables, badges, surfaces, and command bars.
 - Preserved `/index.html` as the independent public-facing visual target/placeholder.
 - Expanded the UI Catalog with rollout coverage notes.
-- Updated release/cache markers to v5.15.1.
+- Updated release/cache markers to v5.15.2.
 - Removed packaging junk from the full replacement ZIP.
 - No server or Coolify configuration changes required.
 

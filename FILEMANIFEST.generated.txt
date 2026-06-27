@@ -262,6 +262,7 @@ docs/ui/SAVED-SCHEDULES-UI.md
 docs/ui/UI-COPY-BOX-CLEANUP-v5.9.md
 index.html
 pages/admin/backend-readiness.html
+pages/admin/dashboard-reference.html
 pages/admin/data-export.html
 pages/admin/data-tools.css
 pages/admin/data-tools.html
