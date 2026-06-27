@@ -1,14 +1,7 @@
-# Signal Schedule v5.15.0 — UI & Foundation Standardization
+# Signal Schedule v5.15.1 — Design System Rollout
 
-## Release focus
-v5.15.0 standardizes the Signal Schedule application foundation before larger v6 feature work.
+Released: 2026-06-27
 
-## Included
-- Adds internal UI Component Catalog at `/pages/admin/ui-catalog.html`.
-- Adds reusable Schedule-only component primitives for page headers, action bars, filters, buttons, cards, badges, forms, tables, alerts, empty states, and modal previews.
-- Adds UI Catalog route and admin/system navigation entry.
-- Updates cache-busting and release markers to `v5.15.0`.
-- Keeps this project isolated as Signal Schedule only.
+This build rolls the UI Catalog standards into the real app shell while preserving `/index.html` as the independent public visual target. Existing pages now receive shared Schedule component styling for buttons, forms, tables, badges, command bars, surfaces, and rollout status.
 
-## Server action
-No Coolify/server action is required beyond deploying the replacement files.
+No Coolify/server configuration change required.

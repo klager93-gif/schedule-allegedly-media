@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/services/EmployeeAvailabilityPreferencesService.js
-Version: v5.15.0
+Version: v5.15.1
 Purpose: Service boundary for availability, preference, and restriction checks used by builder, employee portal, and future scheduling engines.
 */
 export class EmployeeAvailabilityPreferencesService {

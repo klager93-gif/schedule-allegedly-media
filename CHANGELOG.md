@@ -1,3 +1,13 @@
+## v5.15.1 — Design System Rollout
+
+- Applied UI Catalog standards across existing Schedule pages through the shared app shell.
+- Added automatic normalization for buttons, forms, tables, badges, surfaces, and command bars.
+- Preserved `/index.html` as the independent public-facing visual target/placeholder.
+- Expanded the UI Catalog with rollout coverage notes.
+- Updated release/cache markers to v5.15.1.
+- Removed packaging junk from the full replacement ZIP.
+- No server or Coolify configuration changes required.
+
 ## v5.15.0 — UI & Foundation Standardization
 
 - Added internal UI Component Catalog for Schedule-only component standards.

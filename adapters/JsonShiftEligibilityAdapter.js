@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/adapters/JsonShiftEligibilityAdapter.js
-Version: v5.15.0
+Version: v5.15.1
 Purpose: JSON adapter for Qualification & Eligibility Engine preview data
 */
 export async function getShiftEligibilityPreview() {

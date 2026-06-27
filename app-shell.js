@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: app-shell.js
-Version: v5.15.0
+Version: v5.15.1
 Purpose: Desktop application shell using release, route, navigation, config, feature, role, status, and page architecture registries.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
   if (!body || body.dataset.signalArea !== 'Signal Schedule') return;
 
   const releaseMeta = window.SIGNAL_SCHEDULE_RELEASE || {};
-  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.15.0';
+  const version = releaseMeta.version || body.dataset.signalVersion || 'v5.15.1';
   const releaseStatus = releaseMeta.status || 'Foundation';
   const title = body.dataset.signalTitle || document.title.replace('— Signal Schedule', '').trim() || 'Signal Schedule';
   const themeKey = 'signalScheduleTheme';
@@ -29,6 +29,7 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
   insertToolbar();
   syncFooter();
   enableDenseWorkspace();
+  applyDesignSystemRollout();
 
   function getStoredTheme() {
     const stored = localStorage.getItem(themeKey);
@@ -291,6 +292,63 @@ Purpose: Desktop application shell using release, route, navigation, config, fea
 
     document.querySelectorAll('[class*="toolbar"]:not(.schedule-app-toolbar)').forEach((toolbar) => {
       toolbar.classList.add('schedule-command-bar');
+    });
+  }
+
+
+  function applyDesignSystemRollout() {
+    body.classList.add('schedule-design-system-rollout');
+    const main = document.querySelector('main');
+    if (main && !main.querySelector('.schedule-rollout-banner')) {
+      const banner = document.createElement('section');
+      banner.className = 'schedule-rollout-banner';
+      banner.setAttribute('aria-label', 'Design system rollout status');
+      banner.innerHTML = '<strong>Design System Rollout</strong><span>Shared Schedule components are active on this page: cards, tables, forms, buttons, badges, alerts, and empty states.</span>';
+      main.prepend(banner);
+    }
+
+    document.querySelectorAll('button, a').forEach((el) => {
+      const text = (el.textContent || '').trim();
+      const href = el.getAttribute('href') || '';
+      if (el.closest('.schedule-subnav,.schedule-app-toolbar,.schedule-footer')) return;
+      if (el.classList.contains('schedule-button') || el.classList.contains('schedule-nav-primary')) return;
+      const looksAction = el.tagName === 'BUTTON' || /new|add|save|create|edit|delete|remove|export|import|print|refresh|configure|view|open|run|submit|approve|deny|cancel|filter|clear|publish|draft/i.test(text + ' ' + href);
+      if (looksAction) {
+        el.classList.add('schedule-button');
+        if (/new|add|save|create|submit|approve|publish/i.test(text)) el.classList.add('schedule-button--primary');
+        if (/delete|remove|deny/i.test(text)) el.classList.add('schedule-button--danger');
+      }
+    });
+
+    document.querySelectorAll('input:not([type="checkbox"]):not([type="radio"]), textarea').forEach((el) => {
+      if (!el.classList.contains('schedule-input') && !el.classList.contains('schedule-textarea')) {
+        el.classList.add(el.tagName === 'TEXTAREA' ? 'schedule-textarea' : 'schedule-input');
+      }
+    });
+    document.querySelectorAll('select').forEach((el) => el.classList.add('schedule-select'));
+    document.querySelectorAll('label').forEach((el) => {
+      if (!el.closest('.schedule-theme-menu') && !el.classList.contains('schedule-label')) el.classList.add('schedule-label');
+    });
+
+    document.querySelectorAll('[class*="status"], [class*="badge"], [class*="pill"], [data-status]').forEach((el) => {
+      if (el.closest('.schedule-subnav,.schedule-app-toolbar')) return;
+      el.classList.add('schedule-badge');
+      const state = ((el.dataset.status || el.textContent || '') + ' ' + el.className).toLowerCase();
+      if (/approved|active|complete|success|good|available|published/.test(state)) el.classList.add('schedule-badge--good');
+      if (/pending|warning|warn|review|draft|open/.test(state)) el.classList.add('schedule-badge--warn');
+      if (/denied|danger|blocked|error|short|failed|inactive/.test(state)) el.classList.add('schedule-badge--danger');
+    });
+
+    document.querySelectorAll('section, article').forEach((el) => {
+      if (el.closest('.schedule-subnav,.schedule-app-toolbar') || el.classList.contains('schedule-page-header')) return;
+      const name = el.className || '';
+      if (/card|panel|summary|widget|metric|notice|alert|empty/i.test(name)) el.classList.add('schedule-surface');
+    });
+
+    document.querySelectorAll('table').forEach((table) => {
+      table.classList.add('schedule-table');
+      const parent = table.parentElement;
+      if (parent && !parent.classList.contains('schedule-table-wrap')) parent.classList.add('schedule-table-wrap');
     });
   }
 

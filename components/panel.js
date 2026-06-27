@@ -2,8 +2,8 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/components/panel.js
-Version: v5.15.0
+Version: v5.15.1
 Purpose: Reusable panel metadata helpers.
 */
-export const panelComponentVersion = "v5.15.0";
+export const panelComponentVersion = "v5.15.1";
 export function panelTitle(title, subtitle = "") { return { title, subtitle }; }

@@ -1,5 +1,5 @@
-gitattributes
-gitignore
+.gitattributes
+.gitignore
 ADMIN_CHANGELOG.md
 BUILDMANIFEST.md
 CHANGELOG.md

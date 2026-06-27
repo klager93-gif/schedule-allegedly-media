@@ -1,5 +1,23 @@
 # Immediate Roadmap
 
+## Current: v5.15.1 Design System Rollout
+- UI Catalog standards are now active through the app shell.
+- `/index.html` remains the independent visual target/placeholder.
+- Existing operational pages now normalize buttons, tables, forms, badges, surfaces, and command bars.
+
+## Next: v5.15.2 Dashboard Polish
+- Refine dashboard cards, quick actions, staffing summary, pending approvals, and today's schedule widgets.
+- Convert dashboard sections to the same UI Catalog primitives.
+- Tighten desktop spacing and wide-screen behavior.
+
+## Then: v5.15.3 Navigation Enhancements
+- Breadcrumbs, favorites, recently visited pages, better search, and keyboard shortcut planning.
+
+## v5.16 Notification Center
+- In-app notification center, unread badges, toasts, reminder framework, and email groundwork.
+
+# Immediate Roadmap
+
 ## v5.15.x Foundation polish
 - Review UI Component Catalog and apply component standards across remaining module pages.
 - Continue navigation, route, placeholder, and metadata audits.
