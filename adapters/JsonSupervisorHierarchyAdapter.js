@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/adapters/JsonSupervisorHierarchyAdapter.js
-Version: v5.15.2
+Version: v5.15.3
 Purpose: JSON adapter for supervisor hierarchy preview data
 */
 export async function fetchSupervisorHierarchyPreview() {

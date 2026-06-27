@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/app-shell.css
-Version: v5.15.2
+Version: v5.15.3
 Purpose: Desktop-first application shell, theme tokens, and connected flyout navigation for all Schedule pages.
 */
 :root,
@@ -908,7 +908,7 @@ body[data-signal-area="Signal Schedule"] .filter-chip{border:1px solid var(--ss-
 @media (max-width:700px){body[data-signal-area="Signal Schedule"] .view-engine-board,body[data-signal-area="Signal Schedule"] .layer-grid{grid-template-columns:1fr;}}
 
 
-/* v5.15.2 Dashboard CSS repair and operations foundation polish */
+/* v5.15.3 Dashboard CSS repair and operations foundation polish */
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-hero{background:linear-gradient(135deg,var(--ss-app-panel),var(--ss-app-panel-soft));border:1px solid var(--ss-app-border);border-radius:18px;box-shadow:var(--ss-shadow);}
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-status-grid div{min-height:72px;display:flex;flex-direction:column;justify-content:center;gap:4px;}
 body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-status-grid strong{font-size:1.35rem;}
@@ -922,7 +922,7 @@ body[data-signal-area="Signal Schedule"] .schedule-dashboard .calendar-layer-chi
 @media (max-width:1200px){body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-module-grid,body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-rule-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media (max-width:720px){body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-module-grid,body[data-signal-area="Signal Schedule"] .schedule-dashboard .schedule-rule-grid{grid-template-columns:1fr;}}
 
-/* v5.15.2 Foundation standardization primitives */
+/* v5.15.3 Foundation standardization primitives */
 .schedule-page-header{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin:0 0 18px;}
 .schedule-page-header__kicker{margin:0 0 6px;color:var(--ss-app-muted);font-size:.74rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;}
 .schedule-page-header h1{margin:0;color:var(--ss-app-text);font-size:1.9rem;line-height:1.1;}
@@ -970,7 +970,7 @@ body[data-signal-area="Signal Schedule"] .schedule-dashboard .calendar-layer-chi
 @media (max-width:900px){.schedule-page-header{display:block}.schedule-card-grid,.schedule-card-grid--three{grid-template-columns:repeat(2,minmax(0,1fr));}.schedule-action-bar,.schedule-filter-bar{align-items:stretch}.schedule-action-group,.schedule-filter-group{width:100%;}.schedule-input,.schedule-select{width:100%;}.schedule-button{flex:1;}}
 @media (max-width:640px){.schedule-card-grid,.schedule-card-grid--three{grid-template-columns:1fr;}}
 
-/* v5.15.2 Design System Rollout
+/* v5.15.3 Design System Rollout
    Applies the UI Catalog language across existing app pages without replacing the standalone public placeholder. */
 .schedule-design-system-rollout .schedule-rollout-banner{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 18px;padding:12px 14px;border:1px solid color-mix(in srgb,var(--ss-app-accent) 35%,var(--ss-app-border));border-radius:14px;background:linear-gradient(135deg,color-mix(in srgb,var(--ss-app-accent) 10%,var(--ss-app-panel)),var(--ss-app-panel-soft));box-shadow:var(--ss-shadow);color:var(--ss-app-text)}
 .schedule-rollout-banner strong{font-size:.78rem;text-transform:uppercase;letter-spacing:.09em}.schedule-rollout-banner span{color:var(--ss-app-muted);font-size:.86rem;font-weight:750;text-align:right}

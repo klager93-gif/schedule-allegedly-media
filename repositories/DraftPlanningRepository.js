@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/repositories/DraftPlanningRepository.js
-Version: v5.15.2
+Version: v5.15.3
 Purpose: Repository boundary for draft planning data.
 */
 export class DraftPlanningRepository {

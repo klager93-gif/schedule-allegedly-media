@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/services/CoverageSpotsService.js
-Version: v5.15.2
+Version: v5.15.3
 Purpose: Service layer for coverage spot status calculations
 */
 import { listCoverageSpotsPreview } from '../repositories/CoverageSpotsRepository.js';

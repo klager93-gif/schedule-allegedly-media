@@ -1,3 +1,12 @@
+
+## v5.15.3 — Dashboard Reference Component Rollout
+
+- Extracted the dashboard reference button/action styling into reusable production classes.
+- Updated the working dashboard to use reference-style action buttons and build-path copy.
+- Converted `/pages/calendar/schedule.html` away from the old app-shell navigation into the new dashboard shell.
+- Preserved `/pages/admin/dashboard-reference.html` as the visual target and `/pages/admin/ui-catalog.html` as the implementation guide.
+- Updated release/cache markers to v5.15.3 and rebuilt manifests/checksums.
+
 # Signal Schedule
 ## Current release: v5.15.0 — UI & Foundation Standardization
 

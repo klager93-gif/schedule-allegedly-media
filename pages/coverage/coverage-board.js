@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/pages/coverage/coverage-board.js
-Version: v5.15.2
+Version: v5.15.3
 Purpose: Coverage Board foundation preview UI.
 */
 import { JsonCoverageBoardAdapter } from '../../adapters/JsonCoverageBoardAdapter.js';

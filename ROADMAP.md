@@ -1,11 +1,20 @@
-## Current: v5.15.2 Working Dashboard Split
 
-## Current: v5.15.2 Working Dashboard Split
+## v5.15.3 — Dashboard Reference Component Rollout
+
+- Extracted the dashboard reference button/action styling into reusable production classes.
+- Updated the working dashboard to use reference-style action buttons and build-path copy.
+- Converted `/pages/calendar/schedule.html` away from the old app-shell navigation into the new dashboard shell.
+- Preserved `/pages/admin/dashboard-reference.html` as the visual target and `/pages/admin/ui-catalog.html` as the implementation guide.
+- Updated release/cache markers to v5.15.3 and rebuilt manifests/checksums.
+
+## Current: v5.15.3 Working Dashboard Split
+
+## Current: v5.15.3 Working Dashboard Split
 - UI Catalog standards are now active through the app shell.
 - `/index.html` remains the independent visual target/placeholder.
 - Existing operational pages now normalize buttons, tables, forms, badges, surfaces, and command bars.
 
-## Next: v5.15.2 Dashboard Polish
+## Next: v5.15.3 Dashboard Polish
 - Refine dashboard cards, quick actions, staffing summary, pending approvals, and today's schedule widgets.
 - Convert dashboard sections to the same UI Catalog primitives.
 - Tighten desktop spacing and wide-screen behavior.

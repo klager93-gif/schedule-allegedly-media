@@ -1,4 +1,4 @@
-# File Manifest — Signal Schedule v5.15.2
+# File Manifest — Signal Schedule v5.15.3
 
 - `.gitattributes`
 - `.gitignore`

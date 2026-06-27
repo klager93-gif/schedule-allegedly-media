@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/services/CoverageBoardService.js
-Version: v5.15.2
+Version: v5.15.3
 Purpose: Coverage Board summary, filtering, and open-shift linkage helpers.
 */
 export class CoverageBoardService {

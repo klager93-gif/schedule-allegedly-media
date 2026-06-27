@@ -1,10 +1,14 @@
-# Validation — Signal Schedule v5.15.2
+# Validation — Signal Schedule v5.15.3
 
-- Dashboard reference moved to `pages/admin/dashboard-reference.html`: passed
-- Root `index.html` rebuilt as working app dashboard: passed
-- Dashboard reference route added to route/navigation registry: passed
-- UI Catalog preserved: passed
-- Internal local link check: passed
-- JavaScript syntax check for route/navigation/release metadata: passed
-- Version/cache markers updated to v5.15.2: passed
-- Release ZIP junk exclusion target: `.git`, `.DS_Store`, `__MACOSX`: passed
+## Manual Checks
+
+- Open `/index.html` and confirm reference-style buttons appear in Command Center.
+- Open `/pages/calendar/schedule.html` and confirm it uses the dashboard shell/sidebar/topbar, not the old injected app shell.
+- Open `/pages/admin/dashboard-reference.html` and confirm the visual reference is preserved.
+- Open `/pages/admin/ui-catalog.html` and confirm UI standards remain available.
+
+## Automated Checks
+
+- HTML link check passed.
+- JavaScript syntax check passed.
+- ZIP junk check passed.

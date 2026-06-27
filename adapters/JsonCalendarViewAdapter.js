@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/adapters/JsonCalendarViewAdapter.js
-Version: v5.15.2
+Version: v5.15.3
 Purpose: JSON adapter for calendar week/day preview data
 */
 export async function getCalendarViewPreview() {

@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/services/MandationEngineService.js
-Version: v5.15.2
+Version: v5.15.3
 Purpose: Service layer for Mandation Engine Foundation
 */
 import { getMandationEnginePreview } from '../repositories/MandationEngineRepository.js';
