@@ -63,6 +63,7 @@ Purpose: Central navigation registry for connected Schedule flyout navigation.
       [path('employeeRequests','pages/employee/requests.html')]: 'Employee Requests',
       [path('employeeProfile','pages/employee/profile.html')]: 'Employee Profile',
       [path('systemHealth','pages/admin/system-health.html')]: 'System Health',
+      [path('uiCatalog','pages/admin/ui-catalog.html')]: 'UI Catalog',
       [path('dataExport','pages/admin/data-export.html')]: 'Data Export',
       [path('backendReadiness','pages/admin/backend-readiness.html')]: 'Backend Readiness',
       [path('databaseAudit','pages/admin/database-audit.html')]: 'Database Audit',

@@ -1,10 +1,17 @@
-# Build Manifest
+# Build Manifest — Signal Schedule v5.15.0
 
-Project: Signal Schedule
-Version: v5.15.0
-Package: signal-schedule-v5.15.0-ui-foundation-standardization.zip
-Generated: 2026-06-25
+Generated: 2026-06-27
 
-Summary: UI and foundation standardization release with internal UI Component Catalog and reusable Schedule-only component primitives.
+## Release
 
-Validation: JS syntax pass; local link/asset scan pass; checksum manifest generated.
+Signal Schedule v5.15.0 — UI & Foundation Standardization
+
+## Package Rules
+
+- Full replacement ZIP.
+- Excludes `.git`, `__MACOSX`, and `.DS_Store`.
+- No Coolify/server configuration change required.
+
+## File Count
+
+477 tracked release files.

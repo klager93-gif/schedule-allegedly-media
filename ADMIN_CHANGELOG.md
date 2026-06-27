@@ -6,7 +6,7 @@
 - Updated release/cache markers to v5.15.0.
 - No server or Coolify configuration changes required.
 
-# v5.15.0 — Dashboard Responsive Navigation Polish
+# v5.15.0 — UI & Foundation Standardization
 
 - Improved dashboard responsive scaling for desktop and ultrawide displays.
 - Restored My Schedule to the dashboard sidebar.

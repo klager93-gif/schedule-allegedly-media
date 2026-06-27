@@ -1,5 +1,5 @@
-.gitattributes
-.gitignore
+gitattributes
+gitignore
 ADMIN_CHANGELOG.md
 BUILDMANIFEST.md
 CHANGELOG.md
@@ -257,6 +257,7 @@ docs/foundation/VISIBILITY-VIEW-ENGINE-v5.12.md
 docs/hotfixes/EMPLOYEE-PORTAL-NAVIGATION-HOTFIX.md
 docs/migrations/STANDALONE-MIGRATION.md
 docs/releases/LATEST_RELEASE.md
+docs/ui/COMPONENT-CATALOG.md
 docs/ui/SAVED-SCHEDULES-UI.md
 docs/ui/UI-COPY-BOX-CLEANUP-v5.9.md
 index.html

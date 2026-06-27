@@ -1,4 +1,4 @@
-# Signal Schedule v5.15.0 — Standalone Repository Organization
+# Signal Schedule v5.15.0 — UI & Foundation Standardization
 
 This release organizes the standalone Schedule repository after the split from Signal Schedule Tools.
 
@@ -8,6 +8,7 @@ This release organizes the standalone Schedule repository after the split from S
 - New categorized `docs/` structure.
 - Manifest and checksum refresh.
 - Cache-busting/version metadata refresh.
+- Internal UI Catalog added to System navigation.
 - Validation for local HTML links and JavaScript imports.
 
 ## Not included

@@ -8,11 +8,11 @@ Purpose: Single client-side release metadata source for app shell, footer, regis
 window.SIGNAL_SCHEDULE_RELEASE = Object.freeze({
   product: 'Signal Schedule',
   version: '5.15.0',
-  releaseName: 'Dashboard Responsive Navigation Polish',
-  status: 'Patch',
-  date: '2026-06-15',
+  releaseName: 'UI & Foundation Standardization',
+  status: 'Foundation Release',
+  date: '2026-06-27',
   domain: 'https://schedule.allegedly-media.com',
-  updated: '2026-06-15',
+  updated: '2026-06-27',
   cacheKey: '5.15.0',
   repository: 'schedule-allegedly-media'
 });

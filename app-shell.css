@@ -939,6 +939,7 @@ body[data-signal-area="Signal Schedule"] .schedule-dashboard .calendar-layer-chi
 .schedule-label{display:grid;gap:6px;color:var(--ss-app-text);font-size:.8rem;font-weight:850;}
 .schedule-label small{color:var(--ss-app-muted);font-weight:700;}
 .schedule-card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:0 0 18px;}
+.schedule-card-grid--three{grid-template-columns:repeat(3,minmax(0,1fr));}
 .schedule-metric-card,.schedule-info-card,.schedule-list-card,.schedule-action-card{border:1px solid var(--ss-app-border);border-radius:18px;background:var(--ss-app-panel);box-shadow:var(--ss-shadow);padding:16px;}
 .schedule-metric-card small,.schedule-info-card small{display:block;color:var(--ss-app-muted);font-size:.73rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;}
 .schedule-metric-card strong{display:block;margin-top:8px;font-size:2rem;line-height:1;color:var(--ss-app-text);}
@@ -964,5 +965,7 @@ body[data-signal-area="Signal Schedule"] .schedule-dashboard .calendar-layer-chi
 .schedule-component-section{margin:0 0 22px;}
 .schedule-component-section h2{margin:0 0 12px;color:var(--ss-app-text);}
 .schedule-component-demo{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
-@media (max-width:900px){.schedule-page-header{display:block}.schedule-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.schedule-action-bar,.schedule-filter-bar{align-items:stretch}.schedule-action-group,.schedule-filter-group{width:100%;}.schedule-input,.schedule-select{width:100%;}.schedule-button{flex:1;}}
-@media (max-width:640px){.schedule-card-grid{grid-template-columns:1fr;}}
+.schedule-standard-list{margin:0;padding-left:20px;color:var(--ss-app-muted);line-height:1.65;}
+.schedule-standard-list strong{color:var(--ss-app-text);}
+@media (max-width:900px){.schedule-page-header{display:block}.schedule-card-grid,.schedule-card-grid--three{grid-template-columns:repeat(2,minmax(0,1fr));}.schedule-action-bar,.schedule-filter-bar{align-items:stretch}.schedule-action-group,.schedule-filter-group{width:100%;}.schedule-input,.schedule-select{width:100%;}.schedule-button{flex:1;}}
+@media (max-width:640px){.schedule-card-grid,.schedule-card-grid--three{grid-template-columns:1fr;}}
