@@ -1,3 +1,12 @@
-# Build Manifest — v5.16.2
+# Build Manifest
 
-Full replacement build based on the previous release. No server configuration changes required.
+Version: v5.16.3
+Generated: 2026-06-29
+
+Files: 482
+
+## Highlights
+- Rule Engine Foundation page
+- Rule preview data
+- UI Catalog rule components
+- Navigation update

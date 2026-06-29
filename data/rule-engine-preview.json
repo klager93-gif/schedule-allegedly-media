@@ -1,0 +1,82 @@
+{
+  "version": "v5.16.3",
+  "generated": "2026-06-29",
+  "summary": {
+    "checksRun": 18,
+    "blockingConflicts": 2,
+    "warnings": 5,
+    "passingRules": 11
+  },
+  "ruleSets": [
+    {
+      "name": "Conflict Detection",
+      "status": "warning",
+      "checks": [
+        "double assignment",
+        "leave overlap",
+        "training overlap",
+        "rest-window warning"
+      ]
+    },
+    {
+      "name": "Coverage Calculation",
+      "status": "attention",
+      "checks": [
+        "minimum staffing",
+        "seat coverage",
+        "supervisor coverage",
+        "coverage impact"
+      ]
+    },
+    {
+      "name": "Qualification Validation",
+      "status": "blocked",
+      "checks": [
+        "required certification",
+        "role eligibility",
+        "training expiration"
+      ]
+    },
+    {
+      "name": "Approval Routing",
+      "status": "ready",
+      "checks": [
+        "supervisor hierarchy",
+        "dual supervisor trade review",
+        "admin override path"
+      ]
+    },
+    {
+      "name": "Notification Triggers",
+      "status": "ready",
+      "checks": [
+        "approval created",
+        "coverage warning",
+        "schedule changed",
+        "open shift posted"
+      ]
+    }
+  ],
+  "sampleResults": [
+    {
+      "severity": "blocking",
+      "title": "Qualification mismatch",
+      "detail": "Night Desk 2 requires EMD certification before assignment can publish."
+    },
+    {
+      "severity": "blocking",
+      "title": "Leave overlap",
+      "detail": "Employee is unavailable for 1900\u20130700 assignment due to approved leave."
+    },
+    {
+      "severity": "warning",
+      "title": "Overtime threshold watch",
+      "detail": "Projected weekly hours exceed advisory threshold but can be overridden."
+    },
+    {
+      "severity": "pass",
+      "title": "Supervisor coverage met",
+      "detail": "Minimum supervisor coverage is satisfied for all listed watches."
+    }
+  ]
+}

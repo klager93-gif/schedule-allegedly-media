@@ -205,6 +205,7 @@ data/request-foundation-preview.json
 data/request-increment-settings.json
 data/request-reasons.json
 data/roles-permissions-preview.json
+data/rule-engine-preview.json
 data/schedule-admin-settings.json
 data/schedule-builder-sandbox.json
 data/schedule-planning-preview.json
@@ -354,6 +355,7 @@ pages/rules/notifications.js
 pages/rules/permissions.css
 pages/rules/permissions.html
 pages/rules/permissions.js
+pages/rules/rule-engine.html
 pages/rules/shortcodes.css
 pages/rules/shortcodes.html
 pages/rules/shortcodes.js
