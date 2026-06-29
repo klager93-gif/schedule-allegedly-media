@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/requests/requests.html
-Version: v5.17.2
+Version: v5.18.0
 Purpose: Dashboard shell migrated page for Request & Approval Engine
 -->
 <!DOCTYPE html>
@@ -13,10 +13,10 @@ Purpose: Dashboard shell migrated page for Request & Approval Engine
   <title>Signal Schedule — Request & Approval Engine</title>
   <meta name="description" content="Requests and approvals workspace for leave, shift trades, overtime opportunities, and supervisor review.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.17.2">
-  <link rel="stylesheet" href="/pages/requests/request-engine.css?v=5.17.2">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.18.0">
+  <link rel="stylesheet" href="/pages/requests/request-engine.css?v=5.18.0">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Request & Approval Engine" data-signal-version="v5.17.2" data-signal-theme="Request & Approval Engine" data-signal-status="Foundation" data-signal-description="Unified request intake, approval routing, policy checks, schedule impacts, and audit trail foundation." data-signal-status-text="Signal Schedule v5.17.2 foundation cleanup standardized this module on the dashboard design system.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Request & Approval Engine" data-signal-version="v5.18.0" data-signal-theme="Request & Approval Engine" data-signal-status="Foundation" data-signal-description="Unified request intake, approval routing, policy checks, schedule impacts, and audit trail foundation." data-signal-status-text="Signal Schedule v5.18.0 foundation cleanup standardized this module on the dashboard design system.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
@@ -29,20 +29,22 @@ Purpose: Dashboard shell migrated page for Request & Approval Engine
         <div class="signal-dashboard-nav__section">SCHEDULING</div>
         <a href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
         <a href="/my-schedule/"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
         <a href="/open-shifts/"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/trades/"><span class="signal-dashboard-icon">⇄</span><span>Shift Trades</span></a>
+        <a href="/mandation/"><span class="signal-dashboard-icon">⚑</span><span>Mandation</span></a>
         <a href="/assignments/"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
         <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
-        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
         <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
         <div class="signal-dashboard-nav__section">PEOPLE</div>
         <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
-        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
-        <a class="is-active" href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave Management</span></a>
+        <a class="is-active" href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
-        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
+        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
         <a href="/admin/"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
         <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
         <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
@@ -116,7 +118,7 @@ Purpose: Dashboard shell migrated page for Request & Approval Engine
 
       <main class="signal-dashboard-content signal-dashboard-module-content request-engine-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.17.2</span><strong>Requests & Approvals</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+          <span class="signal-dashboard-pill">v5.18.0</span><strong>Requests & Approvals</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
         </div>
 
 <section class="request-engine-hero">
@@ -149,17 +151,17 @@ Purpose: Dashboard shell migrated page for Request & Approval Engine
 <section class="request-engine-card"><h2>v5.7 Request Foundation Controls</h2><p>This release adds the request intake foundation for time off, VOT, trades, reason presets, status boards, partial-day hours, full-day handling, and admin override visibility.</p><div class="request-grid"><div><strong>Request types</strong><span>Vacation, sick, comp, personal, training, trade, VOT, and other.</span></div><div><strong>Statuses</strong><span>Draft, submitted, pending, approved, denied, cancelled, and completed.</span></div><div><strong>Hours</strong><span>Partial-day HHMM ranges and full-day scheduled-shift calculations.</span></div><div><strong>Overrides</strong><span>Admin entries may bypass increment restrictions when needed.</span></div></div></section>
 
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.2 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.18.0 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
     </div>
   </div>
-  <script type="module" src="/pages/requests/request-engine.js?v=5.17.2"></script>
-  <script src="/assets/release-metadata.js?v=5.17.2"></script>
-  <script src="/assets/config.js?v=5.17.2"></script>
-  <script src="/assets/routes.js?v=5.17.2"></script>
-  <script src="/assets/navigation.js?v=5.17.2"></script>
-  <script src="/assets/features.js?v=5.17.2"></script>
-  <script src="/assets/roles.js?v=5.17.2"></script>
-  <script src="/assets/status.js?v=5.17.2"></script>
-  <script src="/assets/data-loader.js?v=5.17.2"></script>
+  <script type="module" src="/pages/requests/request-engine.js?v=5.18.0"></script>
+  <script src="/assets/release-metadata.js?v=5.18.0"></script>
+  <script src="/assets/config.js?v=5.18.0"></script>
+  <script src="/assets/routes.js?v=5.18.0"></script>
+  <script src="/assets/navigation.js?v=5.18.0"></script>
+  <script src="/assets/features.js?v=5.18.0"></script>
+  <script src="/assets/roles.js?v=5.18.0"></script>
+  <script src="/assets/status.js?v=5.18.0"></script>
+  <script src="/assets/data-loader.js?v=5.18.0"></script>
 </body>
 </html>

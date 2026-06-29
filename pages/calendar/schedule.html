@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/calendar/schedule.html
-Version: v5.17.2
+Version: v5.18.0
 Purpose: Production dashboard-shell calendar view with shortcode display
 -->
 <!DOCTYPE html>
@@ -13,10 +13,10 @@ Purpose: Production dashboard-shell calendar view with shortcode display
 <title>Signal Schedule — Schedule Calendar</title>
 <meta name="description" content="Week and day calendar views for Signal Schedule with admin-defined shortcodes and daily detail previews.">
 <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/dashboard.css?v=5.17.2">
-<link rel="stylesheet" href="/pages/calendar/schedule-calendar.css?v=5.17.2">
+<link rel="stylesheet" href="/assets/dashboard.css?v=5.18.0">
+<link rel="stylesheet" href="/pages/calendar/schedule-calendar.css?v=5.18.0">
 </head>
-<body class="signal-dashboard-page schedule-calendar-dashboard" data-signal-area="Signal Schedule" data-signal-title="Schedule Calendar" data-signal-version="v5.17.2" data-signal-theme="Dashboard Calendar" data-signal-status="Design Rollout" data-signal-description="Dashboard-shell calendar workspace for week/day schedule views.">
+<body class="signal-dashboard-page schedule-calendar-dashboard" data-signal-area="Signal Schedule" data-signal-title="Schedule Calendar" data-signal-version="v5.18.0" data-signal-theme="Dashboard Calendar" data-signal-status="Design Rollout" data-signal-description="Dashboard-shell calendar workspace for week/day schedule views.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
 
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
@@ -28,22 +28,24 @@ Purpose: Production dashboard-shell calendar view with shortcode display
         <div class="signal-dashboard-nav__section">MAIN</div>
         <a href="/dashboard/"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
         <div class="signal-dashboard-nav__section">SCHEDULING</div>
-        <a class="is-active" href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
         <a href="/my-schedule/"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
         <a href="/open-shifts/"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/trades/"><span class="signal-dashboard-icon">⇄</span><span>Shift Trades</span></a>
+        <a href="/mandation/"><span class="signal-dashboard-icon">⚑</span><span>Mandation</span></a>
         <a href="/assignments/"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
         <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
-        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
         <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
         <div class="signal-dashboard-nav__section">PEOPLE</div>
         <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
-        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
-        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave Management</span></a>
+        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
-        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
+        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
         <a href="/admin/"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
         <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
         <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
@@ -76,7 +78,7 @@ Purpose: Production dashboard-shell calendar view with shortcode display
 
       <main class="signal-dashboard-content calendar-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.17.2</span><strong>Calendar Workspace</strong><span>•</span><strong>Dashboard-shell design</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Old app shell removed from this page</span>
+          <span class="signal-dashboard-pill">v5.18.0</span><strong>Calendar Workspace</strong><span>•</span><strong>Dashboard-shell design</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Old app shell removed from this page</span>
         </div>
 
         <section class="calendar-hero" aria-labelledby="calendarTitle">
@@ -120,10 +122,10 @@ Purpose: Production dashboard-shell calendar view with shortcode display
           <div class="day-layout"><div class="day-timeline" id="dayTimeline"></div><aside class="day-side" id="daySummaryCards"></aside></div>
         </section>
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.2 <span>•</span> Calendar dashboard rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.18.0 <span>•</span> Calendar dashboard rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
     </div>
   </div>
-<script src="/assets/release-metadata.js?v=5.17.2"></script>
-<script type="module" src="/pages/calendar/schedule-calendar.js?v=5.17.2"></script>
+<script src="/assets/release-metadata.js?v=5.18.0"></script>
+<script type="module" src="/pages/calendar/schedule-calendar.js?v=5.18.0"></script>
 </body>
 </html>

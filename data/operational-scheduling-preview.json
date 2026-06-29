@@ -1,0 +1,58 @@
+{
+  "version": "v5.18.0",
+  "release": "Operational Scheduling Part 2",
+  "mandation": {
+    "shortDayRule": "Prefer connected shift when under minimum staffing and block candidates with max-consecutive violations.",
+    "dayOffMandates": true,
+    "supervisorOverride": true,
+    "rotation": [
+      "Alex Carter",
+      "Morgan Lee",
+      "Taylor Brooks"
+    ]
+  },
+  "shiftTrades": {
+    "dualSupervisorApproval": true,
+    "higherAuthorityOverride": true,
+    "validationChecks": [
+      "coverage",
+      "qualification",
+      "leave conflict",
+      "maximum consecutive",
+      "overtime advisory"
+    ]
+  },
+  "openShifts": {
+    "recommendations": [
+      {
+        "employee": "Morgan Lee",
+        "score": 94,
+        "reason": "Qualified, available, next rotation"
+      },
+      {
+        "employee": "Riley Parker",
+        "score": 88,
+        "reason": "Available with overtime warning"
+      }
+    ]
+  },
+  "leaveImpact": {
+    "pendingRequest": "Jordan Miller vacation day",
+    "coverageBefore": "Minimum met",
+    "coverageAfter": "One console short 1900-2300",
+    "recommendedAction": "Post VOT or mandate connected shift"
+  },
+  "approvalRouting": [
+    "employee acceptance",
+    "primary supervisor",
+    "secondary supervisor if units differ",
+    "scheduling supervisor override"
+  ],
+  "notifications": [
+    "trade requested",
+    "trade accepted",
+    "approval needed",
+    "mandation warning",
+    "open shift awarded"
+  ]
+}

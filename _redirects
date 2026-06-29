@@ -1,9 +1,11 @@
-# Signal Schedule clean URL aliases — v5.17.2
+# Signal Schedule clean URL aliases — v5.18.0
 /index.html /dashboard/ 301
 /pages/workspace/builder.html /schedule/ 301
 /pages/calendar/schedule.html /calendar/ 301
 /pages/employee/index.html /my-schedule/ 301
 /pages/requests/open-shifts.html /open-shifts/ 301
+/pages/requests/shift-trades.html /trades/ 301
+/pages/rules/mandation.html /mandation/ 301
 /pages/workspace/assignments.html /assignments/ 301
 /pages/staffing/staffing-engine.html /staffing/ 301
 /pages/workspace/daily-board.html /daily-board/ 301

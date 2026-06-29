@@ -1,4 +1,4 @@
-# File Manifest — v5.17.2
+# File Manifest — v5.18.0
 
 - `.gitattributes`
 - `.gitignore`
@@ -207,6 +207,7 @@
 - `data/minimum-staffing-templates.json`
 - `data/notifications-preview.json`
 - `data/open-shifts-preview.json`
+- `data/operational-scheduling-preview.json`
 - `data/ot-volunteer-board-preview.json`
 - `data/qualifications-certifications-preview.json`
 - `data/request-approval-engine-preview.json`
@@ -246,6 +247,7 @@
 - `docs/architecture/FILE_ORGANIZATION.md`
 - `docs/architecture/IDENTITY-SESSION-CONTRACT-v5.10.md`
 - `docs/architecture/METADATA-VALIDATION.md`
+- `docs/architecture/OPERATIONAL-SCHEDULING-v5.18.0.md`
 - `docs/architecture/PAGE-ARCHITECTURE.md`
 - `docs/architecture/REGISTRY-FOUNDATION.md`
 - `docs/audits/ALPHA-INTEGRATION-AUDIT.md`
@@ -285,6 +287,7 @@
 - `index.html`
 - `leave/index.html`
 - `login/index.html`
+- `mandation/index.html`
 - `my-schedule/index.html`
 - `notifications/index.html`
 - `open-shifts/index.html`
@@ -511,3 +514,4 @@
 - `standards/UX_STANDARDS.md`
 - `standards/WORKFLOW_STANDARDS.md`
 - `system/index.html`
+- `trades/index.html`

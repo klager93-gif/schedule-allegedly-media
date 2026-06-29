@@ -1,8 +1,8 @@
-# Signal Schedule v5.17.2 — Navigation & Employee Workspace
+# Signal Schedule v5.18.0 — Navigation & Employee Workspace
 
 ## Summary
 
-v5.17.2 reorganizes dashboard navigation into clear sections and adds the first real Employee Workspace surface.
+v5.18.0 reorganizes dashboard navigation into clear sections and adds the first real Employee Workspace surface.
 
 ## Highlights
 

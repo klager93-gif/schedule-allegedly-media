@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/adapters/JsonRequestApprovalWorkflowAdapter.js
-Version: v5.17.2
+Version: v5.18.0
 Purpose: JSON adapter for request approval workflow preview data
 */
 export async function fetchRequestApprovalWorkflowPreview() {

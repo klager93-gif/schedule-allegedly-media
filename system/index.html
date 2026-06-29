@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/admin/system-health.html
-Version: v5.17.2
+Version: v5.18.0
 Alias: /system/ -> /pages/admin/system-health.html
 Purpose: Dashboard shell migrated page for System Health
 -->
@@ -14,10 +14,10 @@ Purpose: Dashboard shell migrated page for System Health
   <title>Signal Schedule — System Health</title>
   <meta name="description" content="Admin validation and health dashboard for routes, metadata, data foundations, and deployment readiness.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.17.2">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.18.0">
   <link rel="canonical" href="https://schedule.allegedly-media.com/system/">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="System Health" data-signal-version="v5.17.2" data-signal-description="Admin validation and health dashboard for routes, metadata, data foundations, and deployment readiness." data-signal-theme="Dashboard Shell Rollout" data-signal-status="Design Rollout" data-signal-status-text="Signal Schedule v5.17.2 foundation cleanup standardized this module on the dashboard design system.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="System Health" data-signal-version="v5.18.0" data-signal-description="Admin validation and health dashboard for routes, metadata, data foundations, and deployment readiness." data-signal-theme="Dashboard Shell Rollout" data-signal-status="Design Rollout" data-signal-status-text="Signal Schedule v5.18.0 foundation cleanup standardized this module on the dashboard design system.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
@@ -30,20 +30,22 @@ Purpose: Dashboard shell migrated page for System Health
         <div class="signal-dashboard-nav__section">SCHEDULING</div>
         <a href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
         <a href="/my-schedule/"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
         <a href="/open-shifts/"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/trades/"><span class="signal-dashboard-icon">⇄</span><span>Shift Trades</span></a>
+        <a href="/mandation/"><span class="signal-dashboard-icon">⚑</span><span>Mandation</span></a>
         <a href="/assignments/"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
         <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
-        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
         <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
         <div class="signal-dashboard-nav__section">PEOPLE</div>
         <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
-        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
-        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave Management</span></a>
+        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
-        <a class="is-active" href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
+        <a class="is-active" href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
         <a href="/admin/"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
         <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
         <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
@@ -117,20 +119,20 @@ Purpose: Dashboard shell migrated page for System Health
 
       <main class="signal-dashboard-content signal-dashboard-module-content schedule-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.17.2</span><strong>System</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+          <span class="signal-dashboard-pill">v5.18.0</span><strong>System</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
         </div>
-<section class="schedule-hero schedule-hero--compact foundation-hero"><div><p class="schedule-kicker">Signal Schedule v5.17.2</p><h1>System Health</h1><p class="schedule-subtitle">Admin validation and health dashboard for routes, metadata, data foundations, and deployment readiness.</p></div></section><section class="schedule-card"><h2>Validation Checklist</h2><div class="foundation-grid"><div class="foundation-card"><h3 class="health-ok">Route registry</h3><p>All registered routes point to local HTML files.</p></div><div class="foundation-card"><h3 class="health-ok">Metadata</h3><p>Footer, homepage, app shell, and release metadata target v5.17.2.</p></div><div class="foundation-card"><h3 class="health-ok">Mac metadata</h3><p>.DS_Store, AppleDouble, and __MACOSX are excluded.</p></div><div class="foundation-card"><h3 class="health-warn">Live database</h3><p>Read/write database connection remains disabled until backend readiness is approved.</p></div><div class="foundation-card"><h3 class="health-ok">UI catalog</h3><p>Reusable Schedule-only components are documented in the v5.17.2 UI Component Catalog.</p></div></div></section><section class="schedule-card"><h2>Next Validation Targets</h2><ul class="foundation-list"><li>Automated route scan before packaging.</li><li>Registry/version check before release handoff.</li><li>Sample data reset and export/import verification.</li><li>Backend API contract review before v6.0.</li><li>UI Component Catalog review before adding new screens.</li></ul></section>
+<section class="schedule-hero schedule-hero--compact foundation-hero"><div><p class="schedule-kicker">Signal Schedule v5.18.0</p><h1>System Health</h1><p class="schedule-subtitle">Admin validation and health dashboard for routes, metadata, data foundations, and deployment readiness.</p></div></section><section class="schedule-card"><h2>Validation Checklist</h2><div class="foundation-grid"><div class="foundation-card"><h3 class="health-ok">Route registry</h3><p>All registered routes point to local HTML files.</p></div><div class="foundation-card"><h3 class="health-ok">Metadata</h3><p>Footer, homepage, app shell, and release metadata target v5.18.0.</p></div><div class="foundation-card"><h3 class="health-ok">Mac metadata</h3><p>.DS_Store, AppleDouble, and __MACOSX are excluded.</p></div><div class="foundation-card"><h3 class="health-warn">Live database</h3><p>Read/write database connection remains disabled until backend readiness is approved.</p></div><div class="foundation-card"><h3 class="health-ok">UI catalog</h3><p>Reusable Schedule-only components are documented in the v5.18.0 UI Component Catalog.</p></div></div></section><section class="schedule-card"><h2>Next Validation Targets</h2><ul class="foundation-list"><li>Automated route scan before packaging.</li><li>Registry/version check before release handoff.</li><li>Sample data reset and export/import verification.</li><li>Backend API contract review before v6.0.</li><li>UI Component Catalog review before adding new screens.</li></ul></section>
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.2 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.18.0 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
     </div>
   </div>
-  <script src="/assets/release-metadata.js?v=5.17.2"></script>
-  <script src="/assets/config.js?v=5.17.2"></script>
-  <script src="/assets/routes.js?v=5.17.2"></script>
-  <script src="/assets/navigation.js?v=5.17.2"></script>
-  <script src="/assets/features.js?v=5.17.2"></script>
-  <script src="/assets/roles.js?v=5.17.2"></script>
-  <script src="/assets/status.js?v=5.17.2"></script>
-  <script src="/assets/data-loader.js?v=5.17.2"></script>
+  <script src="/assets/release-metadata.js?v=5.18.0"></script>
+  <script src="/assets/config.js?v=5.18.0"></script>
+  <script src="/assets/routes.js?v=5.18.0"></script>
+  <script src="/assets/navigation.js?v=5.18.0"></script>
+  <script src="/assets/features.js?v=5.18.0"></script>
+  <script src="/assets/roles.js?v=5.18.0"></script>
+  <script src="/assets/status.js?v=5.18.0"></script>
+  <script src="/assets/data-loader.js?v=5.18.0"></script>
 </body>
 </html>

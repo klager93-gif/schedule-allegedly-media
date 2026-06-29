@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/adapters/JsonMandationEngineAdapter.js
-Version: v5.17.2
+Version: v5.18.0
 Purpose: JSON adapter for Mandation Engine Foundation preview data
 */
 export async function fetchMandationEnginePreview() {

@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/routes.js
-Version: v5.17.2
+Version: v5.18.0
 Purpose: Central route registry for standalone Signal Schedule page architecture and foundation workspaces.
 */
 window.SIGNAL_SCHEDULE_ROUTES = Object.freeze({
@@ -45,10 +45,10 @@ window.SIGNAL_SCHEDULE_ROUTES = Object.freeze({
   leaveBanks: '/leave/',
   openShifts: '/open-shifts/',
   otVolunteerBoard: 'pages/requests/ot-volunteer-board.html',
-  shiftTrades: 'pages/requests/shift-trades.html',
-  trades: 'pages/requests/trades.html',
+  shiftTrades: '/trades/',
+  trades: '/trades/',
   approvals: 'pages/requests/approvals.html',
-  mandation: 'pages/rules/mandation.html',
+  mandation: '/mandation/',
   permissions: 'pages/rules/permissions.html',
   notifications: '/notifications/',
   ruleEngine: '/developer/rule-engine/',

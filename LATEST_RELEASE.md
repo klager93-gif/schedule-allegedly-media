@@ -1,6 +1,10 @@
-# Signal Schedule v5.17.2 — Routing & Clean URL Foundation
+# Signal Schedule v5.18.0 — Operational Scheduling Part 2
 
-Signal Schedule v5.17.2 adds clean URL aliases for primary workflows and updates navigation away from physical HTML file paths.
+Built from v5.17.2. Adds mandation, shift trades, open shifts/VOT integration, leave-impact checks, approval routing previews, clean aliases for `/trades/` and `/mandation/`, and operational cards inside Schedule Builder.
+
+# Signal Schedule v5.18.0 — Routing & Clean URL Foundation
+
+Signal Schedule v5.18.0 adds clean URL aliases for primary workflows and updates navigation away from physical HTML file paths.
 
 ## Validate
 
@@ -13,9 +17,9 @@ Signal Schedule v5.17.2 adds clean URL aliases for primary workflows and updates
 
 No Coolify/server configuration changes are required for directory-based aliases.
 
-# Signal Schedule v5.17.2 — Operational Scheduling: Part 1
+# Signal Schedule v5.18.0 — Operational Scheduling: Part 1
 
-Signal Schedule v5.17.2 makes the Schedule Builder the centerpiece of operational scheduling.
+Signal Schedule v5.18.0 makes the Schedule Builder the centerpiece of operational scheduling.
 
 ## Highlights
 

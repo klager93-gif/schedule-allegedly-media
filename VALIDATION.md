@@ -1,4 +1,8 @@
-# Validation — Signal Schedule v5.17.2
+# Signal Schedule v5.18.0 — Operational Scheduling Part 2
+
+Built from v5.17.2. Adds mandation, shift trades, open shifts/VOT integration, leave-impact checks, approval routing previews, clean aliases for `/trades/` and `/mandation/`, and operational cards inside Schedule Builder.
+
+# Validation — Signal Schedule v5.18.0
 
 ## Required checks
 

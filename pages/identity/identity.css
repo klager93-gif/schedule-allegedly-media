@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/identity/identity.css
-Version: v5.17.2
+Version: v5.18.0
 Purpose: Identity, login, and agency setup foundation styles.
 */
 .identity-grid{display:grid;grid-template-columns:minmax(320px,1fr) minmax(320px,1fr);gap:18px;align-items:stretch}

@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/identity/current-user.html
-Version: v5.17.2
+Version: v5.18.0
 Purpose: Dashboard shell migrated page for Current User
 -->
 <!DOCTYPE html>
@@ -13,10 +13,10 @@ Purpose: Dashboard shell migrated page for Current User
   <title>Signal Schedule — Current User</title>
   <meta name="description" content="Identity and access workspace for agency setup, login flows, and current-user context.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.17.2">
-  <link rel="stylesheet" href="/pages/identity/identity.css?v=5.17.2">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.18.0">
+  <link rel="stylesheet" href="/pages/identity/identity.css?v=5.18.0">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Current User" data-signal-version="v5.17.2" data-signal-theme="Identity Foundation" data-signal-status="Foundation" data-signal-description="Preview the current-user model for future role-aware Schedule access." data-signal-status-text="Signal Schedule v5.17.2 foundation cleanup standardized this module on the dashboard design system.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Current User" data-signal-version="v5.18.0" data-signal-theme="Identity Foundation" data-signal-status="Foundation" data-signal-description="Preview the current-user model for future role-aware Schedule access." data-signal-status-text="Signal Schedule v5.18.0 foundation cleanup standardized this module on the dashboard design system.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
@@ -29,20 +29,22 @@ Purpose: Dashboard shell migrated page for Current User
         <div class="signal-dashboard-nav__section">SCHEDULING</div>
         <a href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
         <a href="/my-schedule/"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
         <a href="/open-shifts/"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/trades/"><span class="signal-dashboard-icon">⇄</span><span>Shift Trades</span></a>
+        <a href="/mandation/"><span class="signal-dashboard-icon">⚑</span><span>Mandation</span></a>
         <a href="/assignments/"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
         <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
-        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
         <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
         <div class="signal-dashboard-nav__section">PEOPLE</div>
         <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
-        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
-        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave Management</span></a>
+        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
-        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
+        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
         <a href="/admin/"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
         <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
         <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
@@ -116,21 +118,21 @@ Purpose: Dashboard shell migrated page for Current User
 
       <main class="signal-dashboard-content signal-dashboard-module-content foundation-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.17.2</span><strong>Signal Schedule</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+          <span class="signal-dashboard-pill">v5.18.0</span><strong>Signal Schedule</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
         </div>
 <section class="foundation-hero"><div><p class="foundation-kicker">Identity</p><h1>Current User</h1><p>Preview the object future pages will use to determine agency context, role-based navigation, permissions, and setup status.</p></div></section><section class="schedule-card identity-grid"><div><h2>Session Preview</h2><div data-current-user-card=""></div></div><div><h2>Role-aware behavior</h2><div class="foundation-grid"><article class="foundation-card"><h3>Employee</h3><p>My Schedule, requests, profile, availability, and leave banks.</p></article><article class="foundation-card"><h3>Supervisor</h3><p>Approvals, team requests, coverage issues, and scoped employee visibility.</p></article><article class="foundation-card"><h3>Scheduler/Admin</h3><p>Staffing, assignments, settings, users, setup, and system readiness.</p></article></div></div></section><section class="schedule-card"><h2>v5.10 boundary</h2><p>This is a frontend/session contract foundation. Password storage, token issuance, backend auth middleware, and secure API enforcement are intentionally deferred until backend connection work.</p></section>
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.2 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.18.0 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
     </div>
   </div>
-  <script src="/assets/release-metadata.js?v=5.17.2"></script>
-  <script src="/assets/config.js?v=5.17.2"></script>
-  <script src="/assets/routes.js?v=5.17.2"></script>
-  <script src="/assets/navigation.js?v=5.17.2"></script>
-  <script src="/assets/features.js?v=5.17.2"></script>
-  <script src="/assets/roles.js?v=5.17.2"></script>
-  <script src="/assets/status.js?v=5.17.2"></script>
-  <script src="/assets/data-loader.js?v=5.17.2"></script>
-  <script src="/pages/identity/identity.js?v=5.17.2"></script>
+  <script src="/assets/release-metadata.js?v=5.18.0"></script>
+  <script src="/assets/config.js?v=5.18.0"></script>
+  <script src="/assets/routes.js?v=5.18.0"></script>
+  <script src="/assets/navigation.js?v=5.18.0"></script>
+  <script src="/assets/features.js?v=5.18.0"></script>
+  <script src="/assets/roles.js?v=5.18.0"></script>
+  <script src="/assets/status.js?v=5.18.0"></script>
+  <script src="/assets/data-loader.js?v=5.18.0"></script>
+  <script src="/pages/identity/identity.js?v=5.18.0"></script>
 </body>
 </html>
