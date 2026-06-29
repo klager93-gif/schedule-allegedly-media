@@ -1,4 +1,9 @@
-# Build Manifest — Signal Schedule v5.15.6
+# Signal Schedule v5.16.0 — Notification Center
+
+- Added static Notification Center, shell notification bell, notification drawer/inbox preview, role preferences, and UI Catalog notification components.
+- No Coolify/server configuration changes required.
+
+# Build Manifest — Signal Schedule v5.16.0
 
 Built: 2026-06-29
 Package: full replacement

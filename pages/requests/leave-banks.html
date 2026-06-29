@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/requests/leave-banks.html
-Version: v5.15.6
+Version: v5.16.0
 Purpose: Dashboard shell migrated page for Signal Schedule — Leave Banks
 -->
 <!DOCTYPE html>
@@ -13,10 +13,10 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Leave Banks
   <title>Signal Schedule — Leave Banks</title>
   <meta name="description" content="Leave Banks Foundation for vacation, sick, personal, comp, holiday, and training balances.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.15.6">
-  <link rel="stylesheet" href="/pages/requests/leave-banks.css?v=5.15.6">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.16.0">
+  <link rel="stylesheet" href="/pages/requests/leave-banks.css?v=5.16.0">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Leave Banks" data-signal-version="v5.15.6" data-signal-theme="Leave Banks" data-signal-status="Preview" data-signal-description="Admin-first leave bank balance, pending impact, adjustment, and audit foundation." data-signal-status-text="Signal Schedule v5.15.6 foundation cleanup standardized this module on the dashboard design system.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Leave Banks" data-signal-version="v5.16.0" data-signal-theme="Leave Banks" data-signal-status="Preview" data-signal-description="Admin-first leave bank balance, pending impact, adjustment, and audit foundation." data-signal-status-text="Signal Schedule v5.16.0 foundation cleanup standardized this module on the dashboard design system.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
@@ -31,6 +31,7 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Leave Banks
         <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
         <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
         <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
         <a class="is-active" href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
         <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
@@ -105,13 +106,14 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Leave Banks
         </nav>
         <div class="signal-dashboard-top-actions">
           <label class="signal-dashboard-search" aria-label="Search Leave Banks"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
-          <a class="signal-dashboard-pill" href="/pages/identity/current-user.html">JM</a>
+                    <a class="signal-dashboard-notification-bell" href="/pages/rules/notifications.html" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a>
+          JM</a>
         </div>
       </header>
 
       <main class="signal-dashboard-content signal-dashboard-module-content leave-bank-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.15.6</span><strong>Requests & Approvals</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+          <span class="signal-dashboard-pill">v5.16.0</span><strong>Requests & Approvals</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
         </div>
 
 <section aria-labelledby="pageTitle" class="leave-bank-hero">
@@ -157,17 +159,17 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Leave Banks
 <section class="schedule-card"><h2>v5.8 Leave Bank Foundation UI</h2><div class="foundation-grid"><div class="foundation-card"><h3>Vacation</h3><p>Balance card and adjustment history placeholder.</p></div><div class="foundation-card"><h3>Sick</h3><p>Admin override and partial-day tracking placeholder.</p></div><div class="foundation-card"><h3>Comp / Holiday</h3><p>Future bank rules and transaction history placeholder.</p></div></div></section>
 
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.15.6 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.16.0 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
     </div>
   </div>
-  <script src="/assets/release-metadata.js?v=5.15.6"></script>
-  <script src="/assets/config.js?v=5.15.6"></script>
-  <script src="/assets/routes.js?v=5.15.6"></script>
-  <script src="/assets/navigation.js?v=5.15.6"></script>
-  <script src="/assets/features.js?v=5.15.6"></script>
-  <script src="/assets/roles.js?v=5.15.6"></script>
-  <script src="/assets/status.js?v=5.15.6"></script>
-  <script src="/assets/data-loader.js?v=5.15.6"></script>
-  <script type="module" src="/pages/requests/leave-banks.js?v=5.15.6"></script>
+  <script src="/assets/release-metadata.js?v=5.16.0"></script>
+  <script src="/assets/config.js?v=5.16.0"></script>
+  <script src="/assets/routes.js?v=5.16.0"></script>
+  <script src="/assets/navigation.js?v=5.16.0"></script>
+  <script src="/assets/features.js?v=5.16.0"></script>
+  <script src="/assets/roles.js?v=5.16.0"></script>
+  <script src="/assets/status.js?v=5.16.0"></script>
+  <script src="/assets/data-loader.js?v=5.16.0"></script>
+  <script type="module" src="/pages/requests/leave-banks.js?v=5.16.0"></script>
 </body>
 </html>

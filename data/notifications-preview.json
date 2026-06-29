@@ -1,11 +1,60 @@
 {
   "summary": {
-    "configuredChannels": 4,
-    "activeRules": 8,
-    "pendingNotifications": 6,
-    "suppressedAfterHours": 2
+    "unread": 6,
+    "highPriority": 2,
+    "pendingApprovals": 4,
+    "digestReady": 9
   },
+  "types": [
+    {
+      "name": "Pending approval",
+      "icon": "\u25b1",
+      "tone": "blue",
+      "description": "Leave, trade, profile, and open-shift requests waiting for supervisor action."
+    },
+    {
+      "name": "Schedule change",
+      "icon": "\u25a3",
+      "tone": "purple",
+      "description": "Draft publish notices, changed assignments, and upcoming shift edits."
+    },
+    {
+      "name": "Open shift",
+      "icon": "\u2637",
+      "tone": "green",
+      "description": "VOT opportunities, eligible employee notices, and deadline reminders."
+    },
+    {
+      "name": "Coverage warning",
+      "icon": "\u26a0",
+      "tone": "yellow",
+      "description": "Minimum staffing gaps, role shortages, and urgent operational warnings."
+    },
+    {
+      "name": "Training expiration",
+      "icon": "\u25c7",
+      "tone": "cyan",
+      "description": "Certification renewals, expiring qualifications, and training assignments."
+    },
+    {
+      "name": "System alert",
+      "icon": "\u2699",
+      "tone": "red",
+      "description": "Import/export results, data-health warnings, and admin-only system notices."
+    }
+  ],
   "channels": [
+    {
+      "id": "channel-in-app",
+      "name": "In-App Inbox",
+      "status": "Active preview",
+      "audience": "All authenticated users",
+      "examples": [
+        "Request status changed",
+        "Coverage warning",
+        "Trade decision"
+      ]
+    },
     {
       "id": "channel-email",
       "name": "Email",
@@ -29,20 +78,9 @@
       ]
     },
     {
-      "id": "channel-in-app",
-      "name": "In-App Inbox",
-      "status": "Foundation",
-      "audience": "All authenticated users",
-      "examples": [
-        "Request status changed",
-        "Benefit bank adjustment",
-        "Training expiring"
-      ]
-    },
-    {
       "id": "channel-digest",
       "name": "Daily Digest",
-      "status": "Foundation",
+      "status": "Active preview",
       "audience": "Admin and supervisor views",
       "examples": [
         "Pending approvals",
@@ -60,11 +98,11 @@
       "source": "Approvals"
     },
     {
-      "trigger": "Leave request approved/denied",
-      "recipient": "Requesting employee",
-      "priority": "Normal",
-      "quietHours": "Allowed next digest",
-      "source": "Approvals"
+      "trigger": "Schedule changed after publish",
+      "recipient": "Affected employee and supervisor",
+      "priority": "High",
+      "quietHours": "Bypass if shift is within 24 hours",
+      "source": "Publishing"
     },
     {
       "trigger": "Open shift posted",
@@ -102,11 +140,11 @@
       "source": "Profile"
     },
     {
-      "trigger": "Benefit bank adjusted",
-      "recipient": "Employee and payroll/admin",
-      "priority": "Normal",
-      "quietHours": "Allowed next digest",
-      "source": "Benefit Ledger"
+      "trigger": "System import completed",
+      "recipient": "Administrator",
+      "priority": "Low",
+      "quietHours": "Daily digest",
+      "source": "System"
     }
   ],
   "queue": [
@@ -115,52 +153,82 @@
       "title": "Coverage under minimum",
       "recipient": "Dispatch Supervisor Queue",
       "channel": "In-App + Email",
-      "status": "Pending review",
-      "created": "2026-06-14 05:30",
-      "relatedModule": "Coverage Board"
+      "status": "Unread",
+      "priority": "High",
+      "created": "2026-06-29 05:30",
+      "relatedModule": "Coverage Board",
+      "href": "/pages/coverage/coverage.html"
     },
     {
       "id": "notif-002",
+      "title": "Published schedule changed",
+      "recipient": "Avery Brooks",
+      "channel": "In-App",
+      "status": "Unread",
+      "priority": "High",
+      "created": "2026-06-29 06:05",
+      "relatedModule": "Publishing",
+      "href": "/pages/workspace/publishing.html"
+    },
+    {
+      "id": "notif-003",
       "title": "VOT opportunity posted",
       "recipient": "Eligible Dispatchers",
       "channel": "In-App Digest",
       "status": "Queued",
-      "created": "2026-06-14 06:00",
-      "relatedModule": "Open Shifts"
-    },
-    {
-      "id": "notif-003",
-      "title": "Trade request awaiting approval",
-      "recipient": "Shift Commander",
-      "channel": "Email",
-      "status": "Queued",
-      "created": "2026-06-14 06:15",
-      "relatedModule": "Trades"
+      "priority": "Normal",
+      "created": "2026-06-29 06:20",
+      "relatedModule": "Open Shifts",
+      "href": "/pages/requests/open-shifts.html"
     },
     {
       "id": "notif-004",
+      "title": "Trade request awaiting approval",
+      "recipient": "Shift Commander",
+      "channel": "Email Preview",
+      "status": "Queued",
+      "priority": "Normal",
+      "created": "2026-06-29 06:45",
+      "relatedModule": "Trades",
+      "href": "/pages/requests/shift-trades.html"
+    },
+    {
+      "id": "notif-005",
+      "title": "Leave request submitted",
+      "recipient": "Supervisor Queue",
+      "channel": "In-App",
+      "status": "Unread",
+      "priority": "Normal",
+      "created": "2026-06-29 07:10",
+      "relatedModule": "Leave",
+      "href": "/pages/requests/leave.html"
+    },
+    {
+      "id": "notif-006",
       "title": "CPR certification expires in 30 days",
       "recipient": "Training Admin",
       "channel": "Daily Digest",
       "status": "Suppressed until digest",
-      "created": "2026-06-14 06:20",
-      "relatedModule": "Training"
+      "priority": "Normal",
+      "created": "2026-06-29 07:30",
+      "relatedModule": "Training",
+      "href": "/pages/people/training.html"
     }
   ],
   "preferences": [
     {
       "role": "Administrator",
-      "defaults": "Immediate for high priority, digest for low priority",
+      "defaults": "Immediate for high priority, digest for low priority, system alerts enabled",
       "canOverride": true
     },
     {
       "role": "Supervisor",
-      "defaults": "Immediate approval and coverage notices",
+      "defaults": "Immediate approval and coverage notices, digest for training and system notices",
       "canOverride": true
     },
     {
       "role": "Employee",
-      "defaults": "Request decisions, open shifts, trades, training expirations",
+      "defaults": "Request decisions, schedule changes, open shifts, trades, and training expirations",
       "canOverride": true
     },
     {
@@ -171,8 +239,9 @@
   ],
   "policyNotes": [
     "No external SMS, email, or push provider credentials are committed in this release.",
-    "Notification delivery is modeled as a queue foundation; production sends remain disabled.",
+    "Notification delivery is modeled as a static in-app inbox and queue foundation; production sends remain disabled.",
     "Quiet-hours and digest behavior are separated from emergency/operational bypass rules.",
-    "Future authentication will decide which in-app inbox items each role can see."
+    "Future authentication will decide which inbox items each role can see.",
+    "The bell badge is intentionally static until the notification repository is connected to session-aware data."
   ]
 }

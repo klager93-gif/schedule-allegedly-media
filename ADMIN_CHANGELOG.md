@@ -1,10 +1,15 @@
-## v5.15.6 — Foundation Cleanup Audit Fix
+# Signal Schedule v5.16.0 — Notification Center
+
+- Added static Notification Center, shell notification bell, notification drawer/inbox preview, role preferences, and UI Catalog notification components.
+- No Coolify/server configuration changes required.
+
+## v5.16.0 — Foundation Cleanup Audit Fix
 
 - Removed unused root legacy shell files: `app-shell.css` and `app-shell.js`.
 - Replaced remaining legacy migration copy with product-ready module descriptions.
 - Replaced placeholder wording on key reserved workspaces where practical.
 - Preserved the dashboard design system, dashboard reference, and UI Catalog as the production UI source of truth.
-- Updated release/cache markers to v5.15.6 and regenerated manifests/checksums.
+- Updated release/cache markers to v5.16.0 and regenerated manifests/checksums.
 - No server or Coolify configuration changes required.
 
 ## v5.15.4 — Dashboard UI Catalog Rebuild

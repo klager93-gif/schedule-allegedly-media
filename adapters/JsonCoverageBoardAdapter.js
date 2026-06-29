@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/adapters/JsonCoverageBoardAdapter.js
-Version: v5.15.6
+Version: v5.16.0
 Purpose: JSON adapter for Coverage Board preview data.
 */
 export class JsonCoverageBoardAdapter {

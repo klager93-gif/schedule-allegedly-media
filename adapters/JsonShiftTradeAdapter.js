@@ -2,11 +2,11 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/adapters/JsonShiftTradeAdapter.js
-Version: v5.15.6
+Version: v5.16.0
 Purpose: JSON preview adapter for Shift Trades & Swap Requests
 */
 export async function readShiftTrades() {
-  const response = await fetch('/data/shift-trades-preview.json?v=5.15.6', { cache: 'no-store' });
+  const response = await fetch('/data/shift-trades-preview.json?v=5.16.0', { cache: 'no-store' });
   if (!response.ok) {
     throw new Error(`Unable to load shift trade preview data: ${response.status}`);
   }

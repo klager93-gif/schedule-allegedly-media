@@ -1,4 +1,4 @@
-# File Manifest — Signal Schedule v5.15.6
+# File Manifest
 
 - `.gitattributes`
 - `.gitignore`
@@ -6,6 +6,7 @@
 - `BUILDMANIFEST.md`
 - `CHANGELOG.md`
 - `FILEMANIFEST.generated.txt`
+- `FILEMANIFEST.md`
 - `HOWTO.md`
 - `LATEST_RELEASE.md`
 - `MASTER-CHANGELOG.md`
@@ -257,6 +258,7 @@
 - `docs/hotfixes/EMPLOYEE-PORTAL-NAVIGATION-HOTFIX.md`
 - `docs/migrations/STANDALONE-MIGRATION.md`
 - `docs/releases/LATEST_RELEASE.md`
+- `docs/releases/RELEASE-v5.16.0.md`
 - `docs/ui/COMPONENT-CATALOG.md`
 - `docs/ui/SAVED-SCHEDULES-UI.md`
 - `docs/ui/UI-COPY-BOX-CLEANUP-v5.9.md`

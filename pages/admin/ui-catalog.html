@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/admin/ui-catalog.html
-Version: v5.15.6
+Version: v5.16.0
 Purpose: Dashboard-reference UI component catalog for Schedule-only production layout, button, card, table, form, badge, alert, empty state, and modal standards.
 -->
 <!DOCTYPE html>
@@ -13,9 +13,9 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
   <title>Signal Schedule | UI Component Catalog</title>
   <meta name="description" content="Dashboard-reference UI component catalog for Signal Schedule production interface standards." />
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.15.6" />
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.16.0" />
 </head>
-<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="UI Component Catalog" data-signal-version="v5.15.6" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Dashboard-reference component catalog used as the source of truth for future Signal Schedule screens.">
+<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="UI Component Catalog" data-signal-version="v5.16.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Dashboard-reference component catalog used as the source of truth for future Signal Schedule screens.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
@@ -31,6 +31,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
         <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
         <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
         <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
         <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
         <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
@@ -46,6 +47,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
           <a href="#cards"><span class="signal-dashboard-icon">▥</span><span>Cards</span></a>
           <a href="#forms"><span class="signal-dashboard-icon">☷</span><span>Forms</span></a>
           <a href="#tables"><span class="signal-dashboard-icon">▤</span><span>Tables</span></a>
+          <a href="#notifications"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         </div>
       </div>
 
@@ -96,14 +98,14 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
             <span>⌕</span>
             <input type="search" placeholder="Search components, states, patterns..." />
           </label>
-          <span aria-label="Notifications">🔔<span class="signal-dashboard-badge">3</span></span>
+          <a class="signal-dashboard-notification-bell" href="/pages/rules/notifications.html" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a>
           <a class="signal-dashboard-pill" href="/pages/identity/current-user.html">JM</a>
         </div>
       </header>
 
       <main class="signal-dashboard-content signal-catalog-content">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.15.6</span>
+          <span class="signal-dashboard-pill">v5.16.0</span>
           <a class="signal-dashboard-pill" href="/pages/admin/dashboard-reference.html">Open Dashboard Reference</a>
           <strong>Source of Truth</strong><span>•</span><strong>Dashboard Shell</strong><span>•</span><strong>Schedule-only design</strong>
           <span class="signal-dashboard-dot" aria-hidden="true"></span><span>Ready for page rollout</span>
@@ -208,6 +210,38 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
               </div>
             </section>
 
+
+            <section class="signal-dashboard-panel" id="notifications" aria-label="Notification components">
+              <div class="signal-dashboard-panel__head"><h2>🔔 Notification Components</h2><a href="/pages/rules/notifications.html">Open Center</a></div>
+              <div class="signal-catalog-card-grid">
+                <article class="notification-card notification-tone-blue">
+                  <div class="notification-type-icon">▱</div>
+                  <h3>Pending Approval</h3>
+                  <p>Use for requests, trades, profile edits, and supervisor review queues.</p>
+                  <span class="notification-badge">Normal</span>
+                </article>
+                <article class="notification-card notification-tone-yellow">
+                  <div class="notification-type-icon">⚠</div>
+                  <h3>Coverage Warning</h3>
+                  <p>Use for minimum staffing warnings and operational bypass notices.</p>
+                  <span class="notification-badge warning">High</span>
+                </article>
+                <article class="notification-card notification-tone-green">
+                  <div class="notification-type-icon">☷</div>
+                  <h3>Open Shift</h3>
+                  <p>Use for VOT opportunities, eligibility notices, and deadline reminders.</p>
+                  <span class="notification-badge good">Eligible</span>
+                </article>
+              </div>
+              <div class="notification-drawer-card" style="margin-top:12px;">
+                <div class="notification-drawer-card__head"><strong>Drawer Pattern</strong><span class="signal-dashboard-badge">6</span></div>
+                <div class="notification-list compact">
+                  <article class="notification-queue-item is-compact"><div><h3><a href="/pages/coverage/coverage.html">Coverage under minimum</a></h3><p>Dispatch Supervisor Queue</p><div class="notification-meta"><span>notif-001</span><span>Coverage Board</span><span>High</span></div></div><div><p><strong>Status:</strong> Unread</p></div></article>
+                  <article class="notification-queue-item is-compact"><div><h3><a href="/pages/workspace/publishing.html">Published schedule changed</a></h3><p>Affected employee</p><div class="notification-meta"><span>notif-002</span><span>Publishing</span><span>High</span></div></div><div><p><strong>Status:</strong> Unread</p></div></article>
+                </div>
+              </div>
+            </section>
+
             <section class="signal-dashboard-panel" id="tables" aria-label="Table pattern">
               <div class="signal-dashboard-panel__head"><h2>▤ Tables</h2><a href="#modal">Modal</a></div>
               <div class="signal-catalog-table-wrap">
@@ -261,7 +295,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
       </main>
 
       <footer class="signal-dashboard-footer">
-        <span>Signal Schedule v5.15.6</span>
+        <span>Signal Schedule v5.16.0</span>
         <span>UI Catalog rebuilt from dashboard-reference design</span>
         <a href="/pages/admin/dashboard-reference.html">Dashboard Reference</a>
       </footer>

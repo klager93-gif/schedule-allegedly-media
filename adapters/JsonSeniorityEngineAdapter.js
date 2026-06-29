@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/adapters/JsonSeniorityEngineAdapter.js
-Version: v5.15.6
+Version: v5.16.0
 Purpose: JSON adapter for Seniority Engine preview data.
 */
 export class JsonSeniorityEngineAdapter {
