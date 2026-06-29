@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/pages/people/seniority.js
-Version: v6.0.0
+Version: v6.0.1
 Purpose: Seniority Engine preview UI.
 */
 import { JsonSeniorityEngineAdapter } from '../../adapters/JsonSeniorityEngineAdapter.js';

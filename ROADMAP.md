@@ -1,11 +1,11 @@
-# Signal Schedule v6.0.0 — Operational Scheduling Part 2
+# Signal Schedule v6.0.1 — Operational Scheduling Part 2
 
 Built from v5.17.2. Adds mandation, shift trades, open shifts/VOT integration, leave-impact checks, approval routing previews, clean aliases for `/trades/` and `/mandation/`, and operational cards inside Schedule Builder.
 
 # Signal Schedule Roadmap
 
-- v6.0.0 — Rule Engine Foundation: conflict, coverage, qualification, approval routing, and notification trigger preview.
-- v6.0.0 — Scheduling Engine: wire assignment, coverage, mandation, trades, and publishing logic.
+- v6.0.1 — Rule Engine Foundation: conflict, coverage, qualification, approval routing, and notification trigger preview.
+- v6.0.1 — Scheduling Engine: wire assignment, coverage, mandation, trades, and publishing logic.
 
 
 ## v5.15.4 — Dashboard Reference Component Rollout

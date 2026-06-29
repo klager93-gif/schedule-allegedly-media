@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/repositories/CalendarRepository.js
-Version: v6.0.0
+Version: v6.0.1
 Purpose: Repository boundary for calendar preview reads before the production scheduling engine exists.
 */
 export class CalendarRepository {

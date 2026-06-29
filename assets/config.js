@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/config.js
-Version: v6.0.0
+Version: v6.0.1
 Purpose: Default standalone configuration registry before live agency settings are wired to persistence.
 */
 window.SIGNAL_SCHEDULE_CONFIG = Object.freeze({

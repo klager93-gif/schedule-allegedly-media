@@ -1,8 +1,8 @@
-# Signal Schedule v6.0.0 — Clean URL Alias Foundation
+# Signal Schedule v6.0.1 — Clean URL Alias Foundation
 
 ## Purpose
 
-v6.0.0 adds clean, user-facing URL aliases for the primary Signal Schedule workflows while preserving the existing static HTML file structure under `/pages/`.
+v6.0.1 adds clean, user-facing URL aliases for the primary Signal Schedule workflows while preserving the existing static HTML file structure under `/pages/`.
 
 ## User-facing aliases
 

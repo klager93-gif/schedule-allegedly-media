@@ -1,5 +1,5 @@
 {
-  "version": "v6.0.0",
+  "version": "v6.0.1",
   "release": "Operational Scheduling Part 2",
   "mandation": {
     "shortDayRule": "Prefer connected shift when under minimum staffing and block candidates with max-consecutive violations.",

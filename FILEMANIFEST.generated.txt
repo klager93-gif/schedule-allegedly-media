@@ -51,6 +51,7 @@ adapters/JsonTrainingCertificationAdapter.js
 adapters/JsonVisibilityPrivacyAdapter.js
 adapters/JsonWeeklyBoardAdapter.js
 admin/index.html
+agency/index.html
 api/contracts/assignment-engine.read.schema.json
 api/contracts/assignment-generator.read.schema.json
 api/contracts/benefit-ledger.read.schema.json
@@ -251,12 +252,14 @@ docs/architecture/METADATA-VALIDATION.md
 docs/architecture/OPERATIONAL-SCHEDULING-v5.18.0.md
 docs/architecture/PAGE-ARCHITECTURE.md
 docs/architecture/PRODUCTION-READY-v6.0.0.md
+docs/architecture/PRODUCTION-READY-v6.0.1.md
 docs/architecture/PRODUCTION-WORKFLOW-CONSOLIDATION-v5.19.0.md
 docs/architecture/REGISTRY-FOUNDATION.md
 docs/audits/ALPHA-INTEGRATION-AUDIT.md
 docs/audits/DATA-LAYER-AUDIT-v5.8.md
 docs/audits/DATA-PATH-DRIFT-AUDIT-v5.7.md
 docs/audits/NAVIGATION-DRIFT-AUDIT-v5.7.md
+docs/audits/PRODUCTION-FOUNDATION-AUDIT-v6.0.1.md
 docs/audits/SQL-AUDIT-v5.9.md
 docs/engines/REQUEST-APPROVAL-ENGINE.md
 docs/engines/SCHEDULE-HISTORY-SNAPSHOT-ENGINE.md
@@ -473,6 +476,7 @@ repositories/TrainingCertificationRepository.js
 repositories/VisibilityPrivacyRepository.js
 repositories/WeeklyBoardRepository.js
 requests/index.html
+roles/index.html
 schedule/index.html
 services/AssignmentEngineService.js
 services/AssignmentGeneratorService.js
@@ -521,3 +525,4 @@ standards/UX_STANDARDS.md
 standards/WORKFLOW_STANDARDS.md
 system/index.html
 trades/index.html
+users/index.html

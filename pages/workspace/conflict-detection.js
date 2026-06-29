@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/pages/workspace/conflict-detection.js
-Version: v6.0.0
+Version: v6.0.1
 Purpose: Render Conflict Detection Foundation preview with role-based panels.
 */
 import { JsonConflictDetectionAdapter } from '../../adapters/JsonConflictDetectionAdapter.js';

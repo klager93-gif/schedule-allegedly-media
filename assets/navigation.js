@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v6.0.0
+Version: v6.0.1
 Purpose: Production grouped navigation registry for workflow-centered Signal Schedule navigation.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Production grouped navigation registry for workflow-centered Signal Sch
   const path = (key, fallback) => routes[key] || fallback;
   const item = (label, href, icon, permission) => Object.freeze({ label, href, icon, permission: permission || 'authenticated' });
   window.SIGNAL_SCHEDULE_NAVIGATION = Object.freeze({
-    version: 'v6.0.0',
+    version: 'v6.0.1',
     labels: Object.freeze({
       [path('dashboard','/dashboard/')]: 'Dashboard',
       [path('calendar','/calendar/')]: 'Calendar',
@@ -30,6 +30,9 @@ Purpose: Production grouped navigation registry for workflow-centered Signal Sch
       [path('auditTrail','/audit/')]: 'Audit Trail',
       [path('reports','/reports/')]: 'Reports',
       [path('systemHealth','/system/')]: 'System Administration',
+      [path('agencySetup','/agency/')]: 'Agency Setup',
+      [path('users','/users/')]: 'Users',
+      [path('permissions','/roles/')]: 'Roles & Permissions',
       [path('settings','/admin/')]: 'Admin',
       [path('dashboardReference','/developer/dashboard-reference/')]: 'Visual Target',
       [path('uiCatalog','/developer/ui-catalog/')]: 'UI Catalog'
@@ -60,6 +63,9 @@ Purpose: Production grouped navigation registry for workflow-centered Signal Sch
       ]) }),
       Object.freeze({ label: 'Administration', items: Object.freeze([
         item('System Administration', path('systemHealth','/system/'), '⌁'),
+        item('Agency Setup', path('agencySetup','/agency/'), '◎'),
+        item('Users', path('users','/users/'), '♙'),
+        item('Roles & Permissions', path('permissions','/roles/'), '◈'),
         item('Admin', path('settings','/admin/'), '⚙')
       ]) }),
       Object.freeze({ label: 'Developer Tools', items: Object.freeze([

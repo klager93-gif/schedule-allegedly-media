@@ -1,11 +1,19 @@
-# Signal Schedule v6.0.0 — Production Ready Foundation
+# Signal Schedule v6.0.1 — Production Foundation Audit & Setup Polish
 
-Released: 2026-06-29
+Release date: 2026-06-29
 
-## Summary
+v6.0.1 stabilizes the v6 production foundation while remaining frontend/static only. It fixes missing clean alias folders for Agency Setup, Users, and Roles & Permissions; updates shared routing/navigation registries; and documents the remaining backend/server work for later v6.x releases.
 
-v6.0.0 establishes the production-readiness foundation for authentication, agency setup, users, roles, imports, exports, and persistence planning while keeping the current package static-deployable.
+## Server status
 
-## Server note
+No Coolify, PHP, MySQL, or server configuration changes are required for v6.0.1.
 
-No Coolify/PHP/MySQL action is required for this static foundation build. Real authentication, sessions, persistent users, agency data, schedule data, and audit logs will require backend/database work in the next production phase.
+## Validate
+
+- `/dashboard/`
+- `/login/`
+- `/agency/`
+- `/users/`
+- `/roles/`
+- `/system/`
+- `/developer/ui-catalog/`

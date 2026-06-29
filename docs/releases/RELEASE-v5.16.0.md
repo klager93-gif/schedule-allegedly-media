@@ -1,9 +1,9 @@
-# Signal Schedule v6.0.0 — Notification Center
+# Signal Schedule v6.0.1 — Notification Center
 
 Release date: 2026-06-29
 
 ## Summary
-v6.0.0 adds the first static Notification Center foundation after the v5.15 dashboard-shell stabilization work.
+v6.0.1 adds the first static Notification Center foundation after the v5.15 dashboard-shell stabilization work.
 
 ## Added
 - Dashboard-shell notification bell with unread badge across application pages.
