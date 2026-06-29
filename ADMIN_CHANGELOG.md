@@ -1,4 +1,13 @@
-# Signal Schedule v5.17.0 — Scheduling Engine
+
+## v5.17.1 — Operational Scheduling: Part 1
+
+- Rebuilt Schedule Builder as the central operational scheduling workspace.
+- Added assignment board, employee filtering, coverage, validation, and recommendation panels.
+- Added schedule-builder operational preview data.
+- Updated navigation label from Create Schedule to Schedule Builder.
+- Updated version/cache markers to v5.17.1.
+
+# Signal Schedule v5.17.1 — Scheduling Engine
 
 Release date: 2026-06-29
 
@@ -13,22 +22,22 @@ Adds the Scheduling Engine workspace as the first v5.17 operational engine miles
 
 ---
 
-# Signal Schedule v5.17.0 — Rule Engine Foundation
+# Signal Schedule v5.17.1 — Rule Engine Foundation
 
 - Added static Rule Engine Foundation workspace.
 - Added validation result components for blocking conflicts, warnings, and passing rules.
 - Added rule engine preview JSON data.
 - Added Rule Engine navigation entry and UI Catalog rule components.
-- Updated version/cache markers to v5.17.0.
+- Updated version/cache markers to v5.17.1.
 
 
-## v5.17.0 — Operations Workspace
+## v5.17.1 — Operations Workspace
 - Added Operations Workspace surface for assignment, leave, approvals, open shifts, coverage impact, and dashboard intelligence previews.
 - Added reusable operations cards, metric tiles, chips, lanes, and warning states to the dashboard design system.
-- Updated Assignment, Leave Banks, Approvals, Dashboard, and UI Catalog surfaces with v5.17.0 operations components.
+- Updated Assignment, Leave Banks, Approvals, Dashboard, and UI Catalog surfaces with v5.17.1 operations components.
 
 
-## v5.17.0 — Navigation & Employee Workspace
+## v5.17.1 — Navigation & Employee Workspace
 
 - Reorganized sidebar navigation into grouped sections.
 - Updated every dashboard-shell page to inherit the grouped navigation.
@@ -37,18 +46,18 @@ Adds the Scheduling Engine workspace as the first v5.17 operational engine miles
 - Added employee workspace components to the UI Catalog.
 - Fixed malformed compact user avatar markup in the top action bar.
 
-# Signal Schedule v5.17.0 — Notification Center
+# Signal Schedule v5.17.1 — Notification Center
 
 - Added static Notification Center, shell notification bell, notification drawer/inbox preview, role preferences, and UI Catalog notification components.
 - No Coolify/server configuration changes required.
 
-## v5.17.0 — Foundation Cleanup Audit Fix
+## v5.17.1 — Foundation Cleanup Audit Fix
 
 - Removed unused root legacy shell files: `app-shell.css` and `app-shell.js`.
 - Replaced remaining legacy migration copy with product-ready module descriptions.
 - Replaced placeholder wording on key reserved workspaces where practical.
 - Preserved the dashboard design system, dashboard reference, and UI Catalog as the production UI source of truth.
-- Updated release/cache markers to v5.17.0 and regenerated manifests/checksums.
+- Updated release/cache markers to v5.17.1 and regenerated manifests/checksums.
 - No server or Coolify configuration changes required.
 
 ## v5.15.4 — Dashboard UI Catalog Rebuild

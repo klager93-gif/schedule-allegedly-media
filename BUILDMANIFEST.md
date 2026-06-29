@@ -1,27 +1,15 @@
-# Signal Schedule v5.17.0 — Scheduling Engine
+# Build Manifest — Signal Schedule v5.17.1
 
-Release date: 2026-06-29
-
-## Summary
-Adds the Scheduling Engine workspace as the first v5.17 operational engine milestone. This release introduces assignment recommendations, coverage checks, conflict-detection integration preview, open shift recommendation structure, and schedule validation reporting.
-
-## Validate
-- /pages/scheduling/scheduling-engine.html
-- /pages/rules/rule-engine.html
-- /pages/workspace/assignments.html
-- /pages/admin/ui-catalog.html#scheduling-engine
-
----
-
-# Build Manifest
-
-Version: v5.17.0
 Generated: 2026-06-29
+Source: v5.17.0 full replacement
+Release: v5.17.1 Operational Scheduling: Part 1
 
-Files: 482
+## Key changed files
 
-## Highlights
-- Rule Engine Foundation page
-- Rule preview data
-- UI Catalog rule components
-- Navigation update
+- `pages/workspace/builder.html`
+- `pages/workspace/builder.css`
+- `data/schedule-builder-operational-preview.json`
+- `assets/navigation.js`
+- `pages/scheduling/scheduling-engine.html`
+- `pages/admin/ui-catalog.html`
+- release metadata and manifests

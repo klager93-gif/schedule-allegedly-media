@@ -1,18 +1,7 @@
-/*
-Signal Schedule
-Area: Signal Schedule
-File: assets/release-metadata.js
-Version: v5.17.0
-Purpose: Single client-side release metadata source for app shell, footer, registries, and validation.
-*/
+/* Signal Schedule release metadata */
 window.SIGNAL_SCHEDULE_RELEASE = Object.freeze({
-  product: 'Signal Schedule',
-  version: 'v5.17.0',
-  releaseName: 'Notification Center',
-  status: 'Notification Center',
+  version: 'v5.17.1',
+  name: 'Operational Scheduling: Part 1',
   date: '2026-06-29',
-  domain: 'https://schedule.allegedly-media.com',
-  updated: '2026-06-29',
-  cacheKey: '5.17.0',
-  repository: 'schedule-allegedly-media'
+  notes: 'Schedule Builder becomes the central operational scheduling workspace.'
 });

@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/adapters/JsonNotificationAdapter.js
-Version: v5.17.0
+Version: v5.17.1
 Purpose: JSON adapter for notification foundation preview data
 */
 export async function fetchNotificationPreview() {

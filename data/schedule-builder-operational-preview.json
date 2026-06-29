@@ -1,0 +1,87 @@
+{
+  "version": "v5.17.1",
+  "release": "Operational Scheduling: Part 1",
+  "workspace": "Schedule Builder",
+  "date": "2026-06-29",
+  "summary": {
+    "draft": "July Week 2 - Primary Dispatch",
+    "coverage": "92%",
+    "openPositions": 3,
+    "blockingConflicts": 2,
+    "warnings": 5,
+    "recommendedAssignments": 6
+  },
+  "shifts": [
+    {
+      "name": "Day Watch",
+      "time": "0600-1800",
+      "minimum": 6,
+      "assigned": 6,
+      "status": "covered"
+    },
+    {
+      "name": "Night Watch",
+      "time": "1800-0600",
+      "minimum": 6,
+      "assigned": 5,
+      "status": "gap"
+    },
+    {
+      "name": "Training Backfill",
+      "time": "1000-1800",
+      "minimum": 2,
+      "assigned": 1,
+      "status": "gap"
+    }
+  ],
+  "recommendations": [
+    {
+      "assignment": "Night Watch Console 2",
+      "employee": "Avery Brooks",
+      "score": 96,
+      "reason": "Qualified, available, lowest rotation impact."
+    },
+    {
+      "assignment": "Training Backfill",
+      "employee": "Taylor Reed",
+      "score": 91,
+      "reason": "Instructor-qualified and no leave conflict."
+    },
+    {
+      "assignment": "Day Watch Desk 4",
+      "employee": "Morgan Hayes",
+      "score": 83,
+      "reason": "Available but triggers overtime advisory."
+    }
+  ],
+  "validation": [
+    {
+      "level": "block",
+      "title": "Qualification mismatch",
+      "detail": "Riley Park cannot cover Console 4 without EMD certification."
+    },
+    {
+      "level": "block",
+      "title": "Minimum staffing gap",
+      "detail": "Night Watch is one dispatcher below minimum from 0200-0600."
+    },
+    {
+      "level": "warn",
+      "title": "Overtime advisory",
+      "detail": "Morgan Hayes would cross 44 hours in the current cycle."
+    },
+    {
+      "level": "pass",
+      "title": "Leave impact checked",
+      "detail": "Approved leave requests have been included in coverage calculations."
+    }
+  ],
+  "builderPanels": [
+    "Assignments",
+    "Employees",
+    "Coverage",
+    "Validation",
+    "Recommendations",
+    "Draft actions"
+  ]
+}

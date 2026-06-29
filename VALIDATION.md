@@ -1,26 +1,15 @@
-# Signal Schedule v5.17.0 — Scheduling Engine
+# Validation — Signal Schedule v5.17.1
 
-Release date: 2026-06-29
+## Required checks
 
-## Summary
-Adds the Scheduling Engine workspace as the first v5.17 operational engine milestone. This release introduces assignment recommendations, coverage checks, conflict-detection integration preview, open shift recommendation structure, and schedule validation reporting.
+- Open `/pages/workspace/builder.html` and confirm it shows the new Schedule Builder workspace.
+- Confirm the builder includes assignment board, employee panel, coverage panel, validation panel, and recommendation panel.
+- Confirm the sidebar label reads Schedule Builder instead of Create Schedule.
+- Open `/data/schedule-builder-operational-preview.json` and confirm it loads.
+- Open `/pages/scheduling/scheduling-engine.html` and confirm it is still available as a developer/support preview.
+- Open `/pages/admin/ui-catalog.html#schedule-builder` and confirm schedule-builder components are documented.
+- Confirm footer/version references show v5.17.1.
 
-## Validate
-- /pages/scheduling/scheduling-engine.html
-- /pages/rules/rule-engine.html
-- /pages/workspace/assignments.html
-- /pages/admin/ui-catalog.html#scheduling-engine
+## Server action
 
----
-
-# Signal Schedule v5.17.0 Validation
-
-- Added static Rule Engine Foundation workspace.
-- Added validation result components for blocking conflicts, warnings, and passing rules.
-- Added rule engine preview JSON data.
-- Added Rule Engine navigation entry and UI Catalog rule components.
-- Updated version/cache markers to v5.17.0.
-
-# Validation — v5.17.0
-
-Validate `/index.html`, `/pages/operations/operations.html`, `/pages/workspace/assignments.html`, `/pages/requests/leave-banks.html`, `/pages/requests/approvals.html`, and `/pages/admin/ui-catalog.html#operations`. Confirm grouped navigation remains visible and operations cards render without legacy shell files.
+No Coolify or server configuration changes required.

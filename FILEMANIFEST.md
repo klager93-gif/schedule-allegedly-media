@@ -1,4 +1,4 @@
-# File Manifest
+# File Manifest — v5.17.1
 
 - `.gitattributes`
 - `.gitignore`
@@ -209,6 +209,7 @@
 - `data/roles-permissions-preview.json`
 - `data/rule-engine-preview.json`
 - `data/schedule-admin-settings.json`
+- `data/schedule-builder-operational-preview.json`
 - `data/schedule-builder-sandbox.json`
 - `data/schedule-planning-preview.json`
 - `data/schedule-publication-preview.json`
