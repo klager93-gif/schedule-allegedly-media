@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/repositories/AssignmentEngineRepository.js
-Version: v5.15.4
+Version: v5.15.5
 Purpose: Repository boundary for Assignment Engine preview data
 */
 import { fetchAssignmentEnginePreview } from '../adapters/JsonAssignmentEngineAdapter.js';

@@ -1,2 +1,129 @@
-<!-- Signal Schedule | Signal Schedule | pages/settings/view-engine.html | v5.15.4 | Visibility & View Engine -->
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>View Engine — Signal Schedule</title><meta name="description" content="Signal Schedule visibility, calendar layers, filters, saved views, and agency day-start settings foundation."><link rel="stylesheet" href="/app-shell.css?v=5.15.4"></head><body data-signal-area="Signal Schedule" data-signal-title="Visibility & View Engine" data-signal-version="v5.15.4" data-signal-description="Role-aware views, agency calendar day settings, layers, filters, saved views, and calendar display controls."><nav class="schedule-subnav" aria-label="Signal Schedule navigation"><div class="schedule-subnav__label"><span>Signal Schedule Navigation</span><span class="schedule-subnav__role">View Engine</span></div><div class="schedule-subnav__links"><a href="/index.html">Overview</a><a href="/pages/calendar/schedule.html">Calendar</a><a href="/pages/settings/view-engine.html" aria-current="page">View Engine</a><a href="/pages/settings/visibility.html">Visibility & Privacy</a><a href="/pages/settings/settings.html">Settings</a></div></nav><main class="schedule-shell"><section class="schedule-hero schedule-hero--compact"><p class="schedule-kicker">Signal Schedule v5.15.4</p><h1>Visibility & View Engine</h1><p class="schedule-subtitle">Define what users see, how a schedule day is measured, which calendar layers are shown, and which filtered views can be saved for dispatch, supervisors, training, overtime, and coverage.</p></section><section class="schedule-card"><div class="schedule-section-head"><div><h2>Agency Calendar Settings</h2><p>These are settings, not temporary filters. They define the agency's scheduling clock.</p></div></div><div class="view-engine-board"><div class="view-engine-card"><strong>05:00</strong><span>Day starts at</span><p>Daily views run 05:00-04:59 so overnight activity stays with the operational day.</p></div><div class="view-engine-card"><strong>Sunday</strong><span>Week starts on</span><p>Controls weekly boards, calendars, and default date ranges.</p></div><div class="view-engine-card"><strong>24h</strong><span>Time format</span><p>Agency default for schedule grids and request forms.</p></div><div class="view-engine-card"><strong>Week</strong><span>Default view</span><p>Default entry point for schedule and calendar screens.</p></div></div></section><section class="schedule-card"><div class="schedule-section-head"><div><h2>Calendar Layers</h2><p>Layer toggles behave like map or CAD layers. They can be temporary or saved as a named view.</p></div></div><div class="layer-grid"><div class="layer-pill"><span>Employees</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Requests</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Training</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Overtime</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Coverage</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Posts</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Vacancies</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Annotations</span><span class="layer-toggle"></span></div></div></section><section class="schedule-card"><div class="schedule-section-head"><div><h2>Filters & Saved Views</h2><p>Filters can hide trainees, administrators, inactive users, supervisors, roles, qualifications, requests, overtime, coverage warnings, or posts.</p></div></div><div class="filter-chip-grid"><span class="filter-chip">Hide trainees</span><span class="filter-chip">Hide administrators</span><span class="filter-chip">Hide supervisors</span><span class="filter-chip">Hide inactive</span><span class="filter-chip">A Days</span><span class="filter-chip">A Nights</span><span class="filter-chip">NCIC</span><span class="filter-chip">Training</span><span class="filter-chip">VOT</span><span class="filter-chip">Mandates</span><span class="filter-chip">Vacancies</span><span class="filter-chip">Shortages</span></div></section><section class="schedule-workspace-split"><section class="schedule-card"><h2>Saved Views</h2><div class="schedule-table-list"><a><b>Dispatch View</b><span>Employees, coverage, requests, vacancies, and posts.</span></a><a><b>Supervisor View</b><span>Team availability, approvals, shortages, and notes.</span></a><a><b>Training View</b><span>Trainees, trainers, certifications, training events, and restrictions.</span></a><a><b>Overtime View</b><span>Open shifts, VOT, callbacks, mandates, and award queue.</span></a></div></section><section class="schedule-card"><h2>Visibility Rules</h2><div class="schedule-table-list"><a><b>Employee</b><span>My Schedule, personal requests, leave banks, and visible team schedule.</span></a><a><b>Supervisor</b><span>Team views, pending approvals, coverage warnings, and employee availability.</span></a><a><b>Scheduler</b><span>Staffing, assignments, open shifts, publishing, and schedule history.</span></a><a><b>Administrator</b><span>Everything plus settings, permissions, visibility, and agency setup.</span></a></div></section></section></main><div id="schedule-footer"></div><script src="/assets/release-metadata.js?v=5.15.4"></script><script src="/assets/config.js?v=5.15.4"></script><script src="/assets/routes.js?v=5.15.4"></script><script src="/assets/navigation.js?v=5.15.4"></script><script src="/assets/features.js?v=5.15.4"></script><script src="/assets/roles.js?v=5.15.4"></script><script src="/assets/status.js?v=5.15.4"></script><script src="/assets/data-loader.js?v=5.15.4"></script><script src="/app-shell.js?v=5.15.4"></script></body></html>
+<!--
+Signal Schedule
+Area: Signal Schedule
+File: pages/settings/view-engine.html
+Version: v5.15.5
+Purpose: Dashboard shell migrated page for View Engine
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Schedule — View Engine</title>
+  <meta name="description" content="Signal Schedule visibility, calendar layers, filters, saved views, and agency day-start settings foundation.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.15.5">
+</head>
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Visibility & View Engine" data-signal-version="v5.15.5" data-signal-description="Role-aware views, agency calendar day settings, layers, filters, saved views, and calendar display controls." data-signal-theme="Dashboard Shell Rollout" data-signal-status="Design Rollout" data-signal-status-text="Signal Schedule v5.15.5 global shell rollout migrated this module to the dashboard reference design.">
+  <div class="signal-dashboard-shell signal-dashboard-shell-wide">
+    <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
+      <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
+        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
+        <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
+      </a>
+      <nav class="signal-dashboard-nav">
+        <a href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <a href="/pages/calendar/schedule.html"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/pages/employee/index.html"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⚙</span><span>System</span></a>
+        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">◇</span><span>Admin</span></a>
+      </nav>
+      <div class="signal-dashboard-quick">
+        <div class="signal-dashboard-nav__section">Design System</div>
+        <div class="signal-dashboard-action">
+          <a href="/pages/admin/dashboard-reference.html"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+          <a href="/pages/admin/ui-catalog.html"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+          <a href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▣</span><span>Create Schedule</span></a>
+          <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        </div>
+      </div>
+      <div class="signal-dashboard-user" aria-label="Current user preview">
+        <div class="signal-dashboard-avatar">JM</div>
+        <div><strong>Jordan Miller</strong><small>Administrator<br>City of Fairview</small></div>
+      </div>
+    </aside>
+
+    <div class="signal-dashboard-main">
+      <header class="signal-dashboard-topbar">
+        <div class="signal-dashboard-title"><h1>View Engine</h1><p>Signal Schedule visibility, calendar layers, filters, saved views, and agency day-start settings foundation.</p></div>
+        <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation">
+
+          <a href="/index.html">Dashboard</a>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/calendar/schedule.html">Schedules</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/calendar/schedule.html">Calendar <small>Live</small></a>
+              <a href="/pages/workspace/builder.html">Builder <small>Live</small></a>
+              <a href="/pages/workspace/daily-board.html">Daily Board <small>Live</small></a>
+              <a href="/pages/workspace/weekly-board.html">Weekly Board <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/requests/requests.html">Requests</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/requests/requests.html">Requests <small>Live</small></a>
+              <a href="/pages/requests/approvals.html">Approvals <small>Live</small></a>
+              <a href="/pages/requests/open-shifts.html">Open Shifts <small>Live</small></a>
+              <a href="/pages/requests/shift-trades.html">Trades <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/people/employees.html">Employees</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/people/employees.html">Employees <small>Live</small></a>
+              <a href="/pages/people/profile.html">Profiles <small>Live</small></a>
+              <a href="/pages/people/qualifications.html">Qualifications <small>Live</small></a>
+              <a href="/pages/people/training.html">Training <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/reports/reports.html">Reports</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/reports/reports.html">Reports <small>Live</small></a>
+              <a href="/pages/admin/data-export.html">Data Export <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/admin/system-health.html">System</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/settings/settings.html">Settings <small>Live</small></a>
+              <a href="/pages/admin/system-health.html">System Health <small>Live</small></a>
+              <a href="/pages/admin/database-audit.html">Database Audit <small>Live</small></a>
+              <a href="/pages/admin/data-tools.html">Data Tools <small>Live</small></a>
+              <a href="/pages/admin/ui-catalog.html">UI Catalog <small>Dev</small></a>
+            </div>
+          </div>
+        </nav>
+        <div class="signal-dashboard-top-actions">
+          <label class="signal-dashboard-search" aria-label="Search View Engine"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
+          <a class="signal-dashboard-pill" href="/pages/identity/current-user.html">JM</a>
+        </div>
+      </header>
+
+      <main class="signal-dashboard-content signal-dashboard-module-content schedule-shell">
+        <div class="signal-dashboard-status">
+          <span class="signal-dashboard-pill">v5.15.5</span><strong>Settings</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+        </div>
+<section class="schedule-hero schedule-hero--compact"><p class="schedule-kicker">Signal Schedule v5.15.5</p><h1>Visibility &amp; View Engine</h1><p class="schedule-subtitle">Define what users see, how a schedule day is measured, which calendar layers are shown, and which filtered views can be saved for dispatch, supervisors, training, overtime, and coverage.</p></section><section class="schedule-card"><div class="schedule-section-head"><div><h2>Agency Calendar Settings</h2><p>These are settings, not temporary filters. They define the agency's scheduling clock.</p></div></div><div class="view-engine-board"><div class="view-engine-card"><strong>05:00</strong><span>Day starts at</span><p>Daily views run 05:00-04:59 so overnight activity stays with the operational day.</p></div><div class="view-engine-card"><strong>Sunday</strong><span>Week starts on</span><p>Controls weekly boards, calendars, and default date ranges.</p></div><div class="view-engine-card"><strong>24h</strong><span>Time format</span><p>Agency default for schedule grids and request forms.</p></div><div class="view-engine-card"><strong>Week</strong><span>Default view</span><p>Default entry point for schedule and calendar screens.</p></div></div></section><section class="schedule-card"><div class="schedule-section-head"><div><h2>Calendar Layers</h2><p>Layer toggles behave like map or CAD layers. They can be temporary or saved as a named view.</p></div></div><div class="layer-grid"><div class="layer-pill"><span>Employees</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Requests</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Training</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Overtime</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Coverage</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Posts</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Vacancies</span><span class="layer-toggle"></span></div><div class="layer-pill"><span>Annotations</span><span class="layer-toggle"></span></div></div></section><section class="schedule-card"><div class="schedule-section-head"><div><h2>Filters &amp; Saved Views</h2><p>Filters can hide trainees, administrators, inactive users, supervisors, roles, qualifications, requests, overtime, coverage warnings, or posts.</p></div></div><div class="filter-chip-grid"><span class="filter-chip">Hide trainees</span><span class="filter-chip">Hide administrators</span><span class="filter-chip">Hide supervisors</span><span class="filter-chip">Hide inactive</span><span class="filter-chip">A Days</span><span class="filter-chip">A Nights</span><span class="filter-chip">NCIC</span><span class="filter-chip">Training</span><span class="filter-chip">VOT</span><span class="filter-chip">Mandates</span><span class="filter-chip">Vacancies</span><span class="filter-chip">Shortages</span></div></section><section class="schedule-workspace-split"><section class="schedule-card"><h2>Saved Views</h2><div class="schedule-table-list"><a><b>Dispatch View</b><span>Employees, coverage, requests, vacancies, and posts.</span></a><a><b>Supervisor View</b><span>Team availability, approvals, shortages, and notes.</span></a><a><b>Training View</b><span>Trainees, trainers, certifications, training events, and restrictions.</span></a><a><b>Overtime View</b><span>Open shifts, VOT, callbacks, mandates, and award queue.</span></a></div></section><section class="schedule-card"><h2>Visibility Rules</h2><div class="schedule-table-list"><a><b>Employee</b><span>My Schedule, personal requests, leave banks, and visible team schedule.</span></a><a><b>Supervisor</b><span>Team views, pending approvals, coverage warnings, and employee availability.</span></a><a><b>Scheduler</b><span>Staffing, assignments, open shifts, publishing, and schedule history.</span></a><a><b>Administrator</b><span>Everything plus settings, permissions, visibility, and agency setup.</span></a></div></section></section>
+      </main>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.15.5 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
+    </div>
+  </div>
+  <script src="/assets/release-metadata.js?v=5.15.5"></script>
+  <script src="/assets/config.js?v=5.15.5"></script>
+  <script src="/assets/routes.js?v=5.15.5"></script>
+  <script src="/assets/navigation.js?v=5.15.5"></script>
+  <script src="/assets/features.js?v=5.15.5"></script>
+  <script src="/assets/roles.js?v=5.15.5"></script>
+  <script src="/assets/status.js?v=5.15.5"></script>
+  <script src="/assets/data-loader.js?v=5.15.5"></script>
+</body>
+</html>

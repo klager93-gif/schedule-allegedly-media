@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/requests/shift-trades.js
-Version: v5.15.4
+Version: v5.15.5
 Purpose: Render Shift Trades UI preview with approval workflow and assignment engine hooks
 */
 import { loadShiftTradeBoard } from '../../services/ShiftTradeService.js';

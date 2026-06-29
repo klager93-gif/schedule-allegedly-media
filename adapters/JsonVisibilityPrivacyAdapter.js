@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/adapters/JsonVisibilityPrivacyAdapter.js
-Version: v5.15.4
+Version: v5.15.5
 Purpose: JSON adapter for Schedule Visibility & Privacy Controls preview data.
 */
 export class JsonVisibilityPrivacyAdapter {

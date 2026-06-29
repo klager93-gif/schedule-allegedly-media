@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/services/EmployeeProfileService.js
-Version: v5.15.4
+Version: v5.15.5
 Purpose: Service layer for employee profile self-service preview rules
 */
 import { listEmployeeProfilePreview } from '../repositories/EmployeeProfileRepository.js';

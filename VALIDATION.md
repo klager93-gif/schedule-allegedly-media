@@ -1,25 +1,16 @@
-# Validation — Signal Schedule v5.15.4
+# Signal Schedule v5.15.5 Validation
 
-Date: 2026-06-29
+## Required checks
 
-## Automated Checks Completed
+- Open `/index.html` and confirm the working dashboard loads.
+- Open `/pages/admin/dashboard-reference.html` and confirm the preserved visual reference loads.
+- Open `/pages/admin/ui-catalog.html` and confirm it still uses the dashboard design system.
+- Open `/pages/calendar/schedule.html` and confirm the calendar remains on the dashboard shell.
+- Open migrated pages such as `/pages/people/employees.html`, `/pages/workspace/assignments.html`, `/pages/requests/approvals.html`, and `/pages/settings/settings.html`.
+- Confirm converted pages no longer load `/app-shell.css` or `/app-shell.js`.
+- Confirm sidebar, topbar, search, status strip, and footer are consistent across converted modules.
+- Confirm module-specific preview scripts still render where applicable.
 
-- Replaced v5.15.3 cache/version markers with v5.15.4.
-- Rebuilt `pages/admin/ui-catalog.html` using the dashboard-reference shell.
-- Confirmed `pages/admin/ui-catalog.html` no longer references `app-shell.css` or `foundation-admin.css`.
-- Ran local HTML asset/link scan against absolute local `href` and `src` references: **0 missing files**.
-- Searched repository for remaining `5.15.3` markers: **0 found**.
-- Regenerated `FILEMANIFEST.md`, `FILEMANIFEST.generated.txt`, and `SHA256SUMS.txt`.
+## Coolify
 
-## Manual Browser Checks To Run After Deploy
-
-- Open `/index.html` and confirm the working dashboard still loads.
-- Open `/pages/admin/dashboard-reference.html` and confirm the preserved reference still loads.
-- Open `/pages/admin/ui-catalog.html` and confirm it now visually matches the dashboard-reference shell.
-- Check responsive behavior at desktop, laptop, and mobile widths.
-- Confirm sidebar anchors in the UI Catalog scroll to catalog sections.
-- Confirm footer/release text displays v5.15.4.
-
-## Coolify / Server
-
-No Coolify/server action required beyond normal deployment.
+No server or Coolify configuration changes are required. Deploy as a full replacement.

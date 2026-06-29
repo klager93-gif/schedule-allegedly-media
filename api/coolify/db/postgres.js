@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/api/coolify/db/postgres.js
-Version: v5.15.4
+Version: v5.15.5
 Purpose: Optional Postgres employee, snapshot, and publish-state adapter for the Coolify API skeleton.
 
 JSON seed mode remains the default. Postgres functions only run when DATA_MODE=postgres and DATABASE_URL are set.

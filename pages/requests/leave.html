@@ -2,132 +2,214 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/requests/leave.html
-Version: v5.15.4
-Purpose: Admin-first Leave Requests Foundation preview page with request hours and admin override planning
+Version: v5.15.5
+Purpose: Dashboard shell migrated page for Signal Schedule — Leave Requests
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signal Schedule — Leave Requests</title>
-<meta name="description" content="Admin-first Schedule Leave Requests Foundation preview.">
-<link rel="stylesheet" href="/app-shell.css?v=5.15.4">
-<link rel="stylesheet" href="/pages/requests/leave-requests.css?v=5.15.4">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Schedule — Leave Requests</title>
+  <meta name="description" content="Admin-first Schedule Leave Requests Foundation preview.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.15.5">
+  <link rel="stylesheet" href="/pages/requests/leave-requests.css?v=5.15.5">
 </head>
-<body
-  data-signal-global-layout="true"
-  data-signal-area="Signal Schedule"
-  data-signal-title="Schedule Leave Requests"
-  data-signal-version="v5.15.4"
-  data-signal-theme="Leave Requests Foundation"
-  data-signal-status="Preview"
-  data-signal-description="Admin-first leave request preview for future vacation, sick, personal, comp, and training workflows."
-  data-signal-status-text="Signal Schedule v5.15.4 modernizes approvals, database naming, SQL audit documentation, and foundation UI."
->
-<div id="sl-header"></div>
-
-<nav class="schedule-subnav" aria-label="Signal Schedule navigation"><div class="schedule-subnav__label"><span>Signal Schedule Navigation</span><span class="schedule-subnav__role">Admin-first / role-filtering later</span></div><div class="schedule-subnav__links"><a href="/index.html">Overview</a><a href="/pages/workspace/workspace.html">Scheduling Workspace</a><a href="/pages/workspace/draft-planning.html">Draft Planning</a><a href="/pages/workspace/publishing.html">Publishing</a><a href="/pages/calendar/schedule.html">Calendar</a><a href="/pages/workspace/weekly-board.html">Weekly View</a><a href="/pages/workspace/daily-board.html">Daily Board</a><a href="/pages/people/employees.html">Employees</a><a href="/pages/people/profile.html">Profile</a><a href="/pages/people/timeline.html">Timeline</a><a href="/pages/people/supervisors.html">Supervisors</a><a href="/pages/people/seniority.html">Seniority & Rotation</a><a href="/pages/people/qualifications.html">Qualifications</a><a href="/pages/people/training.html">Training & Certs</a><a href="/pages/people/eligibility.html">Eligibility</a><a href="/pages/workspace/assignments.html">Assignments</a><a href="/pages/workspace/assignment-generator.html">Assignment Generator</a><a href="/pages/workspace/conflict-detection.html">Conflict Detection</a><a href="/pages/staffing/staffing.html">Minimum Staffing</a><a href="/pages/coverage/coverage.html">Coverage Board</a><a href="/pages/coverage/coverage-spots.html">Coverage Spots</a><a href="/pages/requests/approvals.html">Approvals</a><a href="/pages/requests/leave.html" aria-current="page">Leave Requests</a><a href="/pages/requests/leave-banks.html">Leave Banks</a><a href="/pages/requests/open-shifts.html">Open Shifts</a><a href="/pages/requests/ot-volunteer-board.html">OT Volunteer Board</a><a href="/pages/requests/shift-trades.html">Shift Trades</a><a href="/pages/rules/mandation.html">Mandation</a><a href="/pages/rules/permissions.html">Permissions</a><a href="/pages/rules/notifications.html">Notifications</a><a href="/pages/settings/visibility.html">Visibility & Privacy</a><a href="/pages/rules/shortcodes.html">Shortcodes</a><a href="/pages/rules/benefits.html">Benefit Ledger</a><a href="/pages/reports/reports.html">Reports</a><a href="/pages/settings/settings.html">Settings</a></div></nav>
-
-<main class="leave-shell">
-  <section class="leave-hero" aria-labelledby="pageTitle">
-    <p class="schedule-kicker">Signal Schedule</p>
-    <h1 id="pageTitle">Leave Requests</h1>
-    <p>Preview the future admin workflow for vacation, sick, personal, comp, and training requests. This release is read-only and does not approve, deny, or save production requests yet.</p>
-  </section>
-
-  <section class="leave-grid" aria-label="Leave Requests Foundation preview">
-    <aside class="leave-panel">
-      <h2>Review Dashboard</h2>
-      <p>Leave requests will eventually check employee assignment, shift, minimum staffing, and calendar impact before approval.</p>
-      <div class="leave-summary" data-leave-summary>
-        <div class="leave-stat"><strong>—</strong><span>Loading preview</span></div>
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Schedule Leave Requests" data-signal-version="v5.15.5" data-signal-theme="Leave Requests Foundation" data-signal-status="Preview" data-signal-description="Admin-first leave request preview for future vacation, sick, personal, comp, and training workflows." data-signal-status-text="Signal Schedule v5.15.5 global shell rollout migrated this module to the dashboard reference design.">
+  <div class="signal-dashboard-shell signal-dashboard-shell-wide">
+    <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
+      <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
+        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
+        <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
+      </a>
+      <nav class="signal-dashboard-nav">
+        <a href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <a href="/pages/calendar/schedule.html"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/pages/employee/index.html"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⚙</span><span>System</span></a>
+        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">◇</span><span>Admin</span></a>
+      </nav>
+      <div class="signal-dashboard-quick">
+        <div class="signal-dashboard-nav__section">Design System</div>
+        <div class="signal-dashboard-action">
+          <a href="/pages/admin/dashboard-reference.html"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+          <a href="/pages/admin/ui-catalog.html"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+          <a href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▣</span><span>Create Schedule</span></a>
+          <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        </div>
       </div>
-      <p class="leave-status-line" data-leave-status-line>Loading Leave Requests Foundation preview data…</p>
+      <div class="signal-dashboard-user" aria-label="Current user preview">
+        <div class="signal-dashboard-avatar">JM</div>
+        <div><strong>Jordan Miller</strong><small>Administrator<br>City of Fairview</small></div>
+      </div>
     </aside>
 
-    <section class="leave-form-card" aria-labelledby="requestFormTitle">
-      <h2 id="requestFormTitle">Request Intake Preview</h2>
-      <p>This form shows the intended fields. Submit/review actions remain disabled until authentication, permissions, and database writes are active.</p>
-      <div class="leave-form-grid">
-        <label>Employee
-          <select disabled>
-            <option>Morgan Price</option>
-            <option>Taylor Smith</option>
-            <option>Chris Jones</option>
-          </select>
-        </label>
-        <label>Leave Type
-          <select data-leave-type-select disabled>
-            <option>Loading types…</option>
-          </select>
-        </label>
-        <label>Start Date
-          <input type="date" value="2026-06-15" disabled>
-        </label>
-        <label>End Date
-          <input type="date" value="2026-06-18" disabled>
-        </label>
-        <label>Request Mode
-          <select data-request-mode>
-            <option value="partial-day">Partial Day / Time Range</option>
-            <option value="full-day">Full Day — Use Scheduled Shift Hours</option>
-          </select>
-        </label>
-        <label>Scheduled Shift Hours
-          <input data-scheduled-shift-hours type="number" value="8" min="0" step="0.25">
-        </label>
-        <label>Start Time
-          <input data-start-time type="time" value="13:00">
-        </label>
-        <label>End Time
-          <input data-end-time type="time" value="17:00">
-        </label>
-        <label>Submitting Role
-          <select data-request-role>
-            <option value="employee">Employee / Self-Service</option>
-            <option value="supervisor">Supervisor</option>
-            <option value="scheduler">Scheduler</option>
-            <option value="admin">Admin</option>
-          </select>
-        </label>
-        <label>Admin Override
-          <select data-admin-override>
-            <option value="">No override</option>
-            <option value="on">Override increment rule</option>
-          </select>
-        </label>
-      </div>
-      <div class="leave-hours-preview" aria-live="polite">
-        <strong data-calculated-hours>4 hours</strong>
-        <span data-increment-message>Employee/self-service requests must match the configured increment.</span>
-      </div>
-      <div class="leave-settings-list" data-increment-settings-list aria-label="Configured request increments"></div>
-      <label>Notes
-        <textarea disabled>Preview only. Future releases will save requests, route them for review, and compare them against minimum staffing.</textarea>
-      </label>
-      <div class="leave-preview-note">
+    <div class="signal-dashboard-main">
+      <header class="signal-dashboard-topbar">
+        <div class="signal-dashboard-title"><h1>Leave Requests</h1><p>Admin-first Schedule Leave Requests Foundation preview.</p></div>
+        <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation">
+
+          <a href="/index.html">Dashboard</a>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/calendar/schedule.html">Schedules</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/calendar/schedule.html">Calendar <small>Live</small></a>
+              <a href="/pages/workspace/builder.html">Builder <small>Live</small></a>
+              <a href="/pages/workspace/daily-board.html">Daily Board <small>Live</small></a>
+              <a href="/pages/workspace/weekly-board.html">Weekly Board <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/requests/requests.html">Requests</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/requests/requests.html">Requests <small>Live</small></a>
+              <a href="/pages/requests/approvals.html">Approvals <small>Live</small></a>
+              <a href="/pages/requests/open-shifts.html">Open Shifts <small>Live</small></a>
+              <a href="/pages/requests/shift-trades.html">Trades <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/people/employees.html">Employees</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/people/employees.html">Employees <small>Live</small></a>
+              <a href="/pages/people/profile.html">Profiles <small>Live</small></a>
+              <a href="/pages/people/qualifications.html">Qualifications <small>Live</small></a>
+              <a href="/pages/people/training.html">Training <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/reports/reports.html">Reports</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/reports/reports.html">Reports <small>Live</small></a>
+              <a href="/pages/admin/data-export.html">Data Export <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/admin/system-health.html">System</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/settings/settings.html">Settings <small>Live</small></a>
+              <a href="/pages/admin/system-health.html">System Health <small>Live</small></a>
+              <a href="/pages/admin/database-audit.html">Database Audit <small>Live</small></a>
+              <a href="/pages/admin/data-tools.html">Data Tools <small>Live</small></a>
+              <a href="/pages/admin/ui-catalog.html">UI Catalog <small>Dev</small></a>
+            </div>
+          </div>
+        </nav>
+        <div class="signal-dashboard-top-actions">
+          <label class="signal-dashboard-search" aria-label="Search Leave Requests"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
+          <a class="signal-dashboard-pill" href="/pages/identity/current-user.html">JM</a>
+        </div>
+      </header>
+
+      <main class="signal-dashboard-content signal-dashboard-module-content leave-shell">
+        <div class="signal-dashboard-status">
+          <span class="signal-dashboard-pill">v5.15.5</span><strong>Requests & Approvals</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+        </div>
+
+<section aria-labelledby="pageTitle" class="leave-hero">
+<p class="schedule-kicker">Signal Schedule</p>
+<h1 id="pageTitle">Leave Requests</h1>
+<p>Preview the future admin workflow for vacation, sick, personal, comp, and training requests. This release is read-only and does not approve, deny, or save production requests yet.</p>
+</section>
+<section aria-label="Leave Requests Foundation preview" class="leave-grid">
+<aside class="leave-panel">
+<h2>Review Dashboard</h2>
+<p>Leave requests will eventually check employee assignment, shift, minimum staffing, and calendar impact before approval.</p>
+<div class="leave-summary" data-leave-summary="">
+<div class="leave-stat"><strong>—</strong><span>Loading preview</span></div>
+</div>
+<p class="leave-status-line" data-leave-status-line="">Loading Leave Requests Foundation preview data…</p>
+</aside>
+<section aria-labelledby="requestFormTitle" class="leave-form-card">
+<h2 id="requestFormTitle">Request Intake Preview</h2>
+<p>This form shows the intended fields. Submit/review actions remain disabled until authentication, permissions, and database writes are active.</p>
+<div class="leave-form-grid">
+<label>Employee
+          <select disabled="">
+<option>Morgan Price</option>
+<option>Taylor Smith</option>
+<option>Chris Jones</option>
+</select>
+</label>
+<label>Leave Type
+          <select data-leave-type-select="" disabled="">
+<option>Loading types…</option>
+</select>
+</label>
+<label>Start Date
+          <input disabled="" type="date" value="2026-06-15"/>
+</label>
+<label>End Date
+          <input disabled="" type="date" value="2026-06-18"/>
+</label>
+<label>Request Mode
+          <select data-request-mode="">
+<option value="partial-day">Partial Day / Time Range</option>
+<option value="full-day">Full Day — Use Scheduled Shift Hours</option>
+</select>
+</label>
+<label>Scheduled Shift Hours
+          <input data-scheduled-shift-hours="" min="0" step="0.25" type="number" value="8"/>
+</label>
+<label>Start Time
+          <input data-start-time="" type="time" value="13:00"/>
+</label>
+<label>End Time
+          <input data-end-time="" type="time" value="17:00"/>
+</label>
+<label>Submitting Role
+          <select data-request-role="">
+<option value="employee">Employee / Self-Service</option>
+<option value="supervisor">Supervisor</option>
+<option value="scheduler">Scheduler</option>
+<option value="admin">Admin</option>
+</select>
+</label>
+<label>Admin Override
+          <select data-admin-override="">
+<option value="">No override</option>
+<option value="on">Override increment rule</option>
+</select>
+</label>
+</div>
+<div aria-live="polite" class="leave-hours-preview">
+<strong data-calculated-hours="">4 hours</strong>
+<span data-increment-message="">Employee/self-service requests must match the configured increment.</span>
+</div>
+<div aria-label="Configured request increments" class="leave-settings-list" data-increment-settings-list=""></div>
+<label>Notes
+        <textarea disabled="">Preview only. Future releases will save requests, route them for review, and compare them against minimum staffing.</textarea>
+</label>
+<div class="leave-preview-note">
         Future production workflow: employee submits request → supervisor/admin reviews staffing impact → request is approved/denied → calendar and staffing views update.
       </div>
-    </section>
-  </section>
+</section>
+</section>
+<section aria-labelledby="pendingTitle" class="leave-panel" style="margin-top:18px;">
+<h2 id="pendingTitle">Preview Requests</h2>
+<div class="leave-request-list" data-leave-request-list=""></div>
+</section>
 
-  <section class="leave-panel" aria-labelledby="pendingTitle" style="margin-top:18px;">
-    <h2 id="pendingTitle">Preview Requests</h2>
-    <div class="leave-request-list" data-leave-request-list></div>
-  </section>
-</main>
-<div id="schedule-footer"></div>
-<div id="sl-footer"></div>
-<script src="/assets/release-metadata.js?v=5.15.4"></script>
-<script src="/assets/config.js?v=5.15.4"></script>
-<script src="/assets/routes.js?v=5.15.4"></script>
-<script src="/assets/navigation.js?v=5.15.4"></script>
-<script src="/assets/features.js?v=5.15.4"></script>
-<script src="/assets/roles.js?v=5.15.4"></script>
-<script src="/assets/status.js?v=5.15.4"></script>
-<script src="/assets/data-loader.js?v=5.15.4"></script>
-<script src="/app-shell.js?v=5.15.4"></script>
-<script type="module" src="/pages/requests/leave-requests.js?v=5.15.4"></script>
+      </main>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.15.5 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
+    </div>
+  </div>
+  <script src="/assets/release-metadata.js?v=5.15.5"></script>
+  <script src="/assets/config.js?v=5.15.5"></script>
+  <script src="/assets/routes.js?v=5.15.5"></script>
+  <script src="/assets/navigation.js?v=5.15.5"></script>
+  <script src="/assets/features.js?v=5.15.5"></script>
+  <script src="/assets/roles.js?v=5.15.5"></script>
+  <script src="/assets/status.js?v=5.15.5"></script>
+  <script src="/assets/data-loader.js?v=5.15.5"></script>
+  <script type="module" src="/pages/requests/leave-requests.js?v=5.15.5"></script>
 </body>
 </html>

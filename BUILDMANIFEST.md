@@ -1,27 +1,19 @@
-# Build Manifest — Signal Schedule v5.15.4
+# Build Manifest — Signal Schedule v5.15.5
 
-Generated: 2026-06-29
+Built: 2026-06-29
+Package: full replacement
+Release: Global Dashboard Shell Rollout
 
-## Release Focus
+## Counts
 
-Dashboard UI Catalog rebuild. The internal UI Catalog now matches the preserved dashboard reference design and becomes the implementation source for future page migrations.
+- HTML files: 59
+- CSS files: 47
+- JS files: 159
+- Total files: 479
 
-## Key Changes
+## Release Notes
 
-- Rebuilt `pages/admin/ui-catalog.html` from the dashboard-reference shell.
-- Catalog now loads `/assets/dashboard.css?v=5.15.4` instead of the legacy app shell/foundation-admin CSS pair.
-- Added dashboard-native catalog sections for foundations, metric cards, buttons, command bars, cards, alerts, empty states, forms, tables, badges, modal preview, and usage rules.
-- Added catalog-specific classes to `assets/dashboard.css`.
-- Updated release metadata and cache markers to v5.15.4.
-
-## Key Validation
-
-- Root dashboard remains working app entry.
-- Dashboard reference remains preserved separately.
-- UI Catalog uses the new dashboard shell and styling.
-- Internal HTML asset/link scan passed with zero missing local references.
-- No remaining v5.15.3 markers found.
-
-## Coolify / Server
-
-No server, environment, volume, or Coolify configuration changes are required.
+- Migrated 55 legacy app-shell pages to the dashboard-reference shell.
+- Added dashboard compatibility styles for existing module content.
+- Preserved page-specific JavaScript and CSS.
+- Regenerated file manifest and checksums.

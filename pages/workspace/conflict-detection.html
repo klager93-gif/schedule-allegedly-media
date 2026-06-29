@@ -2,85 +2,174 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/workspace/conflict-detection.html
-Version: v5.15.4
-Purpose: Conflict Detection Foundation with role-based panels
+Version: v5.15.5
+Purpose: Dashboard shell migrated page for Signal Schedule — Conflict Detection
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Signal Schedule — Conflict Detection</title>
-<meta name="description" content="Signal Schedule Conflict Detection Foundation for reviewing double assignments, coverage issues, leave overlap, rest rules, and qualification conflicts.">
-<link rel="stylesheet" href="/app-shell.css?v=5.15.4">
-<link rel="stylesheet" href="/pages/workspace/conflict-detection.css?v=5.15.4">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Schedule — Conflict Detection</title>
+  <meta name="description" content="Signal Schedule Conflict Detection Foundation for reviewing double assignments, coverage issues, leave overlap, rest rules, and qualification conflicts.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.15.5">
+  <link rel="stylesheet" href="/pages/workspace/conflict-detection.css?v=5.15.5">
 </head>
-<body data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Conflict Detection" data-signal-version="v5.15.4" data-signal-theme="Conflict Detection Foundation" data-signal-status="Preview" data-signal-description="Review assignment conflicts before generated schedules are published." data-signal-status-text="Signal Schedule v5.15.4 modernizes approvals, database naming, SQL audit documentation, and foundation UI.">
-<div id="sl-header"></div>
-<nav class="schedule-subnav" aria-label="Signal Schedule navigation"><div class="schedule-subnav__label"><span>Signal Schedule Navigation</span><span class="schedule-subnav__role">Role-based panels</span></div><div class="schedule-subnav__links"><a href="/index.html">Overview</a><a href="/pages/workspace/workspace.html">Scheduling Workspace</a><a href="/pages/workspace/draft-planning.html">Draft Planning</a><a href="/pages/workspace/publishing.html">Publishing</a><a href="/pages/calendar/schedule.html">Calendar</a><a href="/pages/workspace/weekly-board.html">Weekly View</a><a href="/pages/workspace/daily-board.html">Daily Board</a><a href="/pages/people/employees.html">Employees</a><a href="/pages/people/profile.html">Profile</a><a href="/pages/people/timeline.html">Timeline</a><a href="/pages/people/supervisors.html">Supervisors</a><a href="/pages/people/seniority.html">Seniority & Rotation</a><a href="/pages/people/qualifications.html">Qualifications</a><a href="/pages/people/training.html">Training & Certs</a><a href="/pages/people/eligibility.html">Eligibility</a><a href="/pages/workspace/assignments.html">Assignments</a><a href="/pages/workspace/assignment-generator.html">Assignment Generator</a><a href="/pages/workspace/conflict-detection.html" aria-current="page">Conflict Detection</a><a href="/pages/staffing/staffing.html">Minimum Staffing</a><a href="/pages/coverage/coverage.html">Coverage Board</a><a href="/pages/coverage/coverage-spots.html">Coverage Spots</a><a href="/pages/requests/approvals.html">Approvals</a><a href="/pages/requests/leave.html">Leave Requests</a><a href="/pages/requests/leave-banks.html">Leave Banks</a><a href="/pages/requests/open-shifts.html">Open Shifts</a><a href="/pages/requests/ot-volunteer-board.html">OT Volunteer Board</a><a href="/pages/requests/shift-trades.html">Shift Trades</a><a href="/pages/rules/mandation.html">Mandation</a><a href="/pages/rules/permissions.html">Permissions</a><a href="/pages/rules/notifications.html">Notifications</a><a href="/pages/settings/visibility.html">Visibility & Privacy</a><a href="/pages/rules/shortcodes.html">Shortcodes</a><a href="/pages/rules/benefits.html">Benefit Ledger</a><a href="/pages/reports/reports.html">Reports</a><a href="/pages/settings/settings.html">Settings</a></div></nav>
-<main class="conflict-shell" data-conflict-shell data-active-role="supervisor">
-  <section class="conflict-hero" aria-labelledby="pageTitle">
-    <p class="schedule-kicker">Signal Schedule</p>
-    <h1 id="pageTitle">Conflict Detection Foundation</h1>
-    <p>Find double assignments, under-minimum coverage, leave overlap, rest-rule issues, missing qualifications, over-maximum staffing, and manual override conflicts before publishing draft assignments.</p>
-  </section>
-
-  <section class="conflict-grid" aria-label="Conflict detection overview">
-    <aside class="conflict-panel">
-      <h2>Conflict Snapshot</h2>
-      <p>Preview-only detection. Future publish workflows should block hard conflicts unless agency policy allows an audited override.</p>
-      <div class="conflict-summary" data-conflict-summary><div class="conflict-stat"><strong>—</strong><span>Loading preview</span></div></div>
-      <div class="conflict-view-toggle" aria-label="Role preview">
-        <button type="button" data-conflict-role="employee" aria-pressed="false">Employee</button>
-        <button type="button" data-conflict-role="supervisor" aria-pressed="true">Supervisor</button>
-        <button type="button" data-conflict-role="admin" aria-pressed="false">Admin</button>
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Conflict Detection" data-signal-version="v5.15.5" data-signal-theme="Conflict Detection Foundation" data-signal-status="Preview" data-signal-description="Review assignment conflicts before generated schedules are published." data-signal-status-text="Signal Schedule v5.15.5 global shell rollout migrated this module to the dashboard reference design.">
+  <div class="signal-dashboard-shell signal-dashboard-shell-wide">
+    <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
+      <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
+        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
+        <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
+      </a>
+      <nav class="signal-dashboard-nav">
+        <a href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <a href="/pages/calendar/schedule.html"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/pages/employee/index.html"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⚙</span><span>System</span></a>
+        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">◇</span><span>Admin</span></a>
+      </nav>
+      <div class="signal-dashboard-quick">
+        <div class="signal-dashboard-nav__section">Design System</div>
+        <div class="signal-dashboard-action">
+          <a href="/pages/admin/dashboard-reference.html"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+          <a href="/pages/admin/ui-catalog.html"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+          <a href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▣</span><span>Create Schedule</span></a>
+          <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        </div>
       </div>
-      <p class="conflict-status-line" data-conflict-status>Loading Conflict Detection preview data…</p>
+      <div class="signal-dashboard-user" aria-label="Current user preview">
+        <div class="signal-dashboard-avatar">JM</div>
+        <div><strong>Jordan Miller</strong><small>Administrator<br>City of Fairview</small></div>
+      </div>
     </aside>
 
-    <section class="conflict-card">
-      <h2>Sources Checked</h2>
-      <p>These modules feed the conflict detector.</p>
-      <div class="conflict-sources" data-conflict-sources></div>
-    </section>
-  </section>
+    <div class="signal-dashboard-main">
+      <header class="signal-dashboard-topbar">
+        <div class="signal-dashboard-title"><h1>Conflict Detection</h1><p>Signal Schedule Conflict Detection Foundation for reviewing double assignments, coverage issues, leave overlap, rest rules, and qualification conflicts.</p></div>
+        <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation">
 
-  <section class="conflict-card">
-    <div class="conflict-section-header"><div><h2>Conflict Queue</h2><p>Visible items change by role. Protected notes and admin details stay hidden from employee preview.</p></div><span data-conflict-count>—</span></div>
-    <div class="conflict-groups" data-conflict-groups></div>
-  </section>
+          <a href="/index.html">Dashboard</a>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/calendar/schedule.html">Schedules</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/calendar/schedule.html">Calendar <small>Live</small></a>
+              <a href="/pages/workspace/builder.html">Builder <small>Live</small></a>
+              <a href="/pages/workspace/daily-board.html">Daily Board <small>Live</small></a>
+              <a href="/pages/workspace/weekly-board.html">Weekly Board <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/requests/requests.html">Requests</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/requests/requests.html">Requests <small>Live</small></a>
+              <a href="/pages/requests/approvals.html">Approvals <small>Live</small></a>
+              <a href="/pages/requests/open-shifts.html">Open Shifts <small>Live</small></a>
+              <a href="/pages/requests/shift-trades.html">Trades <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/people/employees.html">Employees</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/people/employees.html">Employees <small>Live</small></a>
+              <a href="/pages/people/profile.html">Profiles <small>Live</small></a>
+              <a href="/pages/people/qualifications.html">Qualifications <small>Live</small></a>
+              <a href="/pages/people/training.html">Training <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/reports/reports.html">Reports</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/reports/reports.html">Reports <small>Live</small></a>
+              <a href="/pages/admin/data-export.html">Data Export <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/admin/system-health.html">System</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/settings/settings.html">Settings <small>Live</small></a>
+              <a href="/pages/admin/system-health.html">System Health <small>Live</small></a>
+              <a href="/pages/admin/database-audit.html">Database Audit <small>Live</small></a>
+              <a href="/pages/admin/data-tools.html">Data Tools <small>Live</small></a>
+              <a href="/pages/admin/ui-catalog.html">UI Catalog <small>Dev</small></a>
+            </div>
+          </div>
+        </nav>
+        <div class="signal-dashboard-top-actions">
+          <label class="signal-dashboard-search" aria-label="Search Conflict Detection"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
+          <a class="signal-dashboard-pill" href="/pages/identity/current-user.html">JM</a>
+        </div>
+      </header>
 
-  <section class="conflict-card role-panel" data-role-panel>
-    <div class="conflict-section-header"><div><h2>Role-Based Visibility</h2><p>Same page, different detail level.</p></div><span data-current-role>Supervisor</span></div>
-    <div class="conflict-role-panels" data-conflict-role-panels></div>
-  </section>
+      <main class="signal-dashboard-content signal-dashboard-module-content conflict-shell">
+        <div class="signal-dashboard-status">
+          <span class="signal-dashboard-pill">v5.15.5</span><strong>Scheduling Workspace</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+        </div>
 
-  <section class="conflict-card supervisor-admin-only">
-    <div class="conflict-section-header"><div><h2>Rule Checks</h2><p>Hard and soft conflict rules for future publish safeguards.</p></div></div>
-    <div class="conflict-rule-checks" data-conflict-rule-checks></div>
-  </section>
+<section aria-labelledby="pageTitle" class="conflict-hero">
+<p class="schedule-kicker">Signal Schedule</p>
+<h1 id="pageTitle">Conflict Detection Foundation</h1>
+<p>Find double assignments, under-minimum coverage, leave overlap, rest-rule issues, missing qualifications, over-maximum staffing, and manual override conflicts before publishing draft assignments.</p>
+</section>
+<section aria-label="Conflict detection overview" class="conflict-grid">
+<aside class="conflict-panel">
+<h2>Conflict Snapshot</h2>
+<p>Preview-only detection. Future publish workflows should block hard conflicts unless agency policy allows an audited override.</p>
+<div class="conflict-summary" data-conflict-summary=""><div class="conflict-stat"><strong>—</strong><span>Loading preview</span></div></div>
+<div aria-label="Role preview" class="conflict-view-toggle">
+<button aria-pressed="false" data-conflict-role="employee" type="button">Employee</button>
+<button aria-pressed="true" data-conflict-role="supervisor" type="button">Supervisor</button>
+<button aria-pressed="false" data-conflict-role="admin" type="button">Admin</button>
+</div>
+<p class="conflict-status-line" data-conflict-status="">Loading Conflict Detection preview data…</p>
+</aside>
+<section class="conflict-card">
+<h2>Sources Checked</h2>
+<p>These modules feed the conflict detector.</p>
+<div class="conflict-sources" data-conflict-sources=""></div>
+</section>
+</section>
+<section class="conflict-card">
+<div class="conflict-section-header"><div><h2>Conflict Queue</h2><p>Visible items change by role. Protected notes and admin details stay hidden from employee preview.</p></div><span data-conflict-count="">—</span></div>
+<div class="conflict-groups" data-conflict-groups=""></div>
+</section>
+<section class="conflict-card role-panel" data-role-panel="">
+<div class="conflict-section-header"><div><h2>Role-Based Visibility</h2><p>Same page, different detail level.</p></div><span data-current-role="">Supervisor</span></div>
+<div class="conflict-role-panels" data-conflict-role-panels=""></div>
+</section>
+<section class="conflict-card supervisor-admin-only">
+<div class="conflict-section-header"><div><h2>Rule Checks</h2><p>Hard and soft conflict rules for future publish safeguards.</p></div></div>
+<div class="conflict-rule-checks" data-conflict-rule-checks=""></div>
+</section>
+<section class="conflict-card supervisor-admin-only">
+<div class="conflict-section-header"><div><h2>Resolution Queue</h2><p>Suggested order for supervisor/admin review.</p></div></div>
+<div class="conflict-resolution" data-conflict-resolution=""></div>
+</section>
+<section class="conflict-card admin-only">
+<div class="conflict-section-header"><div><h2>Admin Rules</h2><p>Administrative guardrails for future publish logic.</p></div></div>
+<ul class="conflict-rules" data-conflict-rules=""></ul>
+</section>
 
-  <section class="conflict-card supervisor-admin-only">
-    <div class="conflict-section-header"><div><h2>Resolution Queue</h2><p>Suggested order for supervisor/admin review.</p></div></div>
-    <div class="conflict-resolution" data-conflict-resolution></div>
-  </section>
-
-  <section class="conflict-card admin-only">
-    <div class="conflict-section-header"><div><h2>Admin Rules</h2><p>Administrative guardrails for future publish logic.</p></div></div>
-    <ul class="conflict-rules" data-conflict-rules></ul>
-  </section>
-</main>
-<div id="schedule-footer"></div>
-<div id="sl-footer"></div>
-<script src="/assets/release-metadata.js?v=5.15.4"></script>
-<script src="/assets/config.js?v=5.15.4"></script>
-<script src="/assets/routes.js?v=5.15.4"></script>
-<script src="/assets/navigation.js?v=5.15.4"></script>
-<script src="/assets/features.js?v=5.15.4"></script>
-<script src="/assets/roles.js?v=5.15.4"></script>
-<script src="/assets/status.js?v=5.15.4"></script>
-<script src="/assets/data-loader.js?v=5.15.4"></script>
-<script src="/app-shell.js?v=5.15.4"></script>
-<script type="module" src="/pages/workspace/conflict-detection.js?v=5.15.4"></script>
+      </main>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.15.5 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
+    </div>
+  </div>
+  <script src="/assets/release-metadata.js?v=5.15.5"></script>
+  <script src="/assets/config.js?v=5.15.5"></script>
+  <script src="/assets/routes.js?v=5.15.5"></script>
+  <script src="/assets/navigation.js?v=5.15.5"></script>
+  <script src="/assets/features.js?v=5.15.5"></script>
+  <script src="/assets/roles.js?v=5.15.5"></script>
+  <script src="/assets/status.js?v=5.15.5"></script>
+  <script src="/assets/data-loader.js?v=5.15.5"></script>
+  <script type="module" src="/pages/workspace/conflict-detection.js?v=5.15.5"></script>
 </body>
 </html>
