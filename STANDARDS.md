@@ -32,3 +32,7 @@ Do not switch technologies just to hide file extensions. Clean routes should be 
 ## v5.15.0 UI Component Catalog Rule
 
 Use `/pages/admin/ui-catalog.html` as the Schedule-only reference for reusable page headers, action bars, filters, buttons, cards, forms, tables, badges, alerts, empty states, and modal/dialog patterns. Do not borrow UI or CSS patterns from unrelated projects unless explicitly approved.
+
+## Root Cleanliness + Clean URL Architecture
+
+Public clean URLs are routing aliases, not physical top-level folders. Keep app pages under `/pages/` and use `_redirects` or backend routing to expose clean URLs.

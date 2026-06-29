@@ -1,22 +1,28 @@
-# Signal Schedule v6.0.1 Validation Checklist
+# Signal Schedule v6.1.0 Validation Checklist
 
-## Required pages
+## Clean root
 
-- [ ] `/dashboard/` loads.
-- [ ] `/login/` loads.
-- [ ] `/agency/` loads.
-- [ ] `/users/` loads.
-- [ ] `/roles/` loads.
-- [ ] `/system/` loads.
-- [ ] `/developer/ui-catalog/` loads.
+- Confirm physical top-level alias folders were removed: `/schedule/`, `/employees/`, `/agency/`, `/users/`, `/roles/`, etc.
+- Confirm root keeps only infrastructure and long-lived app folders.
 
-## Navigation
+## Clean URLs
 
-- [ ] Administration sidebar includes System Administration, Agency Setup, Users, Roles & Permissions, and Admin.
-- [ ] Clean URL links are used in primary navigation.
-- [ ] Developer tools remain under Developer Tools.
+Validate these routes after deployment:
+
+- `/dashboard/`
+- `/schedule/`
+- `/employees/`
+- `/leave/`
+- `/requests/`
+- `/agency/`
+- `/users/`
+- `/roles/`
+- `/developer/ui-catalog/`
+
+## Legacy paths
+
+- Confirm old physical paths redirect to clean URLs.
 
 ## Server
 
-- [ ] No Coolify configuration changes are needed.
-- [ ] No PHP/MySQL/database setup is needed for this build.
+- No Coolify/PHP/MySQL change should be needed for this build.

@@ -1,14 +1,43 @@
-# Build Manifest — Signal Schedule v6.0.1
+# Build Manifest — Signal Schedule v6.1.0
 
-Build type: full replacement static package
+Generated: 2026-06-29
 
-## Main changes
+## Summary
 
-- Production foundation audit fixes
-- Clean alias folders for Agency Setup, Users, Roles & Permissions
-- Route/navigation registry polish
-- Documentation, manifest, and checksum refresh
+- Removed physical root clean-url alias folders.
+- Preserved clean URLs through `_redirects` rewrites.
+- Added repository architecture and production data/API/database contract docs.
+- No server/Coolify/PHP/MySQL changes required.
 
-## Server requirements
+## Removed alias folders
 
-None for this build.
+- `account/`
+- `admin/`
+- `agency/`
+- `assignments/`
+- `audit/`
+- `calendar/`
+- `coverage/`
+- `daily-board/`
+- `dashboard/`
+- `employees/`
+- `leave/`
+- `login/`
+- `mandation/`
+- `my-schedule/`
+- `notifications/`
+- `open-shifts/`
+- `operations/`
+- `publishing/`
+- `reports/`
+- `requests/`
+- `roles/`
+- `schedule/`
+- `staffing/`
+- `system/`
+- `trades/`
+- `users/`
+- `developer/ui-catalog/`
+- `developer/dashboard-reference/`
+- `developer/rule-engine/`
+- `developer/scheduling-engine/`

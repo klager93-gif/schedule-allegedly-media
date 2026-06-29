@@ -1,7 +1,6 @@
-/* Signal Schedule release metadata */
 window.SIGNAL_SCHEDULE_RELEASE = Object.freeze({
-  version: 'v6.0.1',
-  name: 'Production Workflow Consolidation',
+  version: 'v6.1.0',
+  name: 'Repository Architecture & Data Contracts',
   date: '2026-06-29',
-  notes: 'Moves production work into clean workflows, adds publishing and audit aliases, and removes engine pages from normal navigation.'
+  serverRequired: false
 });

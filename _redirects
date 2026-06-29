@@ -1,4 +1,39 @@
-# Signal Schedule clean URL aliases — v6.0.1
+# Signal Schedule clean URL aliases — v6.1.0
+# Clean public routes are routing aliases only. Do not create physical root alias folders.
+
+/ /index.html 200
+/dashboard/ /index.html 200
+/schedule/ /pages/workspace/builder.html 200
+/calendar/ /pages/calendar/schedule.html 200
+/my-schedule/ /pages/employee/index.html 200
+/open-shifts/ /pages/requests/open-shifts.html 200
+/trades/ /pages/requests/shift-trades.html 200
+/mandation/ /pages/rules/mandation.html 200
+/assignments/ /pages/workspace/assignments.html 200
+/staffing/ /pages/staffing/staffing-engine.html 200
+/daily-board/ /pages/workspace/daily-board.html 200
+/employees/ /pages/people/employees.html 200
+/employees/profile/ /pages/people/profile.html 200
+/leave/ /pages/requests/leave-banks.html 200
+/requests/ /pages/requests/requests.html 200
+/notifications/ /pages/rules/notifications.html 200
+/publishing/ /pages/workspace/publishing.html 200
+/audit/ /pages/operations/audit-trail.html 200
+/reports/ /pages/reports/reports.html 200
+/coverage/ /pages/coverage/coverage.html 200
+/operations/ /pages/operations/operations.html 200
+/system/ /pages/admin/system-health.html 200
+/admin/ /pages/settings/settings.html 200
+/account/ /pages/identity/current-user.html 200
+/login/ /pages/identity/login.html 200
+/agency/ /pages/identity/agency-setup.html 200
+/users/ /pages/identity/users.html 200
+/roles/ /pages/rules/permissions.html 200
+/developer/ui-catalog/ /pages/admin/ui-catalog.html 200
+/developer/dashboard-reference/ /pages/admin/dashboard-reference.html 200
+/developer/rule-engine/ /pages/rules/rule-engine.html 200
+/developer/scheduling-engine/ /pages/scheduling/scheduling-engine.html 200
+
 /index.html /dashboard/ 301
 /pages/workspace/builder.html /schedule/ 301
 /pages/workspace/publishing.html /publishing/ 301
@@ -13,6 +48,7 @@
 /pages/staffing/staffing-engine.html /staffing/ 301
 /pages/workspace/daily-board.html /daily-board/ 301
 /pages/people/employees.html /employees/ 301
+/pages/people/profile.html /employees/profile/ 301
 /pages/requests/leave-banks.html /leave/ 301
 /pages/requests/requests.html /requests/ 301
 /pages/rules/notifications.html /notifications/ 301
@@ -23,11 +59,10 @@
 /pages/settings/settings.html /admin/ 301
 /pages/identity/current-user.html /account/ 301
 /pages/identity/login.html /login/ 301
+/pages/identity/agency-setup.html /agency/ 301
+/pages/identity/users.html /users/ 301
+/pages/rules/permissions.html /roles/ 301
 /pages/admin/ui-catalog.html /developer/ui-catalog/ 301
 /pages/admin/dashboard-reference.html /developer/dashboard-reference/ 301
 /pages/rules/rule-engine.html /developer/rule-engine/ 301
 /pages/scheduling/scheduling-engine.html /developer/scheduling-engine/ 301
-
-/pages/identity/agency-setup.html /agency/ 301
-/pages/identity/users.html /users/ 301
-/pages/rules/permissions.html /roles/ 301

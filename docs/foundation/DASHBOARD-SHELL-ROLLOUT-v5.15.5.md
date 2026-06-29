@@ -1,4 +1,4 @@
-# Dashboard Shell Rollout v6.0.1
+# Dashboard Shell Rollout v6.1.0
 
 Migrated the remaining legacy app-shell HTML pages into the dashboard reference shell so module pages share the same sidebar, topbar, search, status rail, footer, and dashboard visual language introduced by `dashboard-reference.html` and `ui-catalog.html`.
 

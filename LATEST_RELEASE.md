@@ -1,19 +1,11 @@
-# Signal Schedule v6.0.1 — Production Foundation Audit & Setup Polish
+# Signal Schedule v6.1.0 — Repository Architecture & Data Contracts
 
 Release date: 2026-06-29
 
-v6.0.1 stabilizes the v6 production foundation while remaining frontend/static only. It fixes missing clean alias folders for Agency Setup, Users, and Roles & Permissions; updates shared routing/navigation registries; and documents the remaining backend/server work for later v6.x releases.
+v6.1.0 restores the clean-root repository architecture, preserves clean public URLs through routing aliases, and adds the first production data/API/database contract drafts for the v6.2 backend phase.
 
-## Server status
+## Server / Coolify
 
-No Coolify, PHP, MySQL, or server configuration changes are required for v6.0.1.
+No Coolify, PHP, MySQL, or server changes are required for v6.1.0.
 
-## Validate
-
-- `/dashboard/`
-- `/login/`
-- `/agency/`
-- `/users/`
-- `/roles/`
-- `/system/`
-- `/developer/ui-catalog/`
+The next backend phase, v6.2.0, is where server/database work begins.

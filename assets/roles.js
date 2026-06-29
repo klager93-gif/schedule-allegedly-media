@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/roles.js
-Version: v6.0.1
+Version: v6.1.0
 Purpose: Role registry for future employee, supervisor, scheduler, and admin access surfaces.
 */
 window.SIGNAL_SCHEDULE_ROLES = Object.freeze({

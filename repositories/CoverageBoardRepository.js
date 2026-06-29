@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/repositories/CoverageBoardRepository.js
-Version: v6.0.1
+Version: v6.1.0
 Purpose: Repository boundary for Coverage Board preview data.
 */
 export class CoverageBoardRepository {

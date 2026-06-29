@@ -1,11 +1,10 @@
-# File Manifest — Signal Schedule v6.0.1
+# File Manifest — Signal Schedule v6.1.0
 
 - `.gitattributes`
 - `.gitignore`
 - `ADMIN_CHANGELOG.md`
 - `BUILDMANIFEST.md`
 - `CHANGELOG.md`
-- `FILEMANIFEST.generated.txt`
 - `FILEMANIFEST.md`
 - `HOWTO.md`
 - `LATEST_RELEASE.md`
@@ -13,11 +12,9 @@
 - `PUBLIC_CHANGELOG.md`
 - `README.md`
 - `ROADMAP.md`
-- `SHA256SUMS.txt`
 - `STANDARDS.md`
 - `VALIDATION.md`
 - `_redirects`
-- `account/index.html`
 - `adapters/JsonAssignmentEngineAdapter.js`
 - `adapters/JsonAssignmentGeneratorAdapter.js`
 - `adapters/JsonBenefitLedgerAdapter.js`
@@ -52,8 +49,6 @@
 - `adapters/JsonTrainingCertificationAdapter.js`
 - `adapters/JsonVisibilityPrivacyAdapter.js`
 - `adapters/JsonWeeklyBoardAdapter.js`
-- `admin/index.html`
-- `agency/index.html`
 - `api/contracts/assignment-engine.read.schema.json`
 - `api/contracts/assignment-generator.read.schema.json`
 - `api/contracts/benefit-ledger.read.schema.json`
@@ -162,17 +157,11 @@
 - `assets/themes/light.css`
 - `assets/themes/midnight.css`
 - `assets/themes/slate.css`
-- `assignments/index.html`
-- `audit/index.html`
-- `calendar/index.html`
 - `components/footer.js`
 - `components/panel.js`
 - `components/table.js`
 - `components/tag.js`
 - `components/toolbar.js`
-- `coverage/index.html`
-- `daily-board/index.html`
-- `dashboard/index.html`
 - `data/agencies.json`
 - `data/agency-setup-preview.json`
 - `data/approval-foundation-preview.json`
@@ -240,14 +229,14 @@
 - `data/vot-requests-preview.json`
 - `data/weekly-board-preview.json`
 - `data/workspace-foundation-preview.json`
-- `developer/dashboard-reference/index.html`
-- `developer/rule-engine/index.html`
-- `developer/scheduling-engine/index.html`
-- `developer/ui-catalog/index.html`
+- `developer/README.md`
 - `docs/README.md`
+- `docs/architecture/API-CONTRACTS-v6.1.0.md`
 - `docs/architecture/CLEAN-ROUTE-FOUNDATION.md`
 - `docs/architecture/CLEAN-URL-ALIASES-v5.17.2.md`
+- `docs/architecture/DATA-CONTRACTS-v6.1.0.md`
 - `docs/architecture/DATABASE-NAMING-CONTRACT-v5.9.md`
+- `docs/architecture/DATABASE-SCHEMA-DRAFT-v6.1.0.md`
 - `docs/architecture/FILE_ORGANIZATION.md`
 - `docs/architecture/IDENTITY-SESSION-CONTRACT-v5.10.md`
 - `docs/architecture/METADATA-VALIDATION.md`
@@ -257,6 +246,7 @@
 - `docs/architecture/PRODUCTION-READY-v6.0.1.md`
 - `docs/architecture/PRODUCTION-WORKFLOW-CONSOLIDATION-v5.19.0.md`
 - `docs/architecture/REGISTRY-FOUNDATION.md`
+- `docs/architecture/REPOSITORY-ARCHITECTURE-v6.1.0.md`
 - `docs/audits/ALPHA-INTEGRATION-AUDIT.md`
 - `docs/audits/DATA-LAYER-AUDIT-v5.8.md`
 - `docs/audits/DATA-PATH-DRIFT-AUDIT-v5.7.md`
@@ -290,16 +280,7 @@
 - `docs/ui/COMPONENT-CATALOG.md`
 - `docs/ui/SAVED-SCHEDULES-UI.md`
 - `docs/ui/UI-COPY-BOX-CLEANUP-v5.9.md`
-- `employees/index.html`
-- `employees/profile/index.html`
 - `index.html`
-- `leave/index.html`
-- `login/index.html`
-- `mandation/index.html`
-- `my-schedule/index.html`
-- `notifications/index.html`
-- `open-shifts/index.html`
-- `operations/index.html`
 - `pages/admin/backend-readiness.html`
 - `pages/admin/dashboard-reference.html`
 - `pages/admin/data-export.html`
@@ -441,8 +422,6 @@
 - `pages/workspace/workspace.css`
 - `pages/workspace/workspace.html`
 - `pages/workspace/workspace.js`
-- `publishing/index.html`
-- `reports/index.html`
 - `repositories/AssignmentEngineRepository.js`
 - `repositories/AssignmentGeneratorRepository.js`
 - `repositories/BenefitLedgerRepository.js`
@@ -477,9 +456,6 @@
 - `repositories/TrainingCertificationRepository.js`
 - `repositories/VisibilityPrivacyRepository.js`
 - `repositories/WeeklyBoardRepository.js`
-- `requests/index.html`
-- `roles/index.html`
-- `schedule/index.html`
 - `services/AssignmentEngineService.js`
 - `services/AssignmentGeneratorService.js`
 - `services/BenefitLedgerService.js`
@@ -515,8 +491,9 @@
 - `services/TrainingCertificationService.js`
 - `services/VisibilityPrivacyService.js`
 - `services/WeeklyBoardService.js`
+- `sitemap.xml`
 - `sql/058_leave_banks_foundation.sql`
-- `staffing/index.html`
+- `sql/schema-draft-v6.1.0.sql`
 - `standards/COMPONENT_STANDARDS.md`
 - `standards/DEVELOPMENT_STANDARDS.md`
 - `standards/DOCUMENTATION_STANDARDS.md`
@@ -525,6 +502,3 @@
 - `standards/STANDARDS.md`
 - `standards/UX_STANDARDS.md`
 - `standards/WORKFLOW_STANDARDS.md`
-- `system/index.html`
-- `trades/index.html`
-- `users/index.html`

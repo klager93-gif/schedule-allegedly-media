@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v6.0.1
+Version: v6.1.0
 Purpose: Production grouped navigation registry for workflow-centered Signal Schedule navigation.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Production grouped navigation registry for workflow-centered Signal Sch
   const path = (key, fallback) => routes[key] || fallback;
   const item = (label, href, icon, permission) => Object.freeze({ label, href, icon, permission: permission || 'authenticated' });
   window.SIGNAL_SCHEDULE_NAVIGATION = Object.freeze({
-    version: 'v6.0.1',
+    version: 'v6.1.0',
     labels: Object.freeze({
       [path('dashboard','/dashboard/')]: 'Dashboard',
       [path('calendar','/calendar/')]: 'Calendar',

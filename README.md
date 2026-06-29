@@ -31,3 +31,7 @@ Demo identity and agency references use fictional sample data only.
 ## v5.15.0 UI & Foundation Standardization
 
 `index.html` is the technical static entry point, but the product should present it as the Dashboard. Future releases should move toward clean app-style routes such as `/dashboard`, `/calendar`, and `/requests`.
+
+## Repository Architecture
+
+Signal Schedule keeps clean public URLs through `_redirects` instead of physical root alias folders. App pages live under `/pages/`; clean routes like `/schedule/` and `/employees/` are routing aliases.

@@ -1,76 +1,35 @@
-# Signal Schedule v6.0.1 — Operational Scheduling Part 2
+# Signal Schedule Roadmap — v6.x
 
-Built from v5.17.2. Adds mandation, shift trades, open shifts/VOT integration, leave-impact checks, approval routing previews, clean aliases for `/trades/` and `/mandation/`, and operational cards inside Schedule Builder.
+## v6.1.0 — Repository Architecture & Data Contracts
 
-# Signal Schedule Roadmap
+- Clean root architecture
+- Clean URL aliases preserved through rewrites
+- Data contracts
+- API contract draft
+- Database schema draft
 
-- v6.0.1 — Rule Engine Foundation: conflict, coverage, qualification, approval routing, and notification trigger preview.
-- v6.0.1 — Scheduling Engine: wire assignment, coverage, mandation, trades, and publishing logic.
+## v6.2.0 — Backend Integration Start
 
+Requires server/Coolify/database work.
 
-## v5.15.4 — Dashboard Reference Component Rollout
+- Backend app
+- Database
+- Environment variables
+- Login/session persistence
+- Users/roles/agencies persistence
 
-- Extracted the dashboard reference button/action styling into reusable production classes.
-- Updated the working dashboard to use reference-style action buttons and build-path copy.
-- Converted `/pages/calendar/schedule.html` away from the old app-shell navigation into the new dashboard shell.
-- Preserved `/pages/admin/dashboard-reference.html` as the visual target and `/pages/admin/ui-catalog.html` as the implementation guide.
-- Updated release/cache markers to v5.15.4 and rebuilt manifests/checksums.
+## v6.3.0 — Real Employee + Agency Data
 
-## Current: v5.15.4 Working Dashboard Split
+## v6.4.0 — Real Schedule Persistence
 
-## Current: v5.15.4 Working Dashboard Split
-- UI Catalog standards are now active through the app shell.
-- `/index.html` remains the independent visual target/placeholder.
-- Existing operational pages now normalize buttons, tables, forms, badges, surfaces, and command bars.
+## v6.5.0 — Live Scheduling Intelligence
 
-## Next: v5.15.4 Dashboard Polish
-- Refine dashboard cards, quick actions, staffing summary, pending approvals, and today's schedule widgets.
-- Convert dashboard sections to the same UI Catalog primitives.
-- Tighten desktop spacing and wide-screen behavior.
+## v6.6.0 — Reports, Audit, Revision History
 
-## Then: v5.15.4 Navigation Enhancements
-- Breadcrumbs, favorites, recently visited pages, better search, and keyboard shortcut planning.
+## v6.7.0 — Real Notifications
 
-## v5.16 Notification Center
-- In-app notification center, unread badges, toasts, reminder framework, and email groundwork.
+## v6.8.0 — Scenario Planner
 
-# Immediate Roadmap
+## v6.9.0 — Production Hardening
 
-## v5.15.x Foundation polish
-- Review UI Component Catalog and apply component standards across remaining module pages.
-- Continue navigation, route, placeholder, and metadata audits.
-- Prepare v6 operational scheduling modules after the foundation is stable.
-
-# ROADMAP
-
-Updated for Signal Schedule v5.15.0 — UI & Foundation Standardization.
-
-# Signal Schedule Roadmap
-
-## Completed
-
-- v5.1 Standalone split
-- v5.2 Repository organization
-- v5.3 Metadata stability
-- v5.4 Registry foundation
-- v5.5 Page architecture
-- v5.6 Workspace foundation
-- v5.7 Request foundation and navigation cleanup
-- v5.8 Leave banks and data layer cleanup
-- v5.9 Approval foundation, SQL audit, and UI modernization
-- v5.10 Identity and login foundation
-- v5.11 Agency setup wizard and sanitized demo data
-- v5.12 Visibility and View Engine
-
-## Next
-
-- v5.13 Operations Foundation: Open Shift/VOT, notifications, dashboard widgets
-- v5.14 Staffing & Assignment Foundation
-- v5.15 Publishing & Data Management
-- v5.16 Advanced Tools & Backend Readiness
-- v6.0 Multi-User Request Engine
-
-
-## v5.15.0 Dashboard & Clean Route Foundation
-
-Adds dashboard navigation, agency branding placeholder, and clean route planning. The long-term dashboard target remains the mission-control layout with metrics, layer controls, quick actions, schedule overview, and agency branding.
+## v7.0.0 — Commercial Release

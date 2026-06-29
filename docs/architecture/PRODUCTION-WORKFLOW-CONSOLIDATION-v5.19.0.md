@@ -1,6 +1,6 @@
-# Production Workflow Consolidation — v6.0.1
+# Production Workflow Consolidation — v6.1.0
 
-Signal Schedule v6.0.1 moves the application from feature-preview pages toward production workflows.
+Signal Schedule v6.1.0 moves the application from feature-preview pages toward production workflows.
 
 ## Production workflows
 
