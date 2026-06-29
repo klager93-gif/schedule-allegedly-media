@@ -1,24 +1,13 @@
-# Signal Schedule v5.16.0 — Notification Center
+# Build Manifest — v5.16.1
 
-- Added static Notification Center, shell notification bell, notification drawer/inbox preview, role preferences, and UI Catalog notification components.
-- No Coolify/server configuration changes required.
+Generated: 2026-06-29T17:26:47
 
-# Build Manifest — Signal Schedule v5.16.0
+Source: v5.16.0 full replacement.
 
-Built: 2026-06-29
-Package: full replacement
-Release: Foundation Cleanup Audit Fix
+Primary changes:
+- Grouped dashboard navigation.
+- Employee Workspace.
+- UI Catalog employee components.
+- Version/cache update.
 
-## Counts
-
-- HTML files: 59
-- CSS files: 46
-- JS files: 158
-- Total files: 477
-
-## Release Notes
-
-- Removed unused legacy shell files after confirming converted HTML pages no longer depended on them.
-- Replaced migration-copy remnants with module-specific product descriptions.
-- Preserved dashboard-reference/UI Catalog alignment.
-- Regenerated file manifest and checksums.
+File count: 480

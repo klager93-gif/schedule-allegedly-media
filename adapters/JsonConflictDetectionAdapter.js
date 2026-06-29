@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/adapters/JsonConflictDetectionAdapter.js
-Version: v5.16.0
+Version: v5.16.1
 Purpose: JSON adapter for Conflict Detection preview data.
 */
 export class JsonConflictDetectionAdapter {

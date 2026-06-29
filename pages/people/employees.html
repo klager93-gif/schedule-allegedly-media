@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/people/employees.html
-Version: v5.16.0
+Version: v5.16.1
 Purpose: Dashboard shell migrated page for Signal Schedule — Employees
 -->
 <!DOCTYPE html>
@@ -13,39 +13,40 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Employees
   <title>Signal Schedule — Employees</title>
   <meta name="description" content="Employee directory workspace for roster records, profile access, status review, and workforce administration.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.16.0">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.16.1">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Schedule Employees" data-signal-version="v5.16.0" data-signal-theme="Admin Navigation Foundation" data-signal-status="Reserved" data-signal-description="Employee directory workspace for roster records, profile access, status review, and workforce administration." data-signal-status-text="Signal Schedule v5.16.0 foundation cleanup standardized this module on the dashboard design system.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Schedule Employees" data-signal-version="v5.16.1" data-signal-theme="Admin Navigation Foundation" data-signal-status="Reserved" data-signal-description="Employee directory workspace for roster records, profile access, status review, and workforce administration." data-signal-status-text="Signal Schedule v5.16.1 foundation cleanup standardized this module on the dashboard design system.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
         <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
         <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
       </a>
-      <nav class="signal-dashboard-nav">
+      <nav class="signal-dashboard-nav signal-dashboard-nav--grouped">
+        <div class="signal-dashboard-nav__section">MAIN</div>
         <a href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <div class="signal-dashboard-nav__section">SCHEDULING</div>
         <a href="/pages/calendar/schedule.html"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
         <a href="/pages/employee/index.html"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
         <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
-        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
         <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
-        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
-        <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▧</span><span>Create Schedule</span></a>
+        <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        <div class="signal-dashboard-nav__section">PEOPLE</div>
         <a class="is-active" href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
         <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <div class="signal-dashboard-nav__section">OPERATIONS</div>
+        <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
-        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⚙</span><span>System</span></a>
-        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">◇</span><span>Admin</span></a>
+        <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
+        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
+        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
+        <div class="signal-dashboard-nav__section">DESIGN SYSTEM</div>
+        <a href="/pages/admin/dashboard-reference.html"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+        <a href="/pages/admin/ui-catalog.html"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
       </nav>
-      <div class="signal-dashboard-quick">
-        <div class="signal-dashboard-nav__section">Design System</div>
-        <div class="signal-dashboard-action">
-          <a href="/pages/admin/dashboard-reference.html"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
-          <a href="/pages/admin/ui-catalog.html"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
-          <a href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▣</span><span>Create Schedule</span></a>
-          <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
-        </div>
-      </div>
       <div class="signal-dashboard-user" aria-label="Current user preview">
         <div class="signal-dashboard-avatar">JM</div>
         <div><strong>Jordan Miller</strong><small>Administrator<br>City of Fairview</small></div>
@@ -106,56 +107,88 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Employees
         <div class="signal-dashboard-top-actions">
           <label class="signal-dashboard-search" aria-label="Search Employees"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
                     <a class="signal-dashboard-notification-bell" href="/pages/rules/notifications.html" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a>
-          JM</a>
+          <a class="signal-dashboard-avatar signal-dashboard-avatar--compact" href="/pages/identity/current-user.html" aria-label="Open current user profile">JM</a>
         </div>
       </header>
 
       <main class="signal-dashboard-content signal-dashboard-module-content schedule-placeholder-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.16.0</span><strong>People</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+          <span class="signal-dashboard-pill">v5.16.1</span><strong>People</strong><span>•</span><strong>Employee Workspace</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Directory, filters, profile preview, and quick actions</span>
         </div>
 
-<section aria-labelledby="pageTitle" class="schedule-placeholder-hero">
-<p class="schedule-kicker">Signal Schedule</p>
-<h1 id="pageTitle">Employees</h1>
-<p>Employee management is reserved for the admin-first Schedule interface.</p>
-</section>
-<section aria-labelledby="statusTitle" class="schedule-placeholder-card">
-<h2 id="statusTitle">Reserved Placeholder</h2>
-<p>Future work will move employee CRUD and profile management into this dedicated page.</p>
-<ul class="schedule-placeholder-list">
-<li><strong>Current Status</strong><span>Placeholder only. No production workflow is active from this page yet.</span></li>
-<li><strong>Admin First</strong><span>Build the complete admin interface first, then limit visibility by role.</span></li>
-<li><strong>Future Roles</strong><span>Supervisor, telecommunicator, trainee, and employee views will become filtered versions of this system.</span></li>
-</ul>
-</section>
-<section aria-labelledby="roleTitle" class="schedule-placeholder-card">
-<h2 id="roleTitle">Role Visibility Plan</h2>
-<p>This workspace now uses the shared dashboard shell so future role controls can expose the same page differently for administrators, supervisors, and employees without duplicating the interface.</p>
-</section>
-<section class="schedule-card">
-<h2>Employee Identity Model</h2>
-<p><strong>Identity rule:</strong> Human-entered identifiers belong to the agency. Database identifiers belong to the system.</p>
-<ul>
-<li><strong>Hidden system ID:</strong> internal database key, not user-facing.</li>
-<li><strong>Employee ID:</strong> admin-entered county/agency employee ID.</li>
-<li><strong>Badge Number:</strong> optional operational badge number, separate from employee ID.</li>
-<li><strong>User Login:</strong> future login account linked separately from the employee record.</li>
-<li><strong>Login Method:</strong> future users may sign in with username or email.</li>
-</ul>
-</section>
+        <section class="signal-dashboard-panel" style="padding:18px; margin-bottom:14px;">
+          <div class="signal-employee-toolbar">
+            <div>
+              <p class="schedule-kicker">Employee Workspace</p>
+              <h2 style="margin:0 0 4px;">Directory</h2>
+              <p style="margin:0; color:var(--dash-muted);">Roster-first workspace for employees, supervisors, qualifications, current assignment, and scheduling status.</p>
+            </div>
+            <div class="signal-dashboard-main-actions">
+              <a class="signal-dashboard-pill" href="/pages/people/profile.html">Open Profile Workspace</a>
+              <a class="signal-dashboard-pill" href="/pages/workspace/assignments.html">Assign Shift</a>
+            </div>
+          </div>
+          <div class="signal-employee-toolbar">
+            <label class="signal-dashboard-search" aria-label="Search employees"><span>⌕</span><input type="search" placeholder="Search name, ID, badge, supervisor, qualification..."></label>
+            <div class="signal-employee-filter-row" aria-label="Employee filters">
+              <span class="signal-employee-filter">All Statuses</span>
+              <span class="signal-employee-filter">Shift B</span>
+              <span class="signal-employee-filter">Supervisor</span>
+              <span class="signal-employee-filter">EMD</span>
+              <span class="signal-employee-filter">Instructor</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="signal-employee-grid" aria-label="Employee cards">
+          <article class="signal-dashboard-card signal-employee-card">
+            <div class="signal-employee-card__head"><div class="signal-employee-photo">JM</div><div><h3>Jordan Miller</h3><p>Dispatcher II • Shift B</p></div></div>
+            <div class="signal-employee-badges"><span class="signal-dashboard-status-pill">Active</span><span class="signal-dashboard-status-pill">EMD</span><span class="signal-dashboard-status-pill">Instructor</span></div>
+            <div class="signal-employee-meta"><div><small>Supervisor</small><strong>Emily Carter</strong></div><div><small>Assignment</small><strong>Console 3</strong></div><div><small>Seniority</small><strong>2018-04-16</strong></div><div><small>OT YTD</small><strong>42.5 hrs</strong></div></div>
+          </article>
+          <article class="signal-dashboard-card signal-employee-card">
+            <div class="signal-employee-card__head"><div class="signal-employee-photo">AR</div><div><h3>Avery Reed</h3><p>Telecommunicator • Shift A</p></div></div>
+            <div class="signal-employee-badges"><span class="signal-dashboard-status-pill">Active</span><span class="signal-dashboard-status-pill">LEADS</span><span class="signal-dashboard-status-pill">Trainer</span></div>
+            <div class="signal-employee-meta"><div><small>Supervisor</small><strong>Marcus Hill</strong></div><div><small>Assignment</small><strong>Call Take</strong></div><div><small>Seniority</small><strong>2020-09-02</strong></div><div><small>OT YTD</small><strong>18.0 hrs</strong></div></div>
+          </article>
+          <article class="signal-dashboard-card signal-employee-card">
+            <div class="signal-employee-card__head"><div class="signal-employee-photo">TS</div><div><h3>Taylor Stone</h3><p>Trainee • Shift C</p></div></div>
+            <div class="signal-employee-badges"><span class="signal-dashboard-status-pill">Training</span><span class="signal-dashboard-status-pill">Radio</span></div>
+            <div class="signal-employee-meta"><div><small>Supervisor</small><strong>Nina Brooks</strong></div><div><small>Assignment</small><strong>Shadow</strong></div><div><small>Seniority</small><strong>2025-01-13</strong></div><div><small>OT YTD</small><strong>0.0 hrs</strong></div></div>
+          </article>
+        </section>
+
+        <section class="signal-employee-profile-grid" style="margin-top:14px;">
+          <article class="signal-dashboard-panel" style="padding:18px;">
+            <p class="schedule-kicker">Profile Preview</p>
+            <h2 style="margin-top:0;">Jordan Miller</h2>
+            <div class="signal-employee-meta">
+              <div><small>Employee ID</small><strong>FD-1042</strong></div><div><small>Badge</small><strong>317</strong></div>
+              <div><small>FLSA Cycle</small><strong>36 / 44</strong></div><div><small>Leave Bank</small><strong>84.0 hrs</strong></div>
+              <div><small>Qualifications</small><strong>EMD, LEADS, CTO</strong></div><div><small>Restriction</small><strong>None</strong></div>
+            </div>
+          </article>
+          <article class="signal-dashboard-panel" style="padding:18px;">
+            <p class="schedule-kicker">Activity Timeline</p>
+            <div class="signal-employee-timeline">
+              <article><strong>Leave request submitted</strong><small>Vacation request for July 10 • pending supervisor review</small></article>
+              <article><strong>Training completed</strong><small>Annual policy acknowledgement marked complete</small></article>
+              <article><strong>Assignment changed</strong><small>Moved from Console 2 to Console 3 for coverage balance</small></article>
+            </div>
+          </article>
+        </section>
 
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.16.0 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.16.1 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
     </div>
   </div>
-  <script src="/assets/release-metadata.js?v=5.16.0"></script>
-  <script src="/assets/config.js?v=5.16.0"></script>
-  <script src="/assets/routes.js?v=5.16.0"></script>
-  <script src="/assets/navigation.js?v=5.16.0"></script>
-  <script src="/assets/features.js?v=5.16.0"></script>
-  <script src="/assets/roles.js?v=5.16.0"></script>
-  <script src="/assets/status.js?v=5.16.0"></script>
-  <script src="/assets/data-loader.js?v=5.16.0"></script>
+  <script src="/assets/release-metadata.js?v=5.16.1"></script>
+  <script src="/assets/config.js?v=5.16.1"></script>
+  <script src="/assets/routes.js?v=5.16.1"></script>
+  <script src="/assets/navigation.js?v=5.16.1"></script>
+  <script src="/assets/features.js?v=5.16.1"></script>
+  <script src="/assets/roles.js?v=5.16.1"></script>
+  <script src="/assets/status.js?v=5.16.1"></script>
+  <script src="/assets/data-loader.js?v=5.16.1"></script>
 </body>
 </html>

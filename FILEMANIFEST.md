@@ -1,4 +1,4 @@
-# File Manifest
+# File Manifest — v5.16.1
 
 - `.gitattributes`
 - `.gitignore`
@@ -249,6 +249,7 @@
 - `docs/foundation/LEAVE-BANKS-FOUNDATION-v5.8.md`
 - `docs/foundation/LEAVE-REQUESTS-FOUNDATION.md`
 - `docs/foundation/MINIMUM-STAFFING-FOUNDATION.md`
+- `docs/foundation/NAVIGATION-REORGANIZATION-v5.16.1.md`
 - `docs/foundation/OPEN-SHIFTS-FOUNDATION.md`
 - `docs/foundation/PUBLISHING-FOUNDATION.md`
 - `docs/foundation/REQUEST-FOUNDATION-v5.7.md`
@@ -259,6 +260,7 @@
 - `docs/migrations/STANDALONE-MIGRATION.md`
 - `docs/releases/LATEST_RELEASE.md`
 - `docs/releases/RELEASE-v5.16.0.md`
+- `docs/releases/RELEASE-v5.16.1.md`
 - `docs/ui/COMPONENT-CATALOG.md`
 - `docs/ui/SAVED-SCHEDULES-UI.md`
 - `docs/ui/UI-COPY-BOX-CLEANUP-v5.9.md`

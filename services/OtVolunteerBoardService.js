@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/services/OtVolunteerBoardService.js
-Version: v5.16.0
+Version: v5.16.1
 Purpose: Service layer for OT Volunteer Board Foundation
 */
 import { getOtVolunteerBoardPreview } from '../repositories/OtVolunteerBoardRepository.js';

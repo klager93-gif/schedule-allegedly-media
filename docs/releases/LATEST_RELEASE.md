@@ -1,4 +1,4 @@
-# Signal Schedule v5.16.0 — Foundation Cleanup Audit Fix
+# Signal Schedule v5.16.1 — Foundation Cleanup Audit Fix
 
 Released: 2026-06-29
 
@@ -12,7 +12,7 @@ Cleaned up the dashboard-shell rollout after the v5.15.5 migration. This release
 - Replaced remaining "migrated from legacy app shell" page copy with module-specific product descriptions.
 - Replaced admin placeholder wording on Employees, Reports, Minimum Staffing, and Weekly Schedule pages where applicable.
 - Preserved the dashboard-reference design system and UI Catalog as the source of truth.
-- Updated release/cache markers to v5.16.0.
+- Updated release/cache markers to v5.16.1.
 - Regenerated file manifest and checksums.
 - No server or Coolify configuration changes required.
 

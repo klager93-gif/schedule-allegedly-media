@@ -5,48 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Signal Schedule | Dashboard Design Reference</title>
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.16.0" />
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.16.1" />
 </head>
-<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="Dashboard Design Reference" data-signal-version="v5.16.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Preserved dashboard visual reference used to guide the production dashboard buildout.">
+<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="Dashboard Design Reference" data-signal-version="v5.16.1" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Preserved dashboard visual reference used to guide the production dashboard buildout.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
-        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule" />
+        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
         <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
       </a>
-
-      <nav class="signal-dashboard-nav">
-        <a class="is-active" href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+      <nav class="signal-dashboard-nav signal-dashboard-nav--grouped">
+        <div class="signal-dashboard-nav__section">MAIN</div>
+        <a href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <div class="signal-dashboard-nav__section">SCHEDULING</div>
         <a href="/pages/calendar/schedule.html"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
         <a href="/pages/employee/index.html"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
         <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
-        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
         <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
-        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
-        <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▧</span><span>Create Schedule</span></a>
+        <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        <div class="signal-dashboard-nav__section">PEOPLE</div>
         <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
         <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <div class="signal-dashboard-nav__section">OPERATIONS</div>
+        <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
-        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⚙</span><span>System</span></a>
-        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">◇</span><span>Admin</span></a>
+        <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
+        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
+        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
+        <div class="signal-dashboard-nav__section">DESIGN SYSTEM</div>
+        <a class="is-active" href="/pages/admin/dashboard-reference.html"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+        <a href="/pages/admin/ui-catalog.html"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
       </nav>
-
-      <div class="signal-dashboard-quick">
-        <div class="signal-dashboard-nav__section">Quick Actions</div>
-        <div class="signal-dashboard-action">
-          <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">＋</span><span>Add Request</span></a>
-          <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shift Board</span></a>
-          <a href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▣</span><span>Create Schedule</span></a>
-          <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>View Daily Board</span></a>
-        </div>
-      </div>
-
       <div class="signal-dashboard-user" aria-label="Current user preview">
         <div class="signal-dashboard-avatar">JM</div>
-        <div>
-          <strong>Jordan Miller</strong>
-          <small>Administrator<br>City of Fairview</small>
-        </div>
+        <div><strong>Jordan Miller</strong><small>Administrator<br>City of Fairview</small></div>
       </div>
     </aside>
 
@@ -216,7 +211,7 @@
       </main>
 
       <footer class="signal-dashboard-footer">
-        <div>© 2026 Signal Schedule <span>•</span> Dashboard Design Reference <span>•</span> v5.16.0</div>
+        <div>© 2026 Signal Schedule <span>•</span> Dashboard Design Reference <span>•</span> v5.16.1</div>
         <div>Administrator <span>•</span> Jordan Miller <span>•</span> <a href="/pages/identity/current-user.html">City of Fairview</a></div>
         <nav aria-label="Footer links"><a href="/README.md">Documentation ↗</a></nav>
       </footer>

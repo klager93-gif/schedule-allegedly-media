@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/services/ConflictDetectionService.js
-Version: v5.16.0
+Version: v5.16.1
 Purpose: Conflict Detection preview service and grouping helpers.
 */
 export class ConflictDetectionService {

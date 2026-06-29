@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/staffing/staffing-engine.js
-Version: v5.16.0
+Version: v5.16.1
 Purpose: Render Staffing Engine foundation preview.
 */
 const $ = (selector) => document.querySelector(selector);

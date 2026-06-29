@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/services/TrainingCertificationService.js
-Version: v5.16.0
+Version: v5.16.1
 Purpose: Training & Certifications service helpers
 */
 import { getPreview } from '../repositories/TrainingCertificationRepository.js';
