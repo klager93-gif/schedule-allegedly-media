@@ -1,4 +1,4 @@
-# Signal Schedule v6.1.1 Database Schema Draft
+# Signal Schedule v6.2.0 Database Schema Draft
 
 This is a planning document only. Do not apply it to production until the v6.2 backend/database migration is started.
 

@@ -1,21 +1,16 @@
-# v6.1.1 — Repository Architecture & Data Contracts
-
-- Restored clean-root architecture by removing physical top-level alias folders.
-- Preserved public clean URLs with `_redirects` rewrite rules.
-- Added data contracts, API contract draft, and database schema draft.
-- Added server/database readiness note for v6.2.0.
-
 # Changelog
 
-## v6.1.1 — Production Foundation Audit & Setup Polish
+## v6.2.0 — Backend Integration Start
 
-- Added physical clean URL alias folders for `/agency/`, `/users/`, and `/roles/`.
-- Updated the central route registry to use clean production administration routes.
-- Updated the grouped navigation registry to include Agency Setup, Users, and Roles & Permissions.
-- Added production foundation audit documentation.
-- Updated version/cache markers to `v6.1.1`.
-- Confirmed no Coolify, PHP, MySQL, or server changes are required for this static release.
+- Added long-term Node + TypeScript + Fastify backend foundation.
+- Added Postgres + Prisma schema for agencies, users, roles, permissions, employees, schedules, assignments, leave, revisions, and audit logs.
+- Added auth/login/logout API foundation.
+- Added agencies, users, roles, and health endpoints.
+- Added server-side clean URL route map.
+- Added Dockerfile and Coolify setup documentation.
+- Added API contract draft for v6.2.0.
+- Marked this release as requiring backend/Postgres setup for full deployment.
 
-## v6.0.0 — Production Ready Foundation
+## v6.1.1 — Clean URL Routing Hotfix
 
-- Added production readiness foundation, identity, agency, users, roles, and server/database planning surfaces.
+- Restored lightweight clean URL alias folders for static Coolify/Nginx hosting.

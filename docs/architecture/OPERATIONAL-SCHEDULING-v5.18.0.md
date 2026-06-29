@@ -1,4 +1,4 @@
-# Signal Schedule v6.1.1 — Operational Scheduling Part 2
+# Signal Schedule v6.2.0 — Operational Scheduling Part 2
 
 This release connects the Schedule Builder to operational workflows that affect staffing: mandation, shift trades, open shifts/VOT, leave impact, approval routing, and notifications.
 

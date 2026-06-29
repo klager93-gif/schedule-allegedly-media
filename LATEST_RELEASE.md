@@ -1,11 +1,23 @@
-# Signal Schedule v6.1.1 — Repository Architecture & Data Contracts
+# Signal Schedule v6.2.0 — Backend Integration Start
 
-Release date: 2026-06-29
+Signal Schedule v6.2.0 starts the long-term backend architecture with Node, TypeScript, Fastify, Postgres, and Prisma.
 
-v6.1.1 restores the clean-root repository architecture, preserves clean public URLs through routing aliases, and adds the first production data/API/database contract drafts for the v6.2 backend phase.
+## Server required
 
-## Server / Coolify
+This is the first release that introduces backend/database requirements. The static frontend still exists, but production login, roles, users, agency data, and server-side routing now have a backend foundation.
 
-No Coolify, PHP, MySQL, or server changes are required for v6.1.1.
+## Added
 
-The next backend phase, v6.2.0, is where server/database work begins.
+- `server/` backend application
+- Fastify API foundation
+- Prisma Postgres schema
+- Auth/login API foundation
+- Agencies/users/roles API endpoints
+- Server-side clean URL route map
+- Dockerfile for app container
+- `docker-compose.example.yml`
+- Coolify Node/Postgres setup documentation
+
+## Important
+
+Physical alias folders remain temporarily for the current static deployment. After the Node app is deployed and backend routing is confirmed, remove those temporary alias folders in a later cleanup release.

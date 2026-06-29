@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/features.js
-Version: v6.1.1
+Version: v6.2.0
 Purpose: Feature flag registry for foundation-era modules and incomplete workflow gates.
 */
 window.SIGNAL_SCHEDULE_FEATURES = Object.freeze({

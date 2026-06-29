@@ -1,6 +1,6 @@
 # File Manifest
 
-Generated for Signal Schedule v6.1.1.
+Generated for Signal Schedule v6.2.0.
 
 ```text
        252  .gitattributes
@@ -290,7 +290,7 @@ Generated for Signal Schedule v6.1.1.
       1128  docs/foundation/SAVED-SCHEDULES-FOUNDATION.md
       1146  docs/foundation/VISIBILITY-VIEW-ENGINE-v5.12.md
        610  docs/hotfixes/EMPLOYEE-PORTAL-NAVIGATION-HOTFIX.md
-       822  docs/hotfixes/ROUTING-HOTFIX-v6.1.1.md
+       822  docs/hotfixes/ROUTING-HOTFIX-v6.2.0.md
       1040  docs/migrations/STANDALONE-MIGRATION.md
       1515  docs/releases/LATEST_RELEASE.md
        926  docs/releases/RELEASE-v5.16.0.md

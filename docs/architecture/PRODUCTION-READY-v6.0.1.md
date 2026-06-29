@@ -1,4 +1,4 @@
-# Signal Schedule v6.1.1 — Production Ready Foundation
+# Signal Schedule v6.2.0 — Production Ready Foundation
 
 This release establishes the production-readiness surface for authentication, users, roles, agency setup, imports, exports, and persistence planning.
 
@@ -31,6 +31,6 @@ Before true production use, add:
 - Backup strategy
 
 
-## v6.1.1 stabilization addendum
+## v6.2.0 stabilization addendum
 
 This release keeps Signal Schedule static-deployable while tightening the production foundation. Clean aliases for Agency Setup, Users, and Roles & Permissions now exist as physical alias folders, and the shared route/navigation registries were updated so production administration pages are reachable without legacy `/pages/...` paths.

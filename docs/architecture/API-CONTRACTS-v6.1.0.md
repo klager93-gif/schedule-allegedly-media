@@ -1,4 +1,4 @@
-# Signal Schedule v6.1.1 API Contract Draft
+# Signal Schedule v6.2.0 API Contract Draft
 
 ## Auth
 - `POST /api/auth/login`
@@ -50,4 +50,4 @@
 
 ## v6.2 Implementation Note
 
-These are contracts only in v6.1.1. Real endpoints begin in v6.2 and will require server/database work.
+These are contracts only in v6.2.0. Real endpoints begin in v6.2 and will require server/database work.

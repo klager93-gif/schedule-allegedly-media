@@ -1,4 +1,4 @@
-# Signal Schedule v6.1.1 Routing Hotfix
+# Signal Schedule v6.2.0 Routing Hotfix
 
 ## Reason
 

@@ -1,0 +1,208 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserStatus {
+  active
+  inactive
+  invited
+  locked
+}
+
+enum EmployeeStatus {
+  active
+  inactive
+  leave
+  training
+}
+
+enum ScheduleStatus {
+  draft
+  published
+  archived
+}
+
+model Agency {
+  id        String   @id @default(cuid())
+  name      String
+  slug      String   @unique
+  timezone  String   @default("America/Chicago")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  users     User[]
+  employees Employee[]
+  schedules Schedule[]
+}
+
+model User {
+  id           String     @id @default(cuid())
+  agencyId     String?
+  email        String     @unique
+  name         String
+  passwordHash String?
+  status       UserStatus @default(invited)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  agency    Agency?    @relation(fields: [agencyId], references: [id])
+  employee  Employee?
+  userRoles UserRole[]
+  auditLogs AuditLog[]
+}
+
+model Role {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  userRoles       UserRole[]
+  rolePermissions RolePermission[]
+}
+
+model Permission {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+
+  rolePermissions RolePermission[]
+}
+
+model UserRole {
+  userId String
+  roleId String
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  @@id([userId, roleId])
+}
+
+model RolePermission {
+  roleId       String
+  permissionId String
+
+  role       Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@id([roleId, permissionId])
+}
+
+model Employee {
+  id            String         @id @default(cuid())
+  agencyId      String
+  userId        String?        @unique
+  employeeNumber String?
+  firstName     String
+  lastName      String
+  position      String?
+  supervisor    String?
+  shiftGroup    String?
+  status        EmployeeStatus @default(active)
+  seniorityDate DateTime?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  agency       Agency       @relation(fields: [agencyId], references: [id], onDelete: Cascade)
+  user         User?        @relation(fields: [userId], references: [id])
+  assignments  Assignment[]
+  leaveRequests LeaveRequest[]
+  qualifications EmployeeQualification[]
+}
+
+model Qualification {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  name        String
+  description String?
+  createdAt   DateTime @default(now())
+
+  employees EmployeeQualification[]
+}
+
+model EmployeeQualification {
+  employeeId      String
+  qualificationId String
+  expiresAt       DateTime?
+
+  employee      Employee      @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+  qualification Qualification @relation(fields: [qualificationId], references: [id], onDelete: Cascade)
+
+  @@id([employeeId, qualificationId])
+}
+
+model Schedule {
+  id        String         @id @default(cuid())
+  agencyId  String
+  name      String
+  status    ScheduleStatus @default(draft)
+  startsAt  DateTime
+  endsAt    DateTime
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
+
+  agency      Agency       @relation(fields: [agencyId], references: [id], onDelete: Cascade)
+  assignments Assignment[]
+  revisions   ScheduleRevision[]
+}
+
+model Assignment {
+  id          String   @id @default(cuid())
+  scheduleId  String
+  employeeId  String?
+  title       String
+  startsAt    DateTime
+  endsAt      DateTime
+  position    String?
+  location    String?
+  status      String   @default("draft")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  schedule Schedule  @relation(fields: [scheduleId], references: [id], onDelete: Cascade)
+  employee Employee? @relation(fields: [employeeId], references: [id])
+}
+
+model LeaveRequest {
+  id          String   @id @default(cuid())
+  employeeId  String
+  type        String
+  status      String   @default("pending")
+  startsAt    DateTime
+  endsAt      DateTime
+  reason      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  employee Employee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+}
+
+model ScheduleRevision {
+  id         String   @id @default(cuid())
+  scheduleId String
+  label      String
+  snapshot   Json
+  createdAt  DateTime @default(now())
+
+  schedule Schedule @relation(fields: [scheduleId], references: [id], onDelete: Cascade)
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  entity    String
+  entityId  String?
+  metadata  Json?
+  createdAt DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id])
+}

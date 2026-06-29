@@ -1,28 +1,21 @@
-# Signal Schedule v6.1.1 Validation Checklist
+# Validation — v6.2.0
 
-## Clean root
-
-- Confirm physical top-level alias folders were removed: `/schedule/`, `/employees/`, `/agency/`, `/users/`, `/roles/`, etc.
-- Confirm root keeps only infrastructure and long-lived app folders.
-
-## Clean URLs
-
-Validate these routes after deployment:
+## Static routes to validate before backend cutover
 
 - `/dashboard/`
+- `/calendar/`
 - `/schedule/`
 - `/employees/`
 - `/leave/`
-- `/requests/`
-- `/agency/`
 - `/users/`
 - `/roles/`
 - `/developer/ui-catalog/`
 
-## Legacy paths
+## Backend validation after Node/Postgres setup
 
-- Confirm old physical paths redirect to clean URLs.
-
-## Server
-
-- No Coolify/PHP/MySQL change should be needed for this build.
+- `GET /api/health` returns status and database status.
+- Prisma can connect to Postgres using `DATABASE_URL`.
+- Initial schema migration can run.
+- Demo seed can run in non-production/test environment.
+- `POST /api/auth/login` responds with user data for seeded user.
+- `GET /api/agencies`, `/api/users`, and `/api/roles` return JSON.

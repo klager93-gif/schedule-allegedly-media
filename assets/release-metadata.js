@@ -1,6 +1,7 @@
 window.SIGNAL_SCHEDULE_RELEASE = Object.freeze({
-  version: 'v6.1.1',
-  name: 'Routing Hotfix',
+  version: 'v6.2.0',
+  name: 'Backend Integration Start',
   date: '2026-06-29',
-  serverRequired: false
+  serverRequired: true,
+  stack: 'Node + TypeScript + Fastify + Postgres + Prisma'
 });

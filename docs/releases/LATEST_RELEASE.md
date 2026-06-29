@@ -1,8 +1,8 @@
-# Signal Schedule v6.1.1 — Routing & Clean URL Foundation
+# Signal Schedule v6.2.0 — Routing & Clean URL Foundation
 
 Clean URL alias release.
 
-# Signal Schedule v6.1.1 — Foundation Cleanup Audit Fix
+# Signal Schedule v6.2.0 — Foundation Cleanup Audit Fix
 
 Released: 2026-06-29
 
@@ -16,7 +16,7 @@ Cleaned up the dashboard-shell rollout after the v5.15.5 migration. This release
 - Replaced remaining "migrated from legacy app shell" page copy with module-specific product descriptions.
 - Replaced admin placeholder wording on Employees, Reports, Minimum Staffing, and Weekly Schedule pages where applicable.
 - Preserved the dashboard-reference design system and UI Catalog as the source of truth.
-- Updated release/cache markers to v6.1.1.
+- Updated release/cache markers to v6.2.0.
 - Regenerated file manifest and checksums.
 - No server or Coolify configuration changes required.
 

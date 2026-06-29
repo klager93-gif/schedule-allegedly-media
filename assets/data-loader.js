@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/data-loader.js
-Version: v6.1.1
+Version: v6.2.0
 Purpose: Root-safe JSON loading helpers with graceful fallback support for foundation pages.
 */
 (function () {

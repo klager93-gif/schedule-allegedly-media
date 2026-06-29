@@ -1,4 +1,4 @@
-# Signal Schedule v6.1.1 — Production Ready Foundation
+# Signal Schedule v6.2.0 — Production Ready Foundation
 
 This release establishes the production-readiness surface for authentication, users, roles, agency setup, imports, exports, and persistence planning.
 

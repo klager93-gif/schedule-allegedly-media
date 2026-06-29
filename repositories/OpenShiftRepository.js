@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/repositories/OpenShiftRepository.js
-Version: v6.1.1
+Version: v6.2.0
 Purpose: Repository boundary for Open Shifts / VOT Foundation preview data.
 */
 export class OpenShiftRepository {

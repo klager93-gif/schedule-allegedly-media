@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: components/footer.js
-Version: v6.1.1
+Version: v6.2.0
 Purpose: Render lightweight Schedule-specific footer across standalone Signal Schedule pages using release metadata.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Render lightweight Schedule-specific footer across standalone Signal Sc
   if (!mount) return;
 
   const release = window.SIGNAL_SCHEDULE_RELEASE || {};
-  const version = release.version || document.body?.dataset?.signalVersion || 'v6.1.1';
+  const version = release.version || document.body?.dataset?.signalVersion || 'v6.2.0';
   const releaseName = release.releaseName || 'Configuration & Registry Foundation';
 
   mount.innerHTML = `

@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/pages/people/qualifications.js
-Version: v6.1.1
+Version: v6.2.0
 Purpose: Render Qualifications & Certification Engine preview with license numbers, notes, and role-based panels.
 */
 import { JsonQualificationsCertificationAdapter } from '../../adapters/JsonQualificationsCertificationAdapter.js';
