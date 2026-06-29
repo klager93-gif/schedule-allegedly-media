@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/workspace/daily-board.js
-Version: v5.16.1
+Version: v5.16.2
 Purpose: Render Daily Schedule Board foundation preview
 */
 import { getDailyBoardPreview } from '../../services/DailyBoardService.js';

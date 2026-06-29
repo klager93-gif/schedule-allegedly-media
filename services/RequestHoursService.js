@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/services/RequestHoursService.js
-Version: v5.16.1
+Version: v5.16.2
 Purpose: Shared preview service for leave/VOT request hour calculation and admin override rules.
 */
 export class RequestHoursService {

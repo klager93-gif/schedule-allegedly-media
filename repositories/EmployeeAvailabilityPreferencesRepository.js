@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/repositories/EmployeeAvailabilityPreferencesRepository.js
-Version: v5.16.1
+Version: v5.16.2
 Purpose: Repository boundary for employee availability, preferences, restrictions, and reusable view group filters.
 */
 export class EmployeeAvailabilityPreferencesRepository {

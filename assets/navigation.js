@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v5.16.1
+Version: v5.16.2
 Purpose: Central grouped navigation registry for dashboard shell navigation.
 */
 (function () {
@@ -10,7 +10,7 @@ Purpose: Central grouped navigation registry for dashboard shell navigation.
   const path = (key, fallback) => routes[key] || fallback;
   const item = (label, href, icon, permission) => Object.freeze({ label, href, icon, permission: permission || 'authenticated' });
   window.SIGNAL_SCHEDULE_NAVIGATION = Object.freeze({
-    version: 'v5.16.1',
+    version: 'v5.16.2',
     labels: Object.freeze({
       [path('dashboard','/index.html')]: 'Dashboard',
       [path('calendar','/pages/calendar/schedule.html')]: 'Calendar',

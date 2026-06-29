@@ -1,5 +1,11 @@
 
-## v5.16.1 — Navigation & Employee Workspace
+## v5.16.2 — Operations Workspace
+- Added Operations Workspace surface for assignment, leave, approvals, open shifts, coverage impact, and dashboard intelligence previews.
+- Added reusable operations cards, metric tiles, chips, lanes, and warning states to the dashboard design system.
+- Updated Assignment, Leave Banks, Approvals, Dashboard, and UI Catalog surfaces with v5.16.2 operations components.
+
+
+## v5.16.2 — Navigation & Employee Workspace
 
 - Reorganized sidebar navigation into grouped sections.
 - Updated every dashboard-shell page to inherit the grouped navigation.
@@ -8,18 +14,18 @@
 - Added employee workspace components to the UI Catalog.
 - Fixed malformed compact user avatar markup in the top action bar.
 
-# Signal Schedule v5.16.1 — Notification Center
+# Signal Schedule v5.16.2 — Notification Center
 
 - Added static Notification Center, shell notification bell, notification drawer/inbox preview, role preferences, and UI Catalog notification components.
 - No Coolify/server configuration changes required.
 
-## v5.16.1 — Foundation Cleanup Audit Fix
+## v5.16.2 — Foundation Cleanup Audit Fix
 
 - Removed unused root legacy shell files: `app-shell.css` and `app-shell.js`.
 - Replaced remaining legacy migration copy with product-ready module descriptions.
 - Replaced placeholder wording on key reserved workspaces where practical.
 - Preserved the dashboard design system, dashboard reference, and UI Catalog as the production UI source of truth.
-- Updated release/cache markers to v5.16.1 and regenerated manifests/checksums.
+- Updated release/cache markers to v5.16.2 and regenerated manifests/checksums.
 - No server or Coolify configuration changes required.
 
 ## v5.15.4 — Dashboard UI Catalog Rebuild
