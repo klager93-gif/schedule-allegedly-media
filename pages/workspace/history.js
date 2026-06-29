@@ -1,4 +1,4 @@
-/* Signal Schedule | Signal Schedule | schedule/pages/workspace/history.js | v5.18.0 */
+/* Signal Schedule | Signal Schedule | schedule/pages/workspace/history.js | v5.19.0 */
 const state={items:[],filter:''};
 const $=(s)=>document.querySelector(s);
 const esc=(v)=>String(v??'').replace(/[&<>"']/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

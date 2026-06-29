@@ -1,0 +1,199 @@
+<!--
+Signal Schedule
+Area: Signal Schedule
+File: publishing/index.html
+Version: v5.19.0
+Purpose: Dashboard shell migrated page for Publishing
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Schedule — Publishing</title>
+  <meta name="description" content="Review draft schedule readiness, published versions, immutable snapshots, rollback points, and employee-facing publication controls.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.19.0">
+  <link rel="stylesheet" href="/pages/workspace/workspace.css?v=5.19.0">
+  <link rel="stylesheet" href="/pages/workspace/publishing.css?v=5.19.0">
+  <link rel="canonical" href="https://schedule.allegedly-media.com/publishing/">
+</head>
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Publishing" data-signal-version="v5.19.0" data-signal-description="Schedule publishing beta foundation." data-signal-theme="Dashboard Shell Rollout" data-signal-status="Design Rollout" data-signal-status-text="Signal Schedule v5.19.0 foundation cleanup standardized this module on the dashboard design system.">
+  <div class="signal-dashboard-shell signal-dashboard-shell-wide">
+    <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
+      <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
+        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
+        <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
+      </a>
+      <nav class="signal-dashboard-nav signal-dashboard-nav--grouped">
+        <div class="signal-dashboard-nav__section">MAIN</div>
+        <a href="/dashboard/"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <div class="signal-dashboard-nav__section">SCHEDULING</div>
+        <a href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/my-schedule/"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
+        <a href="/open-shifts/"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/trades/"><span class="signal-dashboard-icon">⇄</span><span>Shift Trades</span></a>
+        <a href="/mandation/"><span class="signal-dashboard-icon">⚑</span><span>Mandation</span></a>
+        <a href="/assignments/"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        <div class="signal-dashboard-nav__section">PEOPLE</div>
+        <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave Management</span></a>
+        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
+        <div class="signal-dashboard-nav__section">OPERATIONS</div>
+        <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/publishing/"><span class="signal-dashboard-icon">⇧</span><span>Publishing</span></a>
+        <a href="/audit/"><span class="signal-dashboard-icon">◷</span><span>Audit Trail</span></a>
+        <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
+        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
+        <a href="/admin/"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
+        <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
+        <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+        <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+      </nav>
+      <div class="signal-dashboard-user" aria-label="Current user preview">
+        <div class="signal-dashboard-avatar">JM</div>
+        <div><strong>Jordan Miller</strong><small>Administrator<br>City of Fairview</small></div>
+      </div>
+    </aside>
+
+    <div class="signal-dashboard-main">
+      <header class="signal-dashboard-topbar">
+        <div class="signal-dashboard-title"><h1>Publishing</h1><p>Review draft schedule readiness, published versions, immutable snapshots, rollback points, and employee-facing publication controls.</p></div>
+        <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation">
+
+          <a href="/dashboard/">Dashboard</a>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/calendar/">Schedules</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/calendar/">Calendar <small>Live</small></a>
+              <a href="/schedule/">Builder <small>Live</small></a>
+              <a href="/daily-board/">Daily Board <small>Live</small></a>
+              <a href="/pages/workspace/weekly-board.html">Weekly Board <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/requests/">Requests</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/requests/">Requests <small>Live</small></a>
+              <a href="/requests/">Approvals <small>Live</small></a>
+              <a href="/open-shifts/">Open Shifts <small>Live</small></a>
+              <a href="/trades/">Trades <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/employees/">Employees</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/employees/">Employees <small>Live</small></a>
+              <a href="/employees/profile/">Profiles <small>Live</small></a>
+              <a href="/pages/people/qualifications.html">Qualifications <small>Live</small></a>
+              <a href="/pages/people/training.html">Training <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/reports/">Reports</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/reports/">Reports <small>Live</small></a>
+              <a href="/pages/admin/data-export.html">Data Export <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/system/">System</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/admin/">Settings <small>Live</small></a>
+              <a href="/system/">System Health <small>Live</small></a>
+              <a href="/pages/admin/database-audit.html">Database Audit <small>Live</small></a>
+              <a href="/pages/admin/data-tools.html">Data Tools <small>Live</small></a>
+              <a href="/developer/ui-catalog/">UI Catalog <small>Dev</small></a>
+            </div>
+          </div>
+        </nav>
+        <div class="signal-dashboard-top-actions">
+          <label class="signal-dashboard-search" aria-label="Search Publishing"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
+                    <a class="signal-dashboard-notification-bell" href="/notifications/" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a>
+          <a class="signal-dashboard-avatar signal-dashboard-avatar--compact" href="/account/" aria-label="Open current user profile">JM</a>
+        </div>
+      </header>
+
+      <main class="signal-dashboard-content signal-dashboard-module-content schedule-shell workspace-shell publishing-shell">
+        <div class="signal-dashboard-status">
+          <span class="signal-dashboard-pill">v5.19.0</span><strong>Scheduling Workspace</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+        </div>
+
+<section class="workspace-header schedule-card publishing-hero">
+<div>
+<p class="schedule-kicker">Signal Schedule v5.19.0</p>
+<h1>Publishing &amp; Schedule Snapshots</h1>
+<p>Move from draft planning into employee-facing schedules with publish readiness checks, immutable snapshots, rollback points, and visibility controls.</p>
+</div>
+<div aria-label="Publishing actions" class="workspace-actions">
+<button class="schedule-btn schedule-btn--secondary" type="button">Run readiness check</button>
+<button class="schedule-btn schedule-btn--secondary" type="button">Preview employee view</button>
+<button class="schedule-btn schedule-btn--primary" type="button">Queue publish</button>
+</div>
+</section>
+<section aria-label="Publishing workspace" class="publishing-layout">
+<section aria-labelledby="publishingVersionsTitle" class="schedule-card publishing-main">
+<div class="workspace-command-row">
+<div>
+<h2 id="publishingVersionsTitle">Versions</h2>
+<p>Track draft candidates, published schedules, employee visibility, and rollback-ready records.</p>
+</div>
+<div class="workspace-filters">
+<button class="schedule-btn schedule-btn--secondary" type="button">Drafts</button>
+<button class="schedule-btn schedule-btn--secondary" type="button">Published</button>
+<button class="schedule-btn schedule-btn--secondary" type="button">Blocked</button>
+</div>
+</div>
+<div class="publishing-summary" data-publishing-summary=""></div>
+<div class="workspace-grid-wrap">
+<table class="workspace-mini-table publishing-table">
+<thead><tr><th>Version</th><th>Range</th><th>Status</th><th>Published</th><th>Visibility</th></tr></thead>
+<tbody data-publishing-versions=""></tbody>
+</table>
+</div>
+</section>
+<aside aria-labelledby="publishingInspectorTitle" class="workspace-inspector schedule-card publishing-inspector">
+<div class="workspace-inspector__head">
+<p class="schedule-kicker">Publish Inspector</p>
+<h2 id="publishingInspectorTitle">Readiness detail</h2>
+<p>Select a version or checklist item to inspect publish impact.</p>
+</div>
+<div class="workspace-inspector__body" data-publishing-inspector="">
+<div class="workspace-empty-state">Select a publish candidate to view version, snapshot, visibility, and rollback details.</div>
+</div>
+</aside>
+</section>
+<section class="workspace-lower-grid">
+<section aria-labelledby="publishChecklistTitle" class="schedule-card workspace-panel">
+<div class="workspace-panel__head"><h2 id="publishChecklistTitle">Publish Readiness Checklist</h2><span class="schedule-status-pill schedule-status-pill--warning">Beta</span></div>
+<div class="publishing-checklist" data-publishing-checklist=""></div>
+</section>
+<section aria-labelledby="snapshotsTitle" class="schedule-card workspace-panel">
+<div class="workspace-panel__head"><h2 id="snapshotsTitle">Snapshots</h2><span class="schedule-status-pill">Immutable preview</span></div>
+<div class="publishing-snapshot-list" data-publishing-snapshots=""></div>
+</section>
+</section>
+<section aria-labelledby="publicationEventsTitle" class="schedule-card workspace-panel">
+<div class="workspace-panel__head"><h2 id="publicationEventsTitle">Publication Events</h2><span class="schedule-status-pill schedule-status-pill--success">Audit-ready</span></div>
+<div class="publishing-event-list" data-publishing-events=""></div>
+</section>
+
+      </main>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.19.0 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
+    </div>
+  </div>
+  <script type="module" src="/pages/workspace/publishing.js?v=5.19.0"></script>
+  <script src="/assets/release-metadata.js?v=5.19.0"></script>
+  <script src="/assets/config.js?v=5.19.0"></script>
+  <script src="/assets/routes.js?v=5.19.0"></script>
+  <script src="/assets/navigation.js?v=5.19.0"></script>
+  <script src="/assets/features.js?v=5.19.0"></script>
+  <script src="/assets/roles.js?v=5.19.0"></script>
+  <script src="/assets/status.js?v=5.19.0"></script>
+  <script src="/assets/data-loader.js?v=5.19.0"></script>
+</body>
+</html>

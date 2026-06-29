@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/repositories/AssignmentGeneratorRepository.js
-Version: v5.18.0
+Version: v5.19.0
 Purpose: Repository boundary for Assignment Generator preview data.
 */
 export class AssignmentGeneratorRepository {

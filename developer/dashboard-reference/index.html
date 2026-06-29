@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Signal Schedule | Dashboard Design Reference</title>
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.18.0" />
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.19.0" />
   <link rel="canonical" href="https://schedule.allegedly-media.com/developer/dashboard-reference/">
 </head>
-<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="Dashboard Design Reference" data-signal-version="v5.18.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Preserved dashboard visual reference used to guide the production dashboard buildout.">
+<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="Dashboard Design Reference" data-signal-version="v5.19.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Preserved dashboard visual reference used to guide the production dashboard buildout.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
@@ -34,6 +34,8 @@
         <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/publishing/"><span class="signal-dashboard-icon">⇧</span><span>Publishing</span></a>
+        <a href="/audit/"><span class="signal-dashboard-icon">◷</span><span>Audit Trail</span></a>
         <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
         <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
@@ -41,8 +43,6 @@
         <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
         <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
         <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
-        <a href="/developer/rule-engine/"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
-        <a href="/developer/scheduling-engine/"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
       </nav>
       <div class="signal-dashboard-user" aria-label="Current user preview">
         <div class="signal-dashboard-avatar">JM</div>
@@ -70,7 +70,7 @@
             <a class="signal-dashboard-menu__trigger" href="/requests/">Requests</a>
             <div class="signal-dashboard-dropdown" role="menu">
               <a href="/requests/">Requests <small>Live</small></a>
-              <a href="/pages/requests/approvals.html">Approvals <small>Live</small></a>
+              <a href="/requests/">Approvals <small>Live</small></a>
               <a href="/pages/requests/trades.html">Trades <small>Live</small></a>
             </div>
           </div>
@@ -193,14 +193,14 @@
             </section>
 
             <section class="signal-dashboard-panel">
-              <div class="signal-dashboard-panel__head"><h2>▱ Pending Approvals</h2><a href="/pages/requests/approvals.html">Review All →</a></div>
+              <div class="signal-dashboard-panel__head"><h2>▱ Pending Approvals</h2><a href="/requests/">Review All →</a></div>
               <div class="signal-dashboard-decision-row"><div><strong>Vacation Request</strong><small>Jordan Lee • 8.0 hrs • Jun 21</small></div><span class="signal-dashboard-status-pill">Pending</span></div>
               <div class="signal-dashboard-decision-row"><div><strong>Shift Trade</strong><small>Casey Morgan • A Nights swap</small></div><span class="signal-dashboard-status-pill">Review</span></div>
               <div class="signal-dashboard-decision-row"><div><strong>Training Leave</strong><small>Taylor Brooks • Certification block</small></div><span class="signal-dashboard-status-pill">Pending</span></div>
             </section>
 
             <section class="signal-dashboard-panel">
-              <div class="signal-dashboard-panel__head"><h2>▣ Publishing Status</h2><a href="/pages/workspace/publishing.html">Open Publishing →</a></div>
+              <div class="signal-dashboard-panel__head"><h2>▣ Publishing Status</h2><a href="/publishing/">Open Publishing →</a></div>
               <div class="signal-dashboard-publish-step"><strong>Draft Schedule</strong><span>3 unpublished</span></div>
               <div class="signal-dashboard-publish-step"><strong>Publication Checks</strong><span class="signal-yellow">2 warnings</span></div>
               <div class="signal-dashboard-publish-step"><strong>Last Published</strong><span>Jun 15, 2026</span></div>
@@ -216,7 +216,7 @@
       </main>
 
       <footer class="signal-dashboard-footer">
-        <div>© 2026 Signal Schedule <span>•</span> Dashboard Design Reference <span>•</span> v5.18.0</div>
+        <div>© 2026 Signal Schedule <span>•</span> Dashboard Design Reference <span>•</span> v5.19.0</div>
         <div>Administrator <span>•</span> Jordan Miller <span>•</span> <a href="/account/">City of Fairview</a></div>
         <nav aria-label="Footer links"><a href="/README.md">Documentation ↗</a></nav>
       </footer>

@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/repositories/EmployeeTimelineRepository.js
-Version: v5.18.0
+Version: v5.19.0
 Purpose: Repository boundary for employee timeline and audit trail data
 */
 import { fetchEmployeeTimelinePreview } from '../adapters/JsonEmployeeTimelineAdapter.js';

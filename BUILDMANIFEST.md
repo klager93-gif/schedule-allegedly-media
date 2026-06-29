@@ -1,28 +1,37 @@
-# Signal Schedule v5.18.0 — Operational Scheduling Part 2
-
-Built from v5.17.2. Adds mandation, shift trades, open shifts/VOT integration, leave-impact checks, approval routing previews, clean aliases for `/trades/` and `/mandation/`, and operational cards inside Schedule Builder.
-
-# Build Manifest — Signal Schedule v5.18.0
-
-Generated: 2026-06-29T17:48:36
+# Signal Schedule v5.19.0 Build Manifest
 
 ## Release
 
-Signal Schedule v5.18.0 — Routing & Clean URL Foundation
+Signal Schedule v5.19.0 — Production Workflow Consolidation
 
-## Build contents
+## Added
 
-- Total files: 511
-- Clean URL aliases: enabled
-- Primary navigation: clean workflow URLs
-- Developer tools: grouped under `/developer/` aliases
+- `audit/index.html`
+- `pages/operations/audit-trail.html`
+- `publishing/index.html`
+- `data/production-workflow-preview.json`
+- `docs/architecture/PRODUCTION-WORKFLOW-CONSOLIDATION-v5.19.0.md`
 
-## Key validation routes
+## Modified
 
-- `/dashboard/`
-- `/schedule/`
-- `/employees/`
-- `/leave/`
-- `/notifications/`
-- `/developer/ui-catalog/`
+- `assets/navigation.js`
+- `assets/routes.js`
+- `assets/release-metadata.js`
+- `_redirects`
+- `LATEST_RELEASE.md`
+- `CHANGELOG.md`
+- `MASTER-CHANGELOG.md`
+- `ADMIN_CHANGELOG.md`
+- `PUBLIC_CHANGELOG.md`
+- `VALIDATION.md`
+- `FILEMANIFEST.md`
+- `FILEMANIFEST.generated.txt`
+- `SHA256SUMS.txt`
 
+## Deleted
+
+- None
+
+## Server/Coolify
+
+No Coolify or server configuration changes required.

@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/repositories/VisibilityPrivacyRepository.js
-Version: v5.18.0
+Version: v5.19.0
 Purpose: Repository boundary for Schedule Visibility & Privacy Controls preview data.
 */
 export class VisibilityPrivacyRepository {

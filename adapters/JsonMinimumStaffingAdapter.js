@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/adapters/JsonMinimumStaffingAdapter.js
-Version: v5.18.0
+Version: v5.19.0
 Purpose: Static JSON adapter for minimum staffing foundation data.
 */
 export class JsonMinimumStaffingAdapter {

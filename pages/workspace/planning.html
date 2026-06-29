@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/workspace/planning.html
-Version: v5.18.0
+Version: v5.19.0
 Purpose: Dashboard shell migrated page for Planning Forecast
 -->
 <!DOCTYPE html>
@@ -13,11 +13,11 @@ Purpose: Dashboard shell migrated page for Planning Forecast
   <title>Signal Schedule — Planning Forecast</title>
   <meta name="description" content="Generate schedule forecasts through a selected horizon and preview staffing conflicts, OT needs, mandate risk, and qualification gaps.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.18.0">
-  <link rel="stylesheet" href="/pages/workspace/workspace.css?v=5.18.0">
-  <link rel="stylesheet" href="/pages/workspace/planning.css?v=5.18.0">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.19.0">
+  <link rel="stylesheet" href="/pages/workspace/workspace.css?v=5.19.0">
+  <link rel="stylesheet" href="/pages/workspace/planning.css?v=5.19.0">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Planning Forecast" data-signal-version="v5.18.0" data-signal-description="Schedule planning and forecast horizon foundation." data-signal-theme="Dashboard Shell Rollout" data-signal-status="Design Rollout" data-signal-status-text="Signal Schedule v5.18.0 foundation cleanup standardized this module on the dashboard design system.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Planning Forecast" data-signal-version="v5.19.0" data-signal-description="Schedule planning and forecast horizon foundation." data-signal-theme="Dashboard Shell Rollout" data-signal-status="Design Rollout" data-signal-status-text="Signal Schedule v5.19.0 foundation cleanup standardized this module on the dashboard design system.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
@@ -43,6 +43,8 @@ Purpose: Dashboard shell migrated page for Planning Forecast
         <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/publishing/"><span class="signal-dashboard-icon">⇧</span><span>Publishing</span></a>
+        <a href="/audit/"><span class="signal-dashboard-icon">◷</span><span>Audit Trail</span></a>
         <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
         <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
@@ -50,8 +52,6 @@ Purpose: Dashboard shell migrated page for Planning Forecast
         <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
         <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
         <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
-        <a href="/developer/rule-engine/"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
-        <a href="/developer/scheduling-engine/"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
       </nav>
       <div class="signal-dashboard-user" aria-label="Current user preview">
         <div class="signal-dashboard-avatar">JM</div>
@@ -78,9 +78,9 @@ Purpose: Dashboard shell migrated page for Planning Forecast
             <a class="signal-dashboard-menu__trigger" href="/requests/">Requests</a>
             <div class="signal-dashboard-dropdown" role="menu">
               <a href="/requests/">Requests <small>Live</small></a>
-              <a href="/pages/requests/approvals.html">Approvals <small>Live</small></a>
+              <a href="/requests/">Approvals <small>Live</small></a>
               <a href="/open-shifts/">Open Shifts <small>Live</small></a>
-              <a href="/pages/requests/shift-trades.html">Trades <small>Live</small></a>
+              <a href="/trades/">Trades <small>Live</small></a>
             </div>
           </div>
           <div class="signal-dashboard-menu">
@@ -119,12 +119,12 @@ Purpose: Dashboard shell migrated page for Planning Forecast
 
       <main class="signal-dashboard-content signal-dashboard-module-content schedule-shell workspace-shell planning-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.18.0</span><strong>Scheduling Workspace</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+          <span class="signal-dashboard-pill">v5.19.0</span><strong>Scheduling Workspace</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
         </div>
 
 <section class="workspace-header schedule-card planning-hero">
 <div>
-<p class="schedule-kicker">Signal Schedule v5.18.0</p>
+<p class="schedule-kicker">Signal Schedule v5.19.0</p>
 <h1>Schedule Planning &amp; Forecast Horizon</h1>
 <p>Project patterns through a selected date range, surface shortages before they happen, and prepare OT, mandate, qualification, and conflict queues before publishing.</p>
 </div>
@@ -185,17 +185,17 @@ Purpose: Dashboard shell migrated page for Planning Forecast
 </section>
 
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.18.0 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.19.0 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
     </div>
   </div>
-  <script type="module" src="/pages/workspace/planning.js?v=5.18.0"></script>
-  <script src="/assets/release-metadata.js?v=5.18.0"></script>
-  <script src="/assets/config.js?v=5.18.0"></script>
-  <script src="/assets/routes.js?v=5.18.0"></script>
-  <script src="/assets/navigation.js?v=5.18.0"></script>
-  <script src="/assets/features.js?v=5.18.0"></script>
-  <script src="/assets/roles.js?v=5.18.0"></script>
-  <script src="/assets/status.js?v=5.18.0"></script>
-  <script src="/assets/data-loader.js?v=5.18.0"></script>
+  <script type="module" src="/pages/workspace/planning.js?v=5.19.0"></script>
+  <script src="/assets/release-metadata.js?v=5.19.0"></script>
+  <script src="/assets/config.js?v=5.19.0"></script>
+  <script src="/assets/routes.js?v=5.19.0"></script>
+  <script src="/assets/navigation.js?v=5.19.0"></script>
+  <script src="/assets/features.js?v=5.19.0"></script>
+  <script src="/assets/roles.js?v=5.19.0"></script>
+  <script src="/assets/status.js?v=5.19.0"></script>
+  <script src="/assets/data-loader.js?v=5.19.0"></script>
 </body>
 </html>

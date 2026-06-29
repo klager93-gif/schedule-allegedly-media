@@ -1,43 +1,14 @@
-# Signal Schedule v5.18.0 — Operational Scheduling Part 2
+# Signal Schedule v5.19.0 — Production Workflow Consolidation
 
-Built from v5.17.2. Adds mandation, shift trades, open shifts/VOT integration, leave-impact checks, approval routing previews, clean aliases for `/trades/` and `/mandation/`, and operational cards inside Schedule Builder.
-
-# Signal Schedule v5.18.0 — Routing & Clean URL Foundation
-
-Signal Schedule v5.18.0 adds clean URL aliases for primary workflows and updates navigation away from physical HTML file paths.
+Built from v5.18.0. Consolidates production workflows around clean URLs, adds Publishing and Audit Trail routes, removes engine/demo pages from normal user navigation, and keeps engine previews under Developer Tools.
 
 ## Validate
 
-- `/dashboard/`
 - `/schedule/`
-- `/employees/`
-- `/leave/`
-- `/notifications/`
+- `/publishing/`
+- `/audit/`
+- `/trades/`
+- `/mandation/`
 - `/developer/ui-catalog/`
 
 No Coolify/server configuration changes are required for directory-based aliases.
-
-# Signal Schedule v5.18.0 — Operational Scheduling: Part 1
-
-Signal Schedule v5.18.0 makes the Schedule Builder the centerpiece of operational scheduling.
-
-## Highlights
-
-- Rebuilt `pages/workspace/builder.html` into a flagship Schedule Builder workspace.
-- Added assignment board, employee panel, coverage panel, validation panel, and recommendation panel.
-- Added live-style metrics for draft coverage, blocking conflicts, warnings, and recommendations.
-- Added `data/schedule-builder-operational-preview.json` for static operational scheduling preview data.
-- Renamed user-facing navigation from Create Schedule to Schedule Builder.
-- Kept the Scheduling Engine page as a developer/support preview while beginning the move toward workflow-centered scheduling.
-
-## Validation
-
-Check these routes after deployment:
-
-- `/pages/workspace/builder.html`
-- `/pages/scheduling/scheduling-engine.html`
-- `/pages/workspace/assignments.html`
-- `/pages/admin/ui-catalog.html#schedule-builder`
-- `/index.html`
-
-No Coolify or server configuration changes are required.

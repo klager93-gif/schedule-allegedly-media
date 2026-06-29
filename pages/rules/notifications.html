@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/rules/notifications.html
-Version: v5.18.0
+Version: v5.19.0
 Purpose: Dashboard shell migrated page for Notification Center
 -->
 <!DOCTYPE html>
@@ -13,10 +13,10 @@ Purpose: Dashboard shell migrated page for Notification Center
   <title>Signal Schedule — Notification Center</title>
   <meta name="description" content="In-app notification center for approvals, schedule changes, leave requests, open shifts, coverage warnings, and system alerts.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.18.0">
-  <link rel="stylesheet" href="/pages/rules/notifications.css?v=5.18.0">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.19.0">
+  <link rel="stylesheet" href="/pages/rules/notifications.css?v=5.19.0">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Notification Center" data-signal-version="v5.18.0" data-signal-theme="Notification Center" data-signal-status="Preview" data-signal-description="Notification drawer, inbox, unread states, delivery rules, preferences, quiet-hours, and digest foundation for schedule events and approvals." data-signal-status-text="Signal Schedule v5.18.0 notification center adds the in-app inbox, badges, preferences, and UI Catalog notification components.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Notification Center" data-signal-version="v5.19.0" data-signal-theme="Notification Center" data-signal-status="Preview" data-signal-description="Notification drawer, inbox, unread states, delivery rules, preferences, quiet-hours, and digest foundation for schedule events and approvals." data-signal-status-text="Signal Schedule v5.19.0 notification center adds the in-app inbox, badges, preferences, and UI Catalog notification components.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
@@ -42,6 +42,8 @@ Purpose: Dashboard shell migrated page for Notification Center
         <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/publishing/"><span class="signal-dashboard-icon">⇧</span><span>Publishing</span></a>
+        <a href="/audit/"><span class="signal-dashboard-icon">◷</span><span>Audit Trail</span></a>
         <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
         <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
@@ -49,8 +51,6 @@ Purpose: Dashboard shell migrated page for Notification Center
         <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
         <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
         <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
-        <a href="/developer/rule-engine/"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
-        <a href="/developer/scheduling-engine/"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
       </nav>
       <div class="signal-dashboard-user" aria-label="Current user preview">
         <div class="signal-dashboard-avatar">JM</div>
@@ -77,9 +77,9 @@ Purpose: Dashboard shell migrated page for Notification Center
             <a class="signal-dashboard-menu__trigger" href="/requests/">Requests</a>
             <div class="signal-dashboard-dropdown" role="menu">
               <a href="/requests/">Requests <small>Live</small></a>
-              <a href="/pages/requests/approvals.html">Approvals <small>Live</small></a>
+              <a href="/requests/">Approvals <small>Live</small></a>
               <a href="/open-shifts/">Open Shifts <small>Live</small></a>
-              <a href="/pages/requests/shift-trades.html">Trades <small>Live</small></a>
+              <a href="/trades/">Trades <small>Live</small></a>
             </div>
           </div>
           <div class="signal-dashboard-menu">
@@ -118,12 +118,12 @@ Purpose: Dashboard shell migrated page for Notification Center
 
       <main class="signal-dashboard-content signal-dashboard-module-content notifications-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.18.0</span><strong>Notification Center</strong><span>•</span><strong>Static inbox foundation</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Delivery providers disabled</span>
+          <span class="signal-dashboard-pill">v5.19.0</span><strong>Notification Center</strong><span>•</span><strong>Static inbox foundation</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Delivery providers disabled</span>
         </div>
 
 <section class="notifications-hero">
   <div>
-    <p class="notifications-kicker">Signal Schedule v5.18.0</p>
+    <p class="notifications-kicker">Signal Schedule v5.19.0</p>
     <h1>Notification Center</h1>
     <p>Central inbox and alert foundation for pending approvals, schedule changes, leave requests, open shifts, coverage warnings, training expirations, and system alerts. This release keeps delivery static and safe while preparing the UI for future backend notification wiring.</p>
     <div class="notification-hero-actions"><a class="signal-dashboard-btn signal-dashboard-btn--primary" href="#inbox">Review Inbox</a><a class="signal-dashboard-btn" href="#preferences">Preferences</a><a class="signal-dashboard-btn" href="/pages/admin/ui-catalog.html#notifications">Catalog Components</a></div>
@@ -131,7 +131,7 @@ Purpose: Dashboard shell migrated page for Notification Center
   <div class="notifications-summary" data-notification-stats=""></div>
 </section>
 <section class="notifications-card notification-drawer-preview" id="drawer">
-  <div class="signal-dashboard-panel__head"><h2>Notification Drawer Preview</h2><a href="/pages/requests/approvals.html">Open approvals →</a></div>
+  <div class="signal-dashboard-panel__head"><h2>Notification Drawer Preview</h2><a href="/requests/">Open approvals →</a></div>
   <div class="notification-drawer-card">
     <div class="notification-drawer-card__head"><strong>Unread alerts</strong><span class="signal-dashboard-badge">6</span></div>
     <div class="notification-list compact" data-notification-drawer=""></div>
@@ -165,17 +165,17 @@ Purpose: Dashboard shell migrated page for Notification Center
 </section>
 
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.18.0 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.19.0 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
     </div>
   </div>
-  <script type="module" src="/pages/rules/notifications.js?v=5.18.0"></script>
-  <script src="/assets/release-metadata.js?v=5.18.0"></script>
-  <script src="/assets/config.js?v=5.18.0"></script>
-  <script src="/assets/routes.js?v=5.18.0"></script>
-  <script src="/assets/navigation.js?v=5.18.0"></script>
-  <script src="/assets/features.js?v=5.18.0"></script>
-  <script src="/assets/roles.js?v=5.18.0"></script>
-  <script src="/assets/status.js?v=5.18.0"></script>
-  <script src="/assets/data-loader.js?v=5.18.0"></script>
+  <script type="module" src="/pages/rules/notifications.js?v=5.19.0"></script>
+  <script src="/assets/release-metadata.js?v=5.19.0"></script>
+  <script src="/assets/config.js?v=5.19.0"></script>
+  <script src="/assets/routes.js?v=5.19.0"></script>
+  <script src="/assets/navigation.js?v=5.19.0"></script>
+  <script src="/assets/features.js?v=5.19.0"></script>
+  <script src="/assets/roles.js?v=5.19.0"></script>
+  <script src="/assets/status.js?v=5.19.0"></script>
+  <script src="/assets/data-loader.js?v=5.19.0"></script>
 </body>
 </html>

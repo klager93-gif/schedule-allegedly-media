@@ -2,15 +2,15 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v5.18.0
-Purpose: Central grouped navigation registry for dashboard shell navigation.
+Version: v5.19.0
+Purpose: Production grouped navigation registry for workflow-centered Signal Schedule navigation.
 */
 (function () {
   const routes = window.SIGNAL_SCHEDULE_ROUTES || {};
   const path = (key, fallback) => routes[key] || fallback;
   const item = (label, href, icon, permission) => Object.freeze({ label, href, icon, permission: permission || 'authenticated' });
   window.SIGNAL_SCHEDULE_NAVIGATION = Object.freeze({
-    version: 'v5.18.0',
+    version: 'v5.19.0',
     labels: Object.freeze({
       [path('dashboard','/dashboard/')]: 'Dashboard',
       [path('calendar','/calendar/')]: 'Calendar',
@@ -26,13 +26,13 @@ Purpose: Central grouped navigation registry for dashboard shell navigation.
       [path('leaveBanks','/leave/')]: 'Leave Management',
       [path('requests','/requests/')]: 'Approvals & Requests',
       [path('notifications','/notifications/')]: 'Notifications',
+      [path('publishing','/publishing/')]: 'Publishing',
+      [path('auditTrail','/audit/')]: 'Audit Trail',
       [path('reports','/reports/')]: 'Reports',
       [path('systemHealth','/system/')]: 'System Administration',
       [path('settings','/admin/')]: 'Admin',
       [path('dashboardReference','/developer/dashboard-reference/')]: 'Visual Target',
-      [path('uiCatalog','/developer/ui-catalog/')]: 'UI Catalog',
-      [path('ruleEngine','/developer/rule-engine/')]: 'Rule Engine',
-      [path('schedulingEngine','/developer/scheduling-engine/')]: 'Scheduling Engine'
+      [path('uiCatalog','/developer/ui-catalog/')]: 'UI Catalog'
     }),
     groups: Object.freeze([
       Object.freeze({ label: 'Main', items: Object.freeze([item('Dashboard', path('dashboard','/dashboard/'), '⌂')]) }),
@@ -54,6 +54,8 @@ Purpose: Central grouped navigation registry for dashboard shell navigation.
       ]) }),
       Object.freeze({ label: 'Operations', items: Object.freeze([
         item('Notifications', path('notifications','/notifications/'), '🔔'),
+        item('Publishing', path('publishing','/publishing/'), '⇧'),
+        item('Audit Trail', path('auditTrail','/audit/'), '◷'),
         item('Reports', path('reports','/reports/'), '↗')
       ]) }),
       Object.freeze({ label: 'Administration', items: Object.freeze([
@@ -62,9 +64,7 @@ Purpose: Central grouped navigation registry for dashboard shell navigation.
       ]) }),
       Object.freeze({ label: 'Developer Tools', items: Object.freeze([
         item('Visual Target', path('dashboardReference','/developer/dashboard-reference/'), '◇', 'developer'),
-        item('UI Catalog', path('uiCatalog','/developer/ui-catalog/'), '▧', 'developer'),
-        item('Rule Engine', path('ruleEngine','/developer/rule-engine/'), '⚖', 'developer'),
-        item('Scheduling Engine', path('schedulingEngine','/developer/scheduling-engine/'), '⚙', 'developer')
+        item('UI Catalog', path('uiCatalog','/developer/ui-catalog/'), '▧', 'developer')
       ]) })
     ])
   });

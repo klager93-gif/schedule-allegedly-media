@@ -2,10 +2,10 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/settings/visibility.js
-Version: v5.18.0
+Version: v5.19.0
 Purpose: Render Schedule Visibility & Privacy Controls preview data.
 */
-const DATA_URL = '/data/visibility-privacy-preview.json?v=5.18.0';
+const DATA_URL = '/data/visibility-privacy-preview.json?v=5.19.0';
 const state = { data: null };
 
 init();

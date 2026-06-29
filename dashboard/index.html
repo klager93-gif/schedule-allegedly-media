@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Signal Schedule | Working Dashboard</title>
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.18.0" />
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.19.0" />
   <link rel="canonical" href="https://schedule.allegedly-media.com/dashboard/">
 </head>
-<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="Working Dashboard" data-signal-version="v5.18.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Working application dashboard for Schedule operations, requests, staffing, publishing, and system health.">
+<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="Working Dashboard" data-signal-version="v5.19.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Working application dashboard for Schedule operations, requests, staffing, publishing, and system health.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
@@ -34,6 +34,8 @@
         <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/publishing/"><span class="signal-dashboard-icon">⇧</span><span>Publishing</span></a>
+        <a href="/audit/"><span class="signal-dashboard-icon">◷</span><span>Audit Trail</span></a>
         <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
         <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
@@ -41,8 +43,6 @@
         <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
         <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
         <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
-        <a href="/developer/rule-engine/"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
-        <a href="/developer/scheduling-engine/"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
       </nav>
       <div class="signal-dashboard-user" aria-label="Current user preview">
         <div class="signal-dashboard-avatar">JM</div>
@@ -76,7 +76,7 @@
 
       <main class="signal-dashboard-content">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.18.0</span>
+          <span class="signal-dashboard-pill">v5.19.0</span>
           <strong>Working App Entry</strong><span>•</span><strong>Reference components active</strong>
           <span class="signal-dashboard-dot" aria-hidden="true"></span><span>Dashboard design rollout active</span>
         </div>
@@ -110,12 +110,12 @@
           <div class="signal-dashboard-widget-stack">
             <section class="signal-dashboard-panel" aria-label="Command center">
               <div class="signal-dashboard-panel__head"><h2>Command Center</h2><a href="/developer/dashboard-reference/">Open visual reference →</a></div>
-              <div class="schedule-action-row"><a class="schedule-button schedule-button--primary" href="/calendar/">Open Calendar</a><a class="schedule-button schedule-button--secondary" href="/schedule/">Build Schedule</a><a class="schedule-button schedule-button--ghost" href="/pages/requests/approvals.html">Review Approvals</a></div>
+              <div class="schedule-action-row"><a class="schedule-button schedule-button--primary" href="/calendar/">Open Calendar</a><a class="schedule-button schedule-button--secondary" href="/schedule/">Build Schedule</a><a class="schedule-button schedule-button--ghost" href="/requests/">Review Approvals</a></div>
               <div class="signal-dashboard-health-grid">
                 <a class="signal-dashboard-health-card" href="/notifications/"><small>Review inbox, alerts, and preferences</small><strong>Notification Center</strong></a>
                 <a class="signal-dashboard-health-card" href="/schedule/"><small>Build and edit the active schedule</small><strong>Schedule Builder</strong></a>
                 <a class="signal-dashboard-health-card" href="/daily-board/"><small>View today's staffing and vacancies</small><strong>Daily Board</strong></a>
-                <a class="signal-dashboard-health-card" href="/pages/requests/approvals.html"><small>Review leave, trades, and open-shift activity</small><strong>Approval Queue</strong></a>
+                <a class="signal-dashboard-health-card" href="/requests/"><small>Review leave, trades, and open-shift activity</small><strong>Approval Queue</strong></a>
                 <a class="signal-dashboard-health-card" href="/staffing/"><small>Check minimum staffing rules and coverage</small><strong>Staffing Engine</strong></a>
                 <a class="signal-dashboard-health-card" href="/developer/rule-engine/"><small>Preview conflicts, coverage, and approval routing</small><strong>Rule Engine Foundation</strong></a>
               </div>
@@ -124,9 +124,9 @@
             <section class="signal-dashboard-panel" aria-label="Dashboard build path">
               <div class="signal-dashboard-panel__head"><h2>Dashboard Build Path</h2><a href="/developer/ui-catalog/">UI Catalog →</a></div>
               <div class="signal-dashboard-list">
-                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot is-blue"></span><strong>v5.18.0</strong><span>Rule Engine Foundation</span></div>
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot is-blue"></span><strong>v5.19.0</strong><span>Rule Engine Foundation</span></div>
                 <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot"></span><strong>Next</strong><span>Notification Center static inbox complete</span></div>
-                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot"></span><strong>v5.18.0</strong><span>Employee profile workspace</span></div>
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot"></span><strong>v5.19.0</strong><span>Employee profile workspace</span></div>
                 <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot"></span><strong>After</strong><span>Add role views and widgets</span></div>
               </div>
             </section>
@@ -151,7 +151,7 @@
       </main>
 
       <footer class="signal-dashboard-footer">
-        <div>© 2026 Signal Schedule <span>•</span> v5.18.0 <span>•</span> Working dashboard foundation</div>
+        <div>© 2026 Signal Schedule <span>•</span> v5.19.0 <span>•</span> Working dashboard foundation</div>
         <div><a href="/developer/dashboard-reference/">Dashboard reference</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div>
       </footer>
     </div>

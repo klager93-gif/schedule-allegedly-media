@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/adapters/JsonSchedulePlanningAdapter.js
-Version: v5.18.0
+Version: v5.19.0
 Purpose: JSON adapter for schedule planning and forecast horizon preview data.
 */
 export class JsonSchedulePlanningAdapter {

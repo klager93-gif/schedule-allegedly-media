@@ -1,21 +1,23 @@
-# Signal Schedule v5.18.0 — Operational Scheduling Part 2
+# Signal Schedule v5.19.0 Validation
 
-Built from v5.17.2. Adds mandation, shift trades, open shifts/VOT integration, leave-impact checks, approval routing previews, clean aliases for `/trades/` and `/mandation/`, and operational cards inside Schedule Builder.
+## Required route checks
 
-# Validation — Signal Schedule v5.18.0
+- `/dashboard/`
+- `/schedule/`
+- `/publishing/`
+- `/audit/`
+- `/employees/`
+- `/leave/`
+- `/requests/`
+- `/trades/`
+- `/mandation/`
+- `/developer/ui-catalog/`
 
-## Required checks
+## Expected result
 
-- Open `/dashboard/` and confirm it displays the dashboard.
-- Open `/schedule/` and confirm it displays Schedule Builder.
-- Open `/employees/` and confirm it displays Employee Workspace.
-- Open `/leave/` and confirm it displays Leave & Banks.
-- Open `/notifications/` and confirm Notification Center loads.
-- Open `/developer/ui-catalog/` and confirm the UI Catalog loads.
-- Confirm primary sidebar links use clean aliases instead of `/pages/...html` paths.
-- Confirm physical `/pages/...` paths still load for development/backward compatibility.
+- Publishing and Audit Trail appear under Operations.
+- Rule Engine and Scheduling Engine do not appear in normal user navigation.
+- Developer routes remain accessible under Developer Tools.
+- No physical `/pages/...` route is required for normal navigation.
 
-## Server action
-
-No Coolify/server configuration changes required for directory alias pages.
-
+No Coolify/server configuration changes required.

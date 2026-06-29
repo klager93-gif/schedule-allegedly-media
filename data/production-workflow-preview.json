@@ -1,0 +1,63 @@
+{
+  "version": "v5.19.0",
+  "release": "Production Workflow Consolidation",
+  "clean_routes": [
+    "/dashboard/",
+    "/schedule/",
+    "/publishing/",
+    "/audit/",
+    "/employees/",
+    "/leave/",
+    "/requests/",
+    "/trades/",
+    "/mandation/"
+  ],
+  "publishing": {
+    "states": [
+      "draft",
+      "published",
+      "archived",
+      "rolled_back"
+    ],
+    "actions": [
+      "validate",
+      "publish",
+      "archive",
+      "compare",
+      "rollback"
+    ]
+  },
+  "audit_events": [
+    {
+      "time": "Today 14:10",
+      "event": "Draft schedule published",
+      "actor": "Jordan Miller",
+      "workflow": "Publishing",
+      "status": "complete"
+    },
+    {
+      "time": "Today 13:42",
+      "event": "Mandation approved with supervisor override",
+      "actor": "Casey Morgan",
+      "workflow": "Mandation",
+      "status": "reviewed"
+    },
+    {
+      "time": "Today 12:25",
+      "event": "Shift trade routed to second supervisor",
+      "actor": "Taylor Reed",
+      "workflow": "Shift Trades",
+      "status": "pending"
+    }
+  ],
+  "developer_pages": [
+    "/developer/ui-catalog/",
+    "/developer/dashboard-reference/",
+    "/developer/rule-engine/",
+    "/developer/scheduling-engine/"
+  ],
+  "production_nav_excludes": [
+    "Rule Engine",
+    "Scheduling Engine"
+  ]
+}

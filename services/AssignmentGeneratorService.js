@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/services/AssignmentGeneratorService.js
-Version: v5.18.0
+Version: v5.19.0
 Purpose: Assignment Generator preview service and draft grouping helpers.
 */
 export class AssignmentGeneratorService {

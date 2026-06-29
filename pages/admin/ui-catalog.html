@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/admin/ui-catalog.html
-Version: v5.18.0
+Version: v5.19.0
 Purpose: Dashboard-reference UI component catalog for Schedule-only production layout, button, card, table, form, badge, alert, empty state, and modal standards.
 -->
 <!DOCTYPE html>
@@ -13,9 +13,9 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
   <title>Signal Schedule | UI Component Catalog</title>
   <meta name="description" content="Dashboard-reference UI component catalog for Signal Schedule production interface standards." />
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.18.0" />
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.19.0" />
 </head>
-<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="UI Component Catalog" data-signal-version="v5.18.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Dashboard-reference component catalog used as the source of truth for future Signal Schedule screens.">
+<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="UI Component Catalog" data-signal-version="v5.19.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Dashboard-reference component catalog used as the source of truth for future Signal Schedule screens.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
@@ -41,6 +41,8 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
         <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/publishing/"><span class="signal-dashboard-icon">⇧</span><span>Publishing</span></a>
+        <a href="/audit/"><span class="signal-dashboard-icon">◷</span><span>Audit Trail</span></a>
         <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
         <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
@@ -48,8 +50,6 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
         <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
         <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
         <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
-        <a href="/developer/rule-engine/"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
-        <a href="/developer/scheduling-engine/"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
       </nav>
       <div class="signal-dashboard-user" aria-label="Current user preview">
         <div class="signal-dashboard-avatar">JM</div>
@@ -77,7 +77,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
             <a class="signal-dashboard-menu__trigger" href="/requests/">Requests</a>
             <div class="signal-dashboard-dropdown" role="menu">
               <a href="/requests/">Requests <small>Live</small></a>
-              <a href="/pages/requests/approvals.html">Approvals <small>Live</small></a>
+              <a href="/requests/">Approvals <small>Live</small></a>
               <a href="/pages/requests/trades.html">Trades <small>Live</small></a>
             </div>
           </div>
@@ -102,7 +102,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
 
       <main class="signal-dashboard-content signal-catalog-content">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.18.0</span>
+          <span class="signal-dashboard-pill">v5.19.0</span>
           <a class="signal-dashboard-pill" href="/developer/dashboard-reference/">Open Dashboard Reference</a>
           <strong>Source of Truth</strong><span>•</span><strong>Dashboard Shell</strong><span>•</span><strong>Schedule-only design</strong>
           <span class="signal-dashboard-dot" aria-hidden="true"></span><span>Ready for page rollout</span>
@@ -234,7 +234,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
                 <div class="notification-drawer-card__head"><strong>Drawer Pattern</strong><span class="signal-dashboard-badge">6</span></div>
                 <div class="notification-list compact">
                   <article class="notification-queue-item is-compact"><div><h3><a href="/coverage/">Coverage under minimum</a></h3><p>Dispatch Supervisor Queue</p><div class="notification-meta"><span>notif-001</span><span>Coverage Board</span><span>High</span></div></div><div><p><strong>Status:</strong> Unread</p></div></article>
-                  <article class="notification-queue-item is-compact"><div><h3><a href="/pages/workspace/publishing.html">Published schedule changed</a></h3><p>Affected employee</p><div class="notification-meta"><span>notif-002</span><span>Publishing</span><span>High</span></div></div><div><p><strong>Status:</strong> Unread</p></div></article>
+                  <article class="notification-queue-item is-compact"><div><h3><a href="/publishing/">Published schedule changed</a></h3><p>Affected employee</p><div class="notification-meta"><span>notif-002</span><span>Publishing</span><span>High</span></div></div><div><p><strong>Status:</strong> Unread</p></div></article>
                 </div>
               </div>
             </section>
@@ -291,7 +291,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
         </section>
 
         <section class="signal-dashboard-panel" style="padding:18px; margin-top:14px;" id="employees">
-          <p class="schedule-kicker">v5.18.0</p>
+          <p class="schedule-kicker">v5.19.0</p>
           <h2>Employee workspace components</h2>
           <p style="color:var(--dash-muted);">Reusable directory cards, profile metadata blocks, status pills, qualification badges, and activity timeline components.</p>
           <div class="signal-employee-grid">
@@ -321,7 +321,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
       </main>
 
       <footer class="signal-dashboard-footer">
-        <span>Signal Schedule v5.18.0</span>
+        <span>Signal Schedule v5.19.0</span>
         <span>UI Catalog rebuilt from dashboard-reference design</span>
         <a href="/developer/dashboard-reference/">Dashboard Reference</a>
       </footer>
