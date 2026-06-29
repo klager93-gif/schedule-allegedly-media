@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/workspace/draft-planning.js
-Version: v6.1.0
+Version: v6.1.1
 Purpose: Draft planning preview interactions for staged moves, drag handles, inspector, and publish checklist.
 */
 const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];

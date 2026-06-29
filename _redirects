@@ -1,5 +1,5 @@
-# Signal Schedule clean URL aliases — v6.1.0
-# Clean public routes are routing aliases only. Do not create physical root alias folders.
+# Signal Schedule clean URL aliases — v6.1.1
+# Clean public routes are also backed by lightweight alias folders for Coolify/Nginx static hosting until server-side rewrites are added.
 
 / /index.html 200
 /dashboard/ /index.html 200

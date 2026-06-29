@@ -1,4 +1,4 @@
-# v6.1.0 — Repository Architecture & Data Contracts
+# v6.1.1 — Repository Architecture & Data Contracts
 
 - Restored clean-root architecture by removing physical top-level alias folders.
 - Preserved public clean URLs with `_redirects` rewrite rules.
@@ -7,6 +7,6 @@
 
 # Master Changelog
 
-## v6.1.0 — Production Foundation Audit & Setup Polish
+## v6.1.1 — Production Foundation Audit & Setup Polish
 
 Static/frontend-only stabilization for v6.0.0. Adds clean alias folders for Agency Setup, Users, and Roles & Permissions, refreshes routing/navigation registries, and documents future backend/database requirements.

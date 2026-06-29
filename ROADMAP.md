@@ -1,6 +1,6 @@
 # Signal Schedule Roadmap — v6.x
 
-## v6.1.0 — Repository Architecture & Data Contracts
+## v6.1.1 — Repository Architecture & Data Contracts
 
 - Clean root architecture
 - Clean URL aliases preserved through rewrites

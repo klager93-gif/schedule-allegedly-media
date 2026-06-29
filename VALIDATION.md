@@ -1,4 +1,4 @@
-# Signal Schedule v6.1.0 Validation Checklist
+# Signal Schedule v6.1.1 Validation Checklist
 
 ## Clean root
 

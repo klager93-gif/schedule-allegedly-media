@@ -1,504 +1,541 @@
-# File Manifest — Signal Schedule v6.1.0
+# File Manifest
 
-- `.gitattributes`
-- `.gitignore`
-- `ADMIN_CHANGELOG.md`
-- `BUILDMANIFEST.md`
-- `CHANGELOG.md`
-- `FILEMANIFEST.md`
-- `HOWTO.md`
-- `LATEST_RELEASE.md`
-- `MASTER-CHANGELOG.md`
-- `PUBLIC_CHANGELOG.md`
-- `README.md`
-- `ROADMAP.md`
-- `STANDARDS.md`
-- `VALIDATION.md`
-- `_redirects`
-- `adapters/JsonAssignmentEngineAdapter.js`
-- `adapters/JsonAssignmentGeneratorAdapter.js`
-- `adapters/JsonBenefitLedgerAdapter.js`
-- `adapters/JsonCalendarAdapter.js`
-- `adapters/JsonCalendarShortcodeAdapter.js`
-- `adapters/JsonCalendarViewAdapter.js`
-- `adapters/JsonConflictDetectionAdapter.js`
-- `adapters/JsonCoverageBoardAdapter.js`
-- `adapters/JsonCoverageSpotsAdapter.js`
-- `adapters/JsonDailyBoardAdapter.js`
-- `adapters/JsonDraftPlanningAdapter.js`
-- `adapters/JsonEmployeeAvailabilityPreferencesAdapter.js`
-- `adapters/JsonEmployeeProfileAdapter.js`
-- `adapters/JsonEmployeeTimelineAdapter.js`
-- `adapters/JsonLeaveBanksAdapter.js`
-- `adapters/JsonLeaveRequestsAdapter.js`
-- `adapters/JsonMandationEngineAdapter.js`
-- `adapters/JsonMinimumStaffingAdapter.js`
-- `adapters/JsonNotificationAdapter.js`
-- `adapters/JsonOpenShiftAdapter.js`
-- `adapters/JsonOtVolunteerBoardAdapter.js`
-- `adapters/JsonQualificationsCertificationAdapter.js`
-- `adapters/JsonRequestApprovalWorkflowAdapter.js`
-- `adapters/JsonRolesPermissionsAdapter.js`
-- `adapters/JsonSchedulePlanningAdapter.js`
-- `adapters/JsonSchedulePublicationAdapter.js`
-- `adapters/JsonSeniorityEngineAdapter.js`
-- `adapters/JsonSeniorityRotationAdapter.js`
-- `adapters/JsonShiftEligibilityAdapter.js`
-- `adapters/JsonShiftTradeAdapter.js`
-- `adapters/JsonSupervisorHierarchyAdapter.js`
-- `adapters/JsonTrainingCertificationAdapter.js`
-- `adapters/JsonVisibilityPrivacyAdapter.js`
-- `adapters/JsonWeeklyBoardAdapter.js`
-- `api/contracts/assignment-engine.read.schema.json`
-- `api/contracts/assignment-generator.read.schema.json`
-- `api/contracts/benefit-ledger.read.schema.json`
-- `api/contracts/calendar-shortcodes.read.schema.json`
-- `api/contracts/calendar-view.read.schema.json`
-- `api/contracts/calendar.read.schema.json`
-- `api/contracts/conflict-detection.read.schema.json`
-- `api/contracts/coverage-board.read.schema.json`
-- `api/contracts/coverage-spots.read.schema.json`
-- `api/contracts/daily-board.read.schema.json`
-- `api/contracts/draft-planning.read.schema.json`
-- `api/contracts/employee-availability-preferences.read.schema.json`
-- `api/contracts/employee-experience-data-tools.read.schema.json`
-- `api/contracts/employee-portal-preview.read.schema.json`
-- `api/contracts/employee-profile.read.schema.json`
-- `api/contracts/employee-timeline.read.schema.json`
-- `api/contracts/leave-banks.read.schema.json`
-- `api/contracts/leave-requests.read.schema.json`
-- `api/contracts/mandation-engine.read.schema.json`
-- `api/contracts/minimum-staffing.read.schema.json`
-- `api/contracts/notifications.read.schema.json`
-- `api/contracts/open-shifts.read.schema.json`
-- `api/contracts/ot-volunteer-board.read.schema.json`
-- `api/contracts/qualifications-certifications.read.schema.json`
-- `api/contracts/request-approval-engine.read.schema.json`
-- `api/contracts/request-approval-workflow.read.schema.json`
-- `api/contracts/request-hours.read.schema.json`
-- `api/contracts/roles-permissions.read.schema.json`
-- `api/contracts/saved-schedules.write.schema.json`
-- `api/contracts/schedule-planning.read.schema.json`
-- `api/contracts/schedule-publication.read.schema.json`
-- `api/contracts/seniority-engine.read.schema.json`
-- `api/contracts/seniority-rotation.read.schema.json`
-- `api/contracts/shift-eligibility.read.schema.json`
-- `api/contracts/shift-trades.read.schema.json`
-- `api/contracts/staffing-engine.read.schema.json`
-- `api/contracts/supervisor-hierarchy.read.schema.json`
-- `api/contracts/training-certifications.read.schema.json`
-- `api/contracts/visibility-privacy.read.schema.json`
-- `api/contracts/weekly-board.read.schema.json`
-- `api/coolify/README.md`
-- `api/coolify/db/postgres.js`
-- `api/coolify/server.js`
-- `api/coolify/sql/004_schema_migrations_foundation.sql`
-- `api/coolify/sql/005_minimum_staffing_foundation_schema.sql`
-- `api/coolify/sql/006_calendar_foundation_schema.sql`
-- `api/coolify/sql/007_employee_identity_cleanup_schema.sql`
-- `api/coolify/sql/008_leave_requests_foundation_schema.sql`
-- `api/coolify/sql/009_request_hours_foundation_schema.sql`
-- `api/coolify/sql/010_open_shifts_foundation_schema.sql`
-- `api/coolify/sql/011_coverage_board_foundation_schema.sql`
-- `api/coolify/sql/012_seniority_rotation_foundation_schema.sql`
-- `api/coolify/sql/013_shift_trades_foundation_schema.sql`
-- `api/coolify/sql/014_training_certifications_foundation_schema.sql`
-- `api/coolify/sql/015_shift_eligibility_foundation_schema.sql`
-- `api/coolify/sql/016_benefit_ledger_foundation_schema.sql`
-- `api/coolify/sql/017_calendar_shortcode_admin_controls_schema.sql`
-- `api/coolify/sql/018_calendar_views_foundation_schema.sql`
-- `api/coolify/sql/019_employee_profile_self_service_schema.sql`
-- `api/coolify/sql/020_employee_timeline_audit_trail_schema.sql`
-- `api/coolify/sql/021_supervisor_hierarchy_schema.sql`
-- `api/coolify/sql/022_roles_permissions_schema.sql`
-- `api/coolify/sql/023_request_approval_workflow_schema.sql`
-- `api/coolify/sql/024_notification_foundation_schema.sql`
-- `api/coolify/sql/025_coverage_spots_foundation_schema.sql`
-- `api/coolify/sql/026_daily_schedule_board_foundation_schema.sql`
-- `api/coolify/sql/027_assignment_engine_integration_schema.sql`
-- `api/coolify/sql/028_leave_banks_foundation_schema.sql`
-- `api/coolify/sql/029_ot_volunteer_board_schema.sql`
-- `api/coolify/sql/030_shift_trades_ui_schema.sql`
-- `api/coolify/sql/031_mandation_engine_foundation_schema.sql`
-- `api/coolify/sql/032_seniority_engine_schema.sql`
-- `api/coolify/sql/033_assignment_generator_schema.sql`
-- `api/coolify/sql/034_conflict_detection_foundation_schema.sql`
-- `api/coolify/sql/035_qualifications_certifications_schema.sql`
-- `api/coolify/sql/036_weekly_schedule_view_schema.sql`
-- `api/coolify/sql/037_schedule_visibility_privacy_schema.sql`
-- `api/coolify/sql/038_drag_drop_draft_planning_schema.sql`
-- `api/coolify/sql/039_schedule_planning_forecast_horizon_schema.sql`
-- `api/coolify/sql/040_schedule_beta_publishing_foundation_schema.sql`
-- `api/coolify/sql/041_schedule_workable_sandbox_settings_schema.sql`
-- `api/coolify/sql/042_employee_portal_view_as_foundation.sql`
-- `api/coolify/sql/043_employee_availability_preferences_restrictions_schema.sql`
-- `api/coolify/sql/044_saved_schedule_crud_foundation_schema.sql`
-- `api/coolify/sql/045_employee_experience_data_tools_schema.sql`
-- `api/coolify/sql/046_request_approval_engine_schema.sql`
-- `api/coolify/sql/047_staffing_engine_schema.sql`
-- `assets/agency-branding.js`
-- `assets/agency-logo.svg`
-- `assets/config.js`
-- `assets/dashboard.css`
-- `assets/data-loader.js`
-- `assets/features.js`
-- `assets/icons/apple-touch-icon.png`
-- `assets/icons/favicon.ico`
-- `assets/icons/favicon.svg`
-- `assets/icons/site.webmanifest`
-- `assets/navigation.js`
-- `assets/release-metadata.js`
-- `assets/roles.js`
-- `assets/routes.js`
-- `assets/signal-schedule-logo.svg`
-- `assets/status.js`
-- `assets/themes/cad.css`
-- `assets/themes/high-contrast.css`
-- `assets/themes/light.css`
-- `assets/themes/midnight.css`
-- `assets/themes/slate.css`
-- `components/footer.js`
-- `components/panel.js`
-- `components/table.js`
-- `components/tag.js`
-- `components/toolbar.js`
-- `data/agencies.json`
-- `data/agency-setup-preview.json`
-- `data/approval-foundation-preview.json`
-- `data/assignment-engine-preview.json`
-- `data/assignment-generator-preview.json`
-- `data/assignment-templates.json`
-- `data/benefit-ledger-preview.json`
-- `data/calendar-events-preview.json`
-- `data/calendar-preview.json`
-- `data/calendar-shortcodes-preview.json`
-- `data/calendar-view-preview.json`
-- `data/conflict-detection-preview.json`
-- `data/coverage-board-preview.json`
-- `data/coverage-spots-preview.json`
-- `data/current-user-preview.json`
-- `data/daily-board-preview.json`
-- `data/database-audit-preview.json`
-- `data/demo-presets.json`
-- `data/draft-planning-preview.json`
-- `data/employee-assignments.json`
-- `data/employee-availability-preferences-preview.json`
-- `data/employee-experience-data-tools-preview.json`
-- `data/employee-portal-preview.json`
-- `data/employee-profile-preview.json`
-- `data/employee-timeline-preview.json`
-- `data/employees.json`
-- `data/export-foundation-preview.json`
-- `data/identity-session-preview.json`
-- `data/leave-banks-preview.json`
-- `data/leave-request-types.json`
-- `data/leave-requests-preview.json`
-- `data/mandation-engine-preview.json`
-- `data/minimum-staffing-preview.json`
-- `data/minimum-staffing-templates.json`
-- `data/notifications-preview.json`
-- `data/open-shifts-preview.json`
-- `data/operational-scheduling-preview.json`
-- `data/ot-volunteer-board-preview.json`
-- `data/production-ready-preview.json`
-- `data/production-workflow-preview.json`
-- `data/qualifications-certifications-preview.json`
-- `data/request-approval-engine-preview.json`
-- `data/request-approval-workflow-preview.json`
-- `data/request-foundation-preview.json`
-- `data/request-increment-settings.json`
-- `data/request-reasons.json`
-- `data/roles-permissions-preview.json`
-- `data/rule-engine-preview.json`
-- `data/schedule-admin-settings.json`
-- `data/schedule-builder-operational-preview.json`
-- `data/schedule-builder-sandbox.json`
-- `data/schedule-planning-preview.json`
-- `data/schedule-publication-preview.json`
-- `data/scheduling-engine-preview.json`
-- `data/seniority-engine-preview.json`
-- `data/seniority-rotation-preview.json`
-- `data/settings-foundation-preview.json`
-- `data/shift-eligibility-preview.json`
-- `data/shift-trades-preview.json`
-- `data/staffing-engine-preview.json`
-- `data/supervisor-hierarchy-preview.json`
-- `data/training-certifications-preview.json`
-- `data/view-engine-preview.json`
-- `data/visibility-privacy-preview.json`
-- `data/vot-requests-preview.json`
-- `data/weekly-board-preview.json`
-- `data/workspace-foundation-preview.json`
-- `developer/README.md`
-- `docs/README.md`
-- `docs/architecture/API-CONTRACTS-v6.1.0.md`
-- `docs/architecture/CLEAN-ROUTE-FOUNDATION.md`
-- `docs/architecture/CLEAN-URL-ALIASES-v5.17.2.md`
-- `docs/architecture/DATA-CONTRACTS-v6.1.0.md`
-- `docs/architecture/DATABASE-NAMING-CONTRACT-v5.9.md`
-- `docs/architecture/DATABASE-SCHEMA-DRAFT-v6.1.0.md`
-- `docs/architecture/FILE_ORGANIZATION.md`
-- `docs/architecture/IDENTITY-SESSION-CONTRACT-v5.10.md`
-- `docs/architecture/METADATA-VALIDATION.md`
-- `docs/architecture/OPERATIONAL-SCHEDULING-v5.18.0.md`
-- `docs/architecture/PAGE-ARCHITECTURE.md`
-- `docs/architecture/PRODUCTION-READY-v6.0.0.md`
-- `docs/architecture/PRODUCTION-READY-v6.0.1.md`
-- `docs/architecture/PRODUCTION-WORKFLOW-CONSOLIDATION-v5.19.0.md`
-- `docs/architecture/REGISTRY-FOUNDATION.md`
-- `docs/architecture/REPOSITORY-ARCHITECTURE-v6.1.0.md`
-- `docs/audits/ALPHA-INTEGRATION-AUDIT.md`
-- `docs/audits/DATA-LAYER-AUDIT-v5.8.md`
-- `docs/audits/DATA-PATH-DRIFT-AUDIT-v5.7.md`
-- `docs/audits/NAVIGATION-DRIFT-AUDIT-v5.7.md`
-- `docs/audits/PRODUCTION-FOUNDATION-AUDIT-v6.0.1.md`
-- `docs/audits/SQL-AUDIT-v5.9.md`
-- `docs/engines/REQUEST-APPROVAL-ENGINE.md`
-- `docs/engines/SCHEDULE-HISTORY-SNAPSHOT-ENGINE.md`
-- `docs/engines/STAFFING-ENGINE.md`
-- `docs/foundation/AGENCY-BRANDING-FOUNDATION.md`
-- `docs/foundation/CALENDAR-FOUNDATION.md`
-- `docs/foundation/DASHBOARD-SHELL-ROLLOUT-v5.15.5.md`
-- `docs/foundation/EMPLOYEE-EXPERIENCE-DATA-TOOLS.md`
-- `docs/foundation/EMPLOYEE-IDENTITY-FOUNDATION.md`
-- `docs/foundation/IDENTITY-LOGIN-FOUNDATION-v5.10.md`
-- `docs/foundation/LEAVE-BANKS-FOUNDATION-v5.8.md`
-- `docs/foundation/LEAVE-REQUESTS-FOUNDATION.md`
-- `docs/foundation/MINIMUM-STAFFING-FOUNDATION.md`
-- `docs/foundation/NAVIGATION-REORGANIZATION-v5.16.1.md`
-- `docs/foundation/OPEN-SHIFTS-FOUNDATION.md`
-- `docs/foundation/PUBLISHING-FOUNDATION.md`
-- `docs/foundation/REQUEST-FOUNDATION-v5.7.md`
-- `docs/foundation/REQUEST-HOURS-FOUNDATION.md`
-- `docs/foundation/SAVED-SCHEDULES-FOUNDATION.md`
-- `docs/foundation/VISIBILITY-VIEW-ENGINE-v5.12.md`
-- `docs/hotfixes/EMPLOYEE-PORTAL-NAVIGATION-HOTFIX.md`
-- `docs/migrations/STANDALONE-MIGRATION.md`
-- `docs/releases/LATEST_RELEASE.md`
-- `docs/releases/RELEASE-v5.16.0.md`
-- `docs/releases/RELEASE-v5.16.1.md`
-- `docs/ui/COMPONENT-CATALOG.md`
-- `docs/ui/SAVED-SCHEDULES-UI.md`
-- `docs/ui/UI-COPY-BOX-CLEANUP-v5.9.md`
-- `index.html`
-- `pages/admin/backend-readiness.html`
-- `pages/admin/dashboard-reference.html`
-- `pages/admin/data-export.html`
-- `pages/admin/data-tools.css`
-- `pages/admin/data-tools.html`
-- `pages/admin/data-tools.js`
-- `pages/admin/database-audit.html`
-- `pages/admin/foundation-admin.css`
-- `pages/admin/system-health.html`
-- `pages/admin/ui-catalog.html`
-- `pages/calendar/schedule-calendar.css`
-- `pages/calendar/schedule-calendar.js`
-- `pages/calendar/schedule.html`
-- `pages/coverage/coverage-board.css`
-- `pages/coverage/coverage-board.js`
-- `pages/coverage/coverage-spots.css`
-- `pages/coverage/coverage-spots.html`
-- `pages/coverage/coverage-spots.js`
-- `pages/coverage/coverage.html`
-- `pages/employee/calendar.html`
-- `pages/employee/employee-portal.css`
-- `pages/employee/employee-portal.js`
-- `pages/employee/index.html`
-- `pages/employee/profile.html`
-- `pages/employee/requests.html`
-- `pages/identity/agency-setup.html`
-- `pages/identity/current-user.html`
-- `pages/identity/identity.css`
-- `pages/identity/identity.js`
-- `pages/identity/login.html`
-- `pages/identity/users.html`
-- `pages/operations/audit-trail.html`
-- `pages/operations/operations.html`
-- `pages/people/availability.css`
-- `pages/people/availability.html`
-- `pages/people/availability.js`
-- `pages/people/eligibility.css`
-- `pages/people/eligibility.html`
-- `pages/people/eligibility.js`
-- `pages/people/employees.html`
-- `pages/people/profile.css`
-- `pages/people/profile.html`
-- `pages/people/profile.js`
-- `pages/people/qualifications.css`
-- `pages/people/qualifications.html`
-- `pages/people/qualifications.js`
-- `pages/people/seniority.css`
-- `pages/people/seniority.html`
-- `pages/people/seniority.js`
-- `pages/people/supervisors.css`
-- `pages/people/supervisors.html`
-- `pages/people/supervisors.js`
-- `pages/people/timeline.css`
-- `pages/people/timeline.html`
-- `pages/people/timeline.js`
-- `pages/people/training.css`
-- `pages/people/training.html`
-- `pages/people/training.js`
-- `pages/reports/reports.html`
-- `pages/requests/approvals.css`
-- `pages/requests/approvals.html`
-- `pages/requests/approvals.js`
-- `pages/requests/leave-banks.css`
-- `pages/requests/leave-banks.html`
-- `pages/requests/leave-banks.js`
-- `pages/requests/leave-requests.css`
-- `pages/requests/leave-requests.js`
-- `pages/requests/leave.html`
-- `pages/requests/open-shifts.css`
-- `pages/requests/open-shifts.html`
-- `pages/requests/open-shifts.js`
-- `pages/requests/ot-volunteer-board.css`
-- `pages/requests/ot-volunteer-board.html`
-- `pages/requests/ot-volunteer-board.js`
-- `pages/requests/request-engine.css`
-- `pages/requests/request-engine.js`
-- `pages/requests/requests.html`
-- `pages/requests/shift-trades.css`
-- `pages/requests/shift-trades.html`
-- `pages/requests/shift-trades.js`
-- `pages/requests/trades.html`
-- `pages/rules/benefits.css`
-- `pages/rules/benefits.html`
-- `pages/rules/benefits.js`
-- `pages/rules/mandation.css`
-- `pages/rules/mandation.html`
-- `pages/rules/mandation.js`
-- `pages/rules/notifications.css`
-- `pages/rules/notifications.html`
-- `pages/rules/notifications.js`
-- `pages/rules/permissions.css`
-- `pages/rules/permissions.html`
-- `pages/rules/permissions.js`
-- `pages/rules/rule-engine.html`
-- `pages/rules/shortcodes.css`
-- `pages/rules/shortcodes.html`
-- `pages/rules/shortcodes.js`
-- `pages/scheduling/scheduling-engine.html`
-- `pages/settings/settings.html`
-- `pages/settings/view-engine.html`
-- `pages/settings/visibility.css`
-- `pages/settings/visibility.html`
-- `pages/settings/visibility.js`
-- `pages/staffing/staffing-engine.css`
-- `pages/staffing/staffing-engine.html`
-- `pages/staffing/staffing-engine.js`
-- `pages/staffing/staffing.html`
-- `pages/workspace/assignment-generator.css`
-- `pages/workspace/assignment-generator.html`
-- `pages/workspace/assignment-generator.js`
-- `pages/workspace/assignments.css`
-- `pages/workspace/assignments.html`
-- `pages/workspace/assignments.js`
-- `pages/workspace/builder.css`
-- `pages/workspace/builder.html`
-- `pages/workspace/builder.js`
-- `pages/workspace/conflict-detection.css`
-- `pages/workspace/conflict-detection.html`
-- `pages/workspace/conflict-detection.js`
-- `pages/workspace/daily-board.css`
-- `pages/workspace/daily-board.html`
-- `pages/workspace/daily-board.js`
-- `pages/workspace/draft-planning.css`
-- `pages/workspace/draft-planning.html`
-- `pages/workspace/draft-planning.js`
-- `pages/workspace/history.css`
-- `pages/workspace/history.html`
-- `pages/workspace/history.js`
-- `pages/workspace/planning.css`
-- `pages/workspace/planning.html`
-- `pages/workspace/planning.js`
-- `pages/workspace/publishing.css`
-- `pages/workspace/publishing.html`
-- `pages/workspace/publishing.js`
-- `pages/workspace/weekly-board.css`
-- `pages/workspace/weekly-board.html`
-- `pages/workspace/weekly-board.js`
-- `pages/workspace/weekly-schedule.html`
-- `pages/workspace/workspace.css`
-- `pages/workspace/workspace.html`
-- `pages/workspace/workspace.js`
-- `repositories/AssignmentEngineRepository.js`
-- `repositories/AssignmentGeneratorRepository.js`
-- `repositories/BenefitLedgerRepository.js`
-- `repositories/CalendarRepository.js`
-- `repositories/CalendarShortcodeRepository.js`
-- `repositories/CalendarViewRepository.js`
-- `repositories/ConflictDetectionRepository.js`
-- `repositories/CoverageBoardRepository.js`
-- `repositories/CoverageSpotsRepository.js`
-- `repositories/DailyBoardRepository.js`
-- `repositories/DraftPlanningRepository.js`
-- `repositories/EmployeeAvailabilityPreferencesRepository.js`
-- `repositories/EmployeeProfileRepository.js`
-- `repositories/EmployeeTimelineRepository.js`
-- `repositories/LeaveBanksRepository.js`
-- `repositories/LeaveRequestRepository.js`
-- `repositories/MandationEngineRepository.js`
-- `repositories/MinimumStaffingRepository.js`
-- `repositories/NotificationRepository.js`
-- `repositories/OpenShiftRepository.js`
-- `repositories/OtVolunteerBoardRepository.js`
-- `repositories/QualificationsCertificationRepository.js`
-- `repositories/RequestApprovalWorkflowRepository.js`
-- `repositories/RolesPermissionsRepository.js`
-- `repositories/SchedulePlanningRepository.js`
-- `repositories/SchedulePublicationRepository.js`
-- `repositories/SeniorityEngineRepository.js`
-- `repositories/SeniorityRotationRepository.js`
-- `repositories/ShiftEligibilityRepository.js`
-- `repositories/ShiftTradeRepository.js`
-- `repositories/SupervisorHierarchyRepository.js`
-- `repositories/TrainingCertificationRepository.js`
-- `repositories/VisibilityPrivacyRepository.js`
-- `repositories/WeeklyBoardRepository.js`
-- `services/AssignmentEngineService.js`
-- `services/AssignmentGeneratorService.js`
-- `services/BenefitLedgerService.js`
-- `services/CalendarService.js`
-- `services/CalendarShortcodeService.js`
-- `services/CalendarViewService.js`
-- `services/ConflictDetectionService.js`
-- `services/CoverageBoardService.js`
-- `services/CoverageSpotsService.js`
-- `services/DailyBoardService.js`
-- `services/DraftPlanningService.js`
-- `services/EmployeeAvailabilityPreferencesService.js`
-- `services/EmployeeProfileService.js`
-- `services/EmployeeTimelineService.js`
-- `services/LeaveBanksService.js`
-- `services/LeaveRequestService.js`
-- `services/MandationEngineService.js`
-- `services/MinimumStaffingService.js`
-- `services/NotificationService.js`
-- `services/OpenShiftService.js`
-- `services/OtVolunteerBoardService.js`
-- `services/QualificationsCertificationService.js`
-- `services/RequestApprovalWorkflowService.js`
-- `services/RequestHoursService.js`
-- `services/RolesPermissionsService.js`
-- `services/SchedulePlanningService.js`
-- `services/SchedulePublicationService.js`
-- `services/SeniorityEngineService.js`
-- `services/SeniorityRotationService.js`
-- `services/ShiftEligibilityService.js`
-- `services/ShiftTradeService.js`
-- `services/SupervisorHierarchyService.js`
-- `services/TrainingCertificationService.js`
-- `services/VisibilityPrivacyService.js`
-- `services/WeeklyBoardService.js`
-- `sitemap.xml`
-- `sql/058_leave_banks_foundation.sql`
-- `sql/schema-draft-v6.1.0.sql`
-- `standards/COMPONENT_STANDARDS.md`
-- `standards/DEVELOPMENT_STANDARDS.md`
-- `standards/DOCUMENTATION_STANDARDS.md`
-- `standards/RELEASE_STANDARDS.md`
-- `standards/REPOSITORY_STANDARDS.md`
-- `standards/STANDARDS.md`
-- `standards/UX_STANDARDS.md`
-- `standards/WORKFLOW_STANDARDS.md`
+Generated for Signal Schedule v6.1.1.
+
+```text
+       252  .gitattributes
+       483  .gitignore
+       518  ADMIN_CHANGELOG.md
+       821  BUILDMANIFEST.md
+      1003  CHANGELOG.md
+     20660  FILEMANIFEST.md
+       492  HOWTO.md
+       458  LATEST_RELEASE.md
+       615  MASTER-CHANGELOG.md
+       453  PUBLIC_CHANGELOG.md
+      1764  README.md
+       733  ROADMAP.md
+      1841  STANDARDS.md
+       597  VALIDATION.md
+      3245  _redirects
+     10915  account/index.html
+       461  adapters/JsonAssignmentEngineAdapter.js
+       536  adapters/JsonAssignmentGeneratorAdapter.js
+       430  adapters/JsonBenefitLedgerAdapter.js
+       813  adapters/JsonCalendarAdapter.js
+       467  adapters/JsonCalendarShortcodeAdapter.js
+       428  adapters/JsonCalendarViewAdapter.js
+       526  adapters/JsonConflictDetectionAdapter.js
+       816  adapters/JsonCoverageBoardAdapter.js
+       447  adapters/JsonCoverageSpotsAdapter.js
+       430  adapters/JsonDailyBoardAdapter.js
+       554  adapters/JsonDraftPlanningAdapter.js
+       814  adapters/JsonEmployeeAvailabilityPreferencesAdapter.js
+       459  adapters/JsonEmployeeProfileAdapter.js
+       467  adapters/JsonEmployeeTimelineAdapter.js
+       442  adapters/JsonLeaveBanksAdapter.js
+       980  adapters/JsonLeaveRequestsAdapter.js
+       467  adapters/JsonMandationEngineAdapter.js
+       538  adapters/JsonMinimumStaffingAdapter.js
+       440  adapters/JsonNotificationAdapter.js
+       977  adapters/JsonOpenShiftAdapter.js
+       464  adapters/JsonOtVolunteerBoardAdapter.js
+       591  adapters/JsonQualificationsCertificationAdapter.js
+       489  adapters/JsonRequestApprovalWorkflowAdapter.js
+       455  adapters/JsonRolesPermissionsAdapter.js
+       644  adapters/JsonSchedulePlanningAdapter.js
+       648  adapters/JsonSchedulePublicationAdapter.js
+       516  adapters/JsonSeniorityEngineAdapter.js
+       599  adapters/JsonSeniorityRotationAdapter.js
+       481  adapters/JsonShiftEligibilityAdapter.js
+       450  adapters/JsonShiftTradeAdapter.js
+       466  adapters/JsonSupervisorHierarchyAdapter.js
+       493  adapters/JsonTrainingCertificationAdapter.js
+       550  adapters/JsonVisibilityPrivacyAdapter.js
+       434  adapters/JsonWeeklyBoardAdapter.js
+     12034  admin/index.html
+     12166  agency/index.html
+      1576  api/contracts/assignment-engine.read.schema.json
+      1186  api/contracts/assignment-generator.read.schema.json
+       467  api/contracts/benefit-ledger.read.schema.json
+      1031  api/contracts/calendar-shortcodes.read.schema.json
+       451  api/contracts/calendar-view.read.schema.json
+      1863  api/contracts/calendar.read.schema.json
+      1915  api/contracts/conflict-detection.read.schema.json
+      1381  api/contracts/coverage-board.read.schema.json
+       409  api/contracts/coverage-spots.read.schema.json
+       740  api/contracts/daily-board.read.schema.json
+       700  api/contracts/draft-planning.read.schema.json
+      1065  api/contracts/employee-availability-preferences.read.schema.json
+       621  api/contracts/employee-experience-data-tools.read.schema.json
+       715  api/contracts/employee-portal-preview.read.schema.json
+       586  api/contracts/employee-profile.read.schema.json
+      1393  api/contracts/employee-timeline.read.schema.json
+       672  api/contracts/leave-banks.read.schema.json
+      2357  api/contracts/leave-requests.read.schema.json
+       928  api/contracts/mandation-engine.read.schema.json
+       850  api/contracts/minimum-staffing.read.schema.json
+       871  api/contracts/notifications.read.schema.json
+      1370  api/contracts/open-shifts.read.schema.json
+       541  api/contracts/ot-volunteer-board.read.schema.json
+      2367  api/contracts/qualifications-certifications.read.schema.json
+       660  api/contracts/request-approval-engine.read.schema.json
+       707  api/contracts/request-approval-workflow.read.schema.json
+       602  api/contracts/request-hours.read.schema.json
+       936  api/contracts/roles-permissions.read.schema.json
+      1066  api/contracts/saved-schedules.write.schema.json
+      1046  api/contracts/schedule-planning.read.schema.json
+       857  api/contracts/schedule-publication.read.schema.json
+      1012  api/contracts/seniority-engine.read.schema.json
+      1164  api/contracts/seniority-rotation.read.schema.json
+       906  api/contracts/shift-eligibility.read.schema.json
+      1620  api/contracts/shift-trades.read.schema.json
+       567  api/contracts/staffing-engine.read.schema.json
+       399  api/contracts/supervisor-hierarchy.read.schema.json
+      1242  api/contracts/training-certifications.read.schema.json
+       887  api/contracts/visibility-privacy.read.schema.json
+       462  api/contracts/weekly-board.read.schema.json
+      1373  api/coolify/README.md
+     13011  api/coolify/db/postgres.js
+     46132  api/coolify/server.js
+       410  api/coolify/sql/004_schema_migrations_foundation.sql
+      1085  api/coolify/sql/005_minimum_staffing_foundation_schema.sql
+      1346  api/coolify/sql/006_calendar_foundation_schema.sql
+      2631  api/coolify/sql/007_employee_identity_cleanup_schema.sql
+      1416  api/coolify/sql/008_leave_requests_foundation_schema.sql
+      1331  api/coolify/sql/009_request_hours_foundation_schema.sql
+      1536  api/coolify/sql/010_open_shifts_foundation_schema.sql
+      1318  api/coolify/sql/011_coverage_board_foundation_schema.sql
+      1025  api/coolify/sql/012_seniority_rotation_foundation_schema.sql
+       940  api/coolify/sql/013_shift_trades_foundation_schema.sql
+      1016  api/coolify/sql/014_training_certifications_foundation_schema.sql
+      1062  api/coolify/sql/015_shift_eligibility_foundation_schema.sql
+      1272  api/coolify/sql/016_benefit_ledger_foundation_schema.sql
+      1829  api/coolify/sql/017_calendar_shortcode_admin_controls_schema.sql
+      1175  api/coolify/sql/018_calendar_views_foundation_schema.sql
+      2071  api/coolify/sql/019_employee_profile_self_service_schema.sql
+      1561  api/coolify/sql/020_employee_timeline_audit_trail_schema.sql
+      1476  api/coolify/sql/021_supervisor_hierarchy_schema.sql
+      2586  api/coolify/sql/022_roles_permissions_schema.sql
+      2178  api/coolify/sql/023_request_approval_workflow_schema.sql
+      2427  api/coolify/sql/024_notification_foundation_schema.sql
+      1331  api/coolify/sql/025_coverage_spots_foundation_schema.sql
+      1989  api/coolify/sql/026_daily_schedule_board_foundation_schema.sql
+      1999  api/coolify/sql/027_assignment_engine_integration_schema.sql
+      2839  api/coolify/sql/028_leave_banks_foundation_schema.sql
+      2712  api/coolify/sql/029_ot_volunteer_board_schema.sql
+      1903  api/coolify/sql/030_shift_trades_ui_schema.sql
+      4400  api/coolify/sql/031_mandation_engine_foundation_schema.sql
+      3294  api/coolify/sql/032_seniority_engine_schema.sql
+      2447  api/coolify/sql/033_assignment_generator_schema.sql
+      2465  api/coolify/sql/034_conflict_detection_foundation_schema.sql
+      3254  api/coolify/sql/035_qualifications_certifications_schema.sql
+      2582  api/coolify/sql/036_weekly_schedule_view_schema.sql
+      2927  api/coolify/sql/037_schedule_visibility_privacy_schema.sql
+      2624  api/coolify/sql/038_drag_drop_draft_planning_schema.sql
+      2937  api/coolify/sql/039_schedule_planning_forecast_horizon_schema.sql
+      5275  api/coolify/sql/040_schedule_beta_publishing_foundation_schema.sql
+      1327  api/coolify/sql/041_schedule_workable_sandbox_settings_schema.sql
+      1388  api/coolify/sql/042_employee_portal_view_as_foundation.sql
+      2040  api/coolify/sql/043_employee_availability_preferences_restrictions_schema.sql
+      1192  api/coolify/sql/044_saved_schedule_crud_foundation_schema.sql
+      3690  api/coolify/sql/045_employee_experience_data_tools_schema.sql
+      3915  api/coolify/sql/046_request_approval_engine_schema.sql
+      3796  api/coolify/sql/047_staffing_engine_schema.sql
+       462  assets/agency-branding.js
+       817  assets/agency-logo.svg
+       809  assets/config.js
+     43432  assets/dashboard.css
+      2187  assets/data-loader.js
+       880  assets/features.js
+      1326  assets/icons/apple-touch-icon.png
+      6756  assets/icons/favicon.ico
+       453  assets/icons/favicon.svg
+       301  assets/icons/site.webmanifest
+      4192  assets/navigation.js
+       146  assets/release-metadata.js
+       561  assets/roles.js
+      2750  assets/routes.js
+      1295  assets/signal-schedule-logo.svg
+       795  assets/status.js
+       163  assets/themes/cad.css
+       178  assets/themes/high-contrast.css
+       163  assets/themes/light.css
+       168  assets/themes/midnight.css
+       162  assets/themes/slate.css
+     12232  assignments/index.html
+      9458  audit/index.html
+     10310  calendar/index.html
+      1328  components/footer.js
+       265  components/panel.js
+       283  components/table.js
+       264  components/tag.js
+       304  components/toolbar.js
+     12930  coverage/index.html
+     10900  daily-board/index.html
+     13244  dashboard/index.html
+      3131  data/agencies.json
+      1024  data/agency-setup-preview.json
+      3190  data/approval-foundation-preview.json
+      7325  data/assignment-engine-preview.json
+      6572  data/assignment-generator-preview.json
+       778  data/assignment-templates.json
+      4543  data/benefit-ledger-preview.json
+       667  data/calendar-events-preview.json
+      2503  data/calendar-preview.json
+      5754  data/calendar-shortcodes-preview.json
+      6936  data/calendar-view-preview.json
+      7314  data/conflict-detection-preview.json
+      5090  data/coverage-board-preview.json
+      5983  data/coverage-spots-preview.json
+       302  data/current-user-preview.json
+      5398  data/daily-board-preview.json
+       519  data/database-audit-preview.json
+       779  data/demo-presets.json
+      2666  data/draft-planning-preview.json
+      1589  data/employee-assignments.json
+      7244  data/employee-availability-preferences-preview.json
+      1709  data/employee-experience-data-tools-preview.json
+      4640  data/employee-portal-preview.json
+      3989  data/employee-profile-preview.json
+      4257  data/employee-timeline-preview.json
+      6983  data/employees.json
+       203  data/export-foundation-preview.json
+       213  data/identity-session-preview.json
+      7384  data/leave-banks-preview.json
+      1547  data/leave-request-types.json
+      3480  data/leave-requests-preview.json
+      9192  data/mandation-engine-preview.json
+      1439  data/minimum-staffing-preview.json
+      3249  data/minimum-staffing-templates.json
+      7178  data/notifications-preview.json
+      2169  data/open-shifts-preview.json
+      1458  data/operational-scheduling-preview.json
+      6045  data/ot-volunteer-board-preview.json
+      1119  data/production-ready-preview.json
+      1311  data/production-workflow-preview.json
+      9017  data/qualifications-certifications-preview.json
+      2256  data/request-approval-engine-preview.json
+      4674  data/request-approval-workflow-preview.json
+      1070  data/request-foundation-preview.json
+      1079  data/request-increment-settings.json
+      1982  data/request-reasons.json
+      6399  data/roles-permissions-preview.json
+      1937  data/rule-engine-preview.json
+      1217  data/schedule-admin-settings.json
+      2062  data/schedule-builder-operational-preview.json
+      4356  data/schedule-builder-sandbox.json
+      3924  data/schedule-planning-preview.json
+      3891  data/schedule-publication-preview.json
+      2081  data/scheduling-engine-preview.json
+      8745  data/seniority-engine-preview.json
+      2627  data/seniority-rotation-preview.json
+       288  data/settings-foundation-preview.json
+      4280  data/shift-eligibility-preview.json
+      4096  data/shift-trades-preview.json
+      1933  data/staffing-engine-preview.json
+      4571  data/supervisor-hierarchy-preview.json
+      2360  data/training-certifications-preview.json
+       943  data/view-engine-preview.json
+      5222  data/visibility-privacy-preview.json
+      2184  data/vot-requests-preview.json
+      8685  data/weekly-board-preview.json
+       270  data/workspace-foundation-preview.json
+       300  developer/README.md
+     21156  developer/dashboard-reference/index.html
+      9788  developer/rule-engine/index.html
+      9035  developer/scheduling-engine/index.html
+     25424  developer/ui-catalog/index.html
+       701  docs/README.md
+      1228  docs/architecture/API-CONTRACTS-v6.1.0.md
+       653  docs/architecture/CLEAN-ROUTE-FOUNDATION.md
+      2188  docs/architecture/CLEAN-URL-ALIASES-v5.17.2.md
+      1974  docs/architecture/DATA-CONTRACTS-v6.1.0.md
+      1215  docs/architecture/DATABASE-NAMING-CONTRACT-v5.9.md
+       574  docs/architecture/DATABASE-SCHEMA-DRAFT-v6.1.0.md
+       768  docs/architecture/FILE_ORGANIZATION.md
+       314  docs/architecture/IDENTITY-SESSION-CONTRACT-v5.10.md
+       909  docs/architecture/METADATA-VALIDATION.md
+       846  docs/architecture/OPERATIONAL-SCHEDULING-v5.18.0.md
+       695  docs/architecture/PAGE-ARCHITECTURE.md
+      1065  docs/architecture/PRODUCTION-READY-v6.0.0.md
+      1438  docs/architecture/PRODUCTION-READY-v6.0.1.md
+       917  docs/architecture/PRODUCTION-WORKFLOW-CONSOLIDATION-v5.19.0.md
+      1003  docs/architecture/REGISTRY-FOUNDATION.md
+      1814  docs/architecture/REPOSITORY-ARCHITECTURE-v6.1.0.md
+       987  docs/architecture/SERVER-ROUTING-ROADMAP.md
+      1383  docs/audits/ALPHA-INTEGRATION-AUDIT.md
+       735  docs/audits/DATA-LAYER-AUDIT-v5.8.md
+       475  docs/audits/DATA-PATH-DRIFT-AUDIT-v5.7.md
+       566  docs/audits/NAVIGATION-DRIFT-AUDIT-v5.7.md
+       841  docs/audits/PRODUCTION-FOUNDATION-AUDIT-v6.0.1.md
+      4817  docs/audits/SQL-AUDIT-v5.9.md
+      1098  docs/engines/REQUEST-APPROVAL-ENGINE.md
+      1231  docs/engines/SCHEDULE-HISTORY-SNAPSHOT-ENGINE.md
+       873  docs/engines/STAFFING-ENGINE.md
+       520  docs/foundation/AGENCY-BRANDING-FOUNDATION.md
+       919  docs/foundation/CALENDAR-FOUNDATION.md
+      1369  docs/foundation/DASHBOARD-SHELL-ROLLOUT-v5.15.5.md
+      1130  docs/foundation/EMPLOYEE-EXPERIENCE-DATA-TOOLS.md
+      2132  docs/foundation/EMPLOYEE-IDENTITY-FOUNDATION.md
+       993  docs/foundation/IDENTITY-LOGIN-FOUNDATION-v5.10.md
+       626  docs/foundation/LEAVE-BANKS-FOUNDATION-v5.8.md
+       806  docs/foundation/LEAVE-REQUESTS-FOUNDATION.md
+       598  docs/foundation/MINIMUM-STAFFING-FOUNDATION.md
+       421  docs/foundation/NAVIGATION-REORGANIZATION-v5.16.1.md
+      1049  docs/foundation/OPEN-SHIFTS-FOUNDATION.md
+       969  docs/foundation/PUBLISHING-FOUNDATION.md
+       657  docs/foundation/REQUEST-FOUNDATION-v5.7.md
+      1137  docs/foundation/REQUEST-HOURS-FOUNDATION.md
+      1128  docs/foundation/SAVED-SCHEDULES-FOUNDATION.md
+      1146  docs/foundation/VISIBILITY-VIEW-ENGINE-v5.12.md
+       610  docs/hotfixes/EMPLOYEE-PORTAL-NAVIGATION-HOTFIX.md
+       822  docs/hotfixes/ROUTING-HOTFIX-v6.1.1.md
+      1040  docs/migrations/STANDALONE-MIGRATION.md
+      1515  docs/releases/LATEST_RELEASE.md
+       926  docs/releases/RELEASE-v5.16.0.md
+       887  docs/releases/RELEASE-v5.16.1.md
+       613  docs/ui/COMPONENT-CATALOG.md
+       841  docs/ui/SAVED-SCHEDULES-UI.md
+       597  docs/ui/UI-COPY-BOX-CLEANUP-v5.9.md
+     15086  employees/index.html
+     12044  employees/profile/index.html
+     13165  index.html
+     13445  leave/index.html
+     12234  login/index.html
+     12643  mandation/index.html
+     10563  my-schedule/index.html
+     12571  notifications/index.html
+     14907  open-shifts/index.html
+     10347  operations/index.html
+     11077  pages/admin/backend-readiness.html
+     21031  pages/admin/dashboard-reference.html
+     11394  pages/admin/data-export.html
+      1343  pages/admin/data-tools.css
+     10829  pages/admin/data-tools.html
+      2210  pages/admin/data-tools.js
+     10678  pages/admin/database-audit.html
+      1342  pages/admin/foundation-admin.css
+     11148  pages/admin/system-health.html
+     25317  pages/admin/ui-catalog.html
+      4280  pages/calendar/schedule-calendar.css
+      3561  pages/calendar/schedule-calendar.js
+     10214  pages/calendar/schedule.html
+      4777  pages/coverage/coverage-board.css
+      6507  pages/coverage/coverage-board.js
+      2507  pages/coverage/coverage-spots.css
+     10656  pages/coverage/coverage-spots.html
+      2155  pages/coverage/coverage-spots.js
+     12834  pages/coverage/coverage.html
+     10246  pages/employee/calendar.html
+      2038  pages/employee/employee-portal.css
+      7092  pages/employee/employee-portal.js
+     10467  pages/employee/index.html
+     10347  pages/employee/profile.html
+     10226  pages/employee/requests.html
+     12068  pages/identity/agency-setup.html
+     10816  pages/identity/current-user.html
+      3260  pages/identity/identity.css
+      2397  pages/identity/identity.js
+     12144  pages/identity/login.html
+     13011  pages/identity/users.html
+      9360  pages/operations/audit-trail.html
+     10245  pages/operations/operations.html
+      1952  pages/people/availability.css
+     10780  pages/people/availability.html
+      3463  pages/people/availability.js
+      4767  pages/people/eligibility.css
+     13448  pages/people/eligibility.html
+      5475  pages/people/eligibility.js
+     14990  pages/people/employees.html
+      3321  pages/people/profile.css
+     11942  pages/people/profile.html
+      3163  pages/people/profile.js
+      4065  pages/people/qualifications.css
+     13239  pages/people/qualifications.html
+      7187  pages/people/qualifications.js
+      3857  pages/people/seniority.css
+     14784  pages/people/seniority.html
+      7142  pages/people/seniority.js
+      2290  pages/people/supervisors.css
+     10882  pages/people/supervisors.html
+      1990  pages/people/supervisors.js
+      4429  pages/people/timeline.css
+     11508  pages/people/timeline.html
+      3341  pages/people/timeline.js
+      4198  pages/people/training.css
+     13116  pages/people/training.html
+      4779  pages/people/training.js
+     10898  pages/reports/reports.html
+      2655  pages/requests/approvals.css
+     11575  pages/requests/approvals.html
+      5544  pages/requests/approvals.js
+      3309  pages/requests/leave-banks.css
+     13349  pages/requests/leave-banks.html
+      5686  pages/requests/leave-banks.js
+      5118  pages/requests/leave-requests.css
+      7400  pages/requests/leave-requests.js
+     13305  pages/requests/leave.html
+      7924  pages/requests/open-shifts.css
+     14805  pages/requests/open-shifts.html
+      9642  pages/requests/open-shifts.js
+      4489  pages/requests/ot-volunteer-board.css
+     11391  pages/requests/ot-volunteer-board.html
+      4219  pages/requests/ot-volunteer-board.js
+      2604  pages/requests/request-engine.css
+      2729  pages/requests/request-engine.js
+     12555  pages/requests/requests.html
+      5078  pages/requests/shift-trades.css
+     13081  pages/requests/shift-trades.html
+      5227  pages/requests/shift-trades.js
+      9766  pages/requests/trades.html
+      2769  pages/rules/benefits.css
+     11509  pages/rules/benefits.html
+      3883  pages/rules/benefits.js
+      4853  pages/rules/mandation.css
+     12548  pages/rules/mandation.html
+      6601  pages/rules/mandation.js
+      3153  pages/rules/notifications.css
+     12468  pages/rules/notifications.html
+      3519  pages/rules/notifications.js
+      2886  pages/rules/permissions.css
+     11170  pages/rules/permissions.html
+      2357  pages/rules/permissions.js
+      9679  pages/rules/rule-engine.html
+      2697  pages/rules/shortcodes.css
+     11142  pages/rules/shortcodes.html
+      2960  pages/rules/shortcodes.js
+      8909  pages/scheduling/scheduling-engine.html
+     11941  pages/settings/settings.html
+     13716  pages/settings/view-engine.html
+      3142  pages/settings/visibility.css
+     12309  pages/settings/visibility.html
+      4771  pages/settings/visibility.js
+      1820  pages/staffing/staffing-engine.css
+     11194  pages/staffing/staffing-engine.html
+      2428  pages/staffing/staffing-engine.js
+     10976  pages/staffing/staffing.html
+      4522  pages/workspace/assignment-generator.css
+     12768  pages/workspace/assignment-generator.html
+      5262  pages/workspace/assignment-generator.js
+      3917  pages/workspace/assignments.css
+     12129  pages/workspace/assignments.html
+      2859  pages/workspace/assignments.js
+      7038  pages/workspace/builder.css
+     18122  pages/workspace/builder.html
+     11209  pages/workspace/builder.js
+      3694  pages/workspace/conflict-detection.css
+     12805  pages/workspace/conflict-detection.html
+      5590  pages/workspace/conflict-detection.js
+      3470  pages/workspace/daily-board.css
+     10797  pages/workspace/daily-board.html
+      2927  pages/workspace/daily-board.js
+      1492  pages/workspace/draft-planning.css
+     12897  pages/workspace/draft-planning.html
+      6609  pages/workspace/draft-planning.js
+      2390  pages/workspace/history.css
+     12493  pages/workspace/history.html
+      6141  pages/workspace/history.js
+      2846  pages/workspace/planning.css
+     13514  pages/workspace/planning.html
+      6894  pages/workspace/planning.js
+      2270  pages/workspace/publishing.css
+     13177  pages/workspace/publishing.html
+      5788  pages/workspace/publishing.js
+      4018  pages/workspace/weekly-board.css
+     10947  pages/workspace/weekly-board.html
+      2390  pages/workspace/weekly-board.js
+      9773  pages/workspace/weekly-schedule.html
+      5955  pages/workspace/workspace.css
+     14508  pages/workspace/workspace.html
+      4968  pages/workspace/workspace.js
+     13278  publishing/index.html
+     10991  reports/index.html
+       371  repositories/AssignmentEngineRepository.js
+       331  repositories/AssignmentGeneratorRepository.js
+       361  repositories/BenefitLedgerRepository.js
+       541  repositories/CalendarRepository.js
+       379  repositories/CalendarShortcodeRepository.js
+       335  repositories/CalendarViewRepository.js
+       325  repositories/ConflictDetectionRepository.js
+       347  repositories/CoverageBoardRepository.js
+       353  repositories/CoverageSpotsRepository.js
+       344  repositories/DailyBoardRepository.js
+       328  repositories/DraftPlanningRepository.js
+       436  repositories/EmployeeAvailabilityPreferencesRepository.js
+       367  repositories/EmployeeProfileRepository.js
+       376  repositories/EmployeeTimelineRepository.js
+       332  repositories/LeaveBanksRepository.js
+       543  repositories/LeaveRequestRepository.js
+       362  repositories/MandationEngineRepository.js
+       401  repositories/MinimumStaffingRepository.js
+       346  repositories/NotificationRepository.js
+       345  repositories/OpenShiftRepository.js
+       369  repositories/OtVolunteerBoardRepository.js
+       364  repositories/QualificationsCertificationRepository.js
+       403  repositories/RequestApprovalWorkflowRepository.js
+       364  repositories/RolesPermissionsRepository.js
+       361  repositories/SchedulePlanningRepository.js
+       390  repositories/SchedulePublicationRepository.js
+       319  repositories/SeniorityEngineRepository.js
+       371  repositories/SeniorityRotationRepository.js
+       357  repositories/ShiftEligibilityRepository.js
+       321  repositories/ShiftTradeRepository.js
+       378  repositories/SupervisorHierarchyRepository.js
+       368  repositories/TrainingCertificationRepository.js
+       345  repositories/VisibilityPrivacyRepository.js
+       338  repositories/WeeklyBoardRepository.js
+     12651  requests/index.html
+     11263  roles/index.html
+     18218  schedule/index.html
+      1229  services/AssignmentEngineService.js
+       935  services/AssignmentGeneratorService.js
+       916  services/BenefitLedgerService.js
+      1882  services/CalendarService.js
+       857  services/CalendarShortcodeService.js
+       481  services/CalendarViewService.js
+      1024  services/ConflictDetectionService.js
+      1519  services/CoverageBoardService.js
+       761  services/CoverageSpotsService.js
+      1115  services/DailyBoardService.js
+       656  services/DraftPlanningService.js
+       806  services/EmployeeAvailabilityPreferencesService.js
+       534  services/EmployeeProfileService.js
+       570  services/EmployeeTimelineService.js
+       762  services/LeaveBanksService.js
+      2255  services/LeaveRequestService.js
+      1226  services/MandationEngineService.js
+      1007  services/MinimumStaffingService.js
+       507  services/NotificationService.js
+      1965  services/OpenShiftService.js
+      1310  services/OtVolunteerBoardService.js
+      1006  services/QualificationsCertificationService.js
+       545  services/RequestApprovalWorkflowService.js
+      2523  services/RequestHoursService.js
+       514  services/RolesPermissionsService.js
+       822  services/SchedulePlanningService.js
+       822  services/SchedulePublicationService.js
+      2342  services/SeniorityEngineService.js
+      1917  services/SeniorityRotationService.js
+      1669  services/ShiftEligibilityService.js
+       789  services/ShiftTradeService.js
+       605  services/SupervisorHierarchyService.js
+      1088  services/TrainingCertificationService.js
+      1193  services/VisibilityPrivacyService.js
+       527  services/WeeklyBoardService.js
+      2320  sitemap.xml
+      1502  sql/058_leave_banks_foundation.sql
+      2594  sql/schema-draft-v6.1.0.sql
+     11297  staffing/index.html
+      1251  standards/COMPONENT_STANDARDS.md
+       731  standards/DEVELOPMENT_STANDARDS.md
+       152  standards/DOCUMENTATION_STANDARDS.md
+      2459  standards/RELEASE_STANDARDS.md
+       650  standards/REPOSITORY_STANDARDS.md
+      4078  standards/STANDARDS.md
+       183  standards/UX_STANDARDS.md
+      3202  standards/WORKFLOW_STANDARDS.md
+     11244  system/index.html
+     13179  trades/index.html
+     13101  users/index.html
+```

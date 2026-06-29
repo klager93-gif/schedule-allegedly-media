@@ -1,4 +1,4 @@
-# Build Manifest — Signal Schedule v6.1.0
+# Build Manifest — Signal Schedule v6.1.1
 
 Generated: 2026-06-29
 

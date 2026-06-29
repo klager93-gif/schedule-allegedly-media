@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/repositories/ConflictDetectionRepository.js
-Version: v6.1.0
+Version: v6.1.1
 Purpose: Repository boundary for Conflict Detection preview data.
 */
 export class ConflictDetectionRepository {

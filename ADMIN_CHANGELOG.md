@@ -1,4 +1,4 @@
-# v6.1.0 — Repository Architecture & Data Contracts
+# v6.1.1 — Repository Architecture & Data Contracts
 
 - Restored clean-root architecture by removing physical top-level alias folders.
 - Preserved public clean URLs with `_redirects` rewrite rules.
@@ -7,7 +7,7 @@
 
 # Admin Changelog
 
-## v6.1.0
+## v6.1.1
 
 - Added working clean admin routes for `/agency/`, `/users/`, and `/roles/`.
 - Updated administration navigation registry.

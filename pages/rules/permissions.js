@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/rules/permissions.js
-Version: v6.1.0
+Version: v6.1.1
 Purpose: Render Roles & Permissions Engine preview
 */
 import { getRolesPermissionsPreview } from '../../services/RolesPermissionsService.js';

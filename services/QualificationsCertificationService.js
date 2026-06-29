@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/services/QualificationsCertificationService.js
-Version: v6.1.0
+Version: v6.1.1
 Purpose: Qualifications & Certification Engine preview service and role visibility helpers.
 */
 export class QualificationsCertificationService {

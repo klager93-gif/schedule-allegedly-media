@@ -1,0 +1,174 @@
+<!-- Clean URL alias generated for /mandation/ from /pages/rules/mandation.html in v6.1.1. -->
+<!--
+Signal Schedule
+Area: Signal Schedule
+File: pages/rules/mandation.html
+Version: v6.1.1
+Purpose: Dashboard shell migrated page for Signal Schedule — Mandation Engine
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Schedule — Mandation Engine</title>
+  <meta name="description" content="Signal Schedule Mandation Engine Foundation for mandate rotation, shortage-window eligibility, policy rules, employee-facing lists, supervisor/admin details, and override audit preview.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=6.1.1">
+  <link rel="stylesheet" href="/pages/rules/mandation.css?v=6.1.1">
+</head>
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Mandation Engine" data-signal-version="v6.1.1" data-signal-theme="Mandation Engine Foundation" data-signal-status="Preview" data-signal-description="Mandation rotation, shortage-window eligibility, configurable policy rules, employee list, supervisor/admin detail view, and override audit preview." data-signal-status-text="Signal Schedule v6.1.1 foundation cleanup standardized this module on the dashboard design system.">
+  <div class="signal-dashboard-shell signal-dashboard-shell-wide">
+    <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
+      <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
+        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
+        <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
+      </a>
+      <nav class="signal-dashboard-nav signal-dashboard-nav--grouped">
+        <div class="signal-dashboard-nav__section">MAIN</div>
+        <a href="/dashboard/"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <div class="signal-dashboard-nav__section">SCHEDULING</div>
+        <a href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/my-schedule/"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
+        <a href="/open-shifts/"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/trades/"><span class="signal-dashboard-icon">⇄</span><span>Shift Trades</span></a>
+        <a class="is-active" href="/mandation/"><span class="signal-dashboard-icon">⚑</span><span>Mandation</span></a>
+        <a href="/assignments/"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        <div class="signal-dashboard-nav__section">PEOPLE</div>
+        <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave Management</span></a>
+        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
+        <div class="signal-dashboard-nav__section">OPERATIONS</div>
+        <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/publishing/"><span class="signal-dashboard-icon">⇧</span><span>Publishing</span></a>
+        <a href="/audit/"><span class="signal-dashboard-icon">◷</span><span>Audit Trail</span></a>
+        <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
+        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System Administration</span></a>
+        <a href="/agency/"><span class="signal-dashboard-icon">◎</span><span>Agency Setup</span></a>
+        <a href="/users/"><span class="signal-dashboard-icon">♙</span><span>Users</span></a>
+        <a href="/roles/"><span class="signal-dashboard-icon">◈</span><span>Roles & Permissions</span></a>
+        <a href="/admin/"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
+        <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
+        <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+        <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+      </nav>
+      <div class="signal-dashboard-user" aria-label="Current user preview">
+        <div class="signal-dashboard-avatar">JM</div>
+        <div><strong>Jordan Miller</strong><small>Administrator<br>City of Fairview</small></div>
+      </div>
+    </aside>
+
+    <div class="signal-dashboard-main">
+      <header class="signal-dashboard-topbar">
+        <div class="signal-dashboard-title"><h1>Mandation Engine</h1><p>Signal Schedule Mandation Engine Foundation for mandate rotation, shortage-window eligibility, policy rules, employee-facing lists, supervisor/admin details, and override audit preview.</p></div>
+        <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation">
+
+          <a href="/dashboard/">Dashboard</a>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/calendar/">Schedules</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/calendar/">Calendar <small>Live</small></a>
+              <a href="/schedule/">Builder <small>Live</small></a>
+              <a href="/daily-board/">Daily Board <small>Live</small></a>
+              <a href="/pages/workspace/weekly-board.html">Weekly Board <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/requests/">Requests</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/requests/">Requests <small>Live</small></a>
+              <a href="/requests/">Approvals <small>Live</small></a>
+              <a href="/open-shifts/">Open Shifts <small>Live</small></a>
+              <a href="/trades/">Trades <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/employees/">Employees</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/employees/">Employees <small>Live</small></a>
+              <a href="/employees/profile/">Profiles <small>Live</small></a>
+              <a href="/pages/people/qualifications.html">Qualifications <small>Live</small></a>
+              <a href="/pages/people/training.html">Training <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/reports/">Reports</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/reports/">Reports <small>Live</small></a>
+              <a href="/pages/admin/data-export.html">Data Export <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/system/">System</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/admin/">Settings <small>Live</small></a>
+              <a href="/system/">System Health <small>Live</small></a>
+              <a href="/pages/admin/database-audit.html">Database Audit <small>Live</small></a>
+              <a href="/pages/admin/data-tools.html">Data Tools <small>Live</small></a>
+              <a href="/developer/ui-catalog/">UI Catalog <small>Dev</small></a>
+            </div>
+          </div>
+        </nav>
+        <div class="signal-dashboard-top-actions">
+          <label class="signal-dashboard-search" aria-label="Search Mandation Engine"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
+                    <a class="signal-dashboard-notification-bell" href="/notifications/" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a>
+          <a class="signal-dashboard-avatar signal-dashboard-avatar--compact" href="/account/" aria-label="Open current user profile">JM</a>
+        </div>
+      </header>
+
+      <main class="signal-dashboard-content signal-dashboard-module-content mandation-shell">
+        <div class="signal-dashboard-status">
+          <span class="signal-dashboard-pill">v6.1.1</span><strong>Rules</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+        </div>
+
+<section aria-labelledby="pageTitle" class="mandation-hero">
+<p class="schedule-kicker">Signal Schedule</p>
+<h1 id="pageTitle">Mandation Engine Foundation</h1>
+<p>Preview mandate rotation, shortage-window eligibility, day-off and connected-shift caps, short-day logic, employee transparency, supervisor/admin details, and required override auditing before live mandation writes are enabled.</p>
+</section>
+<section aria-label="Mandation controls and policy preview" class="mandation-grid">
+<aside class="mandation-panel">
+<h2>Role-Based Mandation Views</h2>
+<p>Employee, supervisor, and admin details live on this same page. The UI changes detail level by role instead of maintaining a separate mandation-admin.html page.</p>
+<div class="mandation-summary" data-mandation-summary=""><div class="mandation-stat"><strong>—</strong><span>Loading preview</span></div></div>
+<div aria-label="Mandation view mode" class="mandation-view-toggle">
+<button aria-pressed="false" data-mandation-view="employee" type="button">Employee View</button>
+<button aria-pressed="true" data-mandation-view="supervisor" type="button">Supervisor/Admin View</button>
+</div>
+<p class="mandation-status-line" data-mandation-status-line="">Loading Mandation Engine preview data…</p>
+</aside>
+<section aria-labelledby="policyTitle" class="mandation-card">
+<h2 id="policyTitle">Agency Policy Profile</h2>
+<p>Mandation rules are configurable by agency. The engine recommends, explains, and audits; supervisors/admins may override soft rules with a required reason.</p>
+<div class="policy-grid" data-policy-grid=""></div>
+<div class="mandation-rules"><h3>Policy Notes</h3><ul data-policy-rules=""></ul></div>
+</section>
+</section>
+<section aria-labelledby="shortageTitle" class="mandation-list-section">
+<div class="mandation-section-header"><div><h2 id="shortageTitle">Shortage Window Recommendations</h2><p>Recommendations are calculated against the actual shortage window, not just the next name on the list.</p></div><span data-shortage-count="">—</span></div>
+<div class="mandation-list" data-shortage-list=""></div>
+</section>
+<section aria-labelledby="rotationTitle" class="mandation-list-section">
+<div class="mandation-section-header"><div><h2 id="rotationTitle">Rotation List</h2><p>Employee-facing list hides notes and internal rule analysis. Supervisor/admin list shows details.</p></div><span data-rotation-count="">—</span></div>
+<div class="mandation-list" data-rotation-list=""></div>
+</section>
+
+      </main>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v6.1.1 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
+    </div>
+  </div>
+  <script src="/assets/release-metadata.js?v=6.1.1"></script>
+  <script src="/assets/config.js?v=6.1.1"></script>
+  <script src="/assets/routes.js?v=6.1.1"></script>
+  <script src="/assets/navigation.js?v=6.1.1"></script>
+  <script src="/assets/features.js?v=6.1.1"></script>
+  <script src="/assets/roles.js?v=6.1.1"></script>
+  <script src="/assets/status.js?v=6.1.1"></script>
+  <script src="/assets/data-loader.js?v=6.1.1"></script>
+  <script type="module" src="/pages/rules/mandation.js?v=6.1.1"></script>
+</body>
+</html>

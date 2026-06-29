@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/agency-branding.js
-Version: v6.1.0
+Version: v6.1.1
 Purpose: Fictional agency branding preview for dashboard and future admin logo upload foundation.
 */
 window.SIGNAL_SCHEDULE_AGENCY_BRANDING = Object.freeze({

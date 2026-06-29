@@ -1,4 +1,4 @@
-# Signal Schedule v6.1.0 Data Contracts
+# Signal Schedule v6.1.1 Data Contracts
 
 ## Purpose
 

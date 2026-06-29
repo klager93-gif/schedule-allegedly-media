@@ -1,8 +1,8 @@
-# Signal Schedule v6.1.0 Repository Architecture
+# Signal Schedule v6.1.1 Repository Architecture
 
 ## Purpose
 
-v6.1.0 restores the clean-root rule while preserving the production clean URL system.
+v6.1.1 restores the clean-root rule while preserving the production clean URL system.
 
 ## Rule
 

@@ -1,4 +1,4 @@
-# v6.1.0 — Repository Architecture & Data Contracts
+# v6.1.1 — Repository Architecture & Data Contracts
 
 - Restored clean-root architecture by removing physical top-level alias folders.
 - Preserved public clean URLs with `_redirects` rewrite rules.
@@ -7,13 +7,13 @@
 
 # Changelog
 
-## v6.1.0 — Production Foundation Audit & Setup Polish
+## v6.1.1 — Production Foundation Audit & Setup Polish
 
 - Added physical clean URL alias folders for `/agency/`, `/users/`, and `/roles/`.
 - Updated the central route registry to use clean production administration routes.
 - Updated the grouped navigation registry to include Agency Setup, Users, and Roles & Permissions.
 - Added production foundation audit documentation.
-- Updated version/cache markers to `v6.1.0`.
+- Updated version/cache markers to `v6.1.1`.
 - Confirmed no Coolify, PHP, MySQL, or server changes are required for this static release.
 
 ## v6.0.0 — Production Ready Foundation
