@@ -1,6 +1,6 @@
 # Signal Schedule Roadmap
 
-- v5.16.3 — Rule Engine Foundation: conflict, coverage, qualification, approval routing, and notification trigger preview.
+- v5.17.0 — Rule Engine Foundation: conflict, coverage, qualification, approval routing, and notification trigger preview.
 - v5.17.0 — Scheduling Engine: wire assignment, coverage, mandation, trades, and publishing logic.
 
 

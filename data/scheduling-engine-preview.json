@@ -1,0 +1,71 @@
+{
+  "version": "v5.17.0",
+  "engine_status": "preview",
+  "generated_at": "2026-06-29",
+  "summary": {
+    "candidate_assignments": 12,
+    "recommended_fills": 5,
+    "blocked_assignments": 2,
+    "coverage_gaps": 3,
+    "validation_checks": 24
+  },
+  "engines": [
+    {
+      "name": "Assignment Engine",
+      "status": "Ready for wiring",
+      "description": "Evaluates candidate employees for open positions using availability, qualifications, leave, and seniority data."
+    },
+    {
+      "name": "Coverage Engine",
+      "status": "Preview",
+      "description": "Calculates minimum staffing coverage and highlights gaps by watch, station, and role."
+    },
+    {
+      "name": "Conflict Detection",
+      "status": "Integrated preview",
+      "description": "Uses rule engine outcomes to block double-bookings, leave overlaps, and qualification mismatches."
+    },
+    {
+      "name": "Open Shift Recommendations",
+      "status": "Preview",
+      "description": "Ranks eligible employees for open shifts and voluntary overtime opportunities."
+    }
+  ],
+  "recommendations": [
+    {
+      "slot": "Night Watch \u2022 Console 2",
+      "recommendation": "Avery Brooks",
+      "reason": "EMD certified, available, lowest rotation impact",
+      "risk": "low"
+    },
+    {
+      "slot": "Day Watch \u2022 Desk 4",
+      "recommendation": "Morgan Hayes",
+      "reason": "Qualified and under advisory overtime threshold",
+      "risk": "medium"
+    },
+    {
+      "slot": "Training Coverage",
+      "recommendation": "Taylor Reed",
+      "reason": "Instructor qualified and no leave conflict",
+      "risk": "low"
+    }
+  ],
+  "validation_report": [
+    {
+      "type": "block",
+      "title": "Leave overlap",
+      "detail": "One candidate is unavailable due to approved leave."
+    },
+    {
+      "type": "warning",
+      "title": "Overtime watch",
+      "detail": "Two candidates would cross advisory overtime threshold."
+    },
+    {
+      "type": "pass",
+      "title": "Supervisor coverage",
+      "detail": "Supervisor minimum coverage remains satisfied."
+    }
+  ]
+}

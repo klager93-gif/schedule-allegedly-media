@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/adapters/JsonAssignmentGeneratorAdapter.js
-Version: v5.16.3
+Version: v5.17.0
 Purpose: JSON adapter for Assignment Generator preview data.
 */
 export class JsonAssignmentGeneratorAdapter {

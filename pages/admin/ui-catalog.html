@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/admin/ui-catalog.html
-Version: v5.16.3
+Version: v5.17.0
 Purpose: Dashboard-reference UI component catalog for Schedule-only production layout, button, card, table, form, badge, alert, empty state, and modal standards.
 -->
 <!DOCTYPE html>
@@ -13,9 +13,9 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
   <title>Signal Schedule | UI Component Catalog</title>
   <meta name="description" content="Dashboard-reference UI component catalog for Signal Schedule production interface standards." />
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.16.3" />
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.17.0" />
 </head>
-<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="UI Component Catalog" data-signal-version="v5.16.3" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Dashboard-reference component catalog used as the source of truth for future Signal Schedule screens.">
+<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="UI Component Catalog" data-signal-version="v5.17.0" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Dashboard-reference component catalog used as the source of truth for future Signal Schedule screens.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
@@ -40,6 +40,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/pages/rules/rule-engine.html"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
+        <a href="/pages/scheduling/scheduling-engine.html"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
         <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
         <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
@@ -99,7 +100,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
 
       <main class="signal-dashboard-content signal-catalog-content">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.16.3</span>
+          <span class="signal-dashboard-pill">v5.17.0</span>
           <a class="signal-dashboard-pill" href="/pages/admin/dashboard-reference.html">Open Dashboard Reference</a>
           <strong>Source of Truth</strong><span>•</span><strong>Dashboard Shell</strong><span>•</span><strong>Schedule-only design</strong>
           <span class="signal-dashboard-dot" aria-hidden="true"></span><span>Ready for page rollout</span>
@@ -288,7 +289,7 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
         </section>
 
         <section class="signal-dashboard-panel" style="padding:18px; margin-top:14px;" id="employees">
-          <p class="schedule-kicker">v5.16.3</p>
+          <p class="schedule-kicker">v5.17.0</p>
           <h2>Employee workspace components</h2>
           <p style="color:var(--dash-muted);">Reusable directory cards, profile metadata blocks, status pills, qualification badges, and activity timeline components.</p>
           <div class="signal-employee-grid">
@@ -301,10 +302,13 @@ Purpose: Dashboard-reference UI component catalog for Schedule-only production l
         </section>
       
 <section id="operations" class="signal-dashboard-panel"><div class="signal-dashboard-panel__head"><h2>Operations Components</h2><a href="/pages/operations/operations.html">Open Operations Workspace →</a></div><div class="signal-ops-grid signal-ops-grid--three"><article class="signal-ops-card signal-ops-metric"><small>Coverage warnings</small><strong>2</strong><span>Reusable dashboard intelligence metric</span></article><article class="signal-ops-card"><h3>Conflict warning</h3><div class="signal-ops-impact"><article class="is-warning"><strong>Qualification issue</strong><p>Selected employee lacks required certification.</p></article></div></article><article class="signal-ops-card"><h3>Assignment chips</h3><div class="signal-ops-chip-row"><span class="signal-ops-chip is-good">Eligible</span><span class="signal-ops-chip is-warning">OT watch</span><span class="signal-ops-chip">Open</span></div></article></div></section>
+
+<section id="scheduling-engine" class="signal-dashboard-panel" style="padding:18px; margin-top:14px;"><div class="signal-dashboard-panel__head"><h2>Scheduling Engine Components</h2><a href="/pages/scheduling/scheduling-engine.html">Open Scheduling Engine →</a></div><div class="signal-engine-grid"><article class="signal-rule-card"><small>Candidate score</small><strong>94%</strong><span>Reusable best-fit assignment score.</span></article><article class="signal-rule-card"><small>Coverage gap</small><strong>3</strong><span>Coverage engine summary tile.</span></article><article class="signal-rule-row"><span class="signal-rule-dot is-pass"></span><div><strong>Recommended fill</strong><p>Eligible, qualified, and lowest rotation impact.</p></div><span class="signal-rule-status is-pass">Best fit</span></article><article class="signal-rule-row"><span class="signal-rule-dot is-warning"></span><div><strong>Validation warning</strong><p>Overtime advisory requires supervisor review.</p></div><span class="signal-rule-status is-warning">Review</span></article></div></section>
+
 </main>
 
       <footer class="signal-dashboard-footer">
-        <span>Signal Schedule v5.16.3</span>
+        <span>Signal Schedule v5.17.0</span>
         <span>UI Catalog rebuilt from dashboard-reference design</span>
         <a href="/pages/admin/dashboard-reference.html">Dashboard Reference</a>
       </footer>

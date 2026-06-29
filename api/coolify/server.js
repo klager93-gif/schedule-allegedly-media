@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/api/coolify/server.js
-Version: v5.16.3
+Version: v5.17.0
 Purpose: Coolify API with employee CRUD, snapshot CRUD, protected publish-state action, and read-only foundations including schedule publishing, schedule planning, draft planning, visibility/privacy controls, notifications, coverage spots, daily board, assignment engine, leave banks, OT volunteer board, shift trades, mandation engine, seniority engine, assignment generator, conflict detection, and qualifications/certifications.
 
 This release intentionally has:
@@ -81,7 +81,7 @@ function sendJson(res, statusCode, payload) {
 }
 
 function apiMeta(overrides = {}) {
-  return { source: 'coolify-api', version: 'v5.16.3', ...overrides };
+  return { source: 'coolify-api', version: 'v5.17.0', ...overrides };
 }
 
 function notFound(res) {
@@ -464,7 +464,7 @@ const server = createServer(async (req, res) => {
         data: result.employees,
         meta: {
           source: result.source,
-          version: 'v5.16.3',
+          version: 'v5.17.0',
           mode: 'read-with-protected-crud-foundation',
           database: result.database,
           writesEnabled: areEmployeeWritesEnabled()

@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/workspace/builder.html
-Version: v5.16.3
+Version: v5.17.0
 Purpose: Dashboard shell migrated page for Schedule Builder
 -->
 <!DOCTYPE html>
@@ -13,10 +13,10 @@ Purpose: Dashboard shell migrated page for Schedule Builder
   <title>Signal Schedule — Schedule Builder</title>
   <meta name="description" content="Interactive Signal Schedule sandbox for entering agency settings, employees, shifts, assignments, and coverage requirements.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.16.3">
-  <link rel="stylesheet" href="/pages/workspace/builder.css?v=5.16.3">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.17.0">
+  <link rel="stylesheet" href="/pages/workspace/builder.css?v=5.17.0">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Schedule Builder" data-signal-version="v5.16.3" data-signal-description="Playable schedule sandbox with admin settings and coverage validation." data-signal-theme="Dashboard Shell Rollout" data-signal-status="Design Rollout" data-signal-status-text="Signal Schedule v5.16.3 foundation cleanup standardized this module on the dashboard design system.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Schedule Builder" data-signal-version="v5.17.0" data-signal-description="Playable schedule sandbox with admin settings and coverage validation." data-signal-theme="Dashboard Shell Rollout" data-signal-status="Design Rollout" data-signal-status-text="Signal Schedule v5.17.0 foundation cleanup standardized this module on the dashboard design system.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
@@ -41,6 +41,7 @@ Purpose: Dashboard shell migrated page for Schedule Builder
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
         <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
         <a href="/pages/rules/rule-engine.html"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
+        <a href="/pages/scheduling/scheduling-engine.html"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
         <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
         <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
@@ -115,10 +116,10 @@ Purpose: Dashboard shell migrated page for Schedule Builder
 
       <main class="signal-dashboard-content signal-dashboard-module-content builder-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.16.3</span><strong>Scheduling Workspace</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+          <span class="signal-dashboard-pill">v5.17.0</span><strong>Scheduling Workspace</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
         </div>
 
-<section class="schedule-card builder-hero"><div><p class="schedule-kicker">Signal Schedule v5.16.3</p><h1>Workable Schedule Sandbox</h1><p>Enter your current shift values, employees, minimum staffing, and daily assignments. The builder checks short staffing, open spots, overstaffing, unavailable employees, and weekly hours while you edit.</p></div><div class="builder-hero__actions"><button class="schedule-btn schedule-btn--primary" data-builder-action="save">Save Snapshot</button><button class="schedule-btn schedule-btn--secondary" data-builder-action="validate">Validate schedule</button><button class="schedule-btn schedule-btn--secondary" data-builder-action="sample">Reload sample</button><button class="schedule-btn schedule-btn--ghost" data-builder-action="clear">Clear assignments</button><a class="schedule-btn schedule-btn--ghost" href="/pages/workspace/history.html">Schedule History</a></div></section>
+<section class="schedule-card builder-hero"><div><p class="schedule-kicker">Signal Schedule v5.17.0</p><h1>Workable Schedule Sandbox</h1><p>Enter your current shift values, employees, minimum staffing, and daily assignments. The builder checks short staffing, open spots, overstaffing, unavailable employees, and weekly hours while you edit.</p></div><div class="builder-hero__actions"><button class="schedule-btn schedule-btn--primary" data-builder-action="save">Save Snapshot</button><button class="schedule-btn schedule-btn--secondary" data-builder-action="validate">Validate schedule</button><button class="schedule-btn schedule-btn--secondary" data-builder-action="sample">Reload sample</button><button class="schedule-btn schedule-btn--ghost" data-builder-action="clear">Clear assignments</button><a class="schedule-btn schedule-btn--ghost" href="/pages/workspace/history.html">Schedule History</a></div></section>
 <section class="builder-layout">
 <aside aria-labelledby="builderSettingsTitle" class="schedule-card builder-settings"><h2 id="builderSettingsTitle">Admin Sandbox Settings</h2><p>These settings are local to this page for now. They model the admin settings that will later save to the database.</p><div data-builder-settings=""></div></aside>
 <section aria-labelledby="builderGridTitle" class="schedule-card builder-main"><div class="builder-command-row"><div><h2 id="builderGridTitle">Editable Week Grid</h2><p>Type employee names directly into cells. Start typing a name to get browser autocomplete suggestions. Use <strong>OPEN</strong> to mark a vacancy.</p></div><div class="builder-summary" data-builder-summary=""></div></div><div class="builder-grid-wrap"><table class="builder-grid" data-builder-grid=""><thead></thead><tbody></tbody></table></div></section>
@@ -127,17 +128,17 @@ Purpose: Dashboard shell migrated page for Schedule Builder
 <section class="builder-lower-grid"><section class="schedule-card"><h2>Employees</h2><div class="builder-employee-list" data-builder-employees=""></div></section><section class="schedule-card"><h2>What this release proves</h2><ul class="builder-checklist"><li>Manual schedule entry can be edited in the browser.</li><li>Admin settings can drive validation behavior.</li><li>Open spots, shortages, and unavailable employee conflicts are visible.</li><li>This now connects to the protected snapshot API when Schedule writes are enabled.</li></ul></section></section>
 
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.16.3 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.0 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
     </div>
   </div>
-  <script type="module" src="/pages/workspace/builder.js?v=5.16.3"></script>
-  <script src="/assets/release-metadata.js?v=5.16.3"></script>
-  <script src="/assets/config.js?v=5.16.3"></script>
-  <script src="/assets/routes.js?v=5.16.3"></script>
-  <script src="/assets/navigation.js?v=5.16.3"></script>
-  <script src="/assets/features.js?v=5.16.3"></script>
-  <script src="/assets/roles.js?v=5.16.3"></script>
-  <script src="/assets/status.js?v=5.16.3"></script>
-  <script src="/assets/data-loader.js?v=5.16.3"></script>
+  <script type="module" src="/pages/workspace/builder.js?v=5.17.0"></script>
+  <script src="/assets/release-metadata.js?v=5.17.0"></script>
+  <script src="/assets/config.js?v=5.17.0"></script>
+  <script src="/assets/routes.js?v=5.17.0"></script>
+  <script src="/assets/navigation.js?v=5.17.0"></script>
+  <script src="/assets/features.js?v=5.17.0"></script>
+  <script src="/assets/roles.js?v=5.17.0"></script>
+  <script src="/assets/status.js?v=5.17.0"></script>
+  <script src="/assets/data-loader.js?v=5.17.0"></script>
 </body>
 </html>

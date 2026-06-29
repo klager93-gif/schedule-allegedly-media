@@ -210,6 +210,7 @@ data/schedule-admin-settings.json
 data/schedule-builder-sandbox.json
 data/schedule-planning-preview.json
 data/schedule-publication-preview.json
+data/scheduling-engine-preview.json
 data/seniority-engine-preview.json
 data/seniority-rotation-preview.json
 data/settings-foundation-preview.json
@@ -359,6 +360,7 @@ pages/rules/rule-engine.html
 pages/rules/shortcodes.css
 pages/rules/shortcodes.html
 pages/rules/shortcodes.js
+pages/scheduling/scheduling-engine.html
 pages/settings/settings.html
 pages/settings/view-engine.html
 pages/settings/visibility.css

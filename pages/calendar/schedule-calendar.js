@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/calendar/schedule-calendar.js
-Version: v5.16.3
+Version: v5.17.0
 Purpose: Render user-facing week/day calendar previews using admin shortcodes
 */
 import { loadCalendarViewModel } from '../../services/CalendarViewService.js';

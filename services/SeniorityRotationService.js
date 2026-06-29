@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/services/SeniorityRotationService.js
-Version: v5.16.3
+Version: v5.17.0
 Purpose: Seniority, equalization, callback, mandate, and skip-reason helpers.
 */
 export class SeniorityRotationService {

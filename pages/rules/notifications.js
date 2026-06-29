@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/rules/notifications.js
-Version: v5.16.3
+Version: v5.17.0
 Purpose: Render Notification Center preview, drawer, queue, rules, and role preferences
 */
 import { getNotificationPreview } from '../../services/NotificationService.js';
