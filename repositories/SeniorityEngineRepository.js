@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/repositories/SeniorityEngineRepository.js
-Version: v5.15.5
+Version: v5.15.6
 Purpose: Repository boundary for Seniority Engine preview data.
 */
 export class SeniorityEngineRepository {

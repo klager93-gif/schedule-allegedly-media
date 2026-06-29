@@ -1,12 +1,24 @@
+# Signal Schedule v5.15.6 — Foundation Cleanup Audit Fix
 
-## v5.15.4 — Dashboard Reference Component Rollout
+Released: 2026-06-29
 
-- Extracted the dashboard reference button/action styling into reusable production classes.
-- Updated the working dashboard to use reference-style action buttons and build-path copy.
-- Converted `/pages/calendar/schedule.html` away from the old app-shell navigation into the new dashboard shell.
-- Preserved `/pages/admin/dashboard-reference.html` as the visual target and `/pages/admin/ui-catalog.html` as the implementation guide.
-- Updated release/cache markers to v5.15.4 and rebuilt manifests/checksums.
+## Release Focus
 
-# Signal Schedule v5.15.4 — Working Dashboard Split
+Cleaned up the dashboard-shell rollout after the v5.15.5 migration. This release removes unused legacy shell files, replaces migration placeholder language with production module copy, and refreshes release metadata/manifests before v5.16 feature work begins.
 
-The visual dashboard target has been preserved as `pages/admin/dashboard-reference.html`, while `index.html` now starts the real working dashboard buildout.
+## What Changed
+
+- Removed unused root legacy shell files: `app-shell.css` and `app-shell.js`.
+- Replaced remaining "migrated from legacy app shell" page copy with module-specific product descriptions.
+- Replaced admin placeholder wording on Employees, Reports, Minimum Staffing, and Weekly Schedule pages where applicable.
+- Preserved the dashboard-reference design system and UI Catalog as the source of truth.
+- Updated release/cache markers to v5.15.6.
+- Regenerated file manifest and checksums.
+- No server or Coolify configuration changes required.
+
+## Validation
+
+- Validate `/index.html`, `/pages/admin/dashboard-reference.html`, `/pages/admin/ui-catalog.html`, `/pages/calendar/schedule.html`, `/pages/people/employees.html`, `/pages/reports/reports.html`, `/pages/staffing/staffing.html`, and `/pages/workspace/weekly-schedule.html`.
+- Confirm no HTML pages load `app-shell.css` or `app-shell.js`.
+- Confirm removed legacy shell files do not create missing asset errors.
+- Confirm module headers no longer say the page was migrated from the legacy app shell.

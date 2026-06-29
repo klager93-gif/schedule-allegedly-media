@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/adapters/JsonAssignmentEngineAdapter.js
-Version: v5.15.5
+Version: v5.15.6
 Purpose: JSON adapter for Assignment Engine preview data
 */
 export async function fetchAssignmentEnginePreview() {

@@ -1,19 +1,19 @@
-# Build Manifest — Signal Schedule v5.15.5
+# Build Manifest — Signal Schedule v5.15.6
 
 Built: 2026-06-29
 Package: full replacement
-Release: Global Dashboard Shell Rollout
+Release: Foundation Cleanup Audit Fix
 
 ## Counts
 
 - HTML files: 59
-- CSS files: 47
-- JS files: 159
-- Total files: 479
+- CSS files: 46
+- JS files: 158
+- Total files: 477
 
 ## Release Notes
 
-- Migrated 55 legacy app-shell pages to the dashboard-reference shell.
-- Added dashboard compatibility styles for existing module content.
-- Preserved page-specific JavaScript and CSS.
+- Removed unused legacy shell files after confirming converted HTML pages no longer depended on them.
+- Replaced migration-copy remnants with module-specific product descriptions.
+- Preserved dashboard-reference/UI Catalog alignment.
 - Regenerated file manifest and checksums.

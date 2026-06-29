@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/dashboard.css
-Version: v5.15.5
+Version: v5.15.6
 Purpose: Temporary dashboard-specific shell and mission-control styling while the app-wide theme migrates toward the target dashboard direction.
 */
 :root {
@@ -153,7 +153,7 @@ body.signal-dashboard-page {
 }
 
 
-/* v5.15.5 responsive shell, dropdowns, search, and role-aware dashboard widgets */
+/* v5.15.6 responsive shell, dropdowns, search, and role-aware dashboard widgets */
 .signal-dashboard-topnav { gap: 4px; align-self: stretch; }
 .signal-dashboard-menu { position: relative; display: flex; align-items: stretch; }
 .signal-dashboard-menu > a,
@@ -210,7 +210,7 @@ body.signal-dashboard-page {
   .signal-dashboard-metric strong { font-size:27px; }
 }
 
-/* v5.15.5 working dashboard split */
+/* v5.15.6 working dashboard split */
 .signal-dashboard-health-card[href] {
   display: block;
   text-decoration: none;
@@ -223,7 +223,7 @@ body.signal-dashboard-page {
   text-decoration: none;
 }
 
-/* v5.15.5 dashboard-reference component extraction */
+/* v5.15.6 dashboard-reference component extraction */
 .schedule-action-row {
   display: flex;
   align-items: center;
@@ -292,7 +292,7 @@ body.signal-dashboard-page {
   padding: 10px;
 }
 
-/* v5.15.5 dashboard-reference UI catalog */
+/* v5.15.6 dashboard-reference UI catalog */
 .signal-dashboard-btn--primary { background: linear-gradient(180deg,#267aff,#0f5fd4); border-color:#60a5fa; color:#fff; box-shadow: 0 10px 26px rgba(15,111,255,.24); }
 .signal-dashboard-btn--danger { background: rgba(127,29,29,.72); border-color: rgba(248,113,113,.48); color:#fecaca; }
 .signal-catalog-content { scroll-behavior:smooth; }
@@ -337,7 +337,7 @@ body.signal-dashboard-page {
 @media (max-width: 640px) { .signal-catalog-command-bar { align-items:flex-start; flex-direction:column; } .signal-catalog-swatch-grid { grid-template-columns:1fr; } }
 
 
-/* v5.15.5 global module shell rollout compatibility layer */
+/* v5.15.6 global module shell rollout compatibility layer */
 .signal-dashboard-module-content { display: grid; gap: 18px; }
 .signal-dashboard-module-content > section,
 .signal-dashboard-module-content > article,

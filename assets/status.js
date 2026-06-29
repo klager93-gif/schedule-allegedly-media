@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/status.js
-Version: v5.15.5
+Version: v5.15.6
 Purpose: Shared status labels for pages, modules, and roadmap surfaces.
 */
 window.SIGNAL_SCHEDULE_STATUSES = Object.freeze({

@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/admin/data-tools.js
-Version: v5.15.5
+Version: v5.15.6
 Purpose: Render employee experience data tools preview with graceful foundation data fallback.
 */
 const esc = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
@@ -33,7 +33,7 @@ function render(data){
   fill('[data-import-list]', list(data.imports));
   fill('[data-export-list]', list(data.exports));
   fill('[data-profile-fields]', list(data.profileFields || data.fields));
-  shell.insertAdjacentHTML('beforeend', `<section class="schedule-card"><h2>Data Layer Ready</h2><p>${esc(data.summary || fallbackData.summary)}</p><p class="schedule-muted">v5.15.5 uses graceful fallback data so missing preview JSON no longer displays alarming fetch errors.</p></section>`);
+  shell.insertAdjacentHTML('beforeend', `<section class="schedule-card"><h2>Data Layer Ready</h2><p>${esc(data.summary || fallbackData.summary)}</p><p class="schedule-muted">v5.15.6 uses graceful fallback data so missing preview JSON no longer displays alarming fetch errors.</p></section>`);
 }
 
 async function init(){

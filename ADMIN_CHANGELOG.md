@@ -1,15 +1,11 @@
+## v5.15.6 — Foundation Cleanup Audit Fix
 
-## v5.15.5 — Global Dashboard Shell Rollout
-
-- Converted 55 legacy module pages from the old app shell to the dashboard-reference shell.
-- Standardized module sidebar, topbar, search, status strip, footer, and design-system links.
-- Removed converted page dependencies on `/app-shell.css` and `/app-shell.js`.
-- Preserved page-specific module scripts and styles where existing previews were already wired.
-- Added dashboard compatibility styles for older cards, heroes, buttons, tables, forms, lists, and rows.
-- Added rollout documentation at `docs/foundation/DASHBOARD-SHELL-ROLLOUT-v5.15.5.md`.
-- Updated release/cache markers to v5.15.5.
+- Removed unused root legacy shell files: `app-shell.css` and `app-shell.js`.
+- Replaced remaining legacy migration copy with product-ready module descriptions.
+- Replaced placeholder wording on key reserved workspaces where practical.
+- Preserved the dashboard design system, dashboard reference, and UI Catalog as the production UI source of truth.
+- Updated release/cache markers to v5.15.6 and regenerated manifests/checksums.
 - No server or Coolify configuration changes required.
-
 
 ## v5.15.4 — Dashboard UI Catalog Rebuild
 

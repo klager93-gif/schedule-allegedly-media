@@ -1,24 +1,24 @@
-# Signal Schedule v5.15.5 — Global Dashboard Shell Rollout
+# Signal Schedule v5.15.6 — Foundation Cleanup Audit Fix
 
 Released: 2026-06-29
 
 ## Release Focus
 
-Migrated the remaining legacy module pages into the dashboard-reference shell so the application now shares one production-facing visual system across dashboard, calendar, people, requests, workspace, staffing, reports, settings, and system pages.
+Cleaned up the dashboard-shell rollout after the v5.15.5 migration. This release removes unused legacy shell files, replaces migration placeholder language with production module copy, and refreshes release metadata/manifests before v5.16 feature work begins.
 
 ## What Changed
 
-- Converted 55 legacy app-shell pages to the dashboard shell.
-- Removed converted page dependencies on `/app-shell.css` and `/app-shell.js`.
-- Removed legacy in-page header/footer placeholders from converted pages.
-- Preserved page-specific CSS and JavaScript modules where previews already existed.
-- Added dashboard compatibility styles for older module cards, heroes, buttons, forms, tables, rows, and lists.
-- Added `docs/foundation/DASHBOARD-SHELL-ROLLOUT-v5.15.5.md`.
-- Updated release/cache markers to v5.15.5.
+- Removed unused root legacy shell files: `app-shell.css` and `app-shell.js`.
+- Replaced remaining "migrated from legacy app shell" page copy with module-specific product descriptions.
+- Replaced admin placeholder wording on Employees, Reports, Minimum Staffing, and Weekly Schedule pages where applicable.
+- Preserved the dashboard-reference design system and UI Catalog as the source of truth.
+- Updated release/cache markers to v5.15.6.
+- Regenerated file manifest and checksums.
 - No server or Coolify configuration changes required.
 
 ## Validation
 
-- Validate `/index.html`, `/pages/admin/dashboard-reference.html`, `/pages/admin/ui-catalog.html`, `/pages/calendar/schedule.html`, `/pages/people/employees.html`, `/pages/workspace/assignments.html`, `/pages/requests/approvals.html`, and `/pages/settings/settings.html`.
-- Confirm converted pages no longer load `app-shell.css` or `app-shell.js`.
-- Confirm the dashboard sidebar, topbar, search, module status strip, and footer appear consistently on converted pages.
+- Validate `/index.html`, `/pages/admin/dashboard-reference.html`, `/pages/admin/ui-catalog.html`, `/pages/calendar/schedule.html`, `/pages/people/employees.html`, `/pages/reports/reports.html`, `/pages/staffing/staffing.html`, and `/pages/workspace/weekly-schedule.html`.
+- Confirm no HTML pages load `app-shell.css` or `app-shell.js`.
+- Confirm removed legacy shell files do not create missing asset errors.
+- Confirm module headers no longer say the page was migrated from the legacy app shell.

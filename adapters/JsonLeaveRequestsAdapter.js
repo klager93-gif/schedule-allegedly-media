@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/adapters/JsonLeaveRequestsAdapter.js
-Version: v5.15.5
+Version: v5.15.6
 Purpose: JSON adapter for Leave Requests and Request Hours Foundation preview data.
 */
 export class JsonLeaveRequestsAdapter {

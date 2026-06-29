@@ -1,4 +1,4 @@
-# File Manifest — Signal Schedule v5.15.5
+# File Manifest — Signal Schedule v5.15.6
 
 - `.gitattributes`
 - `.gitignore`
@@ -6,7 +6,6 @@
 - `BUILDMANIFEST.md`
 - `CHANGELOG.md`
 - `FILEMANIFEST.generated.txt`
-- `FILEMANIFEST.md`
 - `HOWTO.md`
 - `LATEST_RELEASE.md`
 - `MASTER-CHANGELOG.md`
@@ -137,8 +136,6 @@
 - `api/coolify/sql/045_employee_experience_data_tools_schema.sql`
 - `api/coolify/sql/046_request_approval_engine_schema.sql`
 - `api/coolify/sql/047_staffing_engine_schema.sql`
-- `app-shell.css`
-- `app-shell.js`
 - `assets/agency-branding.js`
 - `assets/agency-logo.svg`
 - `assets/config.js`

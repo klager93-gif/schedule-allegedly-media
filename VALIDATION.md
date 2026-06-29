@@ -1,16 +1,19 @@
-# Signal Schedule v5.15.5 Validation
+# Validation — Signal Schedule v5.15.6
 
-## Required checks
+Release: Foundation Cleanup Audit Fix
+Date: 2026-06-29
 
-- Open `/index.html` and confirm the working dashboard loads.
-- Open `/pages/admin/dashboard-reference.html` and confirm the preserved visual reference loads.
-- Open `/pages/admin/ui-catalog.html` and confirm it still uses the dashboard design system.
-- Open `/pages/calendar/schedule.html` and confirm the calendar remains on the dashboard shell.
-- Open migrated pages such as `/pages/people/employees.html`, `/pages/workspace/assignments.html`, `/pages/requests/approvals.html`, and `/pages/settings/settings.html`.
-- Confirm converted pages no longer load `/app-shell.css` or `/app-shell.js`.
-- Confirm sidebar, topbar, search, status strip, and footer are consistent across converted modules.
-- Confirm module-specific preview scripts still render where applicable.
+## Required Checks
+
+- Confirm `/index.html` loads with `dashboard.css?v=5.15.6`.
+- Confirm `/pages/admin/dashboard-reference.html` remains the visual reference.
+- Confirm `/pages/admin/ui-catalog.html` remains aligned to the dashboard-reference design.
+- Confirm `/pages/calendar/schedule.html` still uses the dashboard shell.
+- Confirm `/pages/people/employees.html`, `/pages/reports/reports.html`, `/pages/staffing/staffing.html`, and `/pages/workspace/weekly-schedule.html` no longer contain migration-placeholder copy.
+- Confirm no HTML page requests `/app-shell.css` or `/app-shell.js`.
+- Confirm removed root files `app-shell.css` and `app-shell.js` are not needed by any route.
+- Confirm footer/version markers show v5.15.6.
 
 ## Coolify
 
-No server or Coolify configuration changes are required. Deploy as a full replacement.
+No Coolify, Docker, environment variable, or persistent storage changes are required.
