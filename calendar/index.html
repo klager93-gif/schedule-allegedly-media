@@ -1,0 +1,131 @@
+<!--
+Signal Schedule
+Area: Signal Schedule
+File: pages/calendar/schedule.html
+Version: v5.17.2
+Alias: /calendar/ -> /pages/calendar/schedule.html
+Purpose: Production dashboard-shell calendar view with shortcode display
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Schedule — Schedule Calendar</title>
+<meta name="description" content="Week and day calendar views for Signal Schedule with admin-defined shortcodes and daily detail previews.">
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/dashboard.css?v=5.17.2">
+<link rel="stylesheet" href="/pages/calendar/schedule-calendar.css?v=5.17.2">
+  <link rel="canonical" href="https://schedule.allegedly-media.com/calendar/">
+</head>
+<body class="signal-dashboard-page schedule-calendar-dashboard" data-signal-area="Signal Schedule" data-signal-title="Schedule Calendar" data-signal-version="v5.17.2" data-signal-theme="Dashboard Calendar" data-signal-status="Design Rollout" data-signal-description="Dashboard-shell calendar workspace for week/day schedule views.">
+  <div class="signal-dashboard-shell signal-dashboard-shell-wide">
+
+    <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
+      <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
+        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
+        <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
+      </a>
+      <nav class="signal-dashboard-nav signal-dashboard-nav--grouped">
+        <div class="signal-dashboard-nav__section">MAIN</div>
+        <a href="/dashboard/"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <div class="signal-dashboard-nav__section">SCHEDULING</div>
+        <a class="is-active" href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/my-schedule/"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/open-shifts/"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/assignments/"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
+        <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        <div class="signal-dashboard-nav__section">PEOPLE</div>
+        <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <div class="signal-dashboard-nav__section">OPERATIONS</div>
+        <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
+        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
+        <a href="/admin/"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
+        <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
+        <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+        <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+        <a href="/developer/rule-engine/"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
+        <a href="/developer/scheduling-engine/"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
+      </nav>
+      <div class="signal-dashboard-user" aria-label="Current user preview">
+        <div class="signal-dashboard-avatar">JM</div>
+        <div><strong>Jordan Miller</strong><small>Administrator<br>City of Fairview</small></div>
+      </div>
+    </aside>
+    <div class="signal-dashboard-main">
+      <header class="signal-dashboard-topbar">
+        <div class="signal-dashboard-title"><h1>Schedule Calendar</h1><p>Week and day schedule views now use the dashboard reference shell.</p></div>
+        <nav class="signal-dashboard-topnav" aria-label="Calendar workspace navigation">
+          <a href="/dashboard/">Dashboard</a>
+          <a class="is-active" href="/calendar/">Calendar</a>
+          <a href="/schedule/">Builder</a>
+          <a href="/daily-board/">Daily Board</a>
+          <a href="/pages/requests/approvals.html">Approvals</a>
+          <a href="/staffing/">Staffing</a>
+        </nav>
+        <div class="signal-dashboard-top-actions">
+          <label class="signal-dashboard-search" aria-label="Search calendar"><span>⌕</span><input type="search" placeholder="Search calendar, people, shifts..." /></label>
+                    <a class="signal-dashboard-notification-bell" href="/notifications/" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a>
+          <a class="signal-dashboard-avatar signal-dashboard-avatar--compact" href="/account/" aria-label="Open current user profile">JM</a>
+        </div>
+      </header>
+
+      <main class="signal-dashboard-content calendar-shell">
+        <div class="signal-dashboard-status">
+          <span class="signal-dashboard-pill">v5.17.2</span><strong>Calendar Workspace</strong><span>•</span><strong>Dashboard-shell design</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Old app shell removed from this page</span>
+        </div>
+
+        <section class="calendar-hero" aria-labelledby="calendarTitle">
+          <div>
+            <p class="schedule-kicker">Signal Schedule</p>
+            <h1 id="calendarTitle">Calendar Views</h1>
+            <p class="calendar-subtitle">Preview week and day views using the admin-managed shortcode system. Week view keeps labels compact; day view expands the same events into full text, coverage status, request context, and hour summaries.</p>
+            <div class="schedule-action-row" aria-label="Calendar actions">
+              <a class="schedule-button schedule-button--primary" href="/schedule/">Open Builder</a>
+              <a class="schedule-button schedule-button--secondary" href="/daily-board/">Daily Board</a>
+              <a class="schedule-button schedule-button--ghost" href="/developer/dashboard-reference/">Reference</a>
+            </div>
+          </div>
+          <div class="calendar-status-card"><span>Preview Week</span><strong>Jun 9 – Jun 15, 2026</strong><small>Read-only foundation</small></div>
+        </section>
+
+        <div class="calendar-toolbar" aria-label="Calendar controls">
+          <button class="calendar-control" type="button">←</button>
+          <button class="calendar-control calendar-control--wide" type="button">Jun 9 – Jun 15, 2026</button>
+          <button class="calendar-control" type="button">→</button>
+          <button class="calendar-control" type="button">Today</button>
+          <select class="calendar-control calendar-control--wide" aria-label="Group filter"><option>Group: All Groups</option><option>A Days</option><option>B Nights</option></select>
+          <select class="calendar-control calendar-control--wide" aria-label="Position filter"><option>Position: All</option><option>Dispatcher</option><option>CTO</option></select>
+          <select class="calendar-control calendar-control--wide" aria-label="View filter"><option>View: All Employees</option><option>My Schedule</option><option>Open Coverage</option></select>
+        </div>
+
+        <section class="calendar-board" aria-labelledby="weekViewTitle">
+          <div class="calendar-section calendar-section--flat"><h2 id="weekViewTitle">Week View</h2><p>Compact schedule grid for users and supervisors. Shortcodes keep the week readable while preserving detail for the day view.</p></div>
+          <div class="week-scroll"><div id="weekCalendarGrid"></div></div>
+          <div id="calendarLegend" class="legend" aria-label="Calendar shortcode legend"></div>
+        </section>
+
+        <section class="calendar-section" aria-labelledby="dayViewTitle">
+          <h2 id="dayViewTitle">Day View</h2>
+          <p>Expanded daily schedule detail for one employee, including events, approval states, coverage status, and hour totals.</p>
+          <div class="calendar-toolbar">
+            <button class="calendar-control" type="button">Thu, Jun 12, 2026</button>
+            <select class="calendar-control calendar-control--wide" aria-label="Employee filter"><option>Employee: Morgan Price</option><option>Taylor Reed</option><option>Jordan Smith</option></select>
+            <button class="calendar-control" type="button">Actions</button>
+          </div>
+          <div class="day-layout"><div class="day-timeline" id="dayTimeline"></div><aside class="day-side" id="daySummaryCards"></aside></div>
+        </section>
+      </main>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.2 <span>•</span> Calendar dashboard rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
+    </div>
+  </div>
+<script src="/assets/release-metadata.js?v=5.17.2"></script>
+<script type="module" src="/pages/calendar/schedule-calendar.js?v=5.17.2"></script>
+</body>
+</html>

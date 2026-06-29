@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/people/timeline.html
-Version: v5.17.1
+Version: v5.17.2
 Purpose: Dashboard shell migrated page for Signal Schedule — Employee Timeline
 -->
 <!DOCTYPE html>
@@ -13,42 +13,42 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Employee Timeline
   <title>Signal Schedule — Employee Timeline</title>
   <meta name="description" content="Admin and supervisor employee timeline and audit trail preview for profile, schedule, requests, trades, training, benefits, and system events.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.17.1">
-  <link rel="stylesheet" href="/pages/people/timeline.css?v=5.17.1">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.17.2">
+  <link rel="stylesheet" href="/pages/people/timeline.css?v=5.17.2">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Employee Timeline" data-signal-version="v5.17.1" data-signal-theme="Employee Timeline & Audit Trail" data-signal-status="Preview" data-signal-description="Admin/supervisor employee activity timeline and audit trail preview." data-signal-status-text="Signal Schedule v5.17.1 foundation cleanup standardized this module on the dashboard design system.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Employee Timeline" data-signal-version="v5.17.2" data-signal-theme="Employee Timeline & Audit Trail" data-signal-status="Preview" data-signal-description="Admin/supervisor employee activity timeline and audit trail preview." data-signal-status-text="Signal Schedule v5.17.2 foundation cleanup standardized this module on the dashboard design system.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
-      <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
+      <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
         <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
         <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
       </a>
       <nav class="signal-dashboard-nav signal-dashboard-nav--grouped">
         <div class="signal-dashboard-nav__section">MAIN</div>
-        <a href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <a href="/dashboard/"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
         <div class="signal-dashboard-nav__section">SCHEDULING</div>
-        <a href="/pages/calendar/schedule.html"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
-        <a href="/pages/employee/index.html"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
-        <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
-        <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
-        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
-        <a href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
-        <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        <a href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/my-schedule/"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/open-shifts/"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/assignments/"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
+        <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
         <div class="signal-dashboard-nav__section">PEOPLE</div>
-        <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
-        <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
-        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
-        <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
-        <a href="/pages/rules/rule-engine.html"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
-        <a href="/pages/scheduling/scheduling-engine.html"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
-        <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
-        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
-        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
-        <div class="signal-dashboard-nav__section">DESIGN SYSTEM</div>
-        <a href="/pages/admin/dashboard-reference.html"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
-        <a href="/pages/admin/ui-catalog.html"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
+        <a href="/admin/"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
+        <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
+        <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+        <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+        <a href="/developer/rule-engine/"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
+        <a href="/developer/scheduling-engine/"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
       </nav>
       <div class="signal-dashboard-user" aria-label="Current user preview">
         <div class="signal-dashboard-avatar">JM</div>
@@ -61,62 +61,62 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Employee Timeline
         <div class="signal-dashboard-title"><h1>Employee Timeline</h1><p>Admin and supervisor employee timeline and audit trail preview for profile, schedule, requests, trades, training, benefits, and system events.</p></div>
         <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation">
 
-          <a href="/index.html">Dashboard</a>
+          <a href="/dashboard/">Dashboard</a>
           <div class="signal-dashboard-menu">
-            <a class="signal-dashboard-menu__trigger" href="/pages/calendar/schedule.html">Schedules</a>
+            <a class="signal-dashboard-menu__trigger" href="/calendar/">Schedules</a>
             <div class="signal-dashboard-dropdown" role="menu">
-              <a href="/pages/calendar/schedule.html">Calendar <small>Live</small></a>
-              <a href="/pages/workspace/builder.html">Builder <small>Live</small></a>
-              <a href="/pages/workspace/daily-board.html">Daily Board <small>Live</small></a>
+              <a href="/calendar/">Calendar <small>Live</small></a>
+              <a href="/schedule/">Builder <small>Live</small></a>
+              <a href="/daily-board/">Daily Board <small>Live</small></a>
               <a href="/pages/workspace/weekly-board.html">Weekly Board <small>Live</small></a>
             </div>
           </div>
           <div class="signal-dashboard-menu">
-            <a class="signal-dashboard-menu__trigger" href="/pages/requests/requests.html">Requests</a>
+            <a class="signal-dashboard-menu__trigger" href="/requests/">Requests</a>
             <div class="signal-dashboard-dropdown" role="menu">
-              <a href="/pages/requests/requests.html">Requests <small>Live</small></a>
+              <a href="/requests/">Requests <small>Live</small></a>
               <a href="/pages/requests/approvals.html">Approvals <small>Live</small></a>
-              <a href="/pages/requests/open-shifts.html">Open Shifts <small>Live</small></a>
+              <a href="/open-shifts/">Open Shifts <small>Live</small></a>
               <a href="/pages/requests/shift-trades.html">Trades <small>Live</small></a>
             </div>
           </div>
           <div class="signal-dashboard-menu">
-            <a class="signal-dashboard-menu__trigger" href="/pages/people/employees.html">Employees</a>
+            <a class="signal-dashboard-menu__trigger" href="/employees/">Employees</a>
             <div class="signal-dashboard-dropdown" role="menu">
-              <a href="/pages/people/employees.html">Employees <small>Live</small></a>
-              <a href="/pages/people/profile.html">Profiles <small>Live</small></a>
+              <a href="/employees/">Employees <small>Live</small></a>
+              <a href="/employees/profile/">Profiles <small>Live</small></a>
               <a href="/pages/people/qualifications.html">Qualifications <small>Live</small></a>
               <a href="/pages/people/training.html">Training <small>Live</small></a>
             </div>
           </div>
           <div class="signal-dashboard-menu">
-            <a class="signal-dashboard-menu__trigger" href="/pages/reports/reports.html">Reports</a>
+            <a class="signal-dashboard-menu__trigger" href="/reports/">Reports</a>
             <div class="signal-dashboard-dropdown" role="menu">
-              <a href="/pages/reports/reports.html">Reports <small>Live</small></a>
+              <a href="/reports/">Reports <small>Live</small></a>
               <a href="/pages/admin/data-export.html">Data Export <small>Live</small></a>
             </div>
           </div>
           <div class="signal-dashboard-menu">
-            <a class="signal-dashboard-menu__trigger" href="/pages/admin/system-health.html">System</a>
+            <a class="signal-dashboard-menu__trigger" href="/system/">System</a>
             <div class="signal-dashboard-dropdown" role="menu">
-              <a href="/pages/settings/settings.html">Settings <small>Live</small></a>
-              <a href="/pages/admin/system-health.html">System Health <small>Live</small></a>
+              <a href="/admin/">Settings <small>Live</small></a>
+              <a href="/system/">System Health <small>Live</small></a>
               <a href="/pages/admin/database-audit.html">Database Audit <small>Live</small></a>
               <a href="/pages/admin/data-tools.html">Data Tools <small>Live</small></a>
-              <a href="/pages/admin/ui-catalog.html">UI Catalog <small>Dev</small></a>
+              <a href="/developer/ui-catalog/">UI Catalog <small>Dev</small></a>
             </div>
           </div>
         </nav>
         <div class="signal-dashboard-top-actions">
           <label class="signal-dashboard-search" aria-label="Search Employee Timeline"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
-                    <a class="signal-dashboard-notification-bell" href="/pages/rules/notifications.html" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a>
-          <a class="signal-dashboard-avatar signal-dashboard-avatar--compact" href="/pages/identity/current-user.html" aria-label="Open current user profile">JM</a>
+                    <a class="signal-dashboard-notification-bell" href="/notifications/" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a>
+          <a class="signal-dashboard-avatar signal-dashboard-avatar--compact" href="/account/" aria-label="Open current user profile">JM</a>
         </div>
       </header>
 
       <main class="signal-dashboard-content signal-dashboard-module-content timeline-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v5.17.1</span><strong>People</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
+          <span class="signal-dashboard-pill">v5.17.2</span><strong>People</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
         </div>
 
 <section aria-labelledby="timelineTitle" class="timeline-hero">
@@ -152,17 +152,17 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Employee Timeline
 </section>
 
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.1 <span>•</span> Global shell rollout</div><div><a href="/index.html">Dashboard</a> <span>•</span> <a href="/pages/admin/ui-catalog.html">UI Catalog</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.2 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
     </div>
   </div>
-  <script src="/assets/release-metadata.js?v=5.17.1"></script>
-  <script src="/assets/config.js?v=5.17.1"></script>
-  <script src="/assets/routes.js?v=5.17.1"></script>
-  <script src="/assets/navigation.js?v=5.17.1"></script>
-  <script src="/assets/features.js?v=5.17.1"></script>
-  <script src="/assets/roles.js?v=5.17.1"></script>
-  <script src="/assets/status.js?v=5.17.1"></script>
-  <script src="/assets/data-loader.js?v=5.17.1"></script>
-  <script type="module" src="/pages/people/timeline.js?v=5.17.1"></script>
+  <script src="/assets/release-metadata.js?v=5.17.2"></script>
+  <script src="/assets/config.js?v=5.17.2"></script>
+  <script src="/assets/routes.js?v=5.17.2"></script>
+  <script src="/assets/navigation.js?v=5.17.2"></script>
+  <script src="/assets/features.js?v=5.17.2"></script>
+  <script src="/assets/roles.js?v=5.17.2"></script>
+  <script src="/assets/status.js?v=5.17.2"></script>
+  <script src="/assets/data-loader.js?v=5.17.2"></script>
+  <script type="module" src="/pages/people/timeline.js?v=5.17.2"></script>
 </body>
 </html>

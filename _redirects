@@ -1,0 +1,24 @@
+# Signal Schedule clean URL aliases — v5.17.2
+/index.html /dashboard/ 301
+/pages/workspace/builder.html /schedule/ 301
+/pages/calendar/schedule.html /calendar/ 301
+/pages/employee/index.html /my-schedule/ 301
+/pages/requests/open-shifts.html /open-shifts/ 301
+/pages/workspace/assignments.html /assignments/ 301
+/pages/staffing/staffing-engine.html /staffing/ 301
+/pages/workspace/daily-board.html /daily-board/ 301
+/pages/people/employees.html /employees/ 301
+/pages/requests/leave-banks.html /leave/ 301
+/pages/requests/requests.html /requests/ 301
+/pages/rules/notifications.html /notifications/ 301
+/pages/reports/reports.html /reports/ 301
+/pages/coverage/coverage.html /coverage/ 301
+/pages/operations/operations.html /operations/ 301
+/pages/admin/system-health.html /system/ 301
+/pages/settings/settings.html /admin/ 301
+/pages/identity/current-user.html /account/ 301
+/pages/identity/login.html /login/ 301
+/pages/admin/ui-catalog.html /developer/ui-catalog/ 301
+/pages/admin/dashboard-reference.html /developer/dashboard-reference/ 301
+/pages/rules/rule-engine.html /developer/rule-engine/ 301
+/pages/scheduling/scheduling-engine.html /developer/scheduling-engine/ 301

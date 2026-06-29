@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/repositories/DailyBoardRepository.js
-Version: v5.17.1
+Version: v5.17.2
 Purpose: Repository boundary for Daily Schedule Board foundation data
 */
 import { fetchDailyBoardPreview } from '../adapters/JsonDailyBoardAdapter.js';

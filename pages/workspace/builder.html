@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/workspace/builder.html
-Version: v5.17.1
+Version: v5.17.2
 Purpose: Operational Schedule Builder workspace for assignments, coverage, validation, and recommendations.
 -->
 <!DOCTYPE html>
@@ -13,42 +13,42 @@ Purpose: Operational Schedule Builder workspace for assignments, coverage, valid
   <title>Signal Schedule — Schedule Builder</title>
   <meta name="description" content="Build a working schedule with assignment, coverage, validation, and recommendation panels in Signal Schedule.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/dashboard.css?v=5.17.1">
-  <link rel="stylesheet" href="/pages/workspace/builder.css?v=5.17.1">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.17.2">
+  <link rel="stylesheet" href="/pages/workspace/builder.css?v=5.17.2">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Schedule Builder" data-signal-version="v5.17.1" data-signal-description="Operational schedule builder with live coverage, validation, and assignment recommendations." data-signal-theme="Dashboard" data-signal-status="Operational Scheduling" data-signal-status-text="Signal Schedule v5.17.1 makes the Schedule Builder the centerpiece for operational scheduling.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Schedule Builder" data-signal-version="v5.17.2" data-signal-description="Operational schedule builder with live coverage, validation, and assignment recommendations." data-signal-theme="Dashboard" data-signal-status="Operational Scheduling" data-signal-status-text="Signal Schedule v5.17.2 makes the Schedule Builder the centerpiece for operational scheduling.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
-      <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
+      <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
         <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule">
         <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
       </a>
       <nav class="signal-dashboard-nav signal-dashboard-nav--grouped">
         <div class="signal-dashboard-nav__section">MAIN</div>
-        <a href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <a href="/dashboard/"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
         <div class="signal-dashboard-nav__section">SCHEDULING</div>
-        <a href="/pages/calendar/schedule.html"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
-        <a href="/pages/employee/index.html"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
-        <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
-        <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
-        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
-        <a class="is-active" href="/pages/workspace/builder.html"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
-        <a href="/pages/workspace/daily-board.html"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
+        <a href="/calendar/"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/my-schedule/"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/open-shifts/"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/assignments/"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a class="is-active" href="/schedule/"><span class="signal-dashboard-icon">▧</span><span>Schedule Builder</span></a>
+        <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
         <div class="signal-dashboard-nav__section">PEOPLE</div>
-        <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
-        <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
-        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
-        <a href="/pages/rules/notifications.html"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
-        <a href="/pages/rules/rule-engine.html"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
-        <a href="/pages/scheduling/scheduling-engine.html"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
-        <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <a href="/notifications/"><span class="signal-dashboard-icon">🔔</span><span>Notifications</span></a>
+        <a href="/reports/"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
         <div class="signal-dashboard-nav__section">ADMINISTRATION</div>
-        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
-        <a href="/pages/settings/settings.html"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
-        <div class="signal-dashboard-nav__section">DESIGN SYSTEM</div>
-        <a href="/pages/admin/dashboard-reference.html"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
-        <a href="/pages/admin/ui-catalog.html"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+        <a href="/system/"><span class="signal-dashboard-icon">⌁</span><span>System</span></a>
+        <a href="/admin/"><span class="signal-dashboard-icon">⚙</span><span>Admin</span></a>
+        <div class="signal-dashboard-nav__section">DEVELOPER TOOLS</div>
+        <a href="/developer/dashboard-reference/"><span class="signal-dashboard-icon">◇</span><span>Visual Target</span></a>
+        <a href="/developer/ui-catalog/"><span class="signal-dashboard-icon">▧</span><span>UI Catalog</span></a>
+        <a href="/developer/rule-engine/"><span class="signal-dashboard-icon">⚖</span><span>Rule Engine</span></a>
+        <a href="/developer/scheduling-engine/"><span class="signal-dashboard-icon">⚙</span><span>Scheduling Engine</span></a>
       </nav>
       <div class="signal-dashboard-user" aria-label="Current user preview"><div class="signal-dashboard-avatar">JM</div><div><strong>Jordan Miller</strong><small>Administrator<br>City of Fairview</small></div></div>
     </aside>
@@ -56,11 +56,11 @@ Purpose: Operational Schedule Builder workspace for assignments, coverage, valid
     <div class="signal-dashboard-main">
       <header class="signal-dashboard-topbar">
         <div class="signal-dashboard-title"><h1>Schedule Builder</h1><p>Build a draft schedule, review live coverage, resolve conflicts, and apply recommendations from one workspace.</p></div>
-        <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation"><a href="/index.html">Dashboard</a><a href="/pages/calendar/schedule.html">Calendar</a><a href="/pages/workspace/assignments.html">Assignments</a><a href="/pages/coverage/coverage.html">Coverage</a><a href="/pages/rules/notifications.html">Notifications</a></nav>
-        <div class="signal-dashboard-top-actions"><label class="signal-dashboard-search" aria-label="Search"><span>⌕</span><input type="search" placeholder="Search employees, shifts, rules..." /></label><a class="signal-dashboard-notification-bell" href="/pages/rules/notifications.html" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a><a class="signal-dashboard-avatar signal-dashboard-avatar--compact" href="/pages/identity/current-user.html" aria-label="Open current user profile">JM</a></div>
+        <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation"><a href="/dashboard/">Dashboard</a><a href="/calendar/">Calendar</a><a href="/assignments/">Assignments</a><a href="/coverage/">Coverage</a><a href="/notifications/">Notifications</a></nav>
+        <div class="signal-dashboard-top-actions"><label class="signal-dashboard-search" aria-label="Search"><span>⌕</span><input type="search" placeholder="Search employees, shifts, rules..." /></label><a class="signal-dashboard-notification-bell" href="/notifications/" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a><a class="signal-dashboard-avatar signal-dashboard-avatar--compact" href="/account/" aria-label="Open current user profile">JM</a></div>
       </header>
       <main class="signal-dashboard-content">
-        <div class="signal-dashboard-status"><span class="signal-dashboard-pill">v5.17.1</span><strong>Operational Scheduling: Part 1</strong><span>•</span><strong>Schedule Builder</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Assignments, coverage, validation, and recommendations in one workflow</span></div>
+        <div class="signal-dashboard-status"><span class="signal-dashboard-pill">v5.17.2</span><strong>Operational Scheduling: Part 1</strong><span>•</span><strong>Schedule Builder</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Assignments, coverage, validation, and recommendations in one workflow</span></div>
 
         <section class="builder-metric-strip" aria-label="Draft schedule metrics">
           <article class="builder-metric"><small>Draft coverage</small><strong>92%</strong><span>3 open positions remain.</span></article>
@@ -126,8 +126,8 @@ Purpose: Operational Schedule Builder workspace for assignments, coverage, valid
         </section>
 
         <section class="signal-rule-board" style="margin-top:18px;">
-          <section class="signal-dashboard-panel"><div class="signal-dashboard-panel__head"><h2>Recommendation Panel</h2><a href="/pages/scheduling/scheduling-engine.html">Engine preview</a></div><div class="builder-recommendation-stack"><article class="builder-recommendation-item"><strong>Avery Brooks → Night Watch Console 2 <span class="builder-score">96</span></strong><span>Qualified, available, lowest rotation impact.</span></article><article class="builder-recommendation-item"><strong>Taylor Reed → Training Backfill <span class="builder-score">91</span></strong><span>Instructor-qualified and no leave conflict.</span></article><article class="builder-recommendation-item"><strong>Morgan Hayes → Day Watch Relief <span class="builder-score">83</span></strong><span>Good fit with overtime advisory warning.</span></article></div></section>
-          <aside class="signal-dashboard-panel"><div class="signal-dashboard-panel__head"><h2>Coverage Panel</h2><a href="/pages/coverage/coverage.html">Coverage board</a></div><ul class="signal-rule-checklist"><li><span>Day Watch</span><strong>Covered</strong></li><li><span>Night Watch</span><strong>1 gap</strong></li><li><span>Training Backfill</span><strong>1 gap</strong></li><li><span>Publish readiness</span><strong>Blocked</strong></li></ul></aside>
+          <section class="signal-dashboard-panel"><div class="signal-dashboard-panel__head"><h2>Recommendation Panel</h2><a href="/developer/scheduling-engine/">Engine preview</a></div><div class="builder-recommendation-stack"><article class="builder-recommendation-item"><strong>Avery Brooks → Night Watch Console 2 <span class="builder-score">96</span></strong><span>Qualified, available, lowest rotation impact.</span></article><article class="builder-recommendation-item"><strong>Taylor Reed → Training Backfill <span class="builder-score">91</span></strong><span>Instructor-qualified and no leave conflict.</span></article><article class="builder-recommendation-item"><strong>Morgan Hayes → Day Watch Relief <span class="builder-score">83</span></strong><span>Good fit with overtime advisory warning.</span></article></div></section>
+          <aside class="signal-dashboard-panel"><div class="signal-dashboard-panel__head"><h2>Coverage Panel</h2><a href="/coverage/">Coverage board</a></div><ul class="signal-rule-checklist"><li><span>Day Watch</span><strong>Covered</strong></li><li><span>Night Watch</span><strong>1 gap</strong></li><li><span>Training Backfill</span><strong>1 gap</strong></li><li><span>Publish readiness</span><strong>Blocked</strong></li></ul></aside>
         </section>
 
         <section class="signal-dashboard-panel" style="margin-top:18px;">
@@ -136,7 +136,7 @@ Purpose: Operational Schedule Builder workspace for assignments, coverage, valid
           <div class="builder-footer-actions"><button class="schedule-btn schedule-btn--ghost" type="button">Save draft</button><button class="schedule-btn schedule-btn--ghost" type="button">Export validation report</button><button class="schedule-btn" type="button">Ready for publish review</button></div>
         </section>
       </main>
-      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.1 <span>•</span> Operational Scheduling: Part 1</div><div><a href="/data/schedule-builder-operational-preview.json">Builder data</a> <span>•</span> <a href="/pages/admin/system-health.html">System Health</a></div></footer>
+      <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v5.17.2 <span>•</span> Operational Scheduling: Part 1</div><div><a href="/data/schedule-builder-operational-preview.json">Builder data</a> <span>•</span> <a href="/system/">System Health</a></div></footer>
     </div>
   </div>
 </body>

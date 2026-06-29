@@ -1,15 +1,24 @@
-# Build Manifest — Signal Schedule v5.17.1
+# Build Manifest — Signal Schedule v5.17.2
 
-Generated: 2026-06-29
-Source: v5.17.0 full replacement
-Release: v5.17.1 Operational Scheduling: Part 1
+Generated: 2026-06-29T17:48:36
 
-## Key changed files
+## Release
 
-- `pages/workspace/builder.html`
-- `pages/workspace/builder.css`
-- `data/schedule-builder-operational-preview.json`
-- `assets/navigation.js`
-- `pages/scheduling/scheduling-engine.html`
-- `pages/admin/ui-catalog.html`
-- release metadata and manifests
+Signal Schedule v5.17.2 — Routing & Clean URL Foundation
+
+## Build contents
+
+- Total files: 511
+- Clean URL aliases: enabled
+- Primary navigation: clean workflow URLs
+- Developer tools: grouped under `/developer/` aliases
+
+## Key validation routes
+
+- `/dashboard/`
+- `/schedule/`
+- `/employees/`
+- `/leave/`
+- `/notifications/`
+- `/developer/ui-catalog/`
+

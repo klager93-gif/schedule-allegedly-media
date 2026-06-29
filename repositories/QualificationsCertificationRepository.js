@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/repositories/QualificationsCertificationRepository.js
-Version: v5.17.1
+Version: v5.17.2
 Purpose: Repository boundary for Qualifications & Certification Engine preview data.
 */
 export class QualificationsCertificationRepository {

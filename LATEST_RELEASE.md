@@ -1,6 +1,21 @@
-# Signal Schedule v5.17.1 — Operational Scheduling: Part 1
+# Signal Schedule v5.17.2 — Routing & Clean URL Foundation
 
-Signal Schedule v5.17.1 makes the Schedule Builder the centerpiece of operational scheduling.
+Signal Schedule v5.17.2 adds clean URL aliases for primary workflows and updates navigation away from physical HTML file paths.
+
+## Validate
+
+- `/dashboard/`
+- `/schedule/`
+- `/employees/`
+- `/leave/`
+- `/notifications/`
+- `/developer/ui-catalog/`
+
+No Coolify/server configuration changes are required for directory-based aliases.
+
+# Signal Schedule v5.17.2 — Operational Scheduling: Part 1
+
+Signal Schedule v5.17.2 makes the Schedule Builder the centerpiece of operational scheduling.
 
 ## Highlights
 

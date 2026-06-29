@@ -1,15 +1,17 @@
-# Validation — Signal Schedule v5.17.1
+# Validation — Signal Schedule v5.17.2
 
 ## Required checks
 
-- Open `/pages/workspace/builder.html` and confirm it shows the new Schedule Builder workspace.
-- Confirm the builder includes assignment board, employee panel, coverage panel, validation panel, and recommendation panel.
-- Confirm the sidebar label reads Schedule Builder instead of Create Schedule.
-- Open `/data/schedule-builder-operational-preview.json` and confirm it loads.
-- Open `/pages/scheduling/scheduling-engine.html` and confirm it is still available as a developer/support preview.
-- Open `/pages/admin/ui-catalog.html#schedule-builder` and confirm schedule-builder components are documented.
-- Confirm footer/version references show v5.17.1.
+- Open `/dashboard/` and confirm it displays the dashboard.
+- Open `/schedule/` and confirm it displays Schedule Builder.
+- Open `/employees/` and confirm it displays Employee Workspace.
+- Open `/leave/` and confirm it displays Leave & Banks.
+- Open `/notifications/` and confirm Notification Center loads.
+- Open `/developer/ui-catalog/` and confirm the UI Catalog loads.
+- Confirm primary sidebar links use clean aliases instead of `/pages/...html` paths.
+- Confirm physical `/pages/...` paths still load for development/backward compatibility.
 
 ## Server action
 
-No Coolify or server configuration changes required.
+No Coolify/server configuration changes required for directory alias pages.
+
