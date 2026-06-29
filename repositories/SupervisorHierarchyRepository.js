@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/repositories/SupervisorHierarchyRepository.js
-Version: v5.19.0
+Version: v6.0.0
 Purpose: Repository boundary for supervisor hierarchy data
 */
 import { fetchSupervisorHierarchyPreview } from '../adapters/JsonSupervisorHierarchyAdapter.js';

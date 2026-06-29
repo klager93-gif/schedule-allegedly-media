@@ -1,14 +1,11 @@
-# Signal Schedule v5.19.0 — Production Workflow Consolidation
+# Signal Schedule v6.0.0 — Production Ready Foundation
 
-Built from v5.18.0. Consolidates production workflows around clean URLs, adds Publishing and Audit Trail routes, removes engine/demo pages from normal user navigation, and keeps engine previews under Developer Tools.
+Released: 2026-06-29
 
-## Validate
+## Summary
 
-- `/schedule/`
-- `/publishing/`
-- `/audit/`
-- `/trades/`
-- `/mandation/`
-- `/developer/ui-catalog/`
+v6.0.0 establishes the production-readiness foundation for authentication, agency setup, users, roles, imports, exports, and persistence planning while keeping the current package static-deployable.
 
-No Coolify/server configuration changes are required for directory-based aliases.
+## Server note
+
+No Coolify/PHP/MySQL action is required for this static foundation build. Real authentication, sessions, persistent users, agency data, schedule data, and audit logs will require backend/database work in the next production phase.

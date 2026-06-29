@@ -1,19 +1,17 @@
-# Signal Schedule File Manifest — v5.19.0
-
-Generated: 2026-06-29
-
-Total files: 516
-
 .gitattributes
 .gitignore
 ADMIN_CHANGELOG.md
+BUILDMANIFEST.md
 CHANGELOG.md
+FILEMANIFEST.generated.txt
+FILEMANIFEST.md
 HOWTO.md
 LATEST_RELEASE.md
 MASTER-CHANGELOG.md
 PUBLIC_CHANGELOG.md
 README.md
 ROADMAP.md
+SHA256SUMS.txt
 STANDARDS.md
 VALIDATION.md
 _redirects
@@ -210,6 +208,7 @@ data/notifications-preview.json
 data/open-shifts-preview.json
 data/operational-scheduling-preview.json
 data/ot-volunteer-board-preview.json
+data/production-ready-preview.json
 data/production-workflow-preview.json
 data/qualifications-certifications-preview.json
 data/request-approval-engine-preview.json
@@ -251,6 +250,7 @@ docs/architecture/IDENTITY-SESSION-CONTRACT-v5.10.md
 docs/architecture/METADATA-VALIDATION.md
 docs/architecture/OPERATIONAL-SCHEDULING-v5.18.0.md
 docs/architecture/PAGE-ARCHITECTURE.md
+docs/architecture/PRODUCTION-READY-v6.0.0.md
 docs/architecture/PRODUCTION-WORKFLOW-CONSOLIDATION-v5.19.0.md
 docs/architecture/REGISTRY-FOUNDATION.md
 docs/audits/ALPHA-INTEGRATION-AUDIT.md
@@ -325,6 +325,7 @@ pages/identity/current-user.html
 pages/identity/identity.css
 pages/identity/identity.js
 pages/identity/login.html
+pages/identity/users.html
 pages/operations/audit-trail.html
 pages/operations/operations.html
 pages/people/availability.css

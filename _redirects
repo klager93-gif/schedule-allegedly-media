@@ -1,4 +1,4 @@
-# Signal Schedule clean URL aliases — v5.19.0
+# Signal Schedule clean URL aliases — v6.0.0
 /index.html /dashboard/ 301
 /pages/workspace/builder.html /schedule/ 301
 /pages/workspace/publishing.html /publishing/ 301
@@ -27,3 +27,7 @@
 /pages/admin/dashboard-reference.html /developer/dashboard-reference/ 301
 /pages/rules/rule-engine.html /developer/rule-engine/ 301
 /pages/scheduling/scheduling-engine.html /developer/scheduling-engine/ 301
+
+pages/identity/agency-setup.html /agency/ 301
+/pages/identity/users.html /users/ 301
+/pages/rules/permissions.html /roles/ 301

@@ -1,23 +1,21 @@
-# Signal Schedule v5.19.0 Validation
+# Validation — Signal Schedule v6.0.0
 
-## Required route checks
+Validate after deploy:
 
 - `/dashboard/`
 - `/schedule/`
 - `/publishing/`
 - `/audit/`
-- `/employees/`
-- `/leave/`
-- `/requests/`
-- `/trades/`
-- `/mandation/`
+- `/login/`
+- `/agency/`
+- `/users/`
+- `/roles/`
 - `/developer/ui-catalog/`
 
-## Expected result
+## Checks
 
-- Publishing and Audit Trail appear under Operations.
-- Rule Engine and Scheduling Engine do not appear in normal user navigation.
-- Developer routes remain accessible under Developer Tools.
-- No physical `/pages/...` route is required for normal navigation.
-
-No Coolify/server configuration changes required.
+- Confirm grouped navigation still renders.
+- Confirm clean aliases resolve.
+- Confirm v6.0.0 cache markers are visible in page source.
+- Confirm no Coolify/server changes were required for the static preview.
+- Confirm production-readiness docs are present.

@@ -1,0 +1,25 @@
+{
+  "version": "v6.0.0",
+  "release": "Production Ready Foundation",
+  "server_notice": {
+    "static_preview": true,
+    "requires_server_now": false,
+    "requires_server_for_real_auth": true,
+    "recommended_backend": "PHP or Node API with MySQL/PostgreSQL when replacing preview JSON with persistent users, sessions, agencies, and permissions"
+  },
+  "auth": {
+    "flows": ["login", "logout", "password reset placeholder", "session preview", "remember-me placeholder", "MFA-ready notes"],
+    "status": "frontend foundation only"
+  },
+  "roles": ["Administrator", "Scheduling Supervisor", "Supervisor", "Employee"],
+  "permissions": ["schedule.publish", "schedule.edit", "leave.approve", "trades.approve", "mandation.override", "users.manage", "agency.manage"],
+  "agency": {
+    "name": "City of Fairview Dispatch",
+    "timezone": "America/Chicago",
+    "work_week_start": "Sunday",
+    "branding": "preview",
+    "multi_agency_ready": true
+  },
+  "imports": ["employees", "qualifications", "leave balances", "shift templates"],
+  "exports": ["schedule csv", "payroll csv", "calendar export", "audit export"]
+}

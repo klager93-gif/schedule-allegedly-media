@@ -1,23 +1,22 @@
 <!--
 Signal Schedule
 Area: Signal Schedule
-File: pages/people/employees.html
+File: pages/identity/login.html
 Version: v6.0.0
-Alias: /employees/ -> /pages/people/employees.html
-Purpose: Dashboard shell migrated page for Signal Schedule — Employees
+Purpose: Dashboard shell migrated page for Users
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signal Schedule — Employees</title>
-  <meta name="description" content="Employee directory workspace for roster records, profile access, status review, and workforce administration.">
+  <title>Signal Schedule — Users</title>
+  <meta name="description" content="Identity and access workspace for agency setup, login flows, and current-user context.">
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/dashboard.css?v=6.0.0">
-  <link rel="canonical" href="https://schedule.allegedly-media.com/employees/">
+  <link rel="stylesheet" href="/pages/identity/identity.css?v=6.0.0">
 </head>
-<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-global-layout="true" data-signal-area="Signal Schedule" data-signal-title="Schedule Employees" data-signal-version="v6.0.0" data-signal-theme="Admin Navigation Foundation" data-signal-status="Reserved" data-signal-description="Employee directory workspace for roster records, profile access, status review, and workforce administration." data-signal-status-text="Signal Schedule v6.0.0 foundation cleanup standardized this module on the dashboard design system.">
+<body class="signal-dashboard-page signal-dashboard-module-page" data-signal-area="Signal Schedule" data-signal-title="Users" data-signal-version="v6.0.0" data-signal-theme="Visibility & View Engine" data-signal-status="Foundation" data-signal-description="Manage preview accounts for administrators, scheduling supervisors, supervisors, and employees." data-signal-status-text="Signal Schedule v6.0.0 foundation cleanup standardized this module on the dashboard design system.">
   <div class="signal-dashboard-shell signal-dashboard-shell-wide">
     <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
       <a class="signal-dashboard-brand" href="/dashboard/" aria-label="Signal Schedule Dashboard">
@@ -38,7 +37,7 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Employees
         <a href="/staffing/"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
         <a href="/daily-board/"><span class="signal-dashboard-icon">▦</span><span>Daily Board</span></a>
         <div class="signal-dashboard-nav__section">PEOPLE</div>
-        <a class="is-active" href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/employees/"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
         <a href="/leave/"><span class="signal-dashboard-icon">▦</span><span>Leave Management</span></a>
         <a href="/requests/"><span class="signal-dashboard-icon">▱</span><span>Approvals & Requests</span></a>
         <div class="signal-dashboard-nav__section">OPERATIONS</div>
@@ -64,7 +63,7 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Employees
 
     <div class="signal-dashboard-main">
       <header class="signal-dashboard-topbar">
-        <div class="signal-dashboard-title"><h1>Employees</h1><p>Employee directory workspace for roster records, profile access, status review, and workforce administration.</p></div>
+        <div class="signal-dashboard-title"><h1>Users</h1><p>Identity and access workspace for agency setup, login flows, and current-user context.</p></div>
         <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation">
 
           <a href="/dashboard/">Dashboard</a>
@@ -114,80 +113,48 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Employees
           </div>
         </nav>
         <div class="signal-dashboard-top-actions">
-          <label class="signal-dashboard-search" aria-label="Search Employees"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
+          <label class="signal-dashboard-search" aria-label="Search Users"><span>⌕</span><input type="search" placeholder="Search schedules, people, requests..."></label>
                     <a class="signal-dashboard-notification-bell" href="/notifications/" aria-label="Open Notification Center"><span aria-hidden="true">🔔</span><span class="signal-dashboard-badge">6</span></a>
           <a class="signal-dashboard-avatar signal-dashboard-avatar--compact" href="/account/" aria-label="Open current user profile">JM</a>
         </div>
       </header>
 
-      <main class="signal-dashboard-content signal-dashboard-module-content schedule-placeholder-shell">
+      <main class="signal-dashboard-content signal-dashboard-module-content foundation-shell">
         <div class="signal-dashboard-status">
-          <span class="signal-dashboard-pill">v6.0.0</span><strong>People</strong><span>•</span><strong>Employee Workspace</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Directory, filters, profile preview, and quick actions</span>
+          <span class="signal-dashboard-pill">v6.0.0</span><strong>Signal Schedule</strong><span>•</span><strong>Dashboard shell</strong><span class="signal-dashboard-dot" aria-hidden="true"></span><span>Legacy app shell removed</span>
         </div>
 
-        <section class="signal-dashboard-panel" style="padding:18px; margin-bottom:14px;">
-          <div class="signal-employee-toolbar">
-            <div>
-              <p class="schedule-kicker">Employee Workspace</p>
-              <h2 style="margin:0 0 4px;">Directory</h2>
-              <p style="margin:0; color:var(--dash-muted);">Roster-first workspace for employees, supervisors, qualifications, current assignment, and scheduling status.</p>
-            </div>
-            <div class="signal-dashboard-main-actions">
-              <a class="signal-dashboard-pill" href="/employees/profile/">Open Profile Workspace</a>
-              <a class="signal-dashboard-pill" href="/assignments/">Assign Shift</a>
-            </div>
-          </div>
-          <div class="signal-employee-toolbar">
-            <label class="signal-dashboard-search" aria-label="Search employees"><span>⌕</span><input type="search" placeholder="Search name, ID, badge, supervisor, qualification..."></label>
-            <div class="signal-employee-filter-row" aria-label="Employee filters">
-              <span class="signal-employee-filter">All Statuses</span>
-              <span class="signal-employee-filter">Shift B</span>
-              <span class="signal-employee-filter">Supervisor</span>
-              <span class="signal-employee-filter">EMD</span>
-              <span class="signal-employee-filter">Instructor</span>
-            </div>
-          </div>
-        </section>
+<section class="foundation-hero"><div><p class="foundation-kicker">Identity</p><h1>Users Foundation</h1><p>Preview the first authentication screen for future agency users. This page does not verify credentials yet; it defines the user experience, session shape, and role-aware entry point.</p></div></section>
+<section class="identity-grid">
+<article class="identity-panel">
+<div class="identity-panel__head"><div class="identity-icon">🔐</div><div><h2>Users preview</h2><p>This foundation screen is not live authentication yet. It previews the first-login path into agency setup.</p></div></div>
+<form class="identity-form" data-login-foundation-form="">
+<div class="identity-field"><label for="email">Email</label><input id="email" type="email" value="admin@fairview.example"/></div>
+<div class="identity-field"><label for="password">Password</label><input id="password" type="password" value="preview-only"/></div>
+<div class="identity-field"><label for="agency">Agency</label><select id="agency"><option>City of Fairview</option><option>Signal Schedule Demo Agency</option></select></div>
+<div class="identity-actions"><button class="identity-button" type="submit">Preview Sign In</button><a class="identity-button secondary" href="/account/">View Current User</a><a class="identity-button secondary" href="/pages/identity/agency-setup.html">Open Setup Wizard</a></div>
+<div class="identity-note" data-login-result=""><strong>Next:</strong> a setup-pending administrator lands in the Agency Setup Wizard.</div>
+</form>
+</article>
+<aside class="identity-panel">
+<div class="identity-panel__head"><div class="identity-icon">🎯</div><div><h2>First login target</h2><p>Agency administrators should land in setup-pending mode until agency settings, roles, shifts, coverage, leave banks, request rules, employee import, and invitations are confirmed.</p></div></div>
+<div data-current-user-card=""></div>
+</aside>
+</section>
+<section class="schedule-card"><h2>Identity scope</h2><div class="foundation-grid"><article class="foundation-card"><h3>Session</h3><p>Defines the current user, agency, roles, permissions, setup state, and logout target.</p></article><article class="foundation-card"><h3>Roles</h3><p>Employee, Supervisor, Scheduler, and Administrator roles with permission-aware routing.</p></article><article class="foundation-card"><h3>Database</h3><p>Uses the existing users, roles, user_roles, role_permissions, and employees naming contract.</p></article></div></section>
 
-        <section class="signal-employee-grid" aria-label="Employee cards">
-          <article class="signal-dashboard-card signal-employee-card">
-            <div class="signal-employee-card__head"><div class="signal-employee-photo">JM</div><div><h3>Jordan Miller</h3><p>Dispatcher II • Shift B</p></div></div>
-            <div class="signal-employee-badges"><span class="signal-dashboard-status-pill">Active</span><span class="signal-dashboard-status-pill">EMD</span><span class="signal-dashboard-status-pill">Instructor</span></div>
-            <div class="signal-employee-meta"><div><small>Supervisor</small><strong>Emily Carter</strong></div><div><small>Assignment</small><strong>Console 3</strong></div><div><small>Seniority</small><strong>2018-04-16</strong></div><div><small>OT YTD</small><strong>42.5 hrs</strong></div></div>
-          </article>
-          <article class="signal-dashboard-card signal-employee-card">
-            <div class="signal-employee-card__head"><div class="signal-employee-photo">AR</div><div><h3>Avery Reed</h3><p>Telecommunicator • Shift A</p></div></div>
-            <div class="signal-employee-badges"><span class="signal-dashboard-status-pill">Active</span><span class="signal-dashboard-status-pill">LEADS</span><span class="signal-dashboard-status-pill">Trainer</span></div>
-            <div class="signal-employee-meta"><div><small>Supervisor</small><strong>Marcus Hill</strong></div><div><small>Assignment</small><strong>Call Take</strong></div><div><small>Seniority</small><strong>2020-09-02</strong></div><div><small>OT YTD</small><strong>18.0 hrs</strong></div></div>
-          </article>
-          <article class="signal-dashboard-card signal-employee-card">
-            <div class="signal-employee-card__head"><div class="signal-employee-photo">TS</div><div><h3>Taylor Stone</h3><p>Trainee • Shift C</p></div></div>
-            <div class="signal-employee-badges"><span class="signal-dashboard-status-pill">Training</span><span class="signal-dashboard-status-pill">Radio</span></div>
-            <div class="signal-employee-meta"><div><small>Supervisor</small><strong>Nina Brooks</strong></div><div><small>Assignment</small><strong>Shadow</strong></div><div><small>Seniority</small><strong>2025-01-13</strong></div><div><small>OT YTD</small><strong>0.0 hrs</strong></div></div>
-          </article>
-        </section>
-
-        <section class="signal-employee-profile-grid" style="margin-top:14px;">
-          <article class="signal-dashboard-panel" style="padding:18px;">
-            <p class="schedule-kicker">Profile Preview</p>
-            <h2 style="margin-top:0;">Jordan Miller</h2>
-            <div class="signal-employee-meta">
-              <div><small>Employee ID</small><strong>FD-1042</strong></div><div><small>Badge</small><strong>317</strong></div>
-              <div><small>FLSA Cycle</small><strong>36 / 44</strong></div><div><small>Leave Bank</small><strong>84.0 hrs</strong></div>
-              <div><small>Qualifications</small><strong>EMD, LEADS, CTO</strong></div><div><small>Restriction</small><strong>None</strong></div>
-            </div>
-          </article>
-          <article class="signal-dashboard-panel" style="padding:18px;">
-            <p class="schedule-kicker">Activity Timeline</p>
-            <div class="signal-employee-timeline">
-              <article><strong>Leave request submitted</strong><small>Vacation request for July 10 • pending supervisor review</small></article>
-              <article><strong>Training completed</strong><small>Annual policy acknowledgement marked complete</small></article>
-              <article><strong>Assignment changed</strong><small>Moved from Console 2 to Console 3 for coverage balance</small></article>
-            </div>
-          </article>
-        </section>
-
-      </main>
+      
+<section class="signal-dashboard-panel signal-dashboard-section">
+  <div class="signal-dashboard-section-heading">
+    <span class="signal-dashboard-eyebrow">v6.0.0 Production Foundation</span>
+    <h2>Users</h2>
+    <p>Manage preview accounts for administrators, scheduling supervisors, supervisors, and employees.</p>
+  </div>
+  <div class="signal-dashboard-card-grid">
+    <article class="signal-dashboard-card"><h3>Account directory</h3><p>Static preview of the future user administration workspace.</p></article><article class="signal-dashboard-card"><h3>Invite workflow</h3><p>Placeholder for invite, deactivate, reset password, and MFA-ready controls.</p></article><article class="signal-dashboard-card"><h3>Employee linkage</h3><p>Each account will connect to an employee profile and agency role.</p></article>
+  </div>
+</section>
+</main>
       <footer class="signal-dashboard-footer"><div>© 2026 Signal Schedule <span>•</span> v6.0.0 <span>•</span> Global shell rollout</div><div><a href="/dashboard/">Dashboard</a> <span>•</span> <a href="/developer/ui-catalog/">UI Catalog</a></div></footer>
     </div>
   </div>
@@ -199,5 +166,6 @@ Purpose: Dashboard shell migrated page for Signal Schedule — Employees
   <script src="/assets/roles.js?v=6.0.0"></script>
   <script src="/assets/status.js?v=6.0.0"></script>
   <script src="/assets/data-loader.js?v=6.0.0"></script>
+  <script src="/pages/identity/identity.js?v=6.0.0"></script>
 </body>
 </html>

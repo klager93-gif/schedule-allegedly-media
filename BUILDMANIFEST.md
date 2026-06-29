@@ -1,37 +1,24 @@
-# Signal Schedule v5.19.0 Build Manifest
+# Build Manifest — Signal Schedule v6.0.0
 
-## Release
+Package: `signal-schedule-v6.0.0-full-replacement.zip`
 
-Signal Schedule v5.19.0 — Production Workflow Consolidation
+## Release focus
+
+Production Ready Foundation.
 
 ## Added
 
-- `audit/index.html`
-- `pages/operations/audit-trail.html`
-- `publishing/index.html`
-- `data/production-workflow-preview.json`
-- `docs/architecture/PRODUCTION-WORKFLOW-CONSOLIDATION-v5.19.0.md`
+- `data/production-ready-preview.json`
+- `docs/architecture/PRODUCTION-READY-v6.0.0.md`
+- `pages/identity/users.html`
+- `/agency/`, `/users/`, `/roles/` aliases in `_redirects`
 
 ## Modified
 
-- `assets/navigation.js`
-- `assets/routes.js`
-- `assets/release-metadata.js`
-- `_redirects`
-- `LATEST_RELEASE.md`
-- `CHANGELOG.md`
-- `MASTER-CHANGELOG.md`
-- `ADMIN_CHANGELOG.md`
-- `PUBLIC_CHANGELOG.md`
-- `VALIDATION.md`
-- `FILEMANIFEST.md`
-- `FILEMANIFEST.generated.txt`
-- `SHA256SUMS.txt`
+- Version/cache references updated to v6.0.0
+- Navigation expanded with Agency Setup, Users, and Roles & Permissions
+- Release/changelog/validation/manifests regenerated
 
-## Deleted
+## Server action
 
-- None
-
-## Server/Coolify
-
-No Coolify or server configuration changes required.
+None for this static build. Backend/database work is required for real production authentication and persistence.

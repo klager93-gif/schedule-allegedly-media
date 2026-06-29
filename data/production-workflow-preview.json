@@ -1,5 +1,5 @@
 {
-  "version": "v5.19.0",
+  "version": "v6.0.0",
   "release": "Production Workflow Consolidation",
   "clean_routes": [
     "/dashboard/",

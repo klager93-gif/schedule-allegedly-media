@@ -1,6 +1,6 @@
 /*
 Signal Schedule File: schedule/services/LeaveRequestService.js
-Version: v5.19.0
+Version: v6.0.0
 Purpose: Leave Requests service with Request Hours Foundation summary logic.
 */
 import { RequestHoursService } from './RequestHoursService.js';
