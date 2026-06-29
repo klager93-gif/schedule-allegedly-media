@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/navigation.js
-Version: v5.15.3
+Version: v5.15.4
 Purpose: Central navigation registry for connected Schedule flyout navigation.
 */
 (function () {

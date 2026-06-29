@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: schedule/pages/workspace/publishing.js
-Version: v5.15.3
+Version: v5.15.4
 Purpose: Schedule publishing beta foundation preview rendering.
 */
 let publicationData = null;

@@ -2,18 +2,270 @@
 Signal Schedule
 Area: Signal Schedule
 File: pages/admin/ui-catalog.html
-Version: v5.15.3
-Purpose: Internal UI component catalog for Schedule-only layout, button, card, table, form, badge, alert, empty state, and modal standards.
+Version: v5.15.4
+Purpose: Dashboard-reference UI component catalog for Schedule-only production layout, button, card, table, form, badge, alert, empty state, and modal standards.
 -->
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>UI Component Catalog — Signal Schedule</title><meta name="description" content="Internal UI component catalog for Signal Schedule foundation standards."><link rel="stylesheet" href="/app-shell.css?v=5.15.3"><link rel="stylesheet" href="/pages/admin/foundation-admin.css?v=5.15.3"></head><body data-signal-area="Signal Schedule" data-signal-title="UI Component Catalog" data-signal-version="v5.15.3" data-signal-description="Internal Schedule-only reference for reusable UI standards and the v5.15.3 rollout layer."><nav class="schedule-subnav" aria-label="Signal Schedule navigation"><div class="schedule-subnav__label"><span>Signal Schedule Navigation</span><span class="schedule-subnav__role">Admin foundation</span></div><div class="schedule-subnav__links"><a href="/index.html">Overview</a><a href="/pages/admin/system-health.html">System Health</a><a href="/pages/admin/ui-catalog.html">UI Catalog</a><a href="/pages/admin/data-export.html">Data Export</a><a href="/pages/settings/settings.html">Settings</a></div></nav><main class="schedule-shell">
-<section class="schedule-page-header"><div><p class="schedule-page-header__kicker">Signal Schedule v5.15.3</p><h1>UI Component Catalog</h1><p>This development reference defines the Schedule-only component patterns that should be reused across future modules. It is not a public marketing page and does not borrow from any other project.</p></div><a class="schedule-button" href="/pages/admin/system-health.html">System Health</a></section>
-<section class="schedule-action-bar" aria-label="Standard action bar example"><div class="schedule-action-group"><a class="schedule-button schedule-button--primary" href="#">＋ New</a><button class="schedule-button" type="button">Import</button><button class="schedule-button" type="button">Export</button><button class="schedule-button" type="button">Print</button></div><div class="schedule-action-group"><button class="schedule-button" type="button">Refresh</button><button class="schedule-button" type="button">Settings</button></div></section>
-<section class="schedule-filter-bar" aria-label="Standard filter bar example"><div class="schedule-filter-group"><input class="schedule-input" type="search" placeholder="Search records"><select class="schedule-select"><option>Status: All</option><option>Active</option><option>Pending</option></select><select class="schedule-select"><option>Shift: All</option><option>Days</option><option>Nights</option></select></div><button class="schedule-button" type="button">Clear Filters</button></section>
-<section class="schedule-component-section"><h2>Cards</h2><div class="schedule-card-grid"><article class="schedule-metric-card"><small>Open Shifts</small><strong>7</strong><span>Needs review this pay period</span></article><article class="schedule-metric-card"><small>Pending Requests</small><strong>12</strong><span>Awaiting supervisor action</span></article><article class="schedule-info-card"><small>Information Card</small><h3>Coverage rule</h3><p>Use information cards for explanatory content, settings summaries, and secondary context.</p></article><article class="schedule-action-card"><small>Action Card</small><h3>Run validation</h3><p>Action cards should clearly explain what the user is about to do.</p><button class="schedule-button" type="button">Run Check</button></article></div></section>
-<section class="schedule-component-section"><h2>Buttons and Badges</h2><div class="schedule-card"><div class="schedule-component-demo"><button class="schedule-button schedule-button--primary" type="button">Primary</button><button class="schedule-button" type="button">Secondary</button><button class="schedule-button schedule-button--danger" type="button">Danger</button><span class="schedule-badge">Neutral</span><span class="schedule-badge schedule-badge--good">Approved</span><span class="schedule-badge schedule-badge--warn">Pending</span><span class="schedule-badge schedule-badge--danger">Blocked</span></div></div></section>
-<section class="schedule-component-section"><h2>Forms</h2><div class="schedule-card-grid schedule-card-grid--three"><label class="schedule-label">Employee<small>Required selection</small><input class="schedule-input" type="text" value="Jordan Miller"></label><label class="schedule-label">Status<select class="schedule-select"><option>Pending</option><option>Approved</option><option>Denied</option></select></label><label class="schedule-label">Notes<textarea class="schedule-textarea">Use consistent labels, spacing, and controls.</textarea></label></div></section>
-<section class="schedule-component-section"><h2>Alerts and Empty States</h2><div class="schedule-alert schedule-alert--success"><strong>Success alert</strong><p>Use for completed actions and safe confirmations.</p></div><div class="schedule-alert schedule-alert--warning"><strong>Warning alert</strong><p>Use for coverage warnings, unresolved conflicts, or setup gaps.</p></div><div class="schedule-empty-state"><div><strong>No matching records</strong><p>Change the filters or create a new record to continue.</p></div></div></section>
-<section class="schedule-component-section"><h2>Table</h2><div class="schedule-table-wrap"><table class="schedule-table"><thead><tr><th>Employee</th><th>Assignment</th><th>Status</th><th>Updated</th></tr></thead><tbody><tr><td>Jordan Miller</td><td>Dispatch 1</td><td><span class="schedule-badge schedule-badge--good">Active</span></td><td>Today</td></tr><tr><td>Avery Brooks</td><td>Training</td><td><span class="schedule-badge schedule-badge--warn">Pending</span></td><td>Yesterday</td></tr><tr><td>Morgan Hayes</td><td>Open Shift</td><td><span class="schedule-badge">Review</span></td><td>This week</td></tr></tbody></table></div></section>
-<section class="schedule-component-section"><h2>Modal Pattern</h2><div class="schedule-modal-preview"><h3>Confirm Schedule Change</h3><p>Use one dialog pattern for create, edit, delete, review, and confirmation workflows.</p><div class="schedule-modal-preview__footer"><button class="schedule-button" type="button">Cancel</button><button class="schedule-button schedule-button--primary" type="button">Confirm</button></div></div></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signal Schedule | UI Component Catalog</title>
+  <meta name="description" content="Dashboard-reference UI component catalog for Signal Schedule production interface standards." />
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/dashboard.css?v=5.15.4" />
+</head>
+<body class="signal-dashboard-page" data-signal-area="Signal Schedule" data-signal-title="UI Component Catalog" data-signal-version="v5.15.4" data-signal-theme="Dashboard" data-signal-status="Foundation" data-signal-description="Dashboard-reference component catalog used as the source of truth for future Signal Schedule screens.">
+  <div class="signal-dashboard-shell signal-dashboard-shell-wide">
+    <aside class="signal-dashboard-sidebar" aria-label="Dashboard navigation">
+      <a class="signal-dashboard-brand" href="/index.html" aria-label="Signal Schedule Dashboard">
+        <img src="/assets/signal-schedule-logo.svg" alt="Signal Schedule" />
+        <p class="signal-dashboard-tagline">Smart Scheduling. Stronger Teams.</p>
+      </a>
 
-<section class="schedule-component-section"><h2>Usage Rules</h2><div class="schedule-card"><ul class="schedule-standard-list"><li>Use <strong>Primary</strong> buttons only for the main page action.</li><li>Use badges for state, not decoration.</li><li>Use action bars above tables and filter bars directly below page headers when filters are needed.</li><li>Keep admin/internal screens inside the Signal Schedule shell and avoid shared styling from other projects.</li></ul></div></section></main><div id="schedule-footer"></div><script src="/assets/release-metadata.js?v=5.15.3"></script><script src="/assets/config.js?v=5.15.3"></script><script src="/assets/routes.js?v=5.15.3"></script><script src="/assets/navigation.js?v=5.15.3"></script><script src="/assets/features.js?v=5.15.3"></script><script src="/assets/roles.js?v=5.15.3"></script><script src="/assets/status.js?v=5.15.3"></script><script src="/assets/data-loader.js?v=5.15.3"></script><script src="/app-shell.js?v=5.15.3"></script></body></html>
+      <nav class="signal-dashboard-nav">
+        <a href="/index.html"><span class="signal-dashboard-icon">⌂</span><span>Dashboard</span></a>
+        <a href="/pages/calendar/schedule.html"><span class="signal-dashboard-icon">▣</span><span>Calendar</span></a>
+        <a href="/pages/employee/index.html"><span class="signal-dashboard-icon">◉</span><span>My Schedule</span></a>
+        <a href="/pages/requests/open-shifts.html"><span class="signal-dashboard-icon">☷</span><span>Open Shifts / VOT</span></a>
+        <a href="/pages/staffing/staffing-engine.html"><span class="signal-dashboard-icon">▥</span><span>Staffing</span></a>
+        <a href="/pages/workspace/assignments.html"><span class="signal-dashboard-icon">▤</span><span>Assignments</span></a>
+        <a href="/pages/requests/requests.html"><span class="signal-dashboard-icon">▱</span><span>Requests</span></a>
+        <a href="/pages/people/employees.html"><span class="signal-dashboard-icon">♙</span><span>Employees</span></a>
+        <a href="/pages/requests/leave-banks.html"><span class="signal-dashboard-icon">▦</span><span>Leave & Banks</span></a>
+        <a href="/pages/reports/reports.html"><span class="signal-dashboard-icon">↗</span><span>Reports</span></a>
+        <a href="/pages/admin/system-health.html"><span class="signal-dashboard-icon">⚙</span><span>System</span></a>
+        <a class="is-active" href="/pages/admin/ui-catalog.html"><span class="signal-dashboard-icon">◇</span><span>UI Catalog</span></a>
+      </nav>
+
+      <div class="signal-dashboard-quick">
+        <div class="signal-dashboard-nav__section">Catalog Sections</div>
+        <div class="signal-dashboard-action">
+          <a href="#foundations"><span class="signal-dashboard-icon">◇</span><span>Foundations</span></a>
+          <a href="#actions"><span class="signal-dashboard-icon">＋</span><span>Actions</span></a>
+          <a href="#cards"><span class="signal-dashboard-icon">▥</span><span>Cards</span></a>
+          <a href="#forms"><span class="signal-dashboard-icon">☷</span><span>Forms</span></a>
+          <a href="#tables"><span class="signal-dashboard-icon">▤</span><span>Tables</span></a>
+        </div>
+      </div>
+
+      <div class="signal-dashboard-user" aria-label="Current user preview">
+        <div class="signal-dashboard-avatar">JM</div>
+        <div>
+          <strong>Jordan Miller</strong>
+          <small>Administrator<br>City of Fairview</small>
+        </div>
+      </div>
+    </aside>
+
+    <div class="signal-dashboard-main">
+      <header class="signal-dashboard-topbar">
+        <div class="signal-dashboard-title">
+          <h1>UI Component Catalog</h1>
+          <p>Production components rebuilt to match the dashboard reference.</p>
+        </div>
+        <nav class="signal-dashboard-topnav" aria-label="Primary dashboard navigation">
+          <a href="/index.html">Dashboard</a>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/calendar/schedule.html">Schedules</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/calendar/schedule.html">Calendar <small>Live</small></a>
+              <a href="/pages/workspace/daily-board.html">Daily Board <small>Live</small></a>
+              <a href="/pages/workspace/weekly-board.html">Weekly Board <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/requests/requests.html">Requests</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/requests/requests.html">Requests <small>Live</small></a>
+              <a href="/pages/requests/approvals.html">Approvals <small>Live</small></a>
+              <a href="/pages/requests/trades.html">Trades <small>Live</small></a>
+            </div>
+          </div>
+          <div class="signal-dashboard-menu">
+            <a class="signal-dashboard-menu__trigger" href="/pages/admin/system-health.html">System</a>
+            <div class="signal-dashboard-dropdown" role="menu">
+              <a href="/pages/admin/system-health.html">System Health <small>Live</small></a>
+              <a href="/pages/admin/database-audit.html">Database Audit <small>Live</small></a>
+              <a href="/pages/admin/ui-catalog.html">UI Catalog <small>Dev</small></a>
+            </div>
+          </div>
+        </nav>
+        <div class="signal-dashboard-top-actions">
+          <label class="signal-dashboard-search" aria-label="Search catalog">
+            <span>⌕</span>
+            <input type="search" placeholder="Search components, states, patterns..." />
+          </label>
+          <span aria-label="Notifications">🔔<span class="signal-dashboard-badge">3</span></span>
+          <a class="signal-dashboard-pill" href="/pages/identity/current-user.html">JM</a>
+        </div>
+      </header>
+
+      <main class="signal-dashboard-content signal-catalog-content">
+        <div class="signal-dashboard-status">
+          <span class="signal-dashboard-pill">v5.15.4</span>
+          <a class="signal-dashboard-pill" href="/pages/admin/dashboard-reference.html">Open Dashboard Reference</a>
+          <strong>Source of Truth</strong><span>•</span><strong>Dashboard Shell</strong><span>•</span><strong>Schedule-only design</strong>
+          <span class="signal-dashboard-dot" aria-hidden="true"></span><span>Ready for page rollout</span>
+        </div>
+
+        <section class="signal-catalog-hero" id="foundations">
+          <div>
+            <p class="signal-catalog-kicker">Dashboard Reference System</p>
+            <h2>Build every module from this catalog.</h2>
+            <p>These components now render inside the same sidebar, topbar, panels, pills, shadows, spacing, and dark operational dashboard language used by <code>dashboard-reference.html</code>.</p>
+          </div>
+          <div class="signal-catalog-swatch-grid" aria-label="Color swatches">
+            <span class="signal-catalog-swatch swatch-blue">Blue</span>
+            <span class="signal-catalog-swatch swatch-green">Green</span>
+            <span class="signal-catalog-swatch swatch-yellow">Warning</span>
+            <span class="signal-catalog-swatch swatch-purple">Purple</span>
+            <span class="signal-catalog-swatch swatch-cyan">Cyan</span>
+            <span class="signal-catalog-swatch swatch-red">Critical</span>
+          </div>
+        </section>
+
+        <section class="signal-dashboard-metrics" aria-label="Metric component examples">
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-blue">▥</div><div><small>Metric Card</small><strong>18</strong><em class="signal-blue">Operational KPI</em></div>
+          </article>
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-green">✓</div><div><small>Success State</small><strong>92%</strong><em class="signal-green">Coverage healthy</em></div>
+          </article>
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-yellow">⚠</div><div><small>Warning State</small><strong>5</strong><em class="signal-orange">Needs action</em></div>
+          </article>
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-purple">◷</div><div><small>Time State</small><strong>12</strong><em class="signal-purple">Upcoming items</em></div>
+          </article>
+          <article class="signal-dashboard-card signal-dashboard-metric">
+            <div class="signal-dashboard-metric__icon signal-cyan">▣</div><div><small>Draft State</small><strong>3</strong><em class="signal-cyan">Unpublished</em></div>
+          </article>
+        </section>
+
+        <section class="signal-dashboard-grid signal-catalog-grid">
+          <div class="signal-dashboard-widget-stack">
+            <section class="signal-dashboard-panel" id="actions" aria-label="Buttons and command bars">
+              <div class="signal-dashboard-panel__head"><h2>＋ Buttons & Command Bars</h2><a href="#rules">Rules</a></div>
+              <div class="signal-catalog-demo-row">
+                <a class="signal-dashboard-btn signal-dashboard-btn--primary" href="#">Primary Action</a>
+                <button class="signal-dashboard-btn" type="button">Secondary</button>
+                <button class="signal-dashboard-btn signal-dashboard-btn--danger" type="button">Danger</button>
+                <button class="signal-dashboard-pill" type="button">Pill Button</button>
+              </div>
+              <div class="signal-catalog-command-bar">
+                <div>
+                  <strong>Schedule Builder</strong>
+                  <small>Command bars sit above dense work areas.</small>
+                </div>
+                <div class="signal-dashboard-main-actions">
+                  <button class="signal-dashboard-btn" type="button">Import</button>
+                  <button class="signal-dashboard-btn" type="button">Validate</button>
+                  <button class="signal-dashboard-btn signal-dashboard-btn--primary" type="button">Publish</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="signal-dashboard-panel" id="cards" aria-label="Cards, alerts, and empty states">
+              <div class="signal-dashboard-panel__head"><h2>▥ Cards, Alerts & Empty States</h2><a href="#forms">Next</a></div>
+              <div class="signal-catalog-card-grid">
+                <article class="signal-dashboard-health-card">
+                  <small>Info Card</small>
+                  <strong>Coverage Rule</strong>
+                  <p>Use for settings summaries, non-table context, and workflow explanation.</p>
+                </article>
+                <article class="signal-dashboard-health-card">
+                  <small>Action Card</small>
+                  <strong>Run Validation</strong>
+                  <p>Use when the card performs or starts a focused action.</p>
+                  <button class="signal-dashboard-btn" type="button">Run Check</button>
+                </article>
+                <article class="signal-dashboard-health-card signal-catalog-alert-good">
+                  <small>Success Alert</small>
+                  <strong>Schedule published</strong>
+                  <p>Use after completed safe actions.</p>
+                </article>
+                <article class="signal-dashboard-health-card signal-catalog-alert-warn">
+                  <small>Warning Alert</small>
+                  <strong>Coverage gap detected</strong>
+                  <p>Use for unresolved conflicts or setup gaps.</p>
+                </article>
+              </div>
+              <div class="signal-catalog-empty-state">
+                <strong>No matching records</strong>
+                <p>Use empty states to explain what happened and provide one clear recovery action.</p>
+                <button class="signal-dashboard-btn signal-dashboard-btn--primary" type="button">Clear Filters</button>
+              </div>
+            </section>
+
+            <section class="signal-dashboard-panel" id="forms" aria-label="Form controls">
+              <div class="signal-dashboard-panel__head"><h2>☷ Forms & Filters</h2><a href="#tables">Next</a></div>
+              <div class="signal-catalog-form-grid">
+                <label class="signal-catalog-label">Employee<small>Required selection</small><input class="signal-catalog-input" type="text" value="Jordan Miller"></label>
+                <label class="signal-catalog-label">Status<small>State control</small><select class="signal-catalog-input"><option>Pending</option><option>Approved</option><option>Denied</option></select></label>
+                <label class="signal-catalog-label">Search<small>Filter pattern</small><input class="signal-catalog-input" type="search" placeholder="Search employees"></label>
+                <label class="signal-catalog-label signal-catalog-label--wide">Notes<small>Consistent spacing</small><textarea class="signal-catalog-input" rows="4">Use one form style across schedule, employees, requests, settings, and reports.</textarea></label>
+              </div>
+            </section>
+
+            <section class="signal-dashboard-panel" id="tables" aria-label="Table pattern">
+              <div class="signal-dashboard-panel__head"><h2>▤ Tables</h2><a href="#modal">Modal</a></div>
+              <div class="signal-catalog-table-wrap">
+                <table class="signal-catalog-table">
+                  <thead><tr><th>Employee</th><th>Assignment</th><th>Status</th><th>Updated</th></tr></thead>
+                  <tbody>
+                    <tr><td>Jordan Miller</td><td>Dispatch 1</td><td><span class="signal-dashboard-status-pill">Active</span></td><td>Today</td></tr>
+                    <tr><td>Avery Brooks</td><td>Training</td><td><span class="signal-dashboard-status-pill signal-status-warn">Pending</span></td><td>Yesterday</td></tr>
+                    <tr><td>Morgan Hayes</td><td>Open Shift</td><td><span class="signal-dashboard-status-pill signal-status-neutral">Review</span></td><td>This week</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+
+          <aside class="signal-dashboard-side">
+            <section class="signal-dashboard-panel" id="badges" aria-label="Badges and state tokens">
+              <div class="signal-dashboard-panel__head"><h2>Badges</h2></div>
+              <div class="signal-catalog-token-list">
+                <span class="signal-dashboard-status-pill">Neutral</span>
+                <span class="signal-dashboard-status-pill signal-status-good">Approved</span>
+                <span class="signal-dashboard-status-pill signal-status-warn">Pending</span>
+                <span class="signal-dashboard-status-pill signal-status-danger">Blocked</span>
+                <span class="signal-dashboard-status-pill signal-status-purple">Draft</span>
+              </div>
+            </section>
+
+            <section class="signal-dashboard-panel" id="modal" aria-label="Modal preview">
+              <div class="signal-dashboard-panel__head"><h2>Modal</h2></div>
+              <div class="signal-catalog-modal-preview">
+                <h3>Confirm Schedule Change</h3>
+                <p>Use one dialog pattern for create, edit, delete, review, and confirmation workflows.</p>
+                <div class="signal-catalog-modal-actions">
+                  <button class="signal-dashboard-btn" type="button">Cancel</button>
+                  <button class="signal-dashboard-btn signal-dashboard-btn--primary" type="button">Confirm</button>
+                </div>
+              </div>
+            </section>
+
+            <section class="signal-dashboard-panel" id="rules" aria-label="Usage rules">
+              <div class="signal-dashboard-panel__head"><h2>Usage Rules</h2></div>
+              <div class="signal-dashboard-list">
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot is-blue"></span><strong>Use dashboard.css for new screens.</strong><span class="signal-dashboard-hours">Required</span></div>
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot"></span><strong>One primary action per page.</strong><span class="signal-dashboard-hours">Rule</span></div>
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot is-blue"></span><strong>Badges show state, not decoration.</strong><span class="signal-dashboard-hours">Rule</span></div>
+                <div class="signal-dashboard-list__row"><span class="signal-dashboard-row-dot"></span><strong>Future pages should copy from this catalog.</strong><span class="signal-dashboard-hours">Required</span></div>
+              </div>
+            </section>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="signal-dashboard-footer">
+        <span>Signal Schedule v5.15.4</span>
+        <span>UI Catalog rebuilt from dashboard-reference design</span>
+        <a href="/pages/admin/dashboard-reference.html">Dashboard Reference</a>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

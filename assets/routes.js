@@ -2,7 +2,7 @@
 Signal Schedule
 Area: Signal Schedule
 File: assets/routes.js
-Version: v5.15.3
+Version: v5.15.4
 Purpose: Central route registry for standalone Signal Schedule page architecture and foundation workspaces.
 */
 window.SIGNAL_SCHEDULE_ROUTES = Object.freeze({
